@@ -1,0 +1,16 @@
+module.exports = {
+  disallowBlockExpansion: true,
+  disallowClassAttributeWithStaticValue: true,
+  disallowLegacyMixinCall: true,
+  disallowDuplicateAttributes: true,
+  disallowMultipleLineBreaks: true,
+  disallowTrailingSpaces:true,
+  maximumLineLength: 100,
+  requireClassLiteralsBeforeAttributes: true,
+  requireIdLiteralsBeforeAttributes: true,
+  requireLowerCaseAttributes: true,
+  requireStrictEqualityOperators: true,
+  validateAttributeQuoteMarks: '"',
+  // validateAttributeSeparator: { separator: ', ', multiLineSeparator: ',/n' },
+  validateIndentation: 2,
+};

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Site title</title>
+  <% for (key in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="preload" as="style">
+  <% } %>
+  <!-- Google Tag Manager -->
+  <script>(
+    function(w,d,s,l,i){
+      if (window.__prerender) return;
+      w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','<%= htmlWebpackPlugin.options.googleTagManagerId %>');</script>
+  <!-- End Google Tag Manager -->
+  <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.frontendURL %>/static/img/sharing-image.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:url" content="<%= htmlWebpackPlugin.options.frontendURL %>" />
+  <meta property="fb:app_id" content="2160947010638552" />
+  <% for (key in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" type="text/css">
+  <% } %>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<%= htmlWebpackPlugin.options.googleTagManagerId %>"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<style>
+  .preload-spinner {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    color: #5e5e5e;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+</style>
+<div id="preload-spinner" class="preload-spinner" style="display: none">
+  <div data-v-0a2cba4c="" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+       class="v-progress-circular v-progress-circular--indeterminate" style="height: 32px; width: 32px;">
+    <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="22.857142857142858 22.857142857142858 45.714285714285715 45.714285714285715"
+         style="transform: rotate(0deg);">
+      <circle fill="transparent" cx="45.714285714285715" cy="45.714285714285715" r="20" stroke-width="5.714285714285714"
+              stroke-dasharray="125.664" stroke-dashoffset="125.66370614359172px"
+              class="v-progress-circular__overlay"></circle>
+    </svg>
+    <div class="v-progress-circular__info"></div>
+  </div>
+</div>
+<script>
+window.__jsVersion = null;
+window.__prerendered = false;
+var spinner = document.getElementById('preload-spinner');
+if (spinner && !window.__hydration) spinner.style.display = '';
+</script>
+<div id="app">
+</div>
+<% for (key in htmlWebpackPlugin.options.modernScripts) { %>
+<script type="module" src="<%= htmlWebpackPlugin.options.modernScripts[key] %>" crossorigin="use-credentials"></script>
+<% } %>
+<% for (key in htmlWebpackPlugin.options.legacyScripts) { %>
+<script nomodule type="text/javascript" src="<%= htmlWebpackPlugin.options.legacyScripts[key] %>"></script>
+<% } %>
+<!-- built files will be auto injected -->
+</body>
+
+</html>

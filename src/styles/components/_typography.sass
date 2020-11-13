@@ -1,0 +1,151 @@
+i,
+em
+  font-style: italic
+strong, b
+  +font(700)
+h1, h2, h3, h4, h5, h6
+  color: $black
+  +font(700)
+h1
+  font-size: sizeInRem(45)
+  line-height: 60px
+  @media screen and (max-width: 767px)
+    font-size: sizeInRem(35)
+    line-height: 45px
+  &.big-h1
+    font-size: sizeInRem(65)
+    line-height: 70px
+    @media screen and (max-width: 767px)
+      font-size: sizeInRem(45)
+      line-height: 60px
+h2
+  font-size: sizeInRem(35)
+  line-height: 50px
+  @media screen and (max-width: 767px)
+    font-size: sizeInRem(30)
+    line-height: 40px
+h3
+  font-size: sizeInRem(24)
+  line-height: 36px
+h4
+  font-size: sizeInRem(20)
+  line-height: 30px
+h5
+  font-size: sizeInRem(17)
+  line-height: 26px
+h6
+  font-size: sizeInRem(14)
+  line-height: 20px
+.small-text
+  +font(600)
+  font-size: sizeInRem(12)
+  line-height: 17px
+.small-text-bold
+  +font(700)
+  font-size: sizeInRem(12)
+  line-height: 19px
+.subheading
+  font-size: sizeInRem(20)
+  line-height: 30px
+  color: $black
+  +font(300)
+.v-application
+  a:not(.v-btn)
+    color: $black !important
+    text-decoration: none
+    +mt(.2s)
+    +font(700)
+    &:hover
+      +mt(.2s)
+      color: $secondary !important
+      .svg-icon
+        +mt(0.2s)
+        color: $secondary
+        fill: $secondary
+    &.link-1
+      position: relative
+      display: inline
+      z-index: 1
+      +mt(.2s)
+      color: inherit
+      line-height: 20px
+      border-bottom: solid 1px $secondary
+      &:hover
+        +mt(.2s)
+        border-bottom: solid 1px transparent
+        color: $secondary !important
+      &.no-focus
+        &:hover
+          border-bottom: solid 1px $secondary
+        &:focus
+          border-bottom: solid 1px $secondary
+    &.link-2
+      position: relative
+      display: inline
+      z-index: 1
+      +mt(.2s)
+      color: $white !important
+      line-height: 20px
+      border-bottom: solid 1px $white
+      &:hover
+        +mt(.2s)
+        border-bottom: solid 1px transparent
+        color: $white !important
+      &.no-focus
+        &:hover
+          border-bottom: solid 1px $white
+        &:focus
+          border-bottom: solid 1px $white
+    &.link-3
+      color: $secondary !important
+      .svg-icon
+        fill: $secondary !important
+      &:hover
+        color: #2DD787 !important
+        .svg-icon
+          fill: #2DD787 !important
+    &.small-link
+      font-size: sizeInRem(14)
+      line-height: 20px
+      &.uppercase-link
+        letter-spacing: 0.5px
+    &.extra-small-link
+      font-size: sizeInRem(12)
+      line-height: 18px
+      &.uppercase-link
+        letter-spacing: 0.5px
+    &.uppercase-link
+      text-transform: uppercase
+hr
+  border-bottom: solid 1px $grey
+  border-top: none
+  border-left: none
+
+// H - titles by class
+.is-h1__title
+  @extend h1
+.is-h2__title
+  @extend h2
+.is-h3__title
+  @extend h3
+.is-h4__title
+  @extend h4
+.is-h5__title
+  @extend h5
+.is-h6__title
+  @extend h6
+.content-list
+  ul
+    list-style: none
+    li
+      color: #515D69
+      margin-bottom: 15px
+      &:last-child
+        margin-bottom: 0
+      &:before
+        content: "\2022"
+        color: $blue
+        font-weight: bold
+        display: inline-block
+        width: 1em
+        margin-left: -1em

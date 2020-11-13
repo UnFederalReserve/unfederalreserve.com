@@ -1,0 +1,9 @@
+yarn lint
+
+if [ $? == 0 ]; then
+	echo 'Everything is good'
+	exit 0
+else
+	echo 'Found lint problem'
+	exit 1 
+fi

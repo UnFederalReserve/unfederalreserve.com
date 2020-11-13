@@ -1,0 +1,52 @@
+.slide, .slide-reverse
+  &-enter, &-leave
+    &-active
+      transition: all .3s
+  &-enter, &-leave-active
+    opacity: 0
+  &-enter
+    transform: translateX(100%)
+  &-leave-active
+    transform: translateX(-100%)
+    position: absolute
+.slide-reverse
+  &-enter
+    transform: translateX(-100%)
+  &-leave-active
+    transform: translateX(100%)
+.fade-enter-active,
+.fade-leave-active
+  transition: opacity .3s
+.fade-enter,
+.fade-leave-to
+  opacity: 0 !important
+.fade-component-enter-active,
+.fade-component-leave-active
+  transition: opacity .5s
+.fade-component-enter,
+.fade-component-leave-to
+  position: absolute
+  width: 100%
+  opacity: 0 !important
+.placeholder-loading
+  background-color: $bg_grey
+  position: relative
+  overflow: hidden
+  &:before
+    animation: loading 1.5s infinite
+    content: ""
+    height: 100%
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    transform: translateX(-100%)
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent)
+@keyframes loading
+  100%
+    transform: translateX(100%)
+.animation-spin
+  animation: spin 1.5s ease infinite
+@keyframes spin
+  100%
+    transform: rotate(360deg)

@@ -1,0 +1,17 @@
+@mixin mt($time)
+  transition: all $time ease
+  -webkit-transition: all $time ease-in-out
+  -moz-transition: all $time ease-in-out
+  -ms-transition: all $time ease-in-out
+  -o-transition: all $time ease-in-out
+  transition: all $time ease-in-out
+
+$base-size: 17
+//Function to convert px value into rem
+@function sizeInRem($target, $context: $base-size)
+  @return ($target / $context) * 1rem
+
+@mixin font($weight)
+  font-family: 'Mulish'
+  font-weight: $weight
+  font-style: normal

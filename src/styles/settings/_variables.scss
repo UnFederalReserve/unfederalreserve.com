@@ -1,0 +1,66 @@
+$color-pack: false !default;
+
+$body-font-family: 'Mulish', sans-serif !default;
+$font-size-root: 17px !default;
+$line-height-root: 26px!default;
+
+$spacer: 4px !default;
+
+$spacers: ();
+@for $i from 0 through 12 {
+  $spacers: map-merge($spacers, ($i: $spacer * $i))
+}
+$negative-spacers: ();
+@for $i from 1 through 12 {
+  $negative-spacers: map-merge($negative-spacers, ("n" + $i: -$spacer * $i))
+}
+
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px
+) !default;
+$grid-gutter: 15px !default;
+$form-grid-gutter: $spacer * 2 !default;
+$grid-columns: 12 !default;
+
+$container-padding-x: $grid-gutter / 2 !default;
+
+$grid-gutters: (
+  'xs': $grid-gutter  4,
+  'sm': $grid-gutter / 2,
+  'md': $grid-gutter,
+  'lg': $grid-gutter * 2,
+  'xl': $grid-gutter * 3,
+) !default;
+
+$container-max-widths: (
+  'md': map-get($grid-breakpoints, 'md'),
+  'lg': map-get($grid-breakpoints, 'lg'),
+  'xl': map-get($grid-breakpoints, 'xl')
+) !default;
+
+$heading-font-family: $body-font-family !default;
+
+// buttons vars
+$btn-border-radius: 4px;
+$btn-sizes: (
+  'x-small': 20,
+  'small': 34,
+  'default': 50,
+  'large': 53,
+  'x-large': 70
+) !default;
+$btn-font-sizes: (
+  'x-small': 0.75rem,
+  'small': 0.8235294117647058rem,
+  'default': 1rem,
+  'large': 1.1176470588235294rem,
+  'x-large': 1.375rem
+) !default;
+$btn-font-size: 1rem;
+$btn-letter-spacing: normal;
+$btn-font-weight: 700;
+$text-field-border-radius: 2px;

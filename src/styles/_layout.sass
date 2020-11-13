@@ -1,0 +1,30 @@
+.container:not(.fluid)
+  max-width: 1170px
+  padding-top: 0
+  padding-bottom: 0
+.container:not(.fluid).grid-list-lg
+  padding: 0 15px
+.container.grid-list-lg .layout .flex
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+.container.grid-list-lg .layout:only-child
+  margin: auto -15px
+.container.fluid
+  padding: 0
+.theme--light
+  // background-color: #fff !important
+  color: $primary
+  &.v-application
+    color: $primary
+.row
+   margin-left: 0
+   margin-right: 0
+.v-application--wrap
+  .v-content
+    overflow-x: hidden
+body
+  overflow: hidden
+
+.v-overlay
+  &--active
+    z-index: 8 !important
