@@ -1,159 +1,40 @@
 .theme--light
-  &.v-btn
-    text-transform: uppercase
-    color: $black
-    letter-spacing: 0.5px
-    &:hover
-      &:before
-        opacity: 0.05
-    .v-ripple__container
-      opacity: 0.4
-    &--contained
-      color: $black
-      box-shadow: 0px 2px 4px rgba(61, 71, 81, 0.05)
-      border: 1px solid $bg_grey
-      +mt(.3s)
-      &:before
-        opacity: 0 !important
-      &.secondary,
-      &.accent
-        color: $white !important
-        .v-btn__content
-          color: $white !important
-          position: relative
-          z-index: 1
-      &.secondary
-        .v-ripple__container
-          opacity: 1 !important
-          .v-ripple__animation
-            opacity: 1 !important
-            background-color: #2DD787
-          &:before
-            display: none
-          &:after
-            display: none
-        &:hover
-          background-color: #2BE18B !important
-        &.disabled
-          background-color: #2be48d !important
-          border-color: #2be48d !important
-          opacity: 0.5
-          pointer-events: none
-      &.accent
-        .v-ripple__container
-          opacity: 1 !important
-          .v-ripple__animation
-            opacity: 1 !important
-            background-color: #61C7E0
-          &:before
-            display: none
-          &:after
-            display: none
-        &:hover
-          background-color: #65D4EF !important
-      &.white
-        border: 1px solid $bg_grey !important
-        .v-btn__content
-          position: relative
-          z-index: 1
-        .v-ripple__container
-          opacity: 1 !important
-          .v-ripple__animation
-            opacity: 1 !important
-            background-color: #FBFBFB
-          &:before
-            display: none
-          &:after
-            display: none
-        &:hover
-          +mt(.3s)
-          background-color: #FDFDFD !important
-        &:focus
-          box-shadow: none
-    &--outlined
-      border-width: 2px
-      &.without-border
-        border-color: transparent
-        border-width: 1px
-        .v-ripple__container
-          opacity: 0.1
-        +mt(.3s)
-        &:before
-          opacity: 0
-        &:hover
-          +mt(.3s)
-          background-color: #FDFDFD !important
-          border: 1px solid #F6FAFB
-    &.v-size
-        &--small
-          padding: 0 13px
-        &--default
-          padding: 0 25px
-        &--large
-          padding: 0 25px
-    &--with__icon
-      padding-right: 0 !important
+  .v-btn
+    &:not(.v-btn--round)
+      position: relative
+      color: $white
+      min-width: 290px
+      background: linear-gradient(180deg, #6494F4 0%, #4166DB 100%)
+      box-shadow: 0px 10px 20px rgba(31, 63, 174, 0.04), 0px 2px 6px rgba(31, 63, 174, 0.04), 0px 0px 1px rgba(31, 63, 174, 0.04)
+      &:after
+        content: ''
+        position: absolute
+        z-index: 2
+        left: 3px
+        top: 3px
+        width: calc(100% - 6px)
+        height: calc(100% - 6px)
+        border-radius: 100px
+        background: rgba(255,255,255, 0.1)
       .v-btn__content
-        height: 100%
-      .icon-wrap
-        width: 43px
-        background-color: #FBFBFB
-        height: 100%
-        margin-left: 25px
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: center
-        border-bottom-right-radius: 4px
-        border-top-right-radius: 4px
-        .svg-icon
-          width: 10px
-          fill: $black
-          opacity: 0.5
-      &.secondary
-        .icon-wrap
-          background-color: #2DD787
-          .svg-icon
-            fill: $white
-      &.accent
-        .icon-wrap
-          background-color: #61C7E0
-          .svg-icon
-            fill: $white
-      &.v-size
-        &--small
-          .icon-wrap
-            width: 37px
-            margin-left: 13px
-          .svg-icon
-            width: 7px
-            fill: $black
-            opacity: 0.5
-        &--large
-          .icon-wrap
-            width: 53px
-          .svg-icon
-            width: 12px
-            height: 20px
-            fill: $black
-            opacity: 0.5
-    &--round
-      border-radius: 4px
-      background: #FFFFFF
-      border: 1px solid #F6FAFB
-      box-shadow: 0px 2px 4px rgba(61, 71, 81, 0.05)
-      &:before
-        opacity: 0
-      &.white--text
-        +mt(.3s)
-        &:hover
-          +mt(.3s)
-          background-color: #FBFBFB !important
-      &.v-size
-        &--small
-          .svg-icon
-            width: 8px
-            fill: $black
-            opacity: 1
-    &-flat
-      background-color: transparent !important
+        &:before
+          content: ''
+          position: absolute
+          left: -15px
+          top: -12px
+          width: 31px
+          height: 31px
+          background-image: url('~images/btn-bable-big.svg')
+          z-index: 3
+        &:after
+          content: ''
+          position: absolute
+          right: -15px
+          bottom: -5px
+          width: 21px
+          height: 18px
+          background-image: url('~images/btn-bable-small.svg')
+          z-index: 3
+      &:hover
+        background: linear-gradient(180deg, #2661DC 0%, #133FBD 100%)
+        box-shadow: 0px 10px 20px rgba(31, 63, 174, 0.04), 0px 2px 6px rgba(31, 63, 174, 0.04), 0px 0px 1px rgba(31, 63, 174, 0.04)

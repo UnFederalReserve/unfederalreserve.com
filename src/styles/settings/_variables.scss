@@ -1,8 +1,8 @@
 $color-pack: false !default;
 
-$body-font-family: 'Mulish', sans-serif !default;
-$font-size-root: 17px !default;
-$line-height-root: 26px!default;
+$body-font-family: 'Poppins', sans-serif !default;
+$font-size-root: 18px !default;
+$line-height-root: 30px!default;
 
 $spacer: 4px !default;
 
@@ -45,22 +45,22 @@ $container-max-widths: (
 $heading-font-family: $body-font-family !default;
 
 // buttons vars
-$btn-border-radius: 4px;
+$btn-border-radius: 100px;
 $btn-sizes: (
-  'x-small': 20,
-  'small': 34,
-  'default': 50,
-  'large': 53,
-  'x-large': 70
+  'x-small': 70,
+  'small': 77,
+  'default': 80,
+  'large': 80,
+  'x-large': 80
 ) !default;
 $btn-font-sizes: (
-  'x-small': 0.75rem,
-  'small': 0.8235294117647058rem,
-  'default': 1rem,
-  'large': 1.1176470588235294rem,
-  'x-large': 1.375rem
+  'x-small': 16px,
+  'small': 18px,
+  'default': 24px,
+  'large': 26px,
+  'x-large': 28px
 ) !default;
-$btn-font-size: 1rem;
+$btn-font-size: 24px;
 $btn-letter-spacing: normal;
-$btn-font-weight: 700;
+$btn-font-weight: 600;
 $text-field-border-radius: 2px;
