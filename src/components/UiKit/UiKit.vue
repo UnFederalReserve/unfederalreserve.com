@@ -3,10 +3,10 @@
     v-container(grid-list-lg)
       v-layout(row wrap)
         v-flex(lg6 xs12)
-          h1 H1 - 45px
-          h2 H2 - 35px
-          h3 H3 - 24px
-          h4 H4 - 20px
+          h1 H1 - 75px
+          h2 H2 - 42px
+          h3 H3 - 33px
+          h4 H4 - 24px
           h5 H5 - 17px
           h6 H6 - 14px
         v-flex(lg3 xs12)
