@@ -16,6 +16,8 @@
         height: calc(100% - 6px)
         border-radius: 100px
         background: rgba(255,255,255, 0.1)
+      &:before
+        display: none
       .v-btn__content
         &:before
           content: ''
@@ -38,3 +40,11 @@
       &:hover
         background: linear-gradient(180deg, #2661DC 0%, #133FBD 100%)
         box-shadow: 0px 10px 20px rgba(31, 63, 174, 0.04), 0px 2px 6px rgba(31, 63, 174, 0.04), 0px 0px 1px rgba(31, 63, 174, 0.04)
+    &--outlined
+      &:not(.v-btn--round)
+        background: transparent
+        &:after
+          display: none
+        &:hover
+          background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
+          color: #000

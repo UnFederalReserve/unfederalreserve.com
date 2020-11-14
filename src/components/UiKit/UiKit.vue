@@ -23,12 +23,17 @@
       v-layout(row wrap)
         v-flex(lg12 xs12)
           a(href="#") Link
+      v-layout(row wrap)
+        v-flex(lg12 xs12)
+          SocialLinks.social
 </template>
 
 <script>
+import SocialLinks from 'Components/SocialLinks/SocialLinks';
 
 export default {
   name: 'UiKit',
+  components: { SocialLinks },
 };
 </script>
 
@@ -42,4 +47,9 @@ export default {
   width: 100px
   height: 100px
   margin: 15px
+.social
+  width: 100%
+  height: 100%
+  background: red
+  padding: 10px
 </style>
