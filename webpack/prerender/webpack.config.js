@@ -112,7 +112,7 @@ module.exports = {
         // } else {
         
           // Set page is prerendered
-        html = html.replace('window.__prerendered = false', 'window.__prerendered = true');
+        html = html.replace('window.__prerendered = false', 'window.__prerendered = false');
         // }
         // If jsVersion exist, inject into html
         if (jsVersion) {

@@ -5,9 +5,6 @@ export default [
   {
     path: '/',
     name: 'home',
-    meta: {
-      store: ['farm/getList'],
-    },
     component: PageMain,
   },
   {

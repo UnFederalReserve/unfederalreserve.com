@@ -1,6 +1,6 @@
 <template lang="pug">
   v-app
-    BaseSpinner(:value="isAppLoading && !_isMounted && !__hydration" zIndex="999" full opaque)
+    BaseSpinner(:value="isAppLoading && !_isMounted" zIndex="999" full opaque)
     TheHeader
     v-main
       router-view

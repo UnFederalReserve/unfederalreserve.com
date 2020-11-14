@@ -14,6 +14,7 @@ import store from './store';
 // Setup services
 // Refresh page when pc in sleep mode more than 10 min
 // dreamCatcher(() => window.location.reload(), 6e5);
+import './helpers/directives';
 
 // Connect plugins
 Vue.config.productionTip = false;

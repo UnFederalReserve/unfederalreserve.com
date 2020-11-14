@@ -1,5 +1,4 @@
 import CONFIG from 'Config';
-import { mapGetters } from 'vuex';
 
 export default {
   mounted() {
@@ -7,17 +6,14 @@ export default {
     this.$_page_dispatchRenderReady();
   },
   computed: {
-    ...mapGetters('page', [
-      'pageData',
-    ]),
     $_page_pageTitle() {
-      return (this.$_page_seoFromPageData && this.pageData.seo_title) || this.pageTitle;
+      return this.$_page_seoFromPageData || this.pageTitle;
     },
     $_page_pageDescription() {
-      return (this.$_page_seoFromPageData && this.pageData.seo_description) || this.pageDescription;
+      return this.$_page_seoFromPageData || this.pageDescription;
     },
     $_page_pageCanonicalUrl() {
-      return this.pageData ? this.pageData.canonical : '';
+      return '';
     },
   },
   watch: {
