@@ -1,13 +1,14 @@
 <template lang="pug">
   header.TheHeader.header
-    router-link.header-logo(:to="{name: 'home'}")
-      BaseImage(
-        :src="require('images/logo.svg')",
-        alt="logo",
+    .header-wrap
+      router-link.header-logo(:to="{name: 'home'}")
+        BaseImage(
+          :src="require('images/logo.svg')",
+          alt="logo",
+        )
+      TheHeaderMenu.header-menu(
+        :menu="menu"
       )
-    TheHeaderMenu.header-menu(
-      :menu="menu"
-    )
 </template>
 
 <script>
@@ -53,15 +54,20 @@ export default {
 @import '~Styles/_variables'
 .header
   width: 100%
-  max-width: 1170px
-  padding-left: 15px
-  padding-right: 15px
-  padding-top: 30px
-  margin: 0 auto
-  display: flex
-  flex-direction: row
-  align-items: flex-start
-  justify-content: space-between
+  position: fixed
+  top: 0
+  z-index: 3
+  &-wrap
+    width: 100%
+    max-width: 1140px
+    padding-left: 15px
+    padding-right: 15px
+    padding-top: 30px
+    margin: 0 auto
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: space-between
   &-logo
     width: 187px
     height: 47px
