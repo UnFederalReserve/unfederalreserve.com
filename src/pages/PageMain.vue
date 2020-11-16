@@ -2,18 +2,21 @@
   .PageMain.page-main
     HeroSection
     HowItWorksSection(:items="howItWorksItems")
+    IslandsSection
 </template>
 
 <script>
 import pageMixin from 'Mixins/pageMixin';
 import HeroSection from 'Components/HeroSection/HeroSection';
 import HowItWorksSection from 'Components/HowItWorksSection/HowItWorksSection';
+import IslandsSection from 'Components/IslandsSection/IslandsSection';
 
 export default {
   name: 'PageMain',
   components: {
     HeroSection,
     HowItWorksSection,
+    IslandsSection,
   },
   mixins: [pageMixin],
   computed: {
