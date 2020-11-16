@@ -54,7 +54,7 @@ export default {
 @import '~Styles/_variables'
 .header
   width: 100%
-  position: fixed
+  position: absolute
   top: 0
   z-index: 3
   &-wrap

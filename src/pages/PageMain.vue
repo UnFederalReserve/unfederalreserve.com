@@ -3,6 +3,7 @@
     HeroSection
     HowItWorksSection(:items="howItWorksItems")
     IslandsSection
+    LimitedLiquitySection
 </template>
 
 <script>
@@ -10,6 +11,7 @@ import pageMixin from 'Mixins/pageMixin';
 import HeroSection from 'Components/HeroSection/HeroSection';
 import HowItWorksSection from 'Components/HowItWorksSection/HowItWorksSection';
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
+import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
 
 export default {
   name: 'PageMain',
@@ -17,6 +19,7 @@ export default {
     HeroSection,
     HowItWorksSection,
     IslandsSection,
+    LimitedLiquitySection,
   },
   mixins: [pageMixin],
   computed: {
