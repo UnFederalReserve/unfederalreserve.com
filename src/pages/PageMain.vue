@@ -4,6 +4,7 @@
     HowItWorksSection(:items="howItWorksItems")
     IslandsSection
     LimitedLiquitySection
+    RoadmapSection
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import HeroSection from 'Components/HeroSection/HeroSection';
 import HowItWorksSection from 'Components/HowItWorksSection/HowItWorksSection';
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
 import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
+import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
 
 export default {
   name: 'PageMain',
@@ -20,6 +22,7 @@ export default {
     HowItWorksSection,
     IslandsSection,
     LimitedLiquitySection,
+    RoadmapSection,
   },
   mixins: [pageMixin],
   computed: {
