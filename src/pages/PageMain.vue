@@ -5,6 +5,8 @@
     IslandsSection
     LimitedLiquitySection
     RoadmapSection
+    MoreAboutUsSection
+    OurLeadersSection(:team="team")
 </template>
 
 <script>
@@ -14,6 +16,8 @@ import HowItWorksSection from 'Components/HowItWorksSection/HowItWorksSection';
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
 import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
 import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
+import MoreAboutUsSection from 'Components/MoreAboutUsSection/MoreAboutUsSection';
+import OurLeadersSection from 'Components/OurLeadersSection/OurLeadersSection';
 
 export default {
   name: 'PageMain',
@@ -23,6 +27,8 @@ export default {
     IslandsSection,
     LimitedLiquitySection,
     RoadmapSection,
+    MoreAboutUsSection,
+    OurLeadersSection,
   },
   mixins: [pageMixin],
   computed: {
@@ -63,6 +69,40 @@ export default {
           number: '06',
           title: 'Reporting',
           text: 'Accounting, financial and tax reporting integration with existing systems available.',
+        },
+      ];
+    },
+    team() {
+      return [
+        {
+          name: 'HOWARD KRIEGER, ASA, CEIV',
+          title: 'FOUNDER & CEO',
+          image: 'team/howard.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: '#',
+            },
+            {
+              name: 'facebook',
+              path: '#',
+            },
+          ],
+        },
+        {
+          name: 'RYAN MEDLIN',
+          title: 'FOUNDER & CEO',
+          image: 'team/ryan.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: '#',
+            },
+            {
+              name: 'facebook',
+              path: '#',
+            },
+          ],
         },
       ];
     },
