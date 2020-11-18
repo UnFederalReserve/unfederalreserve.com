@@ -1,0 +1,28 @@
+.v-text-field
+  &--outlined
+    border-radius: 10px
+    .v-input
+      &__slot
+        fieldset
+          border-color: $cornflower_blue
+    .v-text-field__slot
+      min-height: 70px !important
+      .v-label
+        +font(600)
+        font-size: 18px
+        letter-spacing: 0.01em
+        color: $white !important
+        top: 25px
+        left: 15px !important
+        &--active
+          transform: translateY(-32px) scale(0.75)
+          left: 0px !important
+      input
+        color: $white !important
+        max-height: 70px !important
+        padding-left: 15px
+    .v-text-field__details
+      display: none
+  &.error--text
+    .v-text-field__details
+      display: flex

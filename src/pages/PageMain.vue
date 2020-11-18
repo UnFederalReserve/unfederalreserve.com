@@ -7,6 +7,7 @@
     RoadmapSection
     MoreAboutUsSection
     OurLeadersSection(:team="team")
+    GetInTouch
 </template>
 
 <script>
@@ -18,6 +19,7 @@ import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiqui
 import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
 import MoreAboutUsSection from 'Components/MoreAboutUsSection/MoreAboutUsSection';
 import OurLeadersSection from 'Components/OurLeadersSection/OurLeadersSection';
+import GetInTouch from 'Components/GetInTouch/GetInTouch';
 
 export default {
   name: 'PageMain',
@@ -29,6 +31,7 @@ export default {
     RoadmapSection,
     MoreAboutUsSection,
     OurLeadersSection,
+    GetInTouch,
   },
   mixins: [pageMixin],
   computed: {
