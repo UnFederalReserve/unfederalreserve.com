@@ -16,8 +16,7 @@
     "build:analyze": "rm -rf dist/* && NODE_ENV=production webpack --mode production --analyze --profile --json > compilation-stats.json --env.legacy=true",
     "build-prerender:local": "yarn build:dev && yarn prerender && cp -rf ./prerendered/* ./dist",
     "lint": "NODE_ENV=production eslint --ext .js,.vue src",
-    "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src --fix",
-    "postinstall": "test -n \"$NOYARNPOSTINSTALL\" || cp etc/pre-commit .git/hooks/pre-commit"
+    "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src --fix"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
