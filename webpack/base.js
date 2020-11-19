@@ -31,7 +31,7 @@ Object.keys(process.env).forEach((key) => {
 });
 
 const extractHTML = new HtmlWebpackPlugin({
-  filename: isDevServer ? 'index.html' : 'i.html',
+  filename: isDevServer ? 'index.html' : 'index.html',
   inject: false,
   template: `${rootFolder}/index.html`,
   minify: {
