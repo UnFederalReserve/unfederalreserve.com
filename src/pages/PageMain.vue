@@ -4,6 +4,7 @@
     HowItWorksSection(:items="howItWorksItems")
     IslandsSection
     LimitedLiquitySection
+    TokenomicsSection
     RoadmapSection
     MoreAboutUsSection
     OurLeadersSection(:team="team")
@@ -20,6 +21,7 @@ import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
 import MoreAboutUsSection from 'Components/MoreAboutUsSection/MoreAboutUsSection';
 import OurLeadersSection from 'Components/OurLeadersSection/OurLeadersSection';
 import GetInTouch from 'Components/GetInTouch/GetInTouch';
+import TokenomicsSection from 'Components/TokenomicsSection/TokenomicsSection';
 
 export default {
   name: 'PageMain',
@@ -32,6 +34,7 @@ export default {
     MoreAboutUsSection,
     OurLeadersSection,
     GetInTouch,
+    TokenomicsSection,
   },
   mixins: [pageMixin],
   computed: {
