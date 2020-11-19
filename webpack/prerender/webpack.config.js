@@ -63,7 +63,7 @@ module.exports = {
       staticDir: path.resolve('dist'),
       outputDir: path.resolve('prerendered'),
       routes,
-      indexPath: path.resolve('dist/i.html'),
+      indexPath: path.resolve('dist/index.html'),
       minify: {
         collapseWhitespace: false,
         minifyCSS: true,
@@ -110,7 +110,7 @@ module.exports = {
         //  html = html.replace('id="app"', 'id="app" data-server-rendered="true"');
         //  html = html.replace('window.__prerendered = false', 'window.__prerendered = true; window.__hydration = true');
         // } else {
-        
+
           // Set page is prerendered
         html = html.replace('window.__prerendered = false', 'window.__prerendered = false');
         // }
