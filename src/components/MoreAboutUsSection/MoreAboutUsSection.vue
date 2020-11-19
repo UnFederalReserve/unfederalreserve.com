@@ -29,6 +29,8 @@ export default {
   padding-left: 15px
   padding-right: 15px
   margin: 0 auto
+  @media screen and (max-width: 767px)
+    margin-top: 100px
   h2
     color: $white
     margin-bottom: 25px

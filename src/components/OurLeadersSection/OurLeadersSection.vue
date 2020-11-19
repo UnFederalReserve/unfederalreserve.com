@@ -48,8 +48,16 @@ export default {
   display: flex
   flex-direction: row
   justify-content: space-between
+  @media screen and (max-width: 767px)
+    margin-top: 100px
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: center
+    align-items: center
   &__team
     margin-left: 80px
+    @media screen and (max-width: 767px)
+      margin-left: 0
     ::v-deep .thumbnail
       margin-bottom: 90px
   &__text

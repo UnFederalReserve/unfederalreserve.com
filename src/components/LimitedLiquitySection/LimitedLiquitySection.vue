@@ -70,12 +70,19 @@ section
     margin: 0 auto
     display: flex
     flex-direction: row
+    @media screen and (max-width: 767px)
+      flex-direction: column
+      flex-wrap: wrap
     .illustration-wrap
       width: 100%
       max-width: 750px
       flex-shrink: 0
       margin-right: 30px
       position: relative
+      @media screen and (max-width: 767px)
+        margin-right: 0
+        img
+          width: 100%
   .limited-liquity
     &__text
       *
@@ -87,19 +94,30 @@ section
       width: 100%
       max-width: 388px
       margin-top: 100px
+      @media screen and (max-width: 767px)
+        order: -1
+        max-width: 100%
     .close
       position: absolute
       right: -145px
       width: 400px
       bottom: 0
+      @media screen and (max-width: 767px)
+        width: 150px !important
+        right: auto
+        left: 38%
     .polygons
       position: absolute
       left: -15%
       top: -50%
       width: 1200px
       height: 1200px
+      @media screen and (max-width: 767px)
+        display: none
   &.limited-liquity-great
     margin-top: 150px
+    @media screen and (max-width: 767px)
+      margin-top: 0
     .illustration-wrap
       margin-right: 0
       max-width: 670px
@@ -107,15 +125,24 @@ section
       width: 100%
       max-width: 388px
       margin-top: 130px
+      @media screen and (max-width: 767px)
+        max-width: 100%
     .tick
       position: absolute
       left: -100px
       width: 400px
       bottom: -20px
+      @media screen and (max-width: 767px)
+        width: 150px !important
+        right: auto
+        left: 13%
+        bottom: 15px
     .polygons
       position: absolute
       right: -15%
       top: -50%
       width: 1200px
       height: 1200px
+      @media screen and (max-width: 767px)
+        display: none
 </style>

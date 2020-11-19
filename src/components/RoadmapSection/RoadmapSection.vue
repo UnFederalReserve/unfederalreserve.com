@@ -53,6 +53,10 @@ export default {
   background-repeat: no-repeat
   background-position: center 100px
   background-size: 100%
+  @media screen and (max-width: 767px)
+    background-image: none
+    margin-top: 100px
+    height: auto
   h2
     color: $white
     text-align: center
@@ -65,22 +69,32 @@ export default {
       margin-bottom: 20px
   &-row
     display: flex
+    @media screen and (max-width: 767px)
+      margin-bottom: 20px
     &:nth-child(2)
       .roadmap-item
         margin-left: 100px
         margin-top: 220px
+        @media screen and (max-width: 767px)
+          margin-left: 0
     &:nth-child(3)
       justify-content: flex-end
       .roadmap-item
         margin-right: 50px
         margin-top: 0px
+        @media screen and (max-width: 767px)
+          margin-right: 0
     &:nth-child(4)
       .roadmap-item
         margin-left: 50px
         margin-top: 0px
+        @media screen and (max-width: 767px)
+          margin-left: 0
     &:nth-child(5)
       justify-content: flex-end
       .roadmap-item
         margin-right: 20px
         margin-top: 20px
+        @media screen and (max-width: 767px)
+          margin-right: 0
 </style>

@@ -26,6 +26,8 @@ export default {
   background-size: cover
   width: 100%
   min-height: 1145px
+  @media screen and (max-width: 767px)
+    min-height: 100%
   &-content
     width: 100%
     margin: 0 auto

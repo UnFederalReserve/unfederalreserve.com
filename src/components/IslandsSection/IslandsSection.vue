@@ -72,8 +72,12 @@ export default {
 .island
   position: relative
   margin-top: -50px
+  @media screen and (max-width: 767px)
+    margin-top: 0
   &.next
     margin-top: -300px
+    @media screen and (max-width: 767px)
+      margin-top: 50px
   &-item
     display: flex
     flex-direction: row
@@ -92,6 +96,8 @@ export default {
         margin-bottom: 30px
     &__image
       height: 1935px
+      @media screen and (max-width: 767px)
+        display: none
     .illustration
       position: absolute
       right: 0

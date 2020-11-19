@@ -86,4 +86,6 @@ export default {
     position: absolute
     right: 20%
     top: -10px
+    @media screen and (max-width: 767px)
+      display: none
 </style>

@@ -85,6 +85,11 @@ export default {
   display: flex
   flex-direction: row
   justify-content: space-between
+  @media screen and (max-width: 991px)
+    flex-wrap: wrap
+    justify-content: center
+  @media screen and (max-width: 767px)
+    margin-top: 50px
   &-progress
     display: flex
     flex-direction: column
@@ -101,6 +106,8 @@ export default {
       justify-content: space-between
       width: 100%
       margin-bottom: 25px
+      @media screen and (max-width: 640px)
+        flex-direction: column
       .label
         color: $white
         display: flex
@@ -165,6 +172,11 @@ export default {
         position: absolute
         right: 40px
         bottom: -108px
+        @media screen and (max-width: 640px)
+          position: relative
+          bottom: 0
+          right: auto
+          left: 25%
         .text
           font-size: 14px
           opacity: 0.8
@@ -190,6 +202,9 @@ export default {
   &-text
     width: 100%
     max-width: 384px
+    @media screen and (max-width: 991px)
+      margin-top: 150px
+      max-width: 100%
     *
       color: $white
     p
