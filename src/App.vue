@@ -68,5 +68,5 @@ export default {
 @import 'styles/app.scss'
 body,
 .v-application
-  background: linear-gradient(180deg, #345BD8 0%, #010450 100%) !important
+  background: linear-gradient(180deg, #345BD6 0%, #345BD6 10%, #010450 100%) !important
 </style>

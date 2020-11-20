@@ -5,7 +5,7 @@
         h1 Middle Market DeFI
         p Here will be the text about what unfederal reserve is.
           |  Here will be the text about what unfederal reserve is.Here will be the tex
-        v-btn() Stake account
+        v-btn(href="https://app.unfederalreserve.com/", target="_blank") Stake account
 </template>
 
 <script>
@@ -26,6 +26,9 @@ export default {
   background-size: cover
   width: 100%
   min-height: 1145px
+  @media screen and (max-width: 1140px)
+    background-position: bottom
+    min-height: 900px
   @media screen and (max-width: 767px)
     min-height: 100%
   &-content

@@ -24,6 +24,9 @@ export default {
   max-width: 340px
   margin: 15px
   margin-bottom: 50px
+  @media screen and (max-width: 767px)
+    max-width: 100%
+    margin-bottom: 25px
   &-number
     +font(600)
     font-size: 75px
