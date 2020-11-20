@@ -2,10 +2,6 @@
   footer.TheFooter.footer
     .footer-content
       SocialLinks
-      v-btn(
-        outlined,
-        small,
-      ) Residual Token, Inc. Homepage
       p All rights reserved©2020
     BaseImage.right-footer-rock(
       :src="require('images/right-footer-rock.svg')",

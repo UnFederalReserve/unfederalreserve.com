@@ -22,27 +22,27 @@ export default {
     menu() {
       return [
         {
-          path: 'home',
+          path: '/',
           name: 'Home',
         },
         {
-          path: 'home',
-          name: 'How it works',
+          path: '/howitworks',
+          name: 'How It Works',
         },
         {
-          path: 'home',
+          path: '/Tokenomics',
           name: 'Tokenomics',
         },
         {
-          path: 'home',
+          path: '/Roadmap',
           name: 'Roadmap',
         },
         {
-          path: 'home',
+          path: '/AboutUs',
           name: 'About Us',
         },
         {
-          path: 'home',
+          path: '/Contacts',
           name: 'Contacts',
         },
       ];

@@ -39,7 +39,7 @@ export default {
   mixins: [pageMixin],
   computed: {
     pageTitle() {
-      return 'page title';
+      return 'Middle Market DeFi';
     },
     pageDescription() {
       return 'page Description';

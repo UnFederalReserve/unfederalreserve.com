@@ -3,9 +3,8 @@
     .hero-content
       .hero-content__wrap
         h1 Middle Market DeFI
-        p Here will be the text about what unfederal reserve is.
-          |  Here will be the text about what unfederal reserve is.Here will be the tex
-        v-btn() Stake account
+        p Your Treasury management solution for reporting, projecting, and managing cash.  Access overnight capital from a trusted network of companies like yours!
+        v-btn('href=https://app.unfederalreserve.com') Stake account
 </template>
 
 <script>
