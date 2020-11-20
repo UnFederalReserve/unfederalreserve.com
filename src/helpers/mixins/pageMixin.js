@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     $_page_setPageTitle(content = this.$_page_pageTitle) {
-      let title = `${content || CONFIG.seo.defaultTitle} | SiteName`;
+      let title = `${content || CONFIG.seo.defaultTitle} | UnFederalReserve`;
       if (this.notificationsAllNew) title = `(${this.notificationsAllNew}) ${title}`;
       document.title = title;
       this.$_page_setOgContents({ title });

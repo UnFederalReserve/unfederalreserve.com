@@ -3,7 +3,7 @@
     router-link(
       v-for="(item, i) in menu",
       :key="i",
-      :to="{name: item.path}"
+      :to="{name: item.path, hash: item.hash}"
     ) {{ item.name }}
 </template>
 

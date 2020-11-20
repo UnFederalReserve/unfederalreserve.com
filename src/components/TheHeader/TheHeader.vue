@@ -28,22 +28,27 @@ export default {
         {
           path: 'home',
           name: 'How it works',
+          hash: '#how-it-works',
         },
         {
           path: 'home',
           name: 'Tokenomics',
+          hash: '#tokenomics',
         },
         {
           path: 'home',
           name: 'Roadmap',
+          hash: '#roadmap',
         },
         {
           path: 'home',
           name: 'About Us',
+          hash: '#about',
         },
         {
           path: 'home',
           name: 'Contacts',
+          hash: '#get-in-touch',
         },
       ];
     },
