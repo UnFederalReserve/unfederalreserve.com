@@ -5,8 +5,8 @@ const base = {
   },
   staticDataPath: process.env.WEBPACK_DEV_SERVER ? '/staticdata' : '/static',
   seo: {
-    defaultTitle: 'Title',
-    defaultDesc: '',
+    defaultTitle: 'UnFederalReserve | Middle Market DeFi',
+    defaultDesc: 'Middle Market DeFi',
     defaultImage: process.env.DEFAULT_SHARING_IMG,
   },
   maps: {

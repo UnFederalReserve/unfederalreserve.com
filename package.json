@@ -4,6 +4,7 @@
   "description": "",
   "author": "ostap",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "prerender": "rm -rf prerendered/* && node_modules/webpack/bin/webpack.js --hide-modules --mode none --config=webpack/prerender/webpack.config.js",
     "start": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --hot-styles",
