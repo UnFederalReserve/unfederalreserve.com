@@ -123,7 +123,7 @@ export default {
   methods: {
     scrollToItemByHash(hash = this.$route.hash) {
       if (hash) {
-        setTimeout(() => { scrollToAnchor(hash, -50); });
+        setTimeout(() => { scrollToAnchor(hash, -150); });
       }
     },
   },
