@@ -32,12 +32,17 @@ export default {
   padding-left: 15px
   padding-right: 15px
   margin-top: 140px
+  @media screen and (max-width: 1140px)
+    margin-top: 50px
   &-items
     margin: 0 -15px
     margin-top: 100px
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    @media screen and (max-width: 1140px)
+      justify-content: center
+      margin-top: 20px
 h2
   color: $white
 </style>

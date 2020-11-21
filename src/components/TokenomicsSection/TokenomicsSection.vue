@@ -80,7 +80,7 @@ export default {
   width: 100%
   max-width: 1140px
   margin: 0 auto
-  margin-top: 300px
+  margin-top: 200px
   padding: 0 15px
   display: flex
   flex-direction: row

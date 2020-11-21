@@ -1,39 +1,40 @@
 <template lang="pug">
-  v-form.GetInTouchForm(v-model="valid")
-    .row-fields
+  .GetInTouchForm
+    v-form(v-model="valid")
+      .row-fields
+        v-text-field(
+          v-model="name"
+          :rules="nameRules"
+          label="Name"
+          required
+          outlined
+        )
+        v-text-field(
+          v-model="email"
+          :rules="emailRules"
+          label="Email"
+          required
+          outlined
+        )
       v-text-field(
-        v-model="name"
-        :rules="nameRules"
-        label="Name"
+        v-model="subject"
+        :rules="subjectRules"
+        label="Subject"
         required
         outlined
       )
       v-text-field(
-        v-model="email"
-        :rules="emailRules"
-        label="Email"
+        v-model="message"
+        :rules="messageRules"
+        label="Your message..."
         required
         outlined
       )
-    v-text-field(
-      v-model="subject"
-      :rules="subjectRules"
-      label="Subject"
-      required
-      outlined
-    )
-    v-text-field(
-      v-model="message"
-      :rules="messageRules"
-      label="Your message..."
-      required
-      outlined
-    )
-    .row-btn
-      v-btn(
-        outlined,
-        color="secondary"
-      ) Submit
+      .row-btn
+        v-btn(
+          outlined,
+          color="secondary"
+        ) Submit
 </template>
 
 <script>
@@ -42,6 +43,7 @@ export default {
   name: 'GetInTouchForm',
   data() {
     return {
+      formLoaded: false,
       valid: false,
       name: '',
       subject: '',
@@ -64,6 +66,8 @@ export default {
         v => /.+@.+/.test(v) || 'E-mail must be valid',
       ],
     };
+  },
+  methods: {
   },
 };
 </script>

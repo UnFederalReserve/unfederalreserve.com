@@ -73,12 +73,17 @@ section
     @media screen and (max-width: 767px)
       flex-direction: column
       flex-wrap: wrap
+      align-items: center
     .illustration-wrap
       width: 100%
       max-width: 750px
       flex-shrink: 0
       margin-right: 30px
       position: relative
+      @media screen and (max-width: 1140px)
+        max-width: 50%
+        img
+          width: 100%
       @media screen and (max-width: 767px)
         margin-right: 0
         img
@@ -94,6 +99,8 @@ section
       width: 100%
       max-width: 388px
       margin-top: 100px
+      @media screen and (max-width: 1140px)
+        margin-top: 0
       @media screen and (max-width: 767px)
         order: -1
         max-width: 100%
@@ -102,6 +109,10 @@ section
       right: -145px
       width: 400px
       bottom: 0
+      @media screen and (max-width: 1140px)
+        width: 200px !important
+        left: 38%
+        right: auto
       @media screen and (max-width: 767px)
         width: 150px !important
         right: auto
@@ -112,7 +123,7 @@ section
       top: -50%
       width: 1200px
       height: 1200px
-      @media screen and (max-width: 767px)
+      @media screen and (max-width: 1140px)
         display: none
   &.limited-liquity-great
     margin-top: 150px
@@ -121,10 +132,20 @@ section
     .illustration-wrap
       margin-right: 0
       max-width: 670px
+      @media screen and (max-width: 1140px)
+        max-width: 50%
+        img
+          width: 100%
+      @media screen and (max-width: 767px)
+        margin-right: 0
+        img
+          width: 100%
     .limited-liquity__text
       width: 100%
       max-width: 388px
       margin-top: 130px
+      @media screen and (max-width: 1140px)
+        margin-top: 0
       @media screen and (max-width: 767px)
         max-width: 100%
     .tick
@@ -132,17 +153,21 @@ section
       left: -100px
       width: 400px
       bottom: -20px
+      @media screen and (max-width: 1140px)
+        width: 200px !important
+        left: auto
+        right: 55%
       @media screen and (max-width: 767px)
         width: 150px !important
         right: auto
-        left: 13%
-        bottom: 15px
+        left: 0%
+        bottom: 0px
     .polygons
       position: absolute
       right: -15%
       top: -50%
       width: 1200px
       height: 1200px
-      @media screen and (max-width: 767px)
+      @media screen and (max-width: 1140px)
         display: none
 </style>

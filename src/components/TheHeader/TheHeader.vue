@@ -1,23 +1,47 @@
 <template lang="pug">
-  header.TheHeader.header
-    .header-wrap
-      router-link.header-logo(:to="{name: 'home'}")
-        BaseImage(
-          :src="require('images/logo.svg')",
-          alt="logo",
+  header.TheHeader.header(ref="header")
+    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'home-page': isHomePage}")
+      .header-wrap
+        router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
+          logo.site-logo
+        TheHeaderMenu.header-menu(
+          :menu="menu"
         )
-      TheHeaderMenu.header-menu(
-        :menu="menu"
-      )
+        TheHeaderTogglerBtn(
+          @click.native="togglerValue = !togglerValue",
+          :value="togglerValue",
+        )
+    NavigationDrawerMenu(
+      :value="togglerValue",
+      :menu="menu",
+      @closed-menu="togglerValue = false",
+    )
 </template>
 
 <script>
+import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
+import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
+import logo from 'images/svg-icons/logo.svg';
 import TheHeaderMenu from './TheHeaderMenu';
+import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
 
 export default {
   name: 'TheHeader',
-  components: { BaseImage, TheHeaderMenu },
+  components: {
+    BaseImage,
+    TheHeaderMenu,
+    NavigationDrawerMenu,
+    TheHeaderTogglerBtn,
+    logo,
+  },
+  data() {
+    return {
+      scrollPosition: 0,
+      isFixed: false,
+      togglerValue: false,
+    };
+  },
   computed: {
     menu() {
       return [
@@ -28,24 +52,58 @@ export default {
         {
           path: 'home',
           name: 'How it works',
+          hash: '#how-it-works',
         },
         {
           path: 'home',
           name: 'Tokenomics',
+          hash: '#tokenomics',
         },
         {
           path: 'home',
           name: 'Roadmap',
+          hash: '#roadmap',
         },
         {
-          path: 'home',
+          path: 'team',
           name: 'About Us',
         },
         {
           path: 'home',
           name: 'Contacts',
+          hash: '#get-in-touch',
         },
       ];
+    },
+    isHomePage() {
+      return this.$route.name === 'home';
+    },
+  },
+  watch: {
+    scrollPosition: {
+      handler: 'setIsFixed',
+      immediate: true,
+    },
+    routerNameUpdating() {
+      this.togglerValue = false;
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.setScrollPosition);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.setScrollPosition);
+  },
+  methods: {
+    setScrollPosition() {
+      this.scrollPosition = window.pageYOffset;
+    },
+    setIsFixed() {
+      this.isFixed = this.scrollPosition > 0;
+    },
+    onLogoClick() {
+      this.togglerValue = false;
+      scrollToElement(this.$refs.header);
     },
   },
 };
@@ -57,17 +115,56 @@ export default {
   position: absolute
   top: 0
   z-index: 3
+  left: 0
+  .general-wrap
+    width: 100%
+    &.fixed
+      position: fixed
+      left: 0
+      top: 0
+      width: 100%
+      z-index: 3
+      background-color: #fff
+      box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      +mt(.3s)
+    &:not(.fixed)
+      ::v-deep .header-menu
+        a
+          color: #EEF6FF !important
+      .site-logo
+        path
+          fill: $white
+    &.home-page
+      &:not(.fixed)
+        .site-logo
+          path
+            fill: #042751
+        ::v-deep .header-menu
+          a
+            color: #042751 !important
+            opacity: 0.5
+            &:hover
+              opacity: 1
   &-wrap
     width: 100%
     max-width: 1140px
     padding-left: 15px
     padding-right: 15px
-    padding-top: 30px
+    padding-top: 10px
+    padding-bottom: 10px
     margin: 0 auto
     display: flex
     flex-direction: row
-    align-items: flex-start
+    align-items: center
     justify-content: space-between
+    position: relative
+    background-color: transparent
+    +mt(.3s)
+    @media screen and (max-width: 767px)
+      padding-top: 10px
+    .header-menu
+      @media screen and (max-width: 991px)
+        display: none
   &-logo
     width: 187px
     height: 47px

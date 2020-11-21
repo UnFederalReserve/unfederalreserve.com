@@ -1,14 +1,14 @@
 <template lang="pug">
   .PageMain.page-main
     HeroSection
-    HowItWorksSection(:items="howItWorksItems")
+    HowItWorksSection#how-it-works(:items="howItWorksItems")
     IslandsSection
     LimitedLiquitySection
-    TokenomicsSection
-    RoadmapSection
-    MoreAboutUsSection
+    TokenomicsSection#tokenomics
+    RoadmapSection#roadmap
+    MoreAboutUsSection#about
     OurLeadersSection(:team="team")
-    GetInTouch
+    GetInTouch#get-in-touch
 </template>
 
 <script>
@@ -22,6 +22,7 @@ import MoreAboutUsSection from 'Components/MoreAboutUsSection/MoreAboutUsSection
 import OurLeadersSection from 'Components/OurLeadersSection/OurLeadersSection';
 import GetInTouch from 'Components/GetInTouch/GetInTouch';
 import TokenomicsSection from 'Components/TokenomicsSection/TokenomicsSection';
+import { scrollToAnchor } from 'Utils/view';
 
 export default {
   name: 'PageMain',
@@ -39,10 +40,10 @@ export default {
   mixins: [pageMixin],
   computed: {
     pageTitle() {
-      return 'page title';
+      return 'Merchant Banking DeFI';
     },
     pageDescription() {
-      return 'page Description';
+      return 'Merchant Banking Treasury Management at Unfederalreserve.com';
     },
     howItWorksItems() {
       return [
@@ -111,6 +112,19 @@ export default {
           ],
         },
       ];
+    },
+  },
+  watch: {
+    '$route.hash': {
+      immediate: true,
+      handler: 'scrollToItemByHash',
+    },
+  },
+  methods: {
+    scrollToItemByHash(hash = this.$route.hash) {
+      if (hash) {
+        setTimeout(() => { scrollToAnchor(hash, -150); });
+      }
     },
   },
 };

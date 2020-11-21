@@ -18,7 +18,7 @@
           alt="illustration-0",
           force,
         )
-  section.island.next
+  section.island.next.two
     .island-item.item-image-left
       .island-item__image
         BaseImage.illustration(
@@ -71,11 +71,10 @@ export default {
 @import '~Styles/_variables'
 .island
   position: relative
-  margin-top: -50px
   @media screen and (max-width: 767px)
     margin-top: 0
   &.next
-    margin-top: -300px
+    margin-top: -200px
     @media screen and (max-width: 767px)
       margin-top: 50px
   &-item
@@ -90,12 +89,18 @@ export default {
     &__text
       max-width: 445px
       flex-shrink: 0
+      @media screen and (max-width: 767px)
+        max-width: 100%
       *
         color: $white
       h2
         margin-bottom: 30px
     &__image
-      height: 1935px
+      min-height: 1480px
+      @media screen and (max-width: 991px)
+        min-height: 1000px
+      img
+        height: 100%
       @media screen and (max-width: 767px)
         display: none
     .illustration
@@ -105,7 +110,15 @@ export default {
     &.item-image-right
       .illustration
         right: -8%
+        @media screen and (max-width: 1170px)
+          right: -28%
+        @media screen and (max-width: 800px)
+          right: -30%
     &.item-image-left
       .illustration
         left: -8%
+        @media screen and (max-width: 1170px)
+          left: -28%
+        @media screen and (max-width: 800px)
+          left: -30%
 </style>
