@@ -1,12 +1,9 @@
 <template lang="pug">
   header.TheHeader.header(ref="header")
-    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue}")
+    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'home-page': isHomePage}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
-          BaseImage(
-            :src="require('images/logo.svg')",
-            alt="logo",
-          )
+          logo.site-logo
         TheHeaderMenu.header-menu(
           :menu="menu"
         )
@@ -25,6 +22,7 @@
 import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
+import logo from 'images/svg-icons/logo.svg';
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
 
@@ -35,6 +33,7 @@ export default {
     TheHeaderMenu,
     NavigationDrawerMenu,
     TheHeaderTogglerBtn,
+    logo,
   },
   data() {
     return {
@@ -66,9 +65,8 @@ export default {
           hash: '#roadmap',
         },
         {
-          path: 'home',
+          path: 'team',
           name: 'About Us',
-          hash: '#about',
         },
         {
           path: 'home',
@@ -76,6 +74,9 @@ export default {
           hash: '#get-in-touch',
         },
       ];
+    },
+    isHomePage() {
+      return this.$route.name === 'home';
     },
   },
   watch: {
@@ -126,6 +127,24 @@ export default {
       background-color: #fff
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
       +mt(.3s)
+    &:not(.fixed)
+      ::v-deep .header-menu
+        a
+          color: #EEF6FF !important
+      .site-logo
+        path
+          fill: $white
+    &.home-page
+      &:not(.fixed)
+        .site-logo
+          path
+            fill: #042751
+        ::v-deep .header-menu
+          a
+            color: #042751 !important
+            opacity: 0.5
+            &:hover
+              opacity: 1
   &-wrap
     width: 100%
     max-width: 1140px
