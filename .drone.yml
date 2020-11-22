@@ -8,7 +8,6 @@ steps:
   - name: build_dest
     path: /dest
   commands:
-  - sleep 1d
   - yarn install
   - yarn build
   - rm -r /dest/*
