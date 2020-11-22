@@ -70,6 +70,7 @@ section
     margin: 0 auto
     display: flex
     flex-direction: row
+    justify-content: space-between
     @media screen and (max-width: 767px)
       flex-direction: column
       flex-wrap: wrap
