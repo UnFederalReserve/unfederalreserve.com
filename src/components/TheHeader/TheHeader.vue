@@ -3,6 +3,7 @@
     .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'home-page': isHomePage}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
+          img(width="60px" src="https://app.unfederalreserve.com/static/media/left-logo.ee4d988c.svg")
           logo.site-logo
         TheHeaderMenu.header-menu(
           :menu="menu"

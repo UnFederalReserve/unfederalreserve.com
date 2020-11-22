@@ -1,6 +1,6 @@
 <template lang="pug">
   .GetInTouchForm
-    v-form(v-model="valid")
+    v-form#getintouchform(v-model="valid")
       .row-fields
         v-text-field(
           v-model="name"
@@ -51,21 +51,29 @@ export default {
       email: '',
       nameRules: [
         v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
+        v => v.length <= 4 || 'Name must be less than 10 characters',
       ],
       subjectRules: [
         v => !!v || 'Subject is required',
-        v => v.length <= 10 || 'Subject must be less than 10 characters',
+        v => v.length <= 8 || 'Subject must be less than 10 characters',
       ],
       messageRules: [
         v => !!v || 'Message is required',
-        v => v.length <= 10 || 'Message must be less than 10 characters',
+        v => v.length <= 8 || 'Message must be less than 10 characters',
       ],
       emailRules: [
         v => !!v || 'E-mail is required',
         v => /.+@.+/.test(v) || 'E-mail must be valid',
       ],
     };
+  },
+  computed: {
+    $_form_method() {
+      return 'POST';
+    },
+    _form_url() {
+      return 'https://email.webdevelop.pro';
+    },
   },
   methods: {
   },
