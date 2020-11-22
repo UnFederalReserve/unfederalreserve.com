@@ -18,7 +18,7 @@ steps:
   settings:
     webhook:
       from_secret: slackwebhook
-    channel: test
+    channel: unfederalreserve
     username: drone.io-bot
     icon_url: https://xebialabs.com/wp-content/uploads/2018/10/droneio-1.jpg
     template: >
