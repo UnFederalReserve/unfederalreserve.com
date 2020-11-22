@@ -1,34 +1,30 @@
 <template lang="pug">
   .GetInTouchForm
-    v-form#getintouchform(@submit.prevent="send")
+    v-form#getintouchform(@submit.prevent="send", ref="form",)
       .row-fields
         v-text-field(
           v-model="model.name"
-          :rules="nameRules"
           label="Name"
-          required
           outlined
+          :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
         )
         v-text-field(
           v-model="model.email"
-          :rules="emailRules"
           label="Email"
-          required
           outlined
+          :rules="[rules.required, rules.email]"
         )
       v-text-field(
         v-model="model.subject"
-        :rules="subjectRules"
+        :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
         label="Subject"
-        required
         outlined
       )
       v-text-field(
         v-model="model.message"
-        :rules="messageRules"
         label="Your message..."
-        required
         outlined
+        :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
       )
       .row-btn
         v-btn(
@@ -54,22 +50,6 @@ export default {
         message: '',
         email: '',
       },
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
-      ],
-      subjectRules: [
-        v => !!v || 'Subject is required',
-        v => v.length <= 30 || 'Subject must be less than 30 characters',
-      ],
-      messageRules: [
-        v => !!v || 'Message is required',
-        v => v.length <= 50 || 'Message must be less than 50 characters',
-      ],
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid',
-      ],
     };
   },
   computed: {

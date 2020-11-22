@@ -152,7 +152,7 @@ const mixin = {
       return result;
     },
     async $_form_send() {
-      // await this.$_form_beforeFormSend();
+      await this.$_form_beforeFormSend();
       const body = this.$_form_getRequestBody();
       try {
         const params = {
