@@ -11,7 +11,7 @@ steps:
   - yarn install
   - yarn build
   - rm -rf /dest/*
-  - cp -r build/* /dest/
+  - cp -r dist/* /dest/
 
 - name: notify-slack
   image: plugins/slack
