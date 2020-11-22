@@ -40,6 +40,7 @@ export default {
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    justify-content: space-between
     @media screen and (max-width: 1140px)
       justify-content: center
       margin-top: 20px
