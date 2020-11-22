@@ -10,7 +10,7 @@ steps:
   commands:
   - yarn install
   - yarn build
-  - rm -r /dest/*
+  - rm -rf /dest/*
   - cp -r build/* /dest/
 
 - name: notify-slack
