@@ -5,8 +5,9 @@
       color: $white
       text-transform: initial
       min-width: 290px
-      background: linear-gradient(180deg, #6494F4 0%, #4166DB 100%)
+      background: linear-gradient(180deg, #4482FF 0%, #2450DB 100%)
       box-shadow: 0px 10px 20px rgba(31, 63, 174, 0.04), 0px 2px 6px rgba(31, 63, 174, 0.04), 0px 0px 1px rgba(31, 63, 174, 0.04)
+      +mt(.3s)
       &:after
         content: ''
         position: absolute
@@ -16,7 +17,7 @@
         width: calc(100% - 6px)
         height: calc(100% - 6px)
         border-radius: 100px
-        background: rgba(255,255,255, 0.1)
+        // background: rgba(255,255,255, 0.1)
       &:before
         display: none
       .v-btn__content
@@ -39,6 +40,7 @@
           background-image: url('~images/btn-bable-small.svg')
           z-index: 3
       &:hover
+        +mt(.3s)
         background: linear-gradient(180deg, #2661DC 0%, #133FBD 100%)
         box-shadow: 0px 10px 20px rgba(31, 63, 174, 0.04), 0px 2px 6px rgba(31, 63, 174, 0.04), 0px 0px 1px rgba(31, 63, 174, 0.04)
     &--outlined

@@ -53,7 +53,10 @@
        | specifically, users will have to aggregate a certain amount of eRSDL as a percentage
        | of the total minted amount. This function creates scarcity.  In addition, the volume of loans through
        | the platform will generate a fee, which will in turn be distributed pro rata to eRSDL holders.
-       | So, when 4 or 5 middle market lenders are on the platform, if they have collectively $2mn or $3mn in lending daily and the platfrom collects a basis point (0.01%), then the platform would generate about $1mn annually in fees. If we increase the count and average lending volume, the revenue increases exponentially.
+       | So, when 4 or 5 middle market lenders are on the platform, if they have collectively $2mn or $3mn
+       |  in lending daily and the platfrom collects a basis point (0.01%), then the platform would generate
+       |  about $1mn annually in fees. If we increase the count and average lending volume, the revenue
+       |  increases exponentially.
 </template>
 
 <script>
