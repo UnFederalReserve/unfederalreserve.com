@@ -3,7 +3,7 @@ name: unfederal
 steps:
 
 - name: build
-  image: cr.webdevelop.us/yarn:latest
+  image: node:12.19.1
   volumes:
   - name: build_dest
     path: /dest
