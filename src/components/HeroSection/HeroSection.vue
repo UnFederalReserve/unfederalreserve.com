@@ -27,7 +27,7 @@ export default {
   min-height: 900px
   @media screen and (min-width: 1600px)
     min-height: 1500px
-    background-position: left center
+    background-position: center
   @media screen and (max-width: 1600px)
     background-position: bottom
     min-height: 900px
