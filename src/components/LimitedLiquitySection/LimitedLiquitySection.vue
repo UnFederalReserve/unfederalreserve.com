@@ -64,6 +64,8 @@ export default {
 section
   width: 100%
   position: relative
+  @media screen and (max-width: 767px)
+    margin-top: 50px
   .wrap
     max-width: 1140px
     padding: 0 15px
@@ -129,7 +131,7 @@ section
   &.limited-liquity-great
     margin-top: 150px
     @media screen and (max-width: 767px)
-      margin-top: 0
+      margin-top: 50px
     .illustration-wrap
       margin-right: 0
       max-width: 670px

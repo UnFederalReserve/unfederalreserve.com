@@ -71,6 +71,8 @@ export default {
 @import '~Styles/_variables'
 .islands
   margin-top: -50px
+  @media screen and (max-width: 767px)
+    margin-top: 50px
 .island
   position: relative
   @media screen and (max-width: 767px)
