@@ -82,6 +82,9 @@ export default {
     align-items: center
   &__team
     margin-left: 80px
+    flex-shrink: 0
+    @media screen and (max-width: 1170px)
+      margin-left: 0
     @media screen and (max-width: 767px)
       margin-left: 0
     ::v-deep .thumbnail
@@ -89,6 +92,11 @@ export default {
   &__text
     width: 100%
     max-width: 530px
+    margin-left: 30px
+    @media screen and (max-width: 1170px)
+      max-width: 100%
+    @media screen and (max-width: 767px)
+      margin-left: 0
     *
       color: $white
     h2

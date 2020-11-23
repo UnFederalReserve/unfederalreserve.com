@@ -44,7 +44,12 @@
       .tokenomics-progress__bottom
         p Here we leverage Jeffery Timmons’, “Timmons Model of Entrepreneurship”
         .progress-wrap
-          ProgressCircle
+          // ProgressCircle
+          BaseImage.progress-circle(
+            :src="require('images/progress-circle.svg')",
+            alt="progress",
+            force,
+          )
           .text Overall Score
           .number 4.0
     .tokenomics-text
@@ -62,6 +67,7 @@
 <script>
 import ArrowDownSmall from 'images/svg-icons/arrow-down-small.svg';
 import ProgressCircle from 'images/svg-icons/progress-circle.svg';
+import BaseImage from 'Components/Base//BaseImage';
 
 import {
   VProgressLinear,
@@ -73,6 +79,7 @@ export default {
     ArrowDownSmall,
     VProgressLinear,
     ProgressCircle,
+    BaseImage,
   },
 };
 </script>
@@ -97,11 +104,12 @@ export default {
     display: flex
     flex-direction: column
     width: 100%
-    max-width: 690px
+    max-width: 522px
     padding: 40px
     background: rgba(255, 255, 255, 0.03)
     border-radius: 10px
     position: relative
+    margin-right: 30px
     &__row
       display: flex
       flex-direction: row
@@ -118,6 +126,7 @@ export default {
         align-items: center
         justify-content: flex-start
         width: 265px
+        font-size: 13px
         span
           margin-left: 15px
       .v-progress-linear
@@ -169,29 +178,32 @@ export default {
             z-index: 1
             border-radius: 100px
     &__bottom
-      margin-top: 30px
+      margin-top: 20px
       .progress-wrap
-        width: 230px
+        width: 175px
         position: absolute
         right: 40px
-        bottom: -108px
+        bottom: -100px
         @media screen and (max-width: 640px)
           position: relative
           bottom: 0
           right: auto
           left: 25%
+        img
+          width: 175px
+          height: 175px
         .text
-          font-size: 14px
+          font-size: 10px
           opacity: 0.8
           +font(500)
           color: $white
           position: absolute
           left: 50%
           transform: translate(-50%, -50%)
-          top: 42%
+          top: 38%
         .number
           +font(700)
-          font-size: 49px
+          font-size: 37px
           color: $white
           position: absolute
           left: 50%
@@ -200,11 +212,12 @@ export default {
       p
         color: $white
         width: 100%
-        max-width: 356px
+        max-width: 260px
         opacity: 0.8
+        font-size: 13px
   &-text
     width: 100%
-    max-width: 384px
+    max-width: 545px
     @media screen and (max-width: 991px)
       margin-top: 150px
       max-width: 100%

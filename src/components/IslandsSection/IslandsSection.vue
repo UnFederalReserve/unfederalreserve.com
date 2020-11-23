@@ -1,5 +1,5 @@
 <template lang="pug">
-.IslandsSection
+.IslandsSection.islands
   section.island
     .island-item.item-image-right
       .island-item__text
@@ -69,12 +69,14 @@ export default {
 
 <style lang="sass" scoped>
 @import '~Styles/_variables'
+.islands
+  margin-top: -50px
 .island
   position: relative
   @media screen and (max-width: 767px)
     margin-top: 0
   &.next
-    margin-top: -200px
+    margin-top: -100px
     @media screen and (max-width: 767px)
       margin-top: 50px
   &-item
@@ -96,9 +98,9 @@ export default {
       h2
         margin-bottom: 30px
     &__image
-      min-height: 1480px
+      min-height: 987px
       @media screen and (max-width: 991px)
-        min-height: 1000px
+        min-height: 800px
       img
         height: 100%
       @media screen and (max-width: 767px)
@@ -109,16 +111,24 @@ export default {
       top: 0
     &.item-image-right
       .illustration
-        right: -8%
+        right: 0%
         @media screen and (max-width: 1170px)
+          right: -17%
+        @media screen and (max-width: 1024px)
+          right: -20%
+        @media screen and (max-width: 991px)
           right: -28%
         @media screen and (max-width: 800px)
-          right: -30%
+          right: -40%
     &.item-image-left
       .illustration
-        left: -8%
+        left: 0%
         @media screen and (max-width: 1170px)
+          left: -17%
+        @media screen and (max-width: 1024px)
+          left: -20%
+        @media screen and (max-width: 991px)
           left: -28%
         @media screen and (max-width: 800px)
-          left: -30%
+          left: -40%
 </style>

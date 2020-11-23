@@ -3,7 +3,7 @@
     .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'home-page': isHomePage}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
-          img(width="60px" src="https://app.unfederalreserve.com/static/media/left-logo.ee4d988c.svg")
+          logoLeft.svg-logo
           logo.site-logo
         TheHeaderMenu.header-menu(
           :menu="menu"
@@ -24,6 +24,8 @@ import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
 import logo from 'images/svg-icons/logo.svg';
+import logoLeft from 'images/svg-icons/left-logo.svg';
+
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
 
@@ -35,6 +37,7 @@ export default {
     NavigationDrawerMenu,
     TheHeaderTogglerBtn,
     logo,
+    logoLeft,
   },
   data() {
     return {
@@ -171,6 +174,14 @@ export default {
     height: 47px
     opacity: 1 !important
     margin-right: 30px
+    display: flex
+    flex-direction: row
+    .svg-logo
+      width: 40px
+      margin-right: 10px
+    .site-logo
+      position: relative
+      top: -3px
     img
       width: 100%
     @media screen and (max-width: 991px)

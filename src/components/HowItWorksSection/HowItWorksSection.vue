@@ -31,12 +31,10 @@ export default {
   max-width: 1140px
   padding-left: 15px
   padding-right: 15px
-  margin-top: 140px
-  @media screen and (max-width: 1140px)
-    margin-top: 50px
+  margin-top: -50px
   &-items
     margin: 0 -15px
-    margin-top: 100px
+    margin-top: 90px
     display: flex
     flex-direction: row
     flex-wrap: wrap
@@ -46,4 +44,6 @@ export default {
       margin-top: 20px
 h2
   color: $white
+  @media screen and (max-width: 1170px)
+    text-align: center
 </style>
