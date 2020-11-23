@@ -21,7 +21,7 @@ export default {
 .hero
   background-image: url('~images/hero-section.svg')
   background-repeat: no-repeat
-  background-position: top center
+  background-position: bottom center
   background-size: cover
   width: 100%
   min-height: 900px
