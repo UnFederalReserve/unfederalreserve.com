@@ -32,6 +32,8 @@ export default {
   padding-left: 15px
   padding-right: 15px
   margin-top: -50px
+  @media screen and (max-width: 767px)
+    margin-top: 100px
   &-items
     margin: 0 -15px
     margin-top: 90px

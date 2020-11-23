@@ -184,6 +184,7 @@ export default {
         position: absolute
         right: 40px
         bottom: -100px
+        background: rgba(255, 255, 255, 0.03)
         @media screen and (max-width: 640px)
           position: relative
           bottom: 0
