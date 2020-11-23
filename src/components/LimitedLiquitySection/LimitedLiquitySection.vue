@@ -109,13 +109,14 @@ section
         max-width: 100%
     .close
       position: absolute
-      right: -145px
+      right: 55px
       width: 400px
-      bottom: 0
+      bottom: -50px
       @media screen and (max-width: 1140px)
         width: 200px !important
         left: 38%
         right: auto
+        bottom: 0
       @media screen and (max-width: 767px)
         width: 150px !important
         right: auto
