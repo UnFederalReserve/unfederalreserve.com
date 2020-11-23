@@ -70,7 +70,7 @@ export default {
         },
         {
           path: 'team',
-          name: 'About Us',
+          name: 'About us',
         },
         {
           path: 'home',
