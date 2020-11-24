@@ -4,14 +4,14 @@
     .island-item.item-image-right
       .island-item__text
         h2 There Be Dragons...
-        p The term DeFI brings with it connontations of anonymous lenders and borrowers engaged
-          |  in digital-asset backed trades, generally for the purposes of leveraging existing
-          |  positions in the crypto-verse.
-        p Residual Token, Inc. has selected the best elements
-          |  of this ecosystem (e.g. immutable records, near instantaneous settlment and encryption
-          |  well beyond what the largest global banks use today), wrapped it in a “best in class”
-          |  regulatory framework and delivered to you a middle-market, B2B lender cash reporting
-          |  tool and overnight lending / borrowing utility.
+        p The term DeFI brings with it connontations of anonymous lenders
+          |  and borrowers engaged in digital-asset backed trades, generally
+          |  for the purposes of leveraging existing positions in the crypto-verse.
+        p Residual Token, Inc. has selected the best elements of this ecosystem (e.g.
+          |  immutable records, near instantaneous settlment and encryption well
+          |  beyond what the largest global banks use today), wrapped it in a
+          |  “best in class” regulatory framework and delivered to you a middle-market,
+          |  B2B lender cash reporting tool and overnight lending / borrowing utility.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-0.svg')",
@@ -34,20 +34,19 @@
           |  (i.e. the Treasurers at middle-market lenders) is without proper sophistication,
           |  individual lenders cannot properly perform risk-based pricing.  Descrepancies in
           |  experience lead to arbitrage that ultimately harms the lending community.
-          |   The open ocean of DeFI is nowhere for small sailboats to cross paths with large
-          |  containers ships.
+          |   The open ocean of DeFI is nowhere for small sailboats to cross paths with
+          |  large containers ships.
   section.island.next
     .island-item.item-image-right
       .island-item__text
-        h2 Safe Harbor
-        p The eRSDL token creates a safe harbor where only qualified entrants can make or take
-          |  loans. Fundementally, all holders can see activity and aggregated activity data;
-          |  However, only with an enterprise user license, can our borrower ships and ports
-          |  transact with one another.
-        p This is a safe harbor for lenders and borrowers. Simply augment your existing banking
-          |  relationship with our platform and get cash flow reporting, increased liquidity
-          |  options, and overall reductions in costs of capital without increased risk or
-          |  exposure to your balance sheet.
+        h2 eRSDL Creates A Safe Harbor
+        p Short term lending and borrowing settle near instanteously on a blockchain-enabled
+          |  platform.  Sophisticated borrowers are expert at identifying mispriced
+          |  opportunities. An unsophisticated lender would be at the mercy of seasoned
+          |  borrowing professionals, risking the reputation of the entire industry.
+        p The eRSDL safe harbor helps ensure that only sophisticated parties, all vetted
+          |  as qualified to partcipate, have the access they need to liquidity now, and
+          |  in compliance with the law.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-2.svg')",

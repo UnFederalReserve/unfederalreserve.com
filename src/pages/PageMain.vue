@@ -49,28 +49,28 @@ export default {
       return [
         {
           number: '01',
-          title: 'Open an Account',
-          text: 'Easy to install Treasury cash management dashboard.',
+          title: 'Install Treasury App',
+          text: 'Download our easy toinstall Treasury cash management dashboard application.',
         },
         {
           number: '02',
-          title: 'License eRSDL',
+          title: 'Obtain a License',
           text: 'Acquire a sufficient amount of eRSDL token to activte Maker/Taker capabilities.',
         },
         {
           number: '03',
-          title: 'Apply for eRSDL',
-          text: 'Qualified middle-market lenders meet onboarding requirements.',
+          title: 'Welcome Aboard',
+          text: 'Qualified middle-market lenders must meet KYC/AML onboarding requirements to access lending marketplace..',
         },
         {
           number: '04',
           title: 'Monitor Dashboard',
-          text: 'Stunning visualization of current cash position, network participant ratios and available markets.',
+          text: 'A stunning visualization of current cash position, certain network participant data and cash versus projection tables and graphs.',
         },
         {
           number: '05',
-          title: 'Overnight Cash Mgt',
-          text: 'Stunning visualization of current cash position, network participant ratios and available markets.',
+          title: 'Access Liquidity',
+          text: 'Our marketplace leverages an auction rate bond inteface over a traditional short-term line of credit vehicle for borrowers. And we offer a vanilla deposit feature for lenders.',
         },
         {
           number: '06',

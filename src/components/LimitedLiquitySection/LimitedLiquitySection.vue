@@ -20,16 +20,16 @@
         )
       .limited-liquity__text
         h2 Limited Liquity Today
-        p Payment latency or acceleration is a double-edged sword for middle-market B2B
-          |  lenders.  Excess cash sits fallow, and cash deficits force emergency draws
-          |  on lines of credit whose terms assume borrowing for weeks, not hours.
+        p Payment latency or acceleration is a double-edged sword for middle-market
+          |  B2B lenders.  Excess cash sits fallow, and cash deficits force emergency
+          |  draws on lines of credit whose terms assume borrowing for weeks, not hours.
   section.limited-liquity.limited-liquity-great
     .wrap
       .limited-liquity__text
-        h2 Limited Liquity Today
-        p Payment latency or acceleration is a double-edged sword for middle-market B2B
-          |  lenders.  Excess cash sits fallow, and cash deficits force emergency draws
-          |  on lines of credit whose terms assume borrowing for weeks, not hours.
+        h2 Great Liquidity. Lower Costs of Capital.
+        p Transact through an Auction Rate Bond (ARB) platform; specifically tailored
+          |  to meet your workflow. Place excess capital safely into the marektplace,
+          |  and lend to fully-disclosed third parties directly.
       BaseImage.polygons(
         :src="require('images/polygons-2.svg')",
         alt="polygons",
