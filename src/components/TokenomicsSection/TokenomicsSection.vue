@@ -53,18 +53,38 @@
           .text Overall Score
           .number 4.0
     .tokenomics-text
-      h2 Tokenomics
-      p Access to the cash dashboard and maker/taker environment will be
-        |  fee-based;specifically, users will have to aggregate a certain
-        |  amount of eRSDL as a percentage of the total minted amount. This
-        |  function creates scarcity. In addition, the volume of loans through
-        |  the platform will generate a fee, which will in turn be distributed
-        |  pro rata to eRSDL holders.
-      p So, when 4 or 5 middle market lenders are on the platform, if they have
-        |  collectively $2mn or $3mn in lending daily and the platfrom collects
-        |  a basis point (0.01%), then the platform would generate about $1mn
-        |  annually in fees. If we increase the count and average lending volume,
-        |  the revenue increases exponentially.
+      h2 Whitepaper & LitePaper
+      p We understand it can be difficult to read, retain and process the various
+        |  sources of information available; especially, when the information sought
+        |  may not be directly written about in our publicly available corporate
+        |  workpapers, social media or websites.
+        |  For the purposes of the&nbsp;
+        a.link-1(
+          :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
+          target="_blank",
+        ) whitepaper
+        |  and the eRSDL token, market participants should expect that the creator
+        |  will be able to describe the uses, rights/privileges (if applicable)
+        |  and possible factors which may impact the value of the token over time.
+        |  Please find that information&nbsp;
+        a.link-1(
+          :href="require('docs/LitePapereRSDL_110920.pdf')",
+          target="_blank",
+        ) here
+        | , and if you still have questions, please&nbsp;
+        router-link.link-1(:to="{name: 'home', hash: '#get-in-touch'}") let us know
+        | .
+        ul
+          li
+            a.link-1(
+              :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
+              target="_blank",
+            ) whitepaper link
+          li
+            a.link-1(
+              :href="require('docs/LitePapereRSDL_110920.pdf')",
+              target="_blank",
+            ) litepaper link
 </template>
 
 <script>

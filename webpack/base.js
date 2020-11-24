@@ -257,6 +257,7 @@ const config = {
       '@': `${rootFolder}/src`,
       images: `${rootFolder}/staticdata/img`,
       Styles: `${rootFolder}/src/styles`,
+      docs: `${rootFolder}/staticdata/docs`,
     },
   },
   node: {

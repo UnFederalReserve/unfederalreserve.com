@@ -4,7 +4,7 @@
     HowItWorksSection#how-it-works(:items="howItWorksItems")
     IslandsSection
     LimitedLiquitySection
-    TokenomicsSection#tokenomics
+    TokenomicsSection#whitepaper
     RoadmapSection#roadmap
     MoreAboutUsSection#about
     OurLeadersSection(:team="team")

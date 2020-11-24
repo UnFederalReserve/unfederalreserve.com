@@ -60,8 +60,8 @@ export default {
         },
         {
           path: 'home',
-          name: 'Tokenomics',
-          hash: '#tokenomics',
+          name: 'Whitepaper',
+          hash: '#whitepaper',
         },
         {
           path: 'home',
