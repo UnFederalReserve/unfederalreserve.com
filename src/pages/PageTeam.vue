@@ -42,7 +42,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/howardjkrieger/',
             },
             {
               name: 'facebook',
@@ -66,7 +66,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/ryanmedlin/',
             },
             {
               name: 'facebook',
@@ -85,7 +85,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/kumarsriram/',
             },
           ],
         },
@@ -95,8 +95,8 @@ export default {
           image: 'team/katy.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/katkinso/',
             },
           ],
         },
@@ -106,8 +106,8 @@ export default {
           image: 'team/stanley.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/melissa-barbera-4599a64/',
             },
           ],
         },
@@ -117,8 +117,8 @@ export default {
           image: 'team/michael.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/michaelgalecpa/',
             },
           ],
         },
@@ -128,8 +128,8 @@ export default {
           image: 'team/john.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/john-owens-8a54a72/',
             },
           ],
         },
@@ -172,8 +172,8 @@ export default {
           image: 'team/alan.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/alan-alford-ba36795',
             },
           ],
         },
@@ -183,8 +183,8 @@ export default {
           image: 'team/melissa.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/melissa-barbera-4599a64/',
             },
           ],
         },
@@ -205,8 +205,8 @@ export default {
           image: 'team/michael-f.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/mikeforester/',
             },
           ],
         },

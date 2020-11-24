@@ -88,11 +88,11 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/howardjkrieger',
             },
             {
               name: 'facebook',
-              path: '#',
+              path: 'https://www.linkedin.com/in/ryanmedlin',
             },
           ],
         },
@@ -103,7 +103,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: '#',
+              path: 'https://www.linkedin.com/in/ryanmedlin',
             },
             {
               name: 'facebook',
