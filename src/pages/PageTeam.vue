@@ -44,10 +44,6 @@ export default {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/howardjkrieger/',
             },
-            {
-              name: 'facebook',
-              path: '#',
-            },
           ],
         },
         {
@@ -61,10 +57,6 @@ export default {
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/kevin-t-81b71b3/',
-            },
-            {
-              name: 'facebook',
-              path: '#',
             },
           ],
         },
@@ -85,10 +77,6 @@ export default {
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/ryanmedlin/',
-            },
-            {
-              name: 'facebook',
-              path: '#',
             },
           ],
         },
