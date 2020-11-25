@@ -51,6 +51,24 @@ export default {
           ],
         },
         {
+          name: 'Kevin Thompson',
+          title: 'Publications',
+          image: 'team/kevin-t.png',
+          description: '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in</p>'
+            + '<p> Mind When Issuing Stock Options Fair Value Measurements Impact on Financial Reporting</p>'
+            + '<i>Organizations</i><p>American Society of Appraisers National Association of Certified Valuators and Analysts</p>',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/kevin-t-81b71b3/',
+            },
+            {
+              name: 'facebook',
+              path: '#',
+            },
+          ],
+        },
+        {
           name: 'Ryan Medlin',
           title: 'Founder & CEO',
           image: 'team/ryan-1.png',
