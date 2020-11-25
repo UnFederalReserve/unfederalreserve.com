@@ -19,9 +19,9 @@
         |  financial modeling, valuation of equity participating instruments and other
         |  exotic financial assets/liabilities with almost 20 years’ experience. Howard
         |  has an MBA from Rutgers Business School with a concentration in Quantitative Finance
-      // a.bubble-link(href="#")
-      //  .bubble
-      //  span Show more
+      router-link(:to="{name: 'team'}").bubble-link
+        .bubble
+        span Show more
     .our-leaders__text(v-if="activeIndex === 1")
       h2 Our leaders
       p Ryan Medlin is a seasoned Silicon Valley entrepreneurand technologist.
@@ -34,9 +34,9 @@
         |  prototypes and concepts were given a lot of resources for prototype assessments.
         |  Platforms and protocols included: IoTA, Ethereum, Hyperledger, Rootstock, Lisk,
         |  NEO and many lower level protocols including things such as Telehash and Cothority.
-      // a.bubble-link(href="#")
-      //  .bubble
-      //  span Show more
+      router-link(:to="{name: 'team'}").bubble-link
+        .bubble
+        span Show more
 </template>
 
 <script>

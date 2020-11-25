@@ -7,10 +7,14 @@
       h3 {{ name }}
       p(v-html="description")
       .thumbnail-social
-        a(href="#" target="_blank").link
-          Facebook.svg-icon
-        a(href="#" target="_blank").link
-          Linkedin.svg-icon
+        a(
+          v-for="link in social"
+          :href="link.path"
+          :key="link.name"
+          target="_blank"
+        ).link
+          Linkedin.svg-icon(v-show="link.name === 'linkedin'")
+          Facebook.svg-icon(v-show="link.name === 'facebook'")
 </template>
 
 <script>

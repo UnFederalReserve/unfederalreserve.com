@@ -7,8 +7,13 @@
         h4 {{ name }}
         p {{ title }}
       .thumbnail-social
-        a(href="#" target="_blank").link
-          Linkedin.svg-icon
+        a(
+          v-for="link in social"
+          :href="link.path"
+          target="_blank"
+        ).link
+          Linkedin.svg-icon(v-show="link.name === 'linkedin'")
+          Facebook.svg-icon(v-show="link.name === 'facebook'")
 </template>
 
 <script>

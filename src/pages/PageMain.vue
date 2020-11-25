@@ -92,7 +92,7 @@ export default {
             },
             {
               name: 'facebook',
-              path: 'https://www.linkedin.com/in/ryanmedlin',
+              path: '#',
             },
           ],
         },

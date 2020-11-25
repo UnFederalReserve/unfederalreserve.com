@@ -10,10 +10,13 @@
       h6 {{ title }}
     .thumbnail-social
       .social-links
-        a(href="#" target="_blank").link
-          Linkedin.svg-icon
-        a(href="#" target="_blank").link
-          Facebook.svg-icon
+        a(
+          v-for="link in social"
+          :href="link.path"
+          target="_blank"
+        ).link
+          Linkedin.svg-icon(v-show="link.name === 'linkedin'")
+          Facebook.svg-icon(v-show="link.name === 'facebook'")
 </template>
 
 <script>
