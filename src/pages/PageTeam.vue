@@ -139,8 +139,8 @@ export default {
           image: 'team/daniel.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/dan-l-59773621/',
             },
           ],
         },
@@ -150,8 +150,8 @@ export default {
           image: 'team/scott.png',
           social: [
             {
-              name: 'facebook',
-              path: '#',
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/scott-banks-59405b4/',
             },
           ],
         },
@@ -159,12 +159,7 @@ export default {
           name: 'Edward Eaton',
           title: 'Operations',
           image: 'team/edward.png',
-          social: [
-            {
-              name: 'facebook',
-              path: '#',
-            },
-          ],
+          social: [],
         },
         {
           name: 'Alan Alford, PhD',
@@ -192,12 +187,7 @@ export default {
           name: 'Martin Williams',
           title: 'Technology and Operations',
           image: 'team/martin.png',
-          social: [
-            {
-              name: 'facebook',
-              path: '#',
-            },
-          ],
+          social: [],
         },
         {
           name: 'Michael Forester, CFE, CMB, CPA',
