@@ -113,7 +113,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: 'https://www.linkedin.com/in/melissa-barbera-4599a64/',
+              path: 'https://www.linkedin.com/in/stan-krieger-89b6b91/',
             },
           ],
         },
