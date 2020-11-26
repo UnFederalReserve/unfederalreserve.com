@@ -57,3 +57,22 @@
           color: #fff !important
           &:hover
             background: linear-gradient(180deg, #2661DC 0%, #133FBD 100%)
+    &:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined)
+      &.tuna
+        background: #313239
+        background-color: #313239
+        border-radius: 5px
+        font-size: 18px
+        +font(600)
+        box-shadow: none
+        height: 60px
+        padding: 0 20px
+        &:after
+          display: none
+        .v-btn__content
+          &:after,
+          &:before
+            display: none
+        &:hover
+          background: #4F5057
+          background-color: #4F5057
