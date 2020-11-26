@@ -60,7 +60,7 @@ export default {
         {
           number: '03',
           title: 'Welcome Aboard',
-          text: 'Qualified middle-market lenders must meet KYC/AML onboarding requirements to access lending marketplace..',
+          text: 'Qualified middle-market lenders must meet KYC/AML onboarding requirements to access lending marketplace.',
         },
         {
           number: '04',

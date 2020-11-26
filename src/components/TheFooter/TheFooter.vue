@@ -31,12 +31,15 @@
             :href="require('docs/LitePapereRSDL_110920.pdf')",
             target="_blank",
           ) Lite paper
-          // a(href="#") Terms & Conditions
+          router-link(:to="{name: 'terms'}") Terms & Conditions
         .footer-content-row__home.column
           h5 Home
           router-link(:to="{name: 'home', hash: '#how-it-works'}") How it works
           router-link(:to="{name: 'home', hash: '#about'}") About us
-          // a(href="#") Blog
+          a(
+            href="https://unfederalreserve.medium.com/",
+            target="_blank",
+          ) Blog
       .footer-content-row.last-row
         .footer-content-row__leaders
           h5 Our leaders
@@ -47,12 +50,6 @@
             href="https://info.uniswap.org/token/0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
             target="_blank",
           ) Buy on Uniswap
-        .footer-content-row__btn
-          v-btn(
-            color="tuna",
-            href="https://www.residualtoken.com",
-            target="_blank",
-          ) Residual Token, Inc. Homepage
       .all-rights
         p.mb-0 All rights reserved ©2020
 </template>
@@ -120,7 +117,7 @@ export default {
         align-items: center
       &.last-row
         margin-top: 65px
-        justify-content: space-between
+        justify-content: flex-start
         @media screen and (max-width: 767px)
           margin-top: 30px
         @media screen and (max-width: 695px)
@@ -204,6 +201,8 @@ export default {
     top: -290px
     max-width: 300px
     z-index: 1
+    @media screen and (max-width: 767px)
+      display: none
   .star
     position: absolute
     right: 20px

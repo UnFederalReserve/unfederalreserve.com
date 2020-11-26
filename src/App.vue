@@ -29,6 +29,12 @@ export default {
       return !this.__prerender && (this.routeLoading || this.logoutLoading);
     },
   },
+  watch: {
+    '$route.name': {
+      handler: 'setBodyPageClass',
+      immediate: true,
+    },
+  },
   mounted() {
     this.clearPreload();
     this.setRouter(this.$router);
@@ -59,6 +65,10 @@ export default {
     isPortraitOrientation() {
       const orientation = window.matchMedia('(orientation: portrait)');
       return orientation.matches;
+    },
+    setBodyPageClass() {
+      document.body.removeAttribute('class');
+      document.body.classList.add(`body-page-${this.$route.name}`);
     },
   },
 };

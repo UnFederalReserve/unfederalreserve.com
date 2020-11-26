@@ -1,6 +1,6 @@
 <template lang="pug">
   header.TheHeader.header(ref="header")
-    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'home-page': isHomePage}")
+    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'black-header': isBlackHeader}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
           logoLeft.svg-logo
@@ -79,8 +79,8 @@ export default {
         },
       ];
     },
-    isHomePage() {
-      return this.$route.name === 'home';
+    isBlackHeader() {
+      return Boolean(['home', 'terms'].includes(this.$route.name));
     },
   },
   watch: {
@@ -138,7 +138,7 @@ export default {
       .site-logo
         path
           fill: $white
-    &.home-page
+    &.black-header
       &:not(.fixed)
         .site-logo
           path
