@@ -50,12 +50,12 @@ export default {
         {
           number: '01',
           title: 'Install Treasury App',
-          text: 'Download our easy toinstall Treasury cash management dashboard application.',
+          text: 'Download our easy to install Treasury cash management dashboard application.',
         },
         {
           number: '02',
           title: 'Obtain a License',
-          text: 'Acquire a sufficient amount of eRSDL token to activte Maker/Taker capabilities.',
+          text: 'Acquire a sufficient amount of eRSDL token to activate Maker/Taker capabilities.',
         },
         {
           number: '03',
@@ -70,7 +70,7 @@ export default {
         {
           number: '05',
           title: 'Access Liquidity',
-          text: 'Our marketplace leverages an auction rate bond inteface over a traditional short-term line of credit vehicle for borrowers. And we offer a vanilla deposit feature for lenders.',
+          text: 'Our marketplace leverages an auction rate bond interface over a traditional short-term line of credit vehicle for borrowers. And we offer a vanilla deposit feature for lenders.',
         },
         {
           number: '06',

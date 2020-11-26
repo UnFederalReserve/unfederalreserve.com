@@ -8,7 +8,7 @@
           |  and borrowers engaged in digital-asset backed trades, generally
           |  for the purposes of leveraging existing positions in the crypto-verse.
         p Residual Token, Inc. has selected the best elements of this ecosystem (e.g.
-          |  immutable records, near instantaneous settlment and encryption well
+          |  immutable records, near instantaneous settlement and encryption well
           |  beyond what the largest global banks use today), wrapped it in a
           |  “best in class” regulatory framework and delivered to you a middle-market,
           |  B2B lender cash reporting tool and overnight lending / borrowing utility.
@@ -40,7 +40,7 @@
     .island-item.item-image-right
       .island-item__text
         h2 eRSDL Creates A Safe Harbor
-        p Short term lending and borrowing settle near instanteously on a blockchain-enabled
+        p Short term lending and borrowing settle near instantaneously on a blockchain-enabled
           |  platform.  Sophisticated borrowers are expert at identifying mispriced
           |  opportunities. An unsophisticated lender would be at the mercy of seasoned
           |  borrowing professionals, risking the reputation of the entire industry.
