@@ -3,7 +3,7 @@
   section.island
     .island-item.item-image-right
       .island-item__text
-        h2 There Be Dragons...
+        h2 There be dragons...
         p The term DeFI brings with it connontations of anonymous lenders
           |  and borrowers engaged in digital-asset backed trades, generally
           |  for the purposes of leveraging existing positions in the crypto-verse.
@@ -27,7 +27,7 @@
           force,
         )
       .island-item__text
-        h2 Open Ocean
+        h2 Open ocean
         p All major DeFI protocols rely on highly democratized systems. Any borrower
           |  (represented by the boats) can transact with any lender (represented by the ports).
         p The challenge from the DeFI community’s perspective engaging sophisticated borrowers
@@ -39,7 +39,7 @@
   section.island.next
     .island-item.item-image-right
       .island-item__text
-        h2 eRSDL Creates A Safe Harbor
+        h2 eRSDL creates a safe harbor
         p Short term lending and borrowing settle near instantaneously on a blockchain-enabled
           |  platform.  Sophisticated borrowers are expert at identifying mispriced
           |  opportunities. An unsophisticated lender would be at the mercy of seasoned

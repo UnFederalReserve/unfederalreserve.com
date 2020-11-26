@@ -1,6 +1,6 @@
 <template lang="pug">
   section.MoreAboutUsSection.more-about-us
-    h2 More About Us
+    h2 More about us
     p Since our founding, unfederalreserve.com has been known for quality
       |  services, exceptional efficiency and the highest level of
       |  professionalism. No matter what service you’re looking for,
