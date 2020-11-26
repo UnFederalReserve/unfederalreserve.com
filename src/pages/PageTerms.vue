@@ -44,7 +44,7 @@
       |  agree to the terms, conditions, and notices contained or referenced herein. Further
       |  you consent to the use of electronic signatures under the Esignature Act and any
       |  similar state Act.
-    h3 Electronic аnd telephone Соmmunications
+    h3 Electronic and telephone Communications
     p The following terms and conditions
       |  govern electronic communications in connection with this Agreement, discussions
       |  with crypto fintech architects, and the transaction evidenced hereby (the "Consent").
