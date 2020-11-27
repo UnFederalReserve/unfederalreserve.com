@@ -96,6 +96,10 @@ export default {
         border-bottom: 1px solid $periwinkle
         display: flex
         flex-direction: row
+        a
+          color: $primary
+          &:hover
+            opacity: 0.9
   &--open
     width: 235px !important
   ::v-deep .v-navigation-drawer__border
