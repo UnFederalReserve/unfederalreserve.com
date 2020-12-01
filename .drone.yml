@@ -11,6 +11,7 @@ steps:
   - yarn install
   - yarn build
   - rm -rf /dest/*
+  - mkdir -p dist/static/img/
   - cp staticdata/img/sharing-image.png dist/static/img/
   - cp -r dist/* /dest/
 
