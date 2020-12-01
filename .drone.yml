@@ -12,6 +12,7 @@ steps:
   - yarn build
   - rm -rf /dest/*
   - cp -r dist/* /dest/
+  - cp staticdata/img/sharing-image.png dist/static/img/
 
 - name: notify-slack
   image: plugins/slack
