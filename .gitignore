@@ -17,3 +17,5 @@ yarn-error.log*
 /webpack/prerender/builded_stub.js
 /prerendered/
 /prerender-routes.json
+*.pyc
+venv/
