@@ -4,7 +4,7 @@
     .island-item.item-image-right
       .island-item__text
         h2 There be dragons...
-        p The term DeFI brings with it connontations of anonymous lenders
+        p The term DeFI brings with it connotations of anonymous lenders
           |  and borrowers engaged in digital-asset backed trades, generally
           |  for the purposes of leveraging existing positions in the crypto-verse.
         p Residual Token, Inc. has selected the best elements of this ecosystem (e.g.
@@ -32,7 +32,7 @@
           |  (represented by the boats) can transact with any lender (represented by the ports).
         p The challenge from the DeFI community’s perspective engaging sophisticated borrowers
           |  (i.e. the Treasurers at middle-market lenders) is without proper sophistication,
-          |  individual lenders cannot properly perform risk-based pricing.  Descrepancies in
+          |  individual lenders cannot properly perform risk-based pricing.  Discrepancies in
           |  experience lead to arbitrage that ultimately harms the lending community.
           |   The open ocean of DeFI is nowhere for small sailboats to cross paths with
           |  large containers ships.
@@ -45,7 +45,7 @@
           |  opportunities. An unsophisticated lender would be at the mercy of seasoned
           |  borrowing professionals, risking the reputation of the entire industry.
         p The eRSDL safe harbor helps ensure that only sophisticated parties, all vetted
-          |  as qualified to partcipate, have the access they need to liquidity now, and
+          |  as qualified to participate, have the access they need to liquidity now, and
           |  in compliance with the law.
       .island-item__image
         BaseImage.illustration(
