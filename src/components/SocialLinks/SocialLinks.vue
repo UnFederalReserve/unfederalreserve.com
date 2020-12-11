@@ -10,6 +10,8 @@
       Vector.svg-icon
     a(href="https://twitter.com/Unfederalreser1" target="_blank").link
       Twitt.svg-icon
+    a(href="https://www.youtube.com/channel/UCcKaHJ8SdyAGqoMrVrsKK_A" target="_blank").link
+      Youtube.svg-icon
 </template>
 
 <script>
@@ -18,6 +20,7 @@ import Facebook from 'images/svg-icons/facebook.svg';
 import GroupIcon from 'images/svg-icons/group-icon.svg';
 import Vector from 'images/svg-icons/vector.svg';
 import Twitt from 'images/svg-icons/twitt.svg';
+import Youtube from 'images/svg-icons/youtube.svg';
 
 export default {
   name: 'SocialLinks',
@@ -27,6 +30,7 @@ export default {
     GroupIcon,
     Vector,
     Twitt,
+    Youtube,
   },
 };
 </script>
