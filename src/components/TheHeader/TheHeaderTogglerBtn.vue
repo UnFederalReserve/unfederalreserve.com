@@ -21,7 +21,7 @@ export default {
 .navbar-toggler
   position: absolute
   right: 15px
-  top: 23px
+  top: 20px
   width: 20px
   height: 20px
   outline: none
