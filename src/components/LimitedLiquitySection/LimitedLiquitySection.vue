@@ -19,14 +19,18 @@
           force,
         )
       .limited-liquity__text
-        h2 Limited liquidity today
+        h2 Limited Liquidity
+          br
+          | Today
         p Payment latency or acceleration is a double-edged sword for middle-market
           |  B2B lenders.  Excess cash sits fallow, and cash deficits force emergency
           |  draws on lines of credit whose terms assume borrowing for weeks, not hours.
   section.limited-liquity.limited-liquity-great
     .wrap
       .limited-liquity__text
-        h2 Great liquidity. Lower costs of capital.
+        h2 Great Liquidity,
+          br
+          | Lower Costs of Capital
         p Transact through an Auction Rate Bond (ARB) platform; specifically tailored
           |  to meet your workflow. Place excess capital safely into the marketplace,
           |  and lend to fully-disclosed third parties directly.
@@ -79,10 +83,12 @@ section
       align-items: center
     .illustration-wrap
       width: 100%
-      max-width: 750px
+      max-width: 640px
       flex-shrink: 0
       margin-right: 30px
       position: relative
+      display: flex
+      justify-content: flex-end
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
@@ -100,7 +106,7 @@ section
   &.limited-liquity-today
     .limited-liquity__text
       width: 100%
-      max-width: 388px
+      max-width: 413px
       margin-top: 100px
       @media screen and (max-width: 1140px)
         margin-top: 0
@@ -109,7 +115,7 @@ section
         max-width: 100%
     .close
       position: absolute
-      right: 55px
+      right: -5px
       width: 400px
       bottom: -50px
       @media screen and (max-width: 1140px)
@@ -146,7 +152,7 @@ section
           width: 100%
     .limited-liquity__text
       width: 100%
-      max-width: 388px
+      max-width: 413px
       margin-top: 130px
       @media screen and (max-width: 1140px)
         margin-top: 0
@@ -154,7 +160,7 @@ section
         max-width: 100%
     .tick
       position: absolute
-      left: -100px
+      left: -70px
       width: 400px
       bottom: -20px
       @media screen and (max-width: 1140px)

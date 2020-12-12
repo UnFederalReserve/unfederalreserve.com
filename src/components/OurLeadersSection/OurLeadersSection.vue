@@ -9,7 +9,7 @@
         :active="activeIndex === i"
       )
     .our-leaders__text(v-if="activeIndex === 0")
-      h2 Our leaders
+      h2 Our Leaders
       p Howard is a Managing Director in CBIZ Valuation Group, LLC (“CBIZ”).
         |  He specializes in the valuation of complex financial instruments including
         |  crypto-currency loans,  interest rate swaps, agency and non-agency
@@ -23,7 +23,7 @@
         .bubble
         span Show more
     .our-leaders__text(v-if="activeIndex === 1")
-      h2 Our leaders
+      h2 Our Leaders
       p Ryan Medlin is a seasoned Silicon Valley entrepreneurand technologist.
       p His most recent exit was the sale of his proximity tracking and measurement
         |  company Datasnap.io in 2015 to Neustar where he then led a team of engineers

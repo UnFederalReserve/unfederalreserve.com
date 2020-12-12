@@ -53,7 +53,7 @@
           .text Overall Score
           .number 4.0
     .tokenomics-text
-      h2 Whitepaper & Litepaper
+      h2 Whitepaper & LitePaper
       p We understand it can be difficult to read, retain and process the various
         |  sources of information available; especially, when the information sought
         |  may not be directly written about in our publicly available corporate
