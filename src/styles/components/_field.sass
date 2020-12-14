@@ -1,6 +1,6 @@
 .v-text-field
   &--outlined
-    border-radius: 10px
+    border-radius: 15px
     margin-bottom: 10px !important
     .v-input
       &__slot
@@ -22,6 +22,21 @@
         color: $white !important
         max-height: 70px !important
         padding-left: 15px
+    .v-text-field__details
+      display: none
+  &--solo
+    border-radius: 15px
+    .v-input__slot
+      background: rgba(201, 204, 255, 0.08) !important
+      box-shadow: none !important
+      padding: 20px 33px !important
+      margin-bottom: 15px !important
+      label
+        color: $white
+        +font(600)
+        font-size: 18px
+    input
+      color: $white !important
     .v-text-field__details
       display: none
   &.error--text

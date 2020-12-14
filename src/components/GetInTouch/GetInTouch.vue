@@ -1,6 +1,6 @@
 <template lang="pug">
   .GetInTouch.get-in-touch
-    h2 Get in touch
+    h2 Get in Touch
     GetInTouchForm
 </template>
 

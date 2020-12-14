@@ -5,18 +5,12 @@
       BaseImage.polygons(
         :src="require('images/polygons.svg')",
         alt="polygons",
-        force,
       )
       .illustration-wrap
-        BaseImage.illustration(
-          :src="require('images/bank-1.svg')",
-          alt="illustration-2",
-          force,
-        )
+        Bank.illustration
         BaseImage.close(
           :src="require('images/close.svg')",
           alt="close",
-          force,
         )
       .limited-liquity__text
         h2 Limited Liquidity
@@ -37,28 +31,26 @@
       BaseImage.polygons(
         :src="require('images/polygons-2.svg')",
         alt="polygons",
-        force,
       )
       .illustration-wrap
-        BaseImage.illustration(
-          :src="require('images/bank-2.svg')",
-          alt="illustration-2",
-          force,
-        )
+        BankNext.illustration
         BaseImage.tick(
           :src="require('images/tick.svg')",
           alt="tick",
-          force,
         )
 </template>
 
 <script>
 import BaseImage from 'Components/Base//BaseImage';
+import Bank from 'images/svg-icons/bank-1.svg';
+import BankNext from 'images/svg-icons/bank-2.svg';
 
 export default {
   name: 'LimitedLiquitySection',
   components: {
     BaseImage,
+    Bank,
+    BankNext,
   },
 };
 </script>
