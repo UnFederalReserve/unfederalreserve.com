@@ -5,7 +5,9 @@
         h1 Middle Market DeFI
         p Your Treasury management solution for reporting, projecting, and managing cash.
           |  Access overnight capital from a trusted network of companies like yours!
-        v-btn(href="https://app.unfederalreserve.com") Stake account
+        v-btn(href="https://app.unfederalreserve.com")
+          | Stake
+          span &nbsp;account
 </template>
 
 <script>
@@ -22,18 +24,19 @@ export default {
 .hero
   background-image: url('~images/hero-section.svg')
   background-repeat: no-repeat
-  background-position: bottom center
+  background-position: center bottom
   background-size: cover
   width: 100%
-  min-height: 900px
-  @media screen and (min-width: 1600px)
-    min-height: 1500px
-    background-position: center
-  @media screen and (max-width: 1600px)
-    background-position: bottom
-    min-height: 900px
-  @media screen and (max-width: 767px)
-    min-height: 100%
+  height: 1000px
+  @media screen and (min-width: 2200px)
+    height: 1100px
+  @media screen and (min-width: 2700px)
+    height: 1200px
+  @media screen and (max-width: 900px)
+    background-position: left bottom
+    background-image: url('~images/hero-section-mobile.svg')
+  @media screen and (max-width: 576px)
+    height: 800px
   &-content
     width: 100%
     margin: 0 auto
@@ -44,8 +47,19 @@ export default {
       padding-top: 220px
       max-width: 486px
       width: 100%
+      @media screen and (max-width: 576px)
+        padding-top: 150px
       h1
         margin-bottom: 38px
+        @media screen and (max-width: 576px)
+          max-width: 225px
       p
         margin-bottom: 40px
+        @media screen and (max-width: 576px)
+          max-width: 283px
+      .v-btn
+        @media screen and (max-width: 576px)
+          min-width: 145px
+          span
+            display: none
 </style>
