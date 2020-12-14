@@ -6,7 +6,7 @@
       .wrap
         h4 {{ name }}
         p {{ title }}
-      .thumbnail-social
+      .thumbnail-social(v-if="social.length")
         a(
           v-for="link in social"
           :href="link.path"
