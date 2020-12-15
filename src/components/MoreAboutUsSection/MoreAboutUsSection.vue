@@ -25,7 +25,7 @@ export default {
 @import '~Styles/_variables'
 .more-about-us
   width: 100%
-  max-width: 945px
+  max-width: 1140px
   padding-left: 15px
   padding-right: 15px
   margin: 0 auto

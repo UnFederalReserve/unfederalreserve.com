@@ -263,6 +263,7 @@ export default {
   margin-bottom: 200px
   @media screen and (max-width: 767px)
     margin-bottom: 100px
+    margin-top: 100px
   h2
     margin-bottom: 30px
     color: #2C4DC1
