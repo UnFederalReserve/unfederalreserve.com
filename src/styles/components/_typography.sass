@@ -51,6 +51,19 @@ h6
         +mt(.3s)
         color: $white !important
         text-decoration: none !important
+    &.link-2
+      +font(600)
+      color: $white
+      font-size: 18px
+      line-height: 30px
+      letter-spacing: 0.01em
+      text-decoration: none
+      display: inline-block
+      border-bottom: 2px solid transparent
+      opacity: 1
+      &:hover
+        border-bottom: 2px solid $white
+        
     
 hr
   border-bottom: solid 1px $primary
@@ -70,6 +83,7 @@ hr
   @extend h5
 .is-h6__title
   @extend h6
+
 a
   &.bubble-link
     display: flex

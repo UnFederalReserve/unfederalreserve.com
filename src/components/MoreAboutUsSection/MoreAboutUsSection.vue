@@ -1,6 +1,6 @@
 <template lang="pug">
   section.MoreAboutUsSection.more-about-us
-    h2 More about us
+    h2 More About Us
     p Since our founding, unfederalreserve.com has been known for quality
       |  services, exceptional efficiency and the highest level of
       |  professionalism. No matter what service you’re looking for,
@@ -25,7 +25,7 @@ export default {
 @import '~Styles/_variables'
 .more-about-us
   width: 100%
-  max-width: 945px
+  max-width: 1140px
   padding-left: 15px
   padding-right: 15px
   margin: 0 auto

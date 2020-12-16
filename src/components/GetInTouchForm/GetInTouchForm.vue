@@ -5,30 +5,29 @@
         v-text-field(
           v-model="model.name"
           label="Name"
-          outlined
+          solo
           :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
         )
         v-text-field(
           v-model="model.email"
           label="Email"
-          outlined
+          solo
           :rules="[rules.required, rules.email]"
         )
       v-text-field(
         v-model="model.subject"
         :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
         label="Subject"
-        outlined
+        solo
       )
       v-text-field(
         v-model="model.message"
         label="Your message..."
-        outlined
+        solo
         :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
       )
       .row-btn
         v-btn(
-          outlined,
           type="submit",
           color="secondary"
         ) Submit

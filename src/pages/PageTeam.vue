@@ -222,6 +222,8 @@ export default {
   margin: 0 auto
   margin-top: 200px
   margin-bottom: 110px
+  @media screen and (max-width: 767px)
+    margin-top: 100px
   h2
     color: $white
     margin-bottom: 45px
@@ -234,6 +236,11 @@ export default {
         .thumbnail-image
           height: 300px
           margin-bottom: 20px
+      @media screen and (max-width: 767px)
+        background: rgba(0, 0, 0, 0.08)
+        margin-bottom: 10px
+        &.active
+          background: transparent
       &:last-child
         margin-bottom: 0
         .thumbnail-image
@@ -241,6 +248,9 @@ export default {
             background-position: left
   .advisors-title
     margin-top: 130px
+    @media screen and (max-width: 767px)
+      margin-top: 100px
+      margin-bottom: 0
   &-advisors
     display: flex
     flex-wrap: wrap

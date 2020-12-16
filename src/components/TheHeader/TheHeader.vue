@@ -3,7 +3,6 @@
     .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'black-header': isBlackHeader}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
-          logoLeft.svg-logo
           logo.site-logo
         TheHeaderMenu.header-menu(
           :menu="menu"
@@ -24,8 +23,6 @@ import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
 import logo from 'images/svg-icons/logo.svg';
-import logoLeft from 'images/svg-icons/left-logo.svg';
-
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
 
@@ -37,7 +34,6 @@ export default {
     NavigationDrawerMenu,
     TheHeaderTogglerBtn,
     logo,
-    logoLeft,
   },
   data() {
     return {
@@ -118,7 +114,7 @@ export default {
   width: 100%
   position: absolute
   top: 0
-  z-index: 3
+  z-index: 4
   left: 0
   .general-wrap
     width: 100%
@@ -154,8 +150,8 @@ export default {
     max-width: 1140px
     padding-left: 15px
     padding-right: 15px
-    padding-top: 10px
-    padding-bottom: 10px
+    padding-top: 20px
+    padding-bottom: 20px
     margin: 0 auto
     display: flex
     flex-direction: row
@@ -166,12 +162,12 @@ export default {
     +mt(.3s)
     @media screen and (max-width: 767px)
       padding-top: 10px
+      padding-bottom: 10px
     .header-menu
       @media screen and (max-width: 991px)
         display: none
   &-logo
-    width: 187px
-    height: 47px
+    width: 260px
     opacity: 1 !important
     margin-right: 30px
     display: flex
@@ -181,7 +177,7 @@ export default {
       margin-right: 10px
     .site-logo
       position: relative
-      top: -3px
+      top: 0
     img
       width: 100%
     @media screen and (max-width: 991px)

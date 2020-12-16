@@ -28,7 +28,7 @@
             target="_blank",
           ) White paper
           a(
-            :href="require('docs/LitePapereRSDL_110920.pdf')",
+            :href="require('docs/LitePaperRSDL.pdf')",
             target="_blank",
           ) Lite paper
           router-link(:to="{name: 'terms'}") Terms & Conditions
