@@ -29,6 +29,12 @@ export default {
       return !this.__prerender && (this.routeLoading || this.logoutLoading);
     },
   },
+  watch: {
+    '$route.name': {
+      handler: 'setBodyPageClass',
+      immediate: true,
+    },
+  },
   mounted() {
     this.clearPreload();
     this.setRouter(this.$router);
@@ -60,6 +66,10 @@ export default {
       const orientation = window.matchMedia('(orientation: portrait)');
       return orientation.matches;
     },
+    setBodyPageClass() {
+      document.body.removeAttribute('class');
+      document.body.classList.add(`body-page-${this.$route.name}`);
+    },
   },
 };
 </script>
@@ -68,5 +78,5 @@ export default {
 @import 'styles/app.scss'
 body,
 .v-application
-  background: linear-gradient(180deg, #345BD8 0%, #010450 100%) !important
+  background: linear-gradient(180deg, #2F53CB 0%, #2F53CB 10%, #010450 100%) !important
 </style>

@@ -1,24 +1,26 @@
 <template lang="pug">
-.IslandsSection
+.IslandsSection.islands
   section.island
     .island-item.item-image-right
       .island-item__text
-        h2 There Be Dragons...
-        p The term DeFI brings with it connontations of anonymous lenders and borrowers engaged
-          |  in digital-asset backed trades, generally for the purposes of leveraging existing
-          |  positions in the crypto-verse.
-        p Residual Token, Inc. has selected the best elements
-          |  of this ecosystem (e.g. immutable records, near instantaneous settlment and encryption
-          |  well beyond what the largest global banks use today), wrapped it in a “best in class”
-          |  regulatory framework and delivered to you a middle-market, B2B lender cash reporting
-          |  tool and overnight lending / borrowing utility.
+        h2 Warning:
+          br
+          | There Be Dragons...
+        p The term DeFI brings with it connotations of anonymous lenders
+          |  and borrowers engaged in digital-asset backed trades, generally
+          |  for the purposes of leveraging existing positions in the crypto-verse.
+        p Residual Token, Inc. has selected the best elements of this ecosystem (e.g.
+          |  immutable records, near instantaneous settlement and encryption well
+          |  beyond what the largest global banks use today), wrapped it in a
+          |  “best in class” regulatory framework and delivered to you a middle-market,
+          |  B2B lender cash reporting tool and overnight lending / borrowing utility.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-0.svg')",
           alt="illustration-0",
           force,
         )
-  section.island.next
+  section.island.next.two
     .island-item.item-image-left
       .island-item__image
         BaseImage.illustration(
@@ -32,22 +34,23 @@
           |  (represented by the boats) can transact with any lender (represented by the ports).
         p The challenge from the DeFI community’s perspective engaging sophisticated borrowers
           |  (i.e. the Treasurers at middle-market lenders) is without proper sophistication,
-          |  individual lenders cannot properly perform risk-based pricing.  Descrepancies in
+          |  individual lenders cannot properly perform risk-based pricing.  Discrepancies in
           |  experience lead to arbitrage that ultimately harms the lending community.
-          |   The open ocean of DeFI is nowhere for small sailboats to cross paths with large
-          |  containers ships.
+          |   The open ocean of DeFI is nowhere for small sailboats to cross paths with
+          |  large containers ships.
   section.island.next
     .island-item.item-image-right
       .island-item__text
-        h2 Safe Harbor
-        p The eRSDL token creates a safe harbor where only qualified entrants can make or take
-          |  loans. Fundementally, all holders can see activity and aggregated activity data;
-          |  However, only with an enterprise user license, can our borrower ships and ports
-          |  transact with one another.
-        p This is a safe harbor for lenders and borrowers. Simply augment your existing banking
-          |  relationship with our platform and get cash flow reporting, increased liquidity
-          |  options, and overall reductions in costs of capital without increased risk or
-          |  exposure to your balance sheet.
+        h2 eRSDL Creates
+          br
+          | a Safe Harbor
+        p Short term lending and borrowing settle near instantaneously on a blockchain-enabled
+          |  platform.  Sophisticated borrowers are expert at identifying mispriced
+          |  opportunities. An unsophisticated lender would be at the mercy of seasoned
+          |  borrowing professionals, risking the reputation of the entire industry.
+        p The eRSDL safe harbor helps ensure that only sophisticated parties, all vetted
+          |  as qualified to participate, have the access they need to liquidity now, and
+          |  in compliance with the law.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-2.svg')",
@@ -69,13 +72,16 @@ export default {
 
 <style lang="sass" scoped>
 @import '~Styles/_variables'
+.islands
+  margin-top: -50px
+  @media screen and (max-width: 767px)
+    margin-top: 50px
 .island
   position: relative
-  margin-top: -50px
   @media screen and (max-width: 767px)
     margin-top: 0
   &.next
-    margin-top: -300px
+    margin-top: -100px
     @media screen and (max-width: 767px)
       margin-top: 50px
   &-item
@@ -90,12 +96,18 @@ export default {
     &__text
       max-width: 445px
       flex-shrink: 0
+      @media screen and (max-width: 767px)
+        max-width: 100%
       *
         color: $white
       h2
         margin-bottom: 30px
     &__image
-      height: 1935px
+      min-height: 987px
+      @media screen and (max-width: 991px)
+        min-height: 800px
+      img
+        height: 100%
       @media screen and (max-width: 767px)
         display: none
     .illustration
@@ -104,8 +116,24 @@ export default {
       top: 0
     &.item-image-right
       .illustration
-        right: -8%
+        right: 0%
+        @media screen and (max-width: 1170px)
+          right: -17%
+        @media screen and (max-width: 1024px)
+          right: -20%
+        @media screen and (max-width: 991px)
+          right: -28%
+        @media screen and (max-width: 800px)
+          right: -40%
     &.item-image-left
       .illustration
-        left: -8%
+        left: 0%
+        @media screen and (max-width: 1170px)
+          left: -17%
+        @media screen and (max-width: 1024px)
+          left: -20%
+        @media screen and (max-width: 991px)
+          left: -28%
+        @media screen and (max-width: 800px)
+          left: -40%
 </style>

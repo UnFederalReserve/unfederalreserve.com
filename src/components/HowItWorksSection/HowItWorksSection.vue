@@ -31,13 +31,21 @@ export default {
   max-width: 1140px
   padding-left: 15px
   padding-right: 15px
-  margin-top: 140px
+  margin-top: -50px
+  @media screen and (max-width: 767px)
+    margin-top: 100px
   &-items
     margin: 0 -15px
-    margin-top: 100px
+    margin-top: 90px
     display: flex
     flex-direction: row
     flex-wrap: wrap
+    justify-content: space-between
+    @media screen and (max-width: 1140px)
+      justify-content: center
+      margin-top: 20px
 h2
   color: $white
+  @media screen and (max-width: 1170px)
+    text-align: center
 </style>

@@ -32,16 +32,39 @@ h6
   line-height: 20px
 .v-application
   a:not(.v-btn)
-    color: $primary !important
+    color: $white
     text-decoration: none
-    opacity: 0.50
-    font-size: 16px
+    opacity: 0.8
+    font-size: 18px
     +mt(.2s)
-    +font(600)
+    +font(400)
     &:hover
       +mt(.2s)
       opacity: 1
-      color: $primary !important
+      color: $white
+    &.link-1
+      color: $white !important
+      text-decoration: underline !important
+      opacity: 1
+      +mt(.3s)
+      &:hover
+        +mt(.3s)
+        color: $white !important
+        text-decoration: none !important
+    &.link-2
+      +font(600)
+      color: $white
+      font-size: 18px
+      line-height: 30px
+      letter-spacing: 0.01em
+      text-decoration: none
+      display: inline-block
+      border-bottom: 2px solid transparent
+      opacity: 1
+      &:hover
+        border-bottom: 2px solid $white
+        
+    
 hr
   border-bottom: solid 1px $primary
   border-top: none
@@ -60,6 +83,7 @@ hr
   @extend h5
 .is-h6__title
   @extend h6
+
 a
   &.bubble-link
     display: flex

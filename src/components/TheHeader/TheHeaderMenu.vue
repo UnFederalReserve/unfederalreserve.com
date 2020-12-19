@@ -3,7 +3,7 @@
     router-link(
       v-for="(item, i) in menu",
       :key="i",
-      :to="{name: item.path}"
+      :to="{name: item.path, hash: item.hash}"
     ) {{ item.name }}
 </template>
 
@@ -29,8 +29,13 @@ export default {
     display: none
   a
     margin: 0 10px
+    color: $primary !important
+    font-weight: 600 !important
+    opacity: 0.5 !important
     @media screen and (max-width: 991px)
       margin: 0 5px
+    &:hover
+      opacity: 1 !important
     &:last-child
       margin-right: 0
     &:first-child

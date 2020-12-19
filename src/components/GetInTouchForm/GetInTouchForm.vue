@@ -1,69 +1,72 @@
 <template lang="pug">
-  v-form.GetInTouchForm(v-model="valid")
-    .row-fields
+  .GetInTouchForm
+    v-form#getintouchform(@submit.prevent="send", ref="form",)
+      .row-fields
+        v-text-field(
+          v-model="model.name"
+          label="Name"
+          solo
+          :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
+        )
+        v-text-field(
+          v-model="model.email"
+          label="Email"
+          solo
+          :rules="[rules.required, rules.email]"
+        )
       v-text-field(
-        v-model="name"
-        :rules="nameRules"
-        label="Name"
-        required
-        outlined
+        v-model="model.subject"
+        :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
+        label="Subject"
+        solo
       )
       v-text-field(
-        v-model="email"
-        :rules="emailRules"
-        label="Email"
-        required
-        outlined
+        v-model="model.message"
+        label="Your message..."
+        solo
+        :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
       )
-    v-text-field(
-      v-model="subject"
-      :rules="subjectRules"
-      label="Subject"
-      required
-      outlined
-    )
-    v-text-field(
-      v-model="message"
-      :rules="messageRules"
-      label="Your message..."
-      required
-      outlined
-    )
-    .row-btn
-      v-btn(
-        outlined,
-        color="secondary"
-      ) Submit
+      .row-btn
+        v-btn(
+          type="submit",
+          color="secondary"
+        ) Submit
 </template>
 
 <script>
+import formMixin from 'Helpers/form/formMixin';
 
 export default {
   name: 'GetInTouchForm',
+  mixins: [formMixin],
   data() {
     return {
+      formLoaded: false,
       valid: false,
-      name: '',
-      subject: '',
-      message: '',
-      email: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
-      ],
-      subjectRules: [
-        v => !!v || 'Subject is required',
-        v => v.length <= 10 || 'Subject must be less than 10 characters',
-      ],
-      messageRules: [
-        v => !!v || 'Message is required',
-        v => v.length <= 10 || 'Message must be less than 10 characters',
-      ],
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid',
-      ],
+      model: {
+        name: '',
+        subject: '',
+        message: '',
+        email: '',
+      },
     };
+  },
+  computed: {
+    $_form_method() {
+      return 'POST';
+    },
+    $_form_url() {
+      return 'https://email.webdevelop.pro';
+    },
+  },
+  methods: {
+    async send() {
+      try {
+        await this.$_form_send();
+        this.$emit('success');
+        this.formSent = true;
+      } catch (ignore) {} // eslint-disable-line
+    },
   },
 };
 </script>

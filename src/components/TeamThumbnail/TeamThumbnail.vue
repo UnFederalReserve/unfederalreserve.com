@@ -1,5 +1,5 @@
 <template lang="pug">
-  .TeamThumbnail.thumbnail
+  .TeamThumbnail.thumbnail(:class="{active}")
     .thumbnail-image
       BaseImage.chest(
         :src="require(`images/${image}`)",
@@ -10,10 +10,13 @@
       h6 {{ title }}
     .thumbnail-social
       .social-links
-        a(href="#" target="_blank").link
-          Linkedin.svg-icon
-        a(href="#" target="_blank").link
-          Facebook.svg-icon
+        a(
+          v-for="link in social"
+          :href="link.path"
+          target="_blank"
+        ).link
+          Linkedin.svg-icon(v-show="link.name === 'linkedin'")
+          Facebook.svg-icon(v-show="link.name === 'facebook'")
 </template>
 
 <script>
@@ -33,6 +36,7 @@ export default {
     title: String,
     social: Array,
     image: String,
+    active: Boolean,
   },
 };
 </script>
@@ -70,7 +74,8 @@ export default {
       margin-bottom: 7px
     h6
       opacity: 0.6
-  &:hover
+  &:hover,
+  &.active
     background: linear-gradient(89.34deg, #6494F4 1.42%, #476FEE 101.14%)
     border: solid 1px transparent
     +mt(.3s)

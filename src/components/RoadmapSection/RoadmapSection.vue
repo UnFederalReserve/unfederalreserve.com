@@ -48,7 +48,7 @@ export default {
   padding-right: 15px
   height: 1700px
   margin: 0 auto
-  margin-top: 230px
+  margin-top: 200px
   background-image: url('~images/roadmap.svg')
   background-repeat: no-repeat
   background-position: center 100px
@@ -63,6 +63,8 @@ export default {
   &-item
     width: 100%
     max-width: 380px
+    @media screen and (max-width: 767px)
+      max-width: 100%
     *
       color: $white
     h4
@@ -77,6 +79,7 @@ export default {
         margin-top: 220px
         @media screen and (max-width: 767px)
           margin-left: 0
+          margin-top: 50px
     &:nth-child(3)
       justify-content: flex-end
       .roadmap-item

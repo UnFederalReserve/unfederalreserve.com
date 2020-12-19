@@ -1,35 +1,24 @@
 <template lang="pug">
   .OurLeadersSection.our-leaders
+    .our-leaders-header
+      h2 Our Leaders
+      router-link.link-2(:to="{name: 'team'}") Show more
     .our-leaders__team
-      TeamThumbnail(
+      TeamBigThumbnail(
         v-for="(item, i) in team"
         :key="i"
         v-bind="item",
       )
-    .our-leaders__text
-      h2 Our leaders
-      p Howard is a Managing Director in CBIZ Valuation Group, LLC (“CBIZ”).
-        |   He specializes in the valuation of complex financial instruments
-        |  including crypto-currency loans,  interest rate swaps, agency and
-        |  non-agency mortgage-backed securities (MBS), and collateralized debt
-        |  obligations (CDOs
-      p He is a former Big-4 Senior Manager responsible for a variety of assignments
-        |  including: intangible business valuation, intellectual property valuation,
-        |  financial modeling, valuation of equity participating instruments and other
-        |  exotic financial assets/liabilities with almost 20 years’ experience. Howard
-        |  has an MBA from Rutgers Business School with a concentration in Quantitative Finance
-      a.bubble-link(href="#")
-        .bubble
-        span Show more
+    router-link.link-2.mobile-link(:to="{name: 'team'}") Show more
 </template>
 
 <script>
-import TeamThumbnail from 'Components/TeamThumbnail/TeamThumbnail';
+import TeamBigThumbnail from 'Components/TeamBigThumbnail/TeamBigThumbnail';
 
 export default {
   name: 'OurLeadersSection',
   components: {
-    TeamThumbnail,
+    TeamBigThumbnail,
   },
   props: {
     team: Array,
@@ -41,32 +30,51 @@ export default {
 @import '~Styles/_variables'
 .our-leaders
   width: 100%
-  max-width: 1110px
+  max-width: 1140px
   padding: 0 15px
   margin: 0 auto
-  margin-top: 130px
+  margin-top: 190px
+  margin-bottom: 160px
   display: flex
-  flex-direction: row
+  flex-direction: column
   justify-content: space-between
   @media screen and (max-width: 767px)
     margin-top: 100px
+    margin-bottom: 100px
     flex-wrap: wrap
     flex-direction: column
     justify-content: center
+    align-items: flex-start
+  &-header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
     align-items: center
-  &__team
-    margin-left: 80px
+    margin-bottom: 65px
     @media screen and (max-width: 767px)
-      margin-left: 0
-    ::v-deep .thumbnail
-      margin-bottom: 90px
-  &__text
-    width: 100%
-    max-width: 530px
-    *
-      color: $white
+      width: 100%
+      margin-bottom: 20px
     h2
-      margin-bottom: 28px
-    p
-      opacity: 0.8
+      color: $white
+    a
+      @media screen and (max-width: 767px)
+        display: none !important
+  &__team
+    ::v-deep .thumbnail
+      margin-bottom: 40px
+      background: rgba(0, 0, 0, 0.08)
+      @media screen and (max-width: 767px)
+        margin-bottom: 10px
+        &.active
+          background: transparent
+      .thumbnail-image
+        margin-right: 30px
+      &:last-child
+        .image
+          background-position: left center
+  .mobile-link
+    margin-top: 15px
+    margin-left: 15px
+    @media screen and (min-width: 768px)
+      display: none !important
 </style>
