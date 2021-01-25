@@ -131,6 +131,10 @@ export default {
             font-size: 24px
             line-height: 32px
             margin-bottom: 15px
+            @media screen and (max-width: 576px)
+              font-size: 20px
+            @media screen and (max-width: 340px)
+              font-size: 18px
         .thumbnail-social
           @media screen and (min-width: 768px)
             display: none
