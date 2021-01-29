@@ -67,11 +67,26 @@ export default {
         margin-bottom: 10px
         &.active
           background: transparent
+      @media screen and (max-width: 767px)
+        .thumbnail-description
+          .desc
+            opacity: 0
+            overflow: hidden
+            height: 0
+            margin-top: 0
       .thumbnail-image
         margin-right: 30px
       &:last-child
         .image
           background-position: left center
+      &.active
+        @media screen and (max-width: 767px)
+          .thumbnail-description
+            .desc
+              opacity: 1
+              overflow: visible
+              height: 100%
+              margin-top: 20px
   .mobile-link
     margin-top: 15px
     margin-left: 15px

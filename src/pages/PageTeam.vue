@@ -243,10 +243,11 @@ export default {
           background: transparent
       @media screen and (max-width: 767px)
         .thumbnail-description
-          p
+          .desc
             opacity: 0
             overflow: hidden
             height: 0
+            margin-top: 0
       &:last-child
         margin-bottom: 0
         .thumbnail-image
@@ -255,10 +256,11 @@ export default {
       &.active
         @media screen and (max-width: 767px)
           .thumbnail-description
-            p
+            .desc
               opacity: 1
               overflow: visible
               height: 100%
+              margin-top: 20px
   .advisors-title
     margin-top: 130px
     @media screen and (max-width: 767px)
