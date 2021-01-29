@@ -7,7 +7,8 @@
         alt="polygons",
       )
       .illustration-wrap
-        Bank.illustration
+        Bank.illustration.desktop
+        BankMobile.illustration.mobile
         BaseImage.close(
           :src="require('images/close.svg')",
           alt="close",
@@ -33,7 +34,8 @@
         alt="polygons",
       )
       .illustration-wrap
-        BankNext.illustration
+        BankNext.illustration.desktop
+        BankNextMobile.illustration.mobile
         BaseImage.tick(
           :src="require('images/tick.svg')",
           alt="tick",
@@ -44,6 +46,8 @@
 import BaseImage from 'Components/Base//BaseImage';
 import Bank from 'images/svg-icons/bank-1.svg';
 import BankNext from 'images/svg-icons/bank-2.svg';
+import BankMobile from 'images/svg-icons/bank-1-mobile.svg';
+import BankNextMobile from 'images/svg-icons/bank-2-mobile.svg';
 
 export default {
   name: 'LimitedLiquitySection',
@@ -51,6 +55,8 @@ export default {
     BaseImage,
     Bank,
     BankNext,
+    BankMobile,
+    BankNextMobile,
   },
 };
 </script>
@@ -87,6 +93,8 @@ section
           width: 100%
       @media screen and (max-width: 767px)
         margin-right: 0
+        max-width: 100%
+        justify-content: center
         img
           width: 100%
   .limited-liquity
@@ -107,18 +115,16 @@ section
         max-width: 100%
     .close
       position: absolute
-      right: -5px
+      right: -25px
       width: 400px
-      bottom: -50px
+      bottom: -30px
       @media screen and (max-width: 1140px)
         width: 200px !important
-        left: 38%
+        left: 41%
         right: auto
         bottom: 0
       @media screen and (max-width: 767px)
-        width: 150px !important
-        right: auto
-        left: 38%
+        display: none
     .polygons
       position: absolute
       left: -15%
@@ -134,12 +140,17 @@ section
     .illustration-wrap
       margin-right: 0
       max-width: 670px
+      .illustration
+        height: 100%
+        max-height: 540px
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
           width: 100%
       @media screen and (max-width: 767px)
         margin-right: 0
+        max-width: 100%
+        justify-content: center
         img
           width: 100%
     .limited-liquity__text
@@ -154,16 +165,14 @@ section
       position: absolute
       left: -70px
       width: 400px
-      bottom: -20px
+      bottom: -30px
       @media screen and (max-width: 1140px)
         width: 200px !important
         left: auto
         right: 55%
+        bottom: 0
       @media screen and (max-width: 767px)
-        width: 150px !important
-        right: auto
-        left: 0%
-        bottom: 0px
+        display: none
     .polygons
       position: absolute
       right: -15%
@@ -171,5 +180,13 @@ section
       width: 1200px
       height: 1200px
       @media screen and (max-width: 1140px)
+        display: none
+  .illustration
+    height: 100%
+    &.desktop
+      @media screen and (max-width: 767px)
+        display: none
+    &.mobile
+      @media screen and (min-width: 768px)
         display: none
 </style>

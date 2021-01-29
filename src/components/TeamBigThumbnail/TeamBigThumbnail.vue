@@ -18,7 +18,7 @@
             ).link
               Linkedin.svg-icon(v-show="link.name === 'linkedin'")
               Facebook.svg-icon(v-show="link.name === 'facebook'")
-      p(v-html="description")
+      p.desc(v-html="description")
       .thumbnail-social
         a(
           v-for="link in social"
