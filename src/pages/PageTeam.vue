@@ -62,7 +62,7 @@ export default {
         },
         {
           name: 'Ryan Medlin',
-          title: 'Founder & CEO',
+          title: 'Founder & CTO',
           image: 'team/ryan-1.png',
           description: '<p>Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist.</p>'
             + '<p>His most recent exit was the sale of his proximity tracking and measurement company'
