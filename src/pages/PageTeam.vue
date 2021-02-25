@@ -261,6 +261,20 @@ export default {
               overflow: visible
               height: 100%
               margin-top: 20px
+      &:nth-child(2)
+        .thumbnail-image
+          background-color: rgba(255, 255, 255, 0.08)
+          border-radius: 40px
+          .image
+            background-size: contain
+            background-position: right bottom
+        @media screen and (max-width: 767px)
+          .thumbnail-mobile-image
+            background-color: rgba(255, 255, 255, 0.08)
+            border-radius: 10px
+            .image
+              background-size: contain
+              background-position: right bottom
   .advisors-title
     margin-top: 130px
     @media screen and (max-width: 767px)

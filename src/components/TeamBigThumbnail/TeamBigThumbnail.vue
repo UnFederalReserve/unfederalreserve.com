@@ -19,7 +19,7 @@
               Linkedin.svg-icon(v-show="link.name === 'linkedin'")
               Facebook.svg-icon(v-show="link.name === 'facebook'")
       p.desc(v-html="description")
-      .thumbnail-social
+      .thumbnail-social(v-if="social")
         a(
           v-for="link in social"
           :href="link.path"
@@ -66,9 +66,10 @@ export default {
   border-radius: 5px
   padding: 25px
   +mt(.3s)
+  background: rgba(0, 0, 0, 0.08)
   @media screen and (max-width: 767px)
     padding: 18px
-    height: 150px
+    height: 184px
     overflow: hidden
     &.active
       height: auto
@@ -79,16 +80,17 @@ export default {
     width: 100%
     max-width: 395px
     flex-shrink: 0
-    background: linear-gradient(180deg, #4FBDCE 0%, #018CC8 100%)
+    // background: rgba(255,255,255, 0.08)
     margin-right: 45px
-    border-radius: 5px
+    border-radius: 40px
     @media screen and (max-width: 767px)
       display: none
     .image
       width: 100%
       height: 100%
-      background-size: contain
+      background-size: 100%
       background-position: center
+      border-radius: 40px
   &-description
     display: flex
     flex-direction: column
@@ -103,18 +105,18 @@ export default {
         &:last-child
           margin-bottom: 0
     .thumbnail-mobile-image
-      background: linear-gradient(180deg, #4FBDCE 0%, #018CC8 100%)
+      // background: linear-gradient(180deg, #4FBDCE 0%, #018CC8 100%)
       width: 100px
-      height: 115px
+      height: 152px
       margin-right: 10px
-      border-radius: 5px
+      // border-radius: 5px
       @media screen and (min-width: 768px)
         display: none
       .image
         width: 100%
         height: 100%
-        background-size: contain
-        background-position: left center
+        background-size: 100%
+        background-position: center
     .wrap
       display: flex
       flex-direction: row
@@ -147,6 +149,7 @@ export default {
     padding: 5px
     flex-direction: row
     justify-content: center
+    margin-top: 30px
     @media screen and (max-width: 767px)
       display: none
     .link
