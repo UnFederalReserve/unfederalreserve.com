@@ -1,90 +1,89 @@
 <template lang="pug">
   section.TokenomicsSection.tokenomics
-    .tokenomics-progress
-      .tokenomics-progress__row
-        .label
-          ArrowDownSmall.svg-icon
-          span Market Potential
-        .progress-wrap
-          .circle(:style="{left: '72%'}")
-          v-progress-linear(value="85" color="#2BE48D")
-          .value 4.5
-      .tokenomics-progress__row
-        .label
-          ArrowDownSmall.svg-icon
-          span Token Mechanics
-        .progress-wrap
-          .circle(:style="{left: '64%'}")
-          v-progress-linear(value="75" color="#2BE48D")
-          .value 3.5
-      .tokenomics-progress__row
-        .label
-          ArrowDownSmall.svg-icon
-          span Competitive Advantage
-        .progress-wrap
-          .circle(:style="{left: '64%'}")
-          v-progress-linear(value="75" color="#2BE48D")
-          .value 3.5
-      .tokenomics-progress__row
-        .label
-          ArrowDownSmall.svg-icon
-          span User Adoption
-        .progress-wrap
-          .circle(:style="{left: '72%'}")
-          v-progress-linear(value="85" color="#2BE48D")
-          .value 4.5
-      .tokenomics-progress__row
-        .label
-          ArrowDownSmall.svg-icon
-          span Management Team
-        .progress-wrap
-          .circle(:style="{left: '68%'}")
-          v-progress-linear(value="80" color="#2BE48D")
-          .value 4.0
-      .tokenomics-progress__bottom
-        p Here we leverage Jeffery Timmons’, “Timmons Model of Entrepreneurship”
-        .progress-wrap
-          // ProgressCircle
-          BaseImage.progress-circle(
-            :src="require('images/progress-circle.svg')",
-            alt="progress",
-            force,
-          )
-          .text Overall Score
-          .number 4.0
+    //.tokenomics-progress
+    //  .tokenomics-progress__row
+    //    .label
+    //      ArrowDownSmall.svg-icon
+    //      span Market Potential
+    //    .progress-wrap
+    //      .circle(:style="{left: '72%'}")
+    //      v-progress-linear(value="85" color="#2BE48D")
+    //      .value 4.5
+    //  .tokenomics-progress__row
+    //    .label
+    //      ArrowDownSmall.svg-icon
+    //      span Token Mechanics
+    //    .progress-wrap
+    //      .circle(:style="{left: '64%'}")
+    //      v-progress-linear(value="75" color="#2BE48D")
+    //      .value 3.5
+    //  .tokenomics-progress__row
+    //    .label
+    //      ArrowDownSmall.svg-icon
+    //      span Competitive Advantage
+    //    .progress-wrap
+    //      .circle(:style="{left: '64%'}")
+    //      v-progress-linear(value="75" color="#2BE48D")
+    //      .value 3.5
+    //  .tokenomics-progress__row
+    //    .label
+    //      ArrowDownSmall.svg-icon
+    //      span User Adoption
+    //    .progress-wrap
+    //      .circle(:style="{left: '72%'}")
+    //      v-progress-linear(value="85" color="#2BE48D")
+    //      .value 4.5
+    //  .tokenomics-progress__row
+    //    .label
+    //      ArrowDownSmall.svg-icon
+    //      span Management Team
+    //    .progress-wrap
+    //      .circle(:style="{left: '68%'}")
+    //      v-progress-linear(value="80" color="#2BE48D")
+    //      .value 4.0
+    //  .tokenomics-progress__bottom
+    //    p Here we leverage Jeffery Timmons’, “Timmons Model of Entrepreneurship”
+    //    .progress-wrap
+    //      // ProgressCircle
+    //      BaseImage.progress-circle(
+    //        :src="require('images/progress-circle.svg')",
+    //        alt="progress",
+    //        force,
+    //      )
+    //      .text Overall Score
+    //      .number 4.0
     .tokenomics-text
       h2 Whitepaper & LitePaper
-      p We understand it can be difficult to read, retain and process the various
-        |  sources of information available; especially, when the information sought
-        |  may not be directly written about in our publicly available corporate
-        |  workpapers, social media or websites.
-        |  For the purposes of the&nbsp;
-        a.link-1(
-          :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-          target="_blank",
-        ) whitepaper
-        |  and the eRSDL token, market participants should expect that the creator
-        |  will be able to describe the uses, rights/privileges (if applicable)
-        |  and possible factors which may impact the value of the token over time.
-        |  Please find that information&nbsp;
+      p We know it can be difficult to read, retain and process multiple sources of information;
+        |  especially when that information may not be publicly available through our corporate
+        |  work papers, social media handles, or websites. Market participants expect to understand
+        |  the uses, rights, privileges (if applicable), and other possible factors that might impact
+        |  the price of the token over time.
+        |  Our
         a.link-1(
           :href="require('docs/LitePaperRSDL.pdf')",
           target="_blank",
-        ) here
-        | , and if you still have questions, please&nbsp;
+        ) &nbsp;litepaper&nbsp;
+        |  and
+        a.link-1(
+          :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
+          target="_blank",
+        ) &nbsp;whitepaper&nbsp;
+        | , are available for review below, and please feel free to reach out with additional
+        | questions or concerns you may have.&nbsp;
         router-link.link-1(:to="{name: 'home', hash: '#get-in-touch'}") let us know
         | .
-        ul
+        ul.btn-container
           li
-            a.link-1(
+            a.v-btn(
               :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
               target="_blank",
-            ) whitepaper link
+            ) Whitepaper
           li
-            a.link-1(
+            a.v-btn(
               :href="require('docs/LitePaperRSDL.pdf')",
               target="_blank",
-            ) litepaper link
+            ) Litepaper
 </template>
 
 <script>
@@ -117,7 +116,7 @@ export default {
   padding: 0 15px
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: flex-end
   @media screen and (max-width: 991px)
     flex-wrap: wrap
     justify-content: center
@@ -241,6 +240,18 @@ export default {
   &-text
     width: 100%
     max-width: 545px
+    ul.btn-container
+      list-style-type: none
+      display: flex
+      padding-left: 0
+      padding-top: 20px
+      flex-wrap: wrap
+      li
+        margin-right: 15px
+        a.v-btn
+          min-width: auto
+          padding: 10px 20px
+          border-radius: 13px
     @media screen and (max-width: 991px)
       margin-top: 150px
       max-width: 100%

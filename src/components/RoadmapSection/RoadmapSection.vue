@@ -17,7 +17,7 @@
           li Qualified CeFI entities borrow up to 50% of their staked capital and can lend as much as they'd like
     .roadmap-row
       .roadmap-item
-        h4 Q2 2021
+        h4 Q3 2021
         ul
           li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders.
           li Voting on CeFI size participants limits if needed

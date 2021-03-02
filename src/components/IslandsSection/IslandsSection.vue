@@ -5,15 +5,17 @@
       .island-item__text
         h2 Warning:
           br
-          | There Be Dragons...
-        p The term DeFI brings with it connotations of anonymous lenders
-          |  and borrowers engaged in digital-asset backed trades, generally
-          |  for the purposes of leveraging existing positions in the crypto-verse.
-        p Residual Token, Inc. has selected the best elements of this ecosystem (e.g.
-          |  immutable records, near instantaneous settlement and encryption well
-          |  beyond what the largest global banks use today), wrapped it in a
-          |  “best in class” regulatory framework and delivered to you a middle-market,
-          |  B2B lender cash reporting tool and overnight lending / borrowing utility.
+          | Navigating Uncharted Waters...
+        p We understand that the term "DeFi" gives rise to apprehension
+          |  out anonymous lenders and borrowers engaged in digital trading
+          |  whose only concern is to leverage their existing positions in the
+          |  crypto-verse.
+        p UnFederalReseve has selected premium elements of the crypto ecosystem
+          |  and wrapped it in a best-in-class regulatory framework that delivers its
+          |  middle-market clients a B2B lending, cash reporting, and overnight
+          |  lending/borrowing utility tool. We offer the security of immutable records,
+          |  near an instantaneous settlement, and encryption well beyond what the
+          |  largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-0.svg')",
@@ -30,27 +32,28 @@
         )
       .island-item__text
         h2 Open Ocean
-        p All major DeFI protocols rely on highly democratized systems. Any borrower
-          |  (represented by the boats) can transact with any lender (represented by the ports).
-        p The challenge from the DeFI community’s perspective engaging sophisticated borrowers
-          |  (i.e. the Treasurers at middle-market lenders) is without proper sophistication,
-          |  individual lenders cannot properly perform risk-based pricing.  Discrepancies in
-          |  experience lead to arbitrage that ultimately harms the lending community.
-          |   The open ocean of DeFI is nowhere for small sailboats to cross paths with
-          |  large containers ships.
+        p Any major DeFi protocol relies on democratized systems so that any borrower
+          |  (represented by the boats) can transact with any lender (represented by
+          |  the ports). The challenge, then, from the perspective of the DeFi
+          |  community, is the engagement of sophisticated borrowers (e.g.,
+          |  Treasurers at middle-market companies). Without proper sophistication,
+          |  individual lenders cannot perform proper risk-based pricing, and
+          |  discrepancies in experience can lead to arbitrage that can harm the
+          |  entire community. Metaphorically speaking, the open ocean of DeFi is
+          |  not a place where sailboats should approach large container ships.
   section.island.next
     .island-item.item-image-right
       .island-item__text
-        h2 eRSDL Creates
+        h2 unFederalReserve Creates
           br
           | a Safe Harbor
-        p Short term lending and borrowing settle near instantaneously on a blockchain-enabled
-          |  platform.  Sophisticated borrowers are expert at identifying mispriced
-          |  opportunities. An unsophisticated lender would be at the mercy of seasoned
-          |  borrowing professionals, risking the reputation of the entire industry.
-        p The eRSDL safe harbor helps ensure that only sophisticated parties, all vetted
-          |  as qualified to participate, have the access they need to liquidity now, and
-          |  in compliance with the law.
+        p Sophisticated borrowers are experts at identifying mispriced opportunities.
+          | Unsophisticated lenders, however, would be at the mercy of seasoned
+          | borrowing professionals, which poses a risk to the lending industry.
+          | The unFederalReserve safe harbor ensures that only qualified, vetted
+          | parties have access to safe, legally compliant liquidity. And talk
+          | about speed... short-term lending and borrowing transactions settle
+          | almost instantaneously on our blockchain-enabled platform.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-2.svg')",

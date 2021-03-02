@@ -1,7 +1,7 @@
 <template lang="pug">
   .OurLeadersSection.our-leaders
     .our-leaders-header
-      h2 Our Leaders
+      h2 Leadership
       router-link.link-2(:to="{name: 'team'}") Show more
     .our-leaders__team
       TeamBigThumbnail(
@@ -63,6 +63,8 @@ export default {
     ::v-deep .thumbnail
       margin-bottom: 40px
       background: rgba(0, 0, 0, 0.08)
+      @media screen and (min-width: 767px)
+        min-height: 638px
       @media screen and (max-width: 767px)
         margin-bottom: 10px
         &.active
