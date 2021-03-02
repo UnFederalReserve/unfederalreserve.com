@@ -2,9 +2,13 @@
   section.HeroSection.hero
     .hero-content
       .hero-content__wrap
-        h1 Middle Market DeFI
-        p Your Treasury management solution for reporting, projecting, and managing cash.
-          |  Access overnight capital from a trusted network of companies like yours!
+        h1 Your Middle Market DeFI Solution
+        p UnFederalReserve is a banking Saas company built on blockchain
+          | technology. Our banking products are designed for smaller U.S.
+          | Treasury chartered banks and non-bank lenders in need of
+          | greater liquidity without sacrificing security or compliance.
+          | Our software leverages the best of blockchain while keeping
+          | the user’s typical banking experience in place.
         v-btn(href="https://app.unfederalreserve.com")
           | Stake
           span &nbsp;account
