@@ -63,6 +63,10 @@ export default {
     ::v-deep .thumbnail
       margin-bottom: 40px
       background: rgba(0, 0, 0, 0.08)
+      @media screen and (min-width: 767px)
+        &:nth-child(1)
+          padding-top: 55px
+          padding-bottom: 40px
       @media screen and (max-width: 767px)
         margin-bottom: 10px
         &.active
