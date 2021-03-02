@@ -42,7 +42,7 @@
           ) Blog
       .footer-content-row.last-row
         .footer-content-row__leaders
-          h5 Our leaders
+          h5 Leadership
           router-link(:to="{name: 'team'}") Meet the team
         .footer-content-row__more
           h5 More

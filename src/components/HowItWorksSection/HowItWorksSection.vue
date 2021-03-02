@@ -1,6 +1,6 @@
 <template lang="pug">
   section.HowItWorksSection.how-it-works
-    h2 How it works?
+    h2 How it works
     .how-it-works-items
       HowItWorksSectionItem(
         v-for="(item, i) in items"

@@ -86,18 +86,18 @@ export default {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
           image: 'team/howard-1.png',
-          description: '<p>Howard is a Managing Director in CBIZ Valuation Group, LLC </br>'
-            + ' (“CBIZ”). He specializes in the valuation of complex financial </br>'
-            + ' instruments including crypto-currency loans,  interest rate </br>'
-            + ' swaps, agency and non-agency mortgage-backed securities </br>'
-            + '(MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>He is a former Big-4 Senior Manager responsible for a variety </br>'
-            + ' of assignments including: intangible business valuation, </br>'
-            + ' intellectual property valuation, financial modeling, valuation </br>'
-            + ' of equity participating instruments and other exotic financial </br>'
-            + ' assets/liabilities with almost 20 years’ experience. </p>'
-            + '<p> Howard has an MBA from Rutgers Business School with a </br>'
-            + ' concentration in Quantitative Finance</p>',
+          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
+            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”),'
+            + 'where he specializes in the valuation of complex financial instruments including'
+            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed'
+            + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
+            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director`'
+            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4'
+            + 'Accounting Firms. Krieger is well-versed in intangible business valuation,'
+            + 'intellectual property valuation, financial modeling, valuation of equity-participating'
+            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s'
+            + 'degree in business administration from James Madison University and an MBA with a'
+            + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
               name: 'linkedin',
@@ -109,20 +109,14 @@ export default {
           name: 'Ryan Medlin',
           title: 'Founder & CEO',
           image: 'team/ryan-1.png',
-          description: '<p>Ryan Medlin is a seasoned Silicon Valley entrepreneur </br>'
-            + ' and technologist. His most recent exit was the sale of his </br>'
-            + ' proximity tracking and measurement company Datasnap.io </br>'
-            + ' in 2015 to Neustar where he then led a team of engineers to</br>'
-            + ' build out Neustar\'s IoT Identity  initiatives. This included a</br>'
-            + ' product for IoT which was an improvement over normal PKI</br>'
-            + ' providing cryptography based policy enforcement and </br>'
-            + ' Identity Management in a highly decentralized architecture.</p>'
-            + '<p>As part of this responsibility for the past 2 years,  many </br>'
-            + ' Blockchain and DLT based prototypes and concepts were </br>'
-            + ' given a lot of resources for prototype assessments. Platforms </br>'
-            + ' and protocols included: IoTA, Ethereum, Hyperledger, </br>'
-            + ' Rootstock, Lisk, NEO and many lower level protocols including </br>'
-            + ' things such as Telehash and Cothority.</p>',
+          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist'
+            + 'whose most recent success was the sale of his proximity tracking and measurement'
+            + 'company, Datasnap.io, to Neustar in 2015. Medlin stayed with the company and led'
+            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
+            + 'improved upon already existing public key infrastructure (PKI) by providing'
+            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.'
+            + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
+            + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
             {
               name: 'linkedin',
