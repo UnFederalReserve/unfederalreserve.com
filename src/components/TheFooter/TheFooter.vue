@@ -124,7 +124,7 @@ export default {
           justify-content: center
       &__contacts
         width: 100%
-        max-width: 260px
+        max-width: 290px
         margin-right: 50px
         @media screen and (max-width: 767px)
           margin-right: 30px
