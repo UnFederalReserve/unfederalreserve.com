@@ -31,16 +31,16 @@ export default {
   background-position: center bottom
   background-size: cover
   width: 100%
-  height: 1000px
+  height: 1200px
   @media screen and (min-width: 2200px)
-    height: 1100px
-  @media screen and (min-width: 2700px)
     height: 1200px
+  @media screen and (min-width: 2700px)
+    height: 1500px
   @media screen and (max-width: 900px)
     background-position: left bottom
     background-image: url('~images/hero-section-mobile.svg')
   @media screen and (max-width: 576px)
-    height: 800px
+    height: 1100px
   &-content
     width: 100%
     margin: 0 auto
@@ -48,9 +48,11 @@ export default {
     padding-left: 15px
     padding-right: 15px
     &__wrap
-      padding-top: 220px
+      padding-top: 180px
       max-width: 486px
       width: 100%
+      h1
+        font-size: 60px
       @media screen and (max-width: 576px)
         padding-top: 150px
       h1
