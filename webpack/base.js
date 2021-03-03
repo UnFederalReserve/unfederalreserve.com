@@ -170,8 +170,8 @@ const config = {
                     corejs: '2.0.0',
                     targets: {
                       esmodules: true,
-                      ie: "11"
-                    }
+                      ie: '11',
+                    },
                   },
                 ],
               ],
