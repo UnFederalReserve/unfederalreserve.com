@@ -4,8 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserUglifyJsPlugin = require('terser-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
-
 
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 // const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
@@ -95,9 +93,6 @@ const config = {
     //   chunkFilename: isDev ? 'css/[name].css' : `css/[name].${global.manualHash}.css`,
     //   ignoreOrder: true,
     // }),
-    new CopyPlugin({
-      patterns: ['fav.svg', 'apple-touch-icon.svg', 'manifest.json'],
-    }),
     new webpack.DefinePlugin({
       'process.env': env,
       __jsVersion__: JSON.stringify(process.env.BUILD_ID),
