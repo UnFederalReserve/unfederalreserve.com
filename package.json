@@ -24,6 +24,7 @@
     "@vue/component-compiler-utils": "^3.2.0",
     "babel-eslint": "8.0.1",
     "bezier-easing": "^2.1.0",
+    "copy-webpack-plugin": "^6.2.1",
     "core-js": "^2",
     "fibers": "^4.0.1",
     "file-loader": "^2.0.0",
