@@ -1,17 +1,17 @@
 <template lang="pug">
   .SocialLinks.social-links
+    a(href="https://www.youtube.com/channel/UCcKaHJ8SdyAGqoMrVrsKK_A" target="_blank").link
+      Youtube.svg-icon
+    a(href="https://discord.com/invite/A4MyW7g" target="_blank").link
+      GroupIcon.svg-icon
     a(href="https://www.linkedin.com/company/unfederalreserve" target="_blank").link
       Linkedin.svg-icon
     a(href="https://www.facebook.com/residualtoken" target="_blank").link
       Facebook.svg-icon
-    a(href="https://discord.com/invite/A4MyW7g" target="_blank").link
-      GroupIcon.svg-icon
     a(href="https://t.me/unfedres_staking" target="_blank").link
       Vector.svg-icon
     a(href="https://twitter.com/Unfederalreser1" target="_blank").link
       Twitt.svg-icon
-    a(href="https://www.youtube.com/channel/UCcKaHJ8SdyAGqoMrVrsKK_A" target="_blank").link
-      Youtube.svg-icon
     a(href="https://www.reddit.com/r/unFederalReserve" target="_blank").link
       Reddit.svg-icon
     a(href="https://unfederalreserve.medium.com" target="_blank").link
