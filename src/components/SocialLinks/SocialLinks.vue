@@ -68,7 +68,7 @@ export default {
     z-index: 2
     background-repeat: no-repeat
     background-size: contain
-    background-image: url('~images/hover-bubble-btn.svg')
+    background-image: url('~images/hover-square-btn.svg')
     opacity: 0
     +mt(.2s)
   &:hover
