@@ -84,6 +84,7 @@ section
       flex-wrap: wrap
       align-items: center
     .illustration-wrap
+      padding-top: 30px
       width: 100%
       max-width: 640px
       flex-shrink: 0
@@ -119,9 +120,9 @@ section
         max-width: 100%
     .close
       position: absolute
-      right: -25px
-      width: 400px
-      bottom: -30px
+      right: -190px
+      width: 565px
+      bottom: -70px
       @media screen and (max-width: 1140px)
         width: 200px !important
         left: 41%
