@@ -247,7 +247,7 @@ export default {
       padding-top: 20px
       flex-wrap: wrap
       li
-        margin-right: 15px
+        margin: 0 15px 15px 0
         a.v-btn
           min-width: auto
           padding: 10px 20px
