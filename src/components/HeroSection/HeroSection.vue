@@ -48,15 +48,15 @@ export default {
     padding-left: 15px
     padding-right: 15px
     &__wrap
-      padding-top: 180px
+      padding-top: 160px
       max-width: 486px
       width: 100%
       h1
         font-size: 60px
       @media screen and (max-width: 576px)
-        padding-top: 150px
+        padding-top: 90px
       h1
-        margin-bottom: 38px
+        margin-bottom: 40px
         @media screen and (max-width: 576px)
           max-width: 225px
       p
