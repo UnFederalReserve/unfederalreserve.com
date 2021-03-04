@@ -47,7 +47,7 @@
         h2 unFederalReserve Creates
           br
           | a Safe Harbor
-        p Sophisticated borrowers are experts at identifying mispriced opportunities.
+        p Sophisticated borrowers are experts at identifying mispriced opportunities.&nbsp;
           | Unsophisticated lenders, however, would be at the mercy of seasoned
           | borrowing professionals, which poses a risk to the lending industry.
           | The unFederalReserve safe harbor ensures that only qualified, vetted

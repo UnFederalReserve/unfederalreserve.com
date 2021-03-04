@@ -49,33 +49,33 @@ export default {
       return [
         {
           number: '01',
-          title: 'Install Treasury App',
-          text: 'Download our easy to install Treasury cash management dashboard application.',
+          title: 'Create an account',
+          text: 'Easily set up a Reserve Lending account from your desktop, laptop, or mobile device.',
         },
         {
           number: '02',
-          title: 'Obtain a License',
-          text: 'Acquire a sufficient amount of eRSDL token to activate Maker/Taker capabilities.',
+          title: 'Participate today',
+          text: 'For everyday DeFi users, experience the Reserve Lending advantage of superior customer service and support.',
         },
         {
           number: '03',
-          title: 'Welcome Aboard',
-          text: 'Qualified middle-market lenders must meet KYC/AML onboarding requirements to access lending marketplace.',
+          title: 'Qualify to access liquidity',
+          text: 'Qualified middle-market lenders who meet KYC/AML onboarding requirements and obtain a license will have access to our lending marketplace.',
         },
         {
           number: '04',
-          title: 'Monitor Dashboard',
-          text: 'A stunning visualization of current cash position, certain network participant data and cash versus projection tables and graphs.',
+          title: 'Track everything on your dashboard',
+          text: 'AL-Dash(R) will help you easily track and summarize your current cash position and general network participant data.',
         },
         {
           number: '05',
-          title: 'Access Liquidity',
-          text: 'Our marketplace leverages an auction rate bond interface over a traditional short-term line of credit vehicle for borrowers. And we offer a vanilla deposit feature for lenders.',
+          title: 'Integrate',
+          text: 'Connect your balance sheet to CM-Dash(R) and all your liquidity sources and uses can be monitored on our simple to use the platform (Coming late 2021).',
         },
         {
           number: '06',
           title: 'Reporting',
-          text: 'Accounting, financial and tax reporting integration with existing systems available.',
+          text: 'Accounting, financial, and tax reporting integration with existing systems available.',
         },
       ];
     },
