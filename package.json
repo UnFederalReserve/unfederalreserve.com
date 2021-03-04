@@ -11,13 +11,14 @@
     "start:legacy": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --hot-styles --env.legacy=true",
     "start:prod": "NODE_ENV=production webpack-dev-server --host 0.0.0.0 --mode production",
     "start:analyze": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --analyze",
-    "build:dev": "rm -rf dist/* && NODE_ENV=development webpack --mode development --env.legacy=true",
-    "build:staging": "rm -rf dist/* && NODE_ENV=staging webpack --mode production --env.legacy=true",
-    "build": "rm -rf dist/* && NODE_ENV=production webpack --mode production --env.legacy=true",
-    "build:analyze": "rm -rf dist/* && NODE_ENV=production webpack --mode production --analyze --profile --json > compilation-stats.json --env.legacy=true",
+    "build:dev": "yarn build:dist && NODE_ENV=development webpack --mode development --env.legacy=true",
+    "build:staging": "yarn build:dist && NODE_ENV=staging webpack --mode production --env.legacy=true",
+    "build": "yarn build:dist && NODE_ENV=production webpack --mode production --env.legacy=true",
+    "build:analyze": "yarn build:dist && NODE_ENV=production webpack --mode production --analyze --profile --json > compilation-stats.json --env.legacy=true",
     "build-prerender:local": "yarn build:dev && yarn prerender && cp -rf ./prerendered/* ./dist",
     "lint": "NODE_ENV=production eslint --ext .js,.vue src",
-    "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src --fix"
+    "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src --fix",
+    "build:dist": "rm -rf dist && mkdir dist && cp staticdata/dist/** dist/"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
