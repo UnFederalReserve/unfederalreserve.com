@@ -68,10 +68,13 @@ export default {
 @import '~Styles/_variables'
 .footer
   width: 100%
-  height: 429px
   position: relative
   bottom: -1px
   z-index: 2
+  @media screen and (min-width: 695px)
+    height: 500px
+  @media screen and (min-width: 1800px)
+    height: 429px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
@@ -89,7 +92,6 @@ export default {
     padding-bottom: 20px
     @media screen and (max-width: 1170px)
       max-width: 100%
-      justify-content: center
       align-items: center
     &:before
       content: ''
@@ -194,7 +196,7 @@ export default {
       p
         opacity: 0.5
         color: $white
-        text-align: right
+        text-align: left
   .right-footer-rock
     position: absolute
     left: 0
