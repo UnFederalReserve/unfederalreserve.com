@@ -18,7 +18,7 @@
     "build-prerender:local": "yarn build:dev && yarn prerender && cp -rf ./prerendered/* ./dist",
     "lint": "NODE_ENV=production eslint --ext .js,.vue src",
     "lint:fix": "NODE_ENV=production eslint --ext .js,.vue src --fix",
-    "build:dist": "rm -rf dist/* && cp staticdata/dist/** dist/"
+    "build:dist": "rm -rf dist && mkdir dist && cp  staticdata/dist/** dist/"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
