@@ -47,13 +47,13 @@
         h2 unFederalReserve Creates
           br
           | a Safe Harbor
-        p Sophisticated borrowers are experts at identifying mispriced opportunities.&nbsp;
-          | Unsophisticated lenders, however, would be at the mercy of seasoned
-          | borrowing professionals, which poses a risk to the lending industry.
-          | The unFederalReserve safe harbor ensures that only qualified, vetted
-          | parties have access to safe, legally compliant liquidity. And talk
-          | about speed... short-term lending and borrowing transactions settle
-          | almost instantaneously on our blockchain-enabled platform.
+        p Sophisticated borrowers are experts at identifying mispriced opportunities.
+          |  Unsophisticated lenders, however, would be at the mercy of seasoned
+          |  borrowing professionals, which poses a risk to the lending industry.
+          |  The unFederalReserve safe harbor ensures that only qualified, vetted
+          |  parties have access to safe, legally compliant liquidity. And talk
+          |  about speed... short-term lending and borrowing transactions settle
+          |  almost instantaneously on our blockchain-enabled platform.
       .island-item__image
         BaseImage.illustration(
           :src="require('images/illustration-2.svg')",
