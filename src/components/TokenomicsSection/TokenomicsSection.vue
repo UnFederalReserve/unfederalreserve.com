@@ -249,7 +249,7 @@ export default {
       li
         margin: 0 15px 15px 0
         a.v-btn
-          min-width: auto
+          min-width: 150px
           padding: 10px 20px
           border-radius: 13px
     @media screen and (max-width: 991px)
