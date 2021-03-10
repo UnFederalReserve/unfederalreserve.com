@@ -60,7 +60,7 @@ export default {
         {
           number: '03',
           title: 'Qualify to access liquidity',
-          text: 'Qualified middle-market lenders who meet KYC/AML onboarding requirements and obtain a license will have access to our lending marketplace.',
+          text: 'Qualified middle-market lenders who meet KYC/AML onboarding requirements and obtain a license will have access to our lending marketplace. We have partnered with <a href="https://selfkey.org/">SELFKEY</a> for KYC/AML.',
         },
         {
           number: '04',
