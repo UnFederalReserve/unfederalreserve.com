@@ -51,7 +51,7 @@
             target="_blank",
           ) Buy on Uniswap
       .all-rights
-        p.mb-0 All rights reserved ©2020
+        p.mb-0 All rights reserved ©2021
 </template>
 
 <script>

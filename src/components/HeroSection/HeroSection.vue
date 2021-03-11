@@ -4,9 +4,9 @@
       .hero-content__wrap
         h1 Your Mid-Market DeFi Solution
         p UnFederalReserve is a banking Saas company built on blockchain technology.
-          | Our banking products are designed for smaller U.S. Treasury chartered banks
-          | and non-bank lenders in need of greater liquidity without sacrificing security
-          | or compliance.
+          |  Our banking products are designed for smaller U.S. Treasury chartered banks
+          |  and non-bank lenders in need of greater liquidity without sacrificing security
+          |  or compliance.
           span  Hit the button below and create or manage a stake account and purchase our token(s).
         div.btn-container
           v-btn(href="https://app.unfederalreserve.com")
