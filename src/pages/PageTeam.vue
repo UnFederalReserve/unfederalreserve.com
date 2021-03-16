@@ -1,6 +1,7 @@
 <template lang="pug">
   .PageTeam.team
     h2 Meet the team
+    h2 Leadership
     .team-founders
       TeamBigThumbnail(
         v-for="(item, i) in founders",
@@ -30,17 +31,17 @@ export default {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
           image: 'team/howard100x100.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
-            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”),'
-            + 'where he specializes in the valuation of complex financial instruments including'
-            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed'
-            + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director`'
-            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4'
-            + 'Accounting Firms. Krieger is well-versed in intangible business valuation,'
-            + 'intellectual property valuation, financial modeling, valuation of equity-participating'
-            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s'
-            + 'degree in business administration from James Madison University and an MBA with a'
+          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve. '
+            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”), '
+            + 'where he specializes in the valuation of complex financial instruments including '
+            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
+            + 'securities (MBS), and collateralized debt obligations (CDOs).</p> '
+            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director` '
+            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4 '
+            + 'Accounting Firms. Krieger is well-versed in intangible business valuation, '
+            + 'intellectual property valuation, financial modeling, valuation of equity-participating '
+            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s '
+            + 'degree in business administration from James Madison University and an MBA with a '
             + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
@@ -56,7 +57,7 @@ export default {
           description: '<p><b>Publications</b></p>'
             + '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in'
             + 'Mind When Issuing Stock Options</p>'
-            + '<p><b>Publications</b></p>'
+            + '<p><b>Organisations</b></p>'
             + '<p>Fair Value Measurements Impact on Financial Reporting.</p>',
           social: [
             {
@@ -69,14 +70,14 @@ export default {
           name: 'Ryan Medlin',
           title: 'Founder & CTO',
           image: 'team/ryan100x100.png',
-          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist'
-            + 'whose most recent success was the sale of his proximity tracking and measurement'
-            + 'company, Datasnap.io, to Neustar in 2015.</p>'
-            + 'Medlin stayed with the company and led'
-            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
-            + 'improved upon already existing public key infrastructure (PKI) by providing'
+          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist '
+            + 'whose most recent success was the sale of his proximity tracking and measurement '
+            + 'company, Datasnap.io, to Neustar in 2015.</p> '
+            + 'Medlin stayed with the company and led '
+            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity '
+            + 'improved upon already existing public key infrastructure (PKI) by providing '
             + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
-            + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
+            + '<p>The IoT Identity project became the foundation for building out additional blockchain and '
             + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
             {
@@ -234,7 +235,7 @@ export default {
     margin-bottom: 45px
   &-founders
     ::v-deep .thumbnail
-      margin-bottom: 70px
+      margin-bottom: 40px
       @media screen and (max-width: 991px)
         flex-direction: column
         align-items: center
