@@ -43,9 +43,9 @@ export default {
 .thumbnail
   display: flex
   flex-direction: column
-  background: transparent
-  border-radius: 5px
+  border-radius: 20px
   padding: 20px
+  background: #13237B
   +mt(.3s)
   &:hover
     +mt(.3s)
@@ -54,7 +54,7 @@ export default {
     width: 100%
     height: 230px
     flex-shrink: 0
-    background: linear-gradient(180deg, #4FBDCE 0%, #018CC8 100%)
+    background: #2B3E99
     border-radius: 5px
     margin-bottom: 20px
     @media screen and (max-width: 767px)

@@ -29,7 +29,7 @@ export default {
         {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
-          image: 'team/howard-1.png',
+          image: 'team/howard100x100.png',
           description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
             + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”),'
             + 'where he specializes in the valuation of complex financial instruments including'
@@ -52,10 +52,12 @@ export default {
         {
           name: 'Kevin Thompson',
           title: 'Publications',
-          image: 'team/kevin-t.png',
-          description: '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in</p>'
-            + '<p> Mind When Issuing Stock Options Fair Value Measurements Impact on Financial Reporting</p>'
-            + '<i>Organizations</i><p>American Society of Appraisers National Association of Certified Valuators and Analysts</p>',
+          image: 'team/kevin-t100x100.png',
+          description: '<p><b>Publications</b></p>'
+            + '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in'
+            + 'Mind When Issuing Stock Options</p>'
+            + '<p><b>Publications</b></p>'
+            + '<p>Fair Value Measurements Impact on Financial Reporting.</p>',
           social: [
             {
               name: 'linkedin',
@@ -66,13 +68,14 @@ export default {
         {
           name: 'Ryan Medlin',
           title: 'Founder & CTO',
-          image: 'team/ryan-1.png',
+          image: 'team/ryan100x100.png',
           description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist'
             + 'whose most recent success was the sale of his proximity tracking and measurement'
-            + 'company, Datasnap.io, to Neustar in 2015. Medlin stayed with the company and led'
+            + 'company, Datasnap.io, to Neustar in 2015.</p>'
+            + 'Medlin stayed with the company and led'
             + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
             + 'improved upon already existing public key infrastructure (PKI) by providing'
-            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.'
+            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
             + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
             + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
