@@ -9,7 +9,8 @@
         .titles
           h5 {{ title }}
           h3 {{ name }}
-          .thumbnail-social
+        .right
+          .thumbnail-social(v-if="social")
             a(
               v-for="link in social"
               :href="link.path"
@@ -19,15 +20,6 @@
               Linkedin.svg-icon(v-show="link.name === 'linkedin'")
               Facebook.svg-icon(v-show="link.name === 'facebook'")
       p.desc(v-html="description")
-      .thumbnail-social(v-if="social")
-        a(
-          v-for="link in social"
-          :href="link.path"
-          :key="link.name"
-          target="_blank"
-        ).link
-          Linkedin.svg-icon(v-show="link.name === 'linkedin'")
-          Facebook.svg-icon(v-show="link.name === 'facebook'")
 </template>
 
 <script>
@@ -77,6 +69,7 @@ export default {
     +mt(.3s)
     background: rgba(0, 0, 0, 0.08)
   &-image
+    display: none
     width: 100%
     max-width: 395px
     flex-shrink: 0
@@ -93,6 +86,7 @@ export default {
       border-radius: 40px
   &-description
     display: flex
+    flex: 1 1
     flex-direction: column
     align-items: flex-start
     *
@@ -107,11 +101,11 @@ export default {
     .thumbnail-mobile-image
       // background: linear-gradient(180deg, #4FBDCE 0%, #018CC8 100%)
       width: 100px
-      height: 152px
+      height: 100px
       margin-right: 10px
       // border-radius: 5px
       @media screen and (min-width: 768px)
-        display: none
+        // display: none
       .image
         width: 100%
         height: 100%
@@ -122,6 +116,7 @@ export default {
       flex-direction: row
       align-items: center
       justify-content: flex-start
+      width: 100%
       .titles
         display: flex
         flex-direction: column
@@ -137,33 +132,29 @@ export default {
               font-size: 20px
             @media screen and (max-width: 340px)
               font-size: 18px
+      .right
+        display: flex
+        flex: 1
+        justify-content: flex-end
         .thumbnail-social
-          @media screen and (min-width: 768px)
-            display: none
-          @media screen and (max-width: 767px)
+          display: flex
+          background: rgba(100, 133, 255, 0.25)
+          border-radius: 5px
+          padding: 5px
+          flex-direction: row
+          justify-content: center
+          .link
+            width: 30px
+            height: 30px
+            opacity: 1 !important
+            position: relative
             display: flex
-  &-social
-    display: flex
-    background: rgba(100, 133, 255, 0.25)
-    border-radius: 5px
-    padding: 5px
-    flex-direction: row
-    justify-content: center
-    margin-top: 30px
-    @media screen and (max-width: 767px)
-      display: none
-    .link
-      width: 30px
-      height: 30px
-      opacity: 1 !important
-      position: relative
-      display: flex
-      flex-direction: row
-      justify-content: center
-      align-items: center
-      .svg-icon
-        width: auto
-        height: 18px
-      &:hover
-        opacity: 0.8 !important
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            .svg-icon
+              width: auto
+              height: 18px
+            &:hover
+              opacity: 0.8 !important
 </style>
