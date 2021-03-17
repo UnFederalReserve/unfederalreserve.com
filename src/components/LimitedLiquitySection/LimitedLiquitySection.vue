@@ -18,11 +18,11 @@
           br
           | is Limited
         p Middle-market B2B lenders sometimes experience payment latency or
-          | acceleration, and either instance can incur a cost for the lender.
-          | Excess cash sits fallow, while a cash deficit forces an emergency draw
-          | on a line of credit. Because typical loan interest rates are calculated
-          | based on borrowing for weeks and not hours, lenders can incur unnecessary
-          | charges when processing such short-term loans.
+          |  acceleration, and either instance can incur a cost for the lender.
+          |  Excess cash sits fallow, while a cash deficit forces an emergency draw
+          |  on a line of credit. Because typical loan interest rates are calculated
+          |  based on borrowing for weeks and not hours, lenders can incur unnecessary
+          |  charges when processing such short-term loans.
   section.limited-liquity.limited-liquity-great
     .wrap
       .limited-liquity__text
@@ -30,9 +30,9 @@
           br
           | Lower Costs
         p UnFederalReserve uses an Auction Rate Bond (ARB) platform that can be specifically
-          | tailored to meet clients' unique workflows. Middle market bank and non-bank lenders
-          | can feel confident in both lending to vetted third-parties directly and placing
-          | excess capital into the marketplace.
+          |  tailored to meet clients' unique workflows. Middle-market bank and non-bank lenders
+          |  can feel confident in both lending to vetted third-parties directly and placing
+          |  excess capital into the marketplace.
       BaseImage.polygons(
         :src="require('images/polygons-2.svg')",
         alt="polygons",

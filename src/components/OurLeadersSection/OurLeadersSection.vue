@@ -63,8 +63,6 @@ export default {
     ::v-deep .thumbnail
       margin-bottom: 40px
       background: rgba(0, 0, 0, 0.08)
-      @media screen and (min-width: 767px)
-        min-height: 638px
       @media screen and (max-width: 767px)
         margin-bottom: 10px
         &.active
