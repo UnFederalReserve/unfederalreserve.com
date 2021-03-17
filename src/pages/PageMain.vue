@@ -113,10 +113,10 @@ export default {
             + 'whose most recent success was the sale of his proximity tracking and measurement '
             + 'company, Datasnap.io, to Neustar in 2015.</p>'
             + '<p>Medlin stayed with the company and led '
-            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
+            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity '
             + 'improved upon already existing public key infrastructure (PKI) by providing '
             + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
-            + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
+            + '<p>The IoT Identity project became the foundation for building out additional blockchain and '
             + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
             {
