@@ -86,7 +86,7 @@ export default {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
           image: 'team/howard100x100.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
+          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve. '
             + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”), '
             + 'where he specializes in the valuation of complex financial instruments including '
             + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
