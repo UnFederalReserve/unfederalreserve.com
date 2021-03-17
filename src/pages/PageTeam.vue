@@ -36,7 +36,7 @@ export default {
             + 'where he specializes in the valuation of complex financial instruments including '
             + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
             + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director` '
+            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director '
             + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4 '
             + 'Accounting Firms. Krieger is well-versed in intangible business valuation, '
             + 'intellectual property valuation, financial modeling, valuation of equity-participating '
@@ -56,8 +56,8 @@ export default {
           image: 'team/kevin-t100x100.png',
           description: '<p><b>Publications</b></p>'
             + '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in '
-            + 'Mind When Issuing Stock Options</p>'
-            + '<p><b>Organisations</b></p>'
+            + 'Mind When Issuing Stock Options.</p>'
+            + '<p><b>Organizations</b></p>'
             + '<p>Fair Value Measurements Impact on Financial Reporting.</p>',
           social: [
             {
