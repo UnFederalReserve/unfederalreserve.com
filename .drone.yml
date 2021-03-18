@@ -4,6 +4,9 @@ steps:
 
 - name: build
   image: node:12.19.1
+  when:
+    branch:
+    - master
   volumes:
   - name: build_dest
     path: /dest
@@ -14,6 +17,31 @@ steps:
   - mkdir -p dist/static/img/
   - cp staticdata/img/sharing-image.png dist/static/img/
   - cp -r dist/* /dest/
+
+- name: build-image
+  image: docker
+  when:
+    branch:
+    - dev
+  commands:
+    - docker --config /.docker build -t registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA} .
+    - docker --config /.docker push registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
+  volumes:
+  - name: docker_sock
+    path: /var/run/docker.sock
+  - name: docker_config
+    path: /.docker/config.json
+
+- name: deploy
+  image: bitnami/kubectl
+  when:
+    branch:
+    - dev
+  commands:
+    - kubectl --context do-nyc1-develop -n unfederal-dev set image deployment/unfederalreserve-com unfederalreserve-com=registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
+  volumes:
+  - name: kubectl_config
+    path: /.kube/config
 
 - name: notify-slack
   image: plugins/slack
@@ -41,6 +69,15 @@ trigger:
   - push
 
 volumes:
+- name: docker_sock
+  host:
+    path: /var/run/docker.sock
+- name: docker_config
+  host:
+    path: /etc/docker/config.json
+- name: kubectl_config
+  host:
+    path: /home/psetoor/.kube/config
 - name: build_dest
   host:
     path: /storage/${DRONE_COMMIT_BRANCH}/unfederal

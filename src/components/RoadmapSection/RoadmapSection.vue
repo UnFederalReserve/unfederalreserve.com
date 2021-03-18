@@ -17,9 +17,17 @@
           li Qualified CeFI entities borrow up to 50% of their staked capital and can lend as much as they'd like
     .roadmap-row
       .roadmap-item
+        h4 Q2 2021
+        ul
+          li Reserve Lending® Alpha testing and product launch
+          li Voting on Tier 1 exchange listing and key relationships
+          li Develop Treasurer’s Toolkit (KYC Chain/SelfKey®, treasury management dashboards, and Maker/Taker protocols)
+          li Website refresh and brand development
+    .roadmap-row
+      .roadmap-item
         h4 Q3 2021
         ul
-          li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders.
+          li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders
           li Voting on CeFI size participants limits if needed
           li Alignment with international lending/borrower restrictions to open cross-border opportunities
     .roadmap-row
@@ -100,4 +108,10 @@ export default {
         margin-top: 20px
         @media screen and (max-width: 767px)
           margin-right: 0
+    &:nth-child(6)
+      .roadmap-item
+        margin-left: 50px
+        margin-top: 0px
+        @media screen and (max-width: 767px)
+          margin-left: 0
 </style>

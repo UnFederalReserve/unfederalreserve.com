@@ -1,6 +1,7 @@
 <template lang="pug">
   .PageTeam.team
     h2 Meet the team
+    h2 Leadership
     .team-founders
       TeamBigThumbnail(
         v-for="(item, i) in founders",
@@ -29,18 +30,18 @@ export default {
         {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
-          image: 'team/howard-1.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
-            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”),'
-            + 'where he specializes in the valuation of complex financial instruments including'
-            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed'
+          image: 'team/howard100x100.png',
+          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve. '
+            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”), '
+            + 'where he specializes in the valuation of complex financial instruments including '
+            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
             + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director`'
-            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4'
-            + 'Accounting Firms. Krieger is well-versed in intangible business valuation,'
-            + 'intellectual property valuation, financial modeling, valuation of equity-participating'
-            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s'
-            + 'degree in business administration from James Madison University and an MBA with a'
+            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director '
+            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4 '
+            + 'Accounting Firms. Krieger is well-versed in intangible business valuation, '
+            + 'intellectual property valuation, financial modeling, valuation of equity-participating '
+            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s '
+            + 'degree in business administration from James Madison University and an MBA with a '
             + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
@@ -52,10 +53,12 @@ export default {
         {
           name: 'Kevin Thompson',
           title: 'Publications',
-          image: 'team/kevin-t.png',
-          description: '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in</p>'
-            + '<p> Mind When Issuing Stock Options Fair Value Measurements Impact on Financial Reporting</p>'
-            + '<i>Organizations</i><p>American Society of Appraisers National Association of Certified Valuators and Analysts</p>',
+          image: 'team/kevin-t100x100.png',
+          description: '<p><b>Publications</b></p>'
+            + '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in '
+            + 'Mind When Issuing Stock Options.</p>'
+            + '<p><b>Organizations</b></p>'
+            + '<p>Fair Value Measurements Impact on Financial Reporting.</p>',
           social: [
             {
               name: 'linkedin',
@@ -66,19 +69,38 @@ export default {
         {
           name: 'Ryan Medlin',
           title: 'Founder & CTO',
-          image: 'team/ryan-1.png',
-          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist'
-            + 'whose most recent success was the sale of his proximity tracking and measurement'
-            + 'company, Datasnap.io, to Neustar in 2015. Medlin stayed with the company and led'
-            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
-            + 'improved upon already existing public key infrastructure (PKI) by providing'
-            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.'
-            + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
+          image: 'team/ryan100x100.png',
+          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist '
+            + 'whose most recent success was the sale of his proximity tracking and measurement '
+            + 'company, Datasnap.io, to Neustar in 2015.</p> '
+            + 'Medlin stayed with the company and led '
+            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity '
+            + 'improved upon already existing public key infrastructure (PKI) by providing '
+            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
+            + '<p>The IoT Identity project became the foundation for building out additional blockchain and '
             + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/ryanmedlin/',
+            },
+          ],
+        },
+        {
+          name: 'Vladyslav Tarasenko',
+          title: 'Solution Architect',
+          image: 'team/vlad100x100.png',
+          description: '<p> Vlad is a software developer with 10 years of experience and a wide range of skills in various '
+          + 'technologies. Vlad has a Master\'s Degree in Computer  Science. He has a proven track record in the financial '
+          + 'services sector. As a lead engineer, Vlad has successfully managed all stages of the development process '
+          + 'from idea to product launch. He is a good problem solver who knows how to find a balance between the quality '
+          + 'of the product and development speed. He can grasp the essence of the project at hand. Vlad has launched 3 '
+          + 'big projects with hit rate more than 1 000 000+ requests per day. Today he’s a founder of Webdevelop Pro '
+          + 'and an experienced team leader building strong development teams.</p>',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/vladyslav-tarasenko-16600372',
             },
           ],
         },
@@ -231,7 +253,7 @@ export default {
     margin-bottom: 45px
   &-founders
     ::v-deep .thumbnail
-      margin-bottom: 70px
+      margin-bottom: 40px
       @media screen and (max-width: 991px)
         flex-direction: column
         align-items: center

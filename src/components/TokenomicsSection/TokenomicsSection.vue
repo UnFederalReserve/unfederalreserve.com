@@ -59,18 +59,18 @@
         |  work papers, social media handles, or websites. Market participants expect to understand
         |  the uses, rights, privileges (if applicable), and other possible factors that might impact
         |  the price of the token over time.
-        |  Our
+        |  Our&nbsp;
         a.link-1(
           :href="require('docs/LitePaperRSDL.pdf')",
           target="_blank",
-        ) &nbsp;litepaper&nbsp;
-        |  and
+        ) litepaper
+        |  and&nbsp;
         a.link-1(
           :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
           target="_blank",
-        ) &nbsp;whitepaper&nbsp;
-        | , are available for review below, and please feel free to reach out with additional
-        | questions or concerns you may have.&nbsp;
+        ) whitepaper
+        |  , are available for review below, and please feel free to reach out with additional
+        |  questions or concerns you may have.&nbsp;
         router-link.link-1(:to="{name: 'home', hash: '#get-in-touch'}") let us know
         | .
         ul.btn-container

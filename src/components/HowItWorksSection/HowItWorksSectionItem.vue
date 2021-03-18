@@ -2,7 +2,7 @@
   .HowItWorksSectionItem.item
     .item-number {{ number }}
     h4 {{ title }}
-    p {{ text }}
+    p(v-html="text")
 </template>
 
 <script>

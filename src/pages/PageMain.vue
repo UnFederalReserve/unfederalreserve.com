@@ -60,7 +60,7 @@ export default {
         {
           number: '03',
           title: 'Qualify to access liquidity',
-          text: 'Qualified middle-market lenders who meet KYC/AML onboarding requirements and obtain a license will have access to our lending marketplace.',
+          text: 'Qualified middle-market lenders who meet KYC/AML onboarding requirements and obtain a license will have access to our lending marketplace. We have partnered with <a target="_blank" style="text-decoration: underline" href="https://selfkey.org/">SELFKEY</a> for KYC/AML.',
         },
         {
           number: '04',
@@ -85,18 +85,18 @@ export default {
         {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
-          image: 'team/howard-1.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve.'
-            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”),'
-            + 'where he specializes in the valuation of complex financial instruments including'
-            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed'
+          image: 'team/howard100x100.png',
+          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve. '
+            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”), '
+            + 'where he specializes in the valuation of complex financial instruments including '
+            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
             + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director`'
-            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4'
-            + 'Accounting Firms. Krieger is well-versed in intangible business valuation,'
-            + 'intellectual property valuation, financial modeling, valuation of equity-participating'
-            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s'
-            + 'degree in business administration from James Madison University and an MBA with a'
+            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director '
+            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4 '
+            + 'Accounting Firms. Krieger is well-versed in intangible business valuation, '
+            + 'intellectual property valuation, financial modeling, valuation of equity-participating '
+            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s '
+            + 'degree in business administration from James Madison University and an MBA with a '
             + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
@@ -108,14 +108,15 @@ export default {
         {
           name: 'Ryan Medlin',
           title: 'Founder & CTO',
-          image: 'team/ryan-1.png',
-          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist'
-            + 'whose most recent success was the sale of his proximity tracking and measurement'
-            + 'company, Datasnap.io, to Neustar in 2015. Medlin stayed with the company and led'
-            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity'
-            + 'improved upon already existing public key infrastructure (PKI) by providing'
-            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.'
-            + '<p>The IoT Identity project became the foundation for building out additional blockchain and'
+          image: 'team/ryan100x100.png',
+          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist '
+            + 'whose most recent success was the sale of his proximity tracking and measurement '
+            + 'company, Datasnap.io, to Neustar in 2015.</p>'
+            + '<p>Medlin stayed with the company and led '
+            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity '
+            + 'improved upon already existing public key infrastructure (PKI) by providing '
+            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
+            + '<p>The IoT Identity project became the foundation for building out additional blockchain and '
             + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
           social: [
             {
