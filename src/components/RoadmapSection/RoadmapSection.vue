@@ -18,14 +18,16 @@
     .roadmap-row
       .roadmap-item
         h4 Q2 2021
-        div We are currently researching another exchange listing for Q2 and wanted to get the Community’s thoughts
-          |  and suggestions to add to the pool. You can share your thoughts on our Telegram channel, or send DM for your comfort.
-          |  An open-ended question doesn’t work great in a survey, but your opinion is valuable and we’d like to consider it.
+        ul
+          li Reserve Lending® Alpha testing and product launch
+          li Voting on Tier 1 exchange listing and key relationships
+          li Develop Treasurer’s Toolkit (KYC Chain/SelfKey®, treasury management dashboards, and Maker/Taker protocols)
+          li Website refresh and brand development
     .roadmap-row
       .roadmap-item
         h4 Q3 2021
         ul
-          li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders.
+          li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders
           li Voting on CeFI size participants limits if needed
           li Alignment with international lending/borrower restrictions to open cross-border opportunities
     .roadmap-row
