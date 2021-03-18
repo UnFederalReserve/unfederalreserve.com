@@ -100,7 +100,7 @@ export default {
           social: [
             {
               name: 'linkedin',
-              path: 'https://www.linkedin.com/in/ryanmedlin/',
+              path: 'https://www.linkedin.com/in/vladyslav-tarasenko-16600372',
             },
           ],
         },
