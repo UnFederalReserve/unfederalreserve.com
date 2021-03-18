@@ -87,8 +87,8 @@ export default {
           ],
         },
         {
-          name: 'Vladislav Tarasenko',
-          title: 'Software developer',
+          name: 'Vladyslav Tarasenko',
+          title: 'Solution Architect',
           image: 'team/vlad100x100.png',
           description: '<p> Vlad is a software developer with 10 years of experience and a wide range of skills in various '
           + 'technologies. Vlad has a Master\'s Degree in Computer  Science. He has a proven track record in the financial '
