@@ -70,7 +70,7 @@ export default {
         },
         {
           path: 'home',
-          name: 'Contacts',
+          name: 'Contact us',
           hash: '#get-in-touch',
         },
       ];

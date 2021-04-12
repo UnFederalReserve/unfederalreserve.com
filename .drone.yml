@@ -23,6 +23,7 @@ steps:
   when:
     branch:
     - dev
+    - stage
   commands:
     - docker --config /.docker build -t registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA} .
     - docker --config /.docker push registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
@@ -37,8 +38,9 @@ steps:
   when:
     branch:
     - dev
+    - stage
   commands:
-    - kubectl --context do-nyc1-develop -n unfederal-dev set image deployment/unfederalreserve-com unfederalreserve-com=registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
+    - kubectl --context unfederal-${DRONE_COMMIT_BRANCH} -n unfederal-${DRONE_COMMIT_BRANCH} set image deployment/unfederalreserve-com unfederalreserve-com=registry.digitalocean.com/develop/unfederalreserve-com:${DRONE_COMMIT_BRANCH}-${DRONE_COMMIT_SHA}
   volumes:
   - name: kubectl_config
     path: /.kube/config
@@ -65,6 +67,7 @@ trigger:
   branch:
   - master
   - dev
+  - stage
   event:
   - push
 
