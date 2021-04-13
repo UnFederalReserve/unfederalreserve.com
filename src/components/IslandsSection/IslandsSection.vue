@@ -13,7 +13,7 @@
           |  and wrapped it in a best-in-class regulatory framework that delivers its
           |  middle-market clients a B2B lending, cash reporting, and overnight
           |  lending/borrowing utility tool. We offer the security of immutable records,
-          |  near an instantaneous settlement, and encryption well beyond what the
+          |  near instantaneous settlement, and encryption well beyond what the
           |  largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
