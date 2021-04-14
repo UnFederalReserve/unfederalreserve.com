@@ -1,7 +1,7 @@
 <template lang="pug">
   section.MoreAboutUsSection.more-about-us
     h2 About Us
-    p Since its founding, unFederalReserve.com has been focused on transparency,
+    p Since its founding, unfederalreserve.com has been focused on transparency,
       |  efficiency, and professionalism. Our goal is to exceed clients' expectations
       |  as they enjoy seamless lending and borrowing experiences. Please reach out
       |  to learn more about the unFederalReserve management team, the company, and
