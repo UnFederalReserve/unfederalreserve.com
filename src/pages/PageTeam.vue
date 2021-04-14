@@ -33,9 +33,9 @@ export default {
           image: 'team/howard100x100.png',
           description: '<p> Howard Krieger currently serves as co-founder and CEO of UnFederalReserve. </p>'
               + '<p>Prior to founding UnFederalReserve, Krieger served as Managing Director at CBIZ Valuation Group, Valuation Director at '
-              + 'WithumSmith+Brown was also a Senior Manager at one of the Big 4 Accounting Firms. Krieger is well-versed in intangible business '
+              + 'WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms. Krieger is well-versed in intangible business '
               + 'valuation, intellectual property valuation, financial modeling, valuation of equity-participating instruments, and exotic financial assets '
-              + 'and liabilities. Krieger holds a bachelor\'s degree in business administration from James Madison University and an MBA with a '
+              + 'and liabilities. Krieger holds a bachelor\'s degree in business administration from James Madison University and a MBA with a '
               + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
