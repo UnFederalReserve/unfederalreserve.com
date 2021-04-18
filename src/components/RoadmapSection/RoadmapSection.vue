@@ -57,7 +57,7 @@ export default {
   max-width: 1010px
   padding-left: 15px
   padding-right: 15px
-  height: 1700px
+  height: 2000px
   margin: 0 auto
   margin-top: 200px
   background-image: url('~images/roadmap.svg')
