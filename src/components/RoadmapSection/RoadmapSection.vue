@@ -19,23 +19,26 @@
       .roadmap-item
         h4 Q2 2021
         ul
-          li Reserve Lending® Alpha testing and product launch
+          li Reserve Lending® Alpha testing and product launch? with single-side staking and Chainlink® price oracle integration
           li Voting on Tier 1 exchange listing and key relationships
-          li Develop Treasurer’s Toolkit (KYC Chain/SelfKey®, treasury management dashboards, and Maker/Taker protocols)
-          li Website refresh and brand development
+          li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin Marker/Taker protocols)
     .roadmap-row
       .roadmap-item
         h4 Q3 2021
         ul
-          li Large scale adoption of eRSDL as Treasury stop-gap for certain asset-backed lenders
-          li Voting on CeFI size participants limits if needed
-          li Alignment with international lending/borrower restrictions to open cross-border opportunities
+          li MVP with Partner non-bank lenders
+          li Voting on CeFI size participants size limits, if needed
+          li Apply for multi-jurisdictional regularity licenses to open cross-border opportunities
+          li Launch Lightning product (low rate, unsecured credit) as safe harbor for commercial lending
     .roadmap-row
       .roadmap-item
         h4 Q4 2021
         ul
           li Fully decentralized platform providing capital to lenders in need, and providing returns for folks with excess capital
-          li Asset class discussion on break-out of more discrete, lender asset types to refine pricing
+          li Asset class discussion on break out of more discrete, lender asset-types to refine pricing
+          li Secure insurance for banking product
+          li CMDash product or integration with Treasury tool provider
+          li Institute sponsor-bank model for expanding user base
 </template>
 
 <script>
