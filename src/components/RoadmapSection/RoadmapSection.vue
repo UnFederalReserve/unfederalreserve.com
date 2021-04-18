@@ -19,7 +19,7 @@
       .roadmap-item
         h4 Q2 2021
         ul
-          li Reserve Lending® Alpha testing and product launch? with single-side staking and Chainlink® price oracle integration
+          li Reserve Lending® Alpha testing and product launch, with single-side staking and Chainlink® price oracle integration
           li Voting on Tier 1 exchange listing and key relationships
           li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin Marker/Taker protocols)
     .roadmap-row
@@ -27,7 +27,7 @@
         h4 Q3 2021
         ul
           li MVP with Partner non-bank lenders
-          li Voting on CeFI size participants size limits, if needed
+          li Voting on CeFi participants’ size limits, if needed
           li Apply for multi-jurisdictional regularity licenses to open cross-border opportunities
           li Launch Lightning product (low rate, unsecured credit) as safe harbor for commercial lending
     .roadmap-row
