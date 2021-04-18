@@ -21,21 +21,21 @@
         ul
           li Reserve Lending® Alpha testing and product launch, with single-side staking and Chainlink® price oracle integration
           li Voting on Tier 1 exchange listing and key relationships
-          li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin Marker/Taker protocols)
+          li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin maker/taker protocols)
     .roadmap-row
       .roadmap-item
         h4 Q3 2021
         ul
           li MVP with Partner non-bank lenders
           li Voting on CeFi participants’ size limits, if needed
-          li Apply for multi-jurisdictional regularity licenses to open cross-border opportunities
+          li Apply for multi-jurisdictional regulatory licenses to open cross-border opportunities
           li Launch Lightning product (low rate, unsecured credit) as safe harbor for commercial lending
     .roadmap-row
       .roadmap-item
         h4 Q4 2021
         ul
           li Fully decentralized platform providing capital to lenders in need, and providing returns for folks with excess capital
-          li Asset class discussion on break out of more discrete, lender asset-types to refine pricing
+          li Asset class discussion on break out of more discrete lender asset-types to refine pricing
           li Secure insurance for banking product
           li CMDash product or integration with Treasury tool provider
           li Institute sponsor-bank model for expanding user base
