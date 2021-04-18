@@ -35,7 +35,7 @@
         h4 Q4 2021
         ul
           li Fully decentralized platform providing capital to lenders in need, and providing returns for folks with excess capital
-          li Asset class discussion on break out of more discrete, lender asset-types to refine pricing
+          li Asset class discussion on break out of more discrete lender asset-types to refine pricing
           li Secure insurance for banking product
           li CMDash product or integration with Treasury tool provider
           li Institute sponsor-bank model for expanding user base
