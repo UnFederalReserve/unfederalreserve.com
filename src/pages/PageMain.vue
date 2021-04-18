@@ -70,7 +70,7 @@ export default {
         {
           number: '05',
           title: 'Integrate',
-          text: 'Connect your balance sheet to CM-Dash(R) and all your liquidity sources and uses can be monitored on our simple to use the platform (Coming late 2021).',
+          text: 'Connect your balance sheet to CM-Dash(R) and all your liquidity sources and uses can be monitored on our simple to use the platform.',
         },
         {
           number: '06',
@@ -86,18 +86,12 @@ export default {
           name: 'Howard Krieger',
           title: 'Founder & CEO',
           image: 'team/howard100x100.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO, UnFederalReserve. '
-            + 'Krieger also serves as Managing Director, CBIZ Valuation Group (“CBIZ”), '
-            + 'where he specializes in the valuation of complex financial instruments including '
-            + 'crypto-currency loans, interest rate swaps, agency, and non-agency mortgage-backed '
-            + 'securities (MBS), and collateralized debt obligations (CDOs).</p>'
-            + '<p>Prior to founding UnFederalReserve, Krieger served as Valuation Director '
-            + 'at WithumSmith+Brown and KPMG and was also a Senior Manager at one of the Big 4 '
-            + 'Accounting Firms. Krieger is well-versed in intangible business valuation, '
-            + 'intellectual property valuation, financial modeling, valuation of equity-participating '
-            + 'instruments, and exotic financial assets and liabilities. Krieger holds a bachelor\'s '
-            + 'degree in business administration from James Madison University and an MBA with a '
-            + 'concentration in qualitative finance from Rutgers University.</p>',
+          description: '<p> Howard Krieger currently serves as co-founder and CEO of unFederalReserve. </p>'
+              + '<p>Prior to founding unFederalReserve, Krieger served as Managing Director at CBIZ Valuation Group, Valuation Director at '
+              + 'WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms. Krieger is well-versed in intangible business '
+              + 'valuation, intellectual property valuation, financial modeling, valuation of equity-participating instruments, and exotic financial assets '
+              + 'and liabilities. Krieger holds a bachelor\'s degree in business administration from James Madison University and a MBA with a '
+              + 'concentration in qualitative finance from Rutgers University.</p>',
           social: [
             {
               name: 'linkedin',

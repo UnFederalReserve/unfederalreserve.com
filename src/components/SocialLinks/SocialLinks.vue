@@ -6,8 +6,6 @@
       GroupIcon.svg-icon
     a(href="https://www.linkedin.com/company/unfederalreserve" target="_blank").link
       Linkedin.svg-icon
-    a(href="https://www.facebook.com/residualtoken" target="_blank").link
-      Facebook.svg-icon
     a(href="https://t.me/unfedres_staking" target="_blank").link
       Vector.svg-icon
     a(href="https://twitter.com/Unfederalreser1" target="_blank").link
