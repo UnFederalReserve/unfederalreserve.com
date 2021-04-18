@@ -28,7 +28,7 @@
         ul
           li MVP with Partner non-bank lenders
           li Voting on CeFI size participants size limits, if needed
-          li Apply for multi-juristictional regularity licenses to open cross-border opportunities
+          li Apply for multi-jurisdictional regularity licenses to open cross-border opportunities
           li Launch Lightning product (low rate, unsecured credit) as safe harbor for commercial lending
     .roadmap-row
       .roadmap-item
