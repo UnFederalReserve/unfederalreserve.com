@@ -114,8 +114,8 @@ export default {
           ],
         },
         {
-          name: 'Katy Atkinson',
-          title: 'Product Development Director - ForgeRock',
+          name: 'Kate Atkinson',
+          title: 'Senior Director',
           image: 'team/katy.png',
           social: [
             {
