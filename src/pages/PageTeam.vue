@@ -187,7 +187,7 @@ export default {
         },
         {
           name: 'Alan Alford, PhD',
-          title: 'Risk Pricing (Ecomonics)',
+          title: 'Risk Pricing (Economics)',
           image: 'team/alan.png',
           social: [
             {

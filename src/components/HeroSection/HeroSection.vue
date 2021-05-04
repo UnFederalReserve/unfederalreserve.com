@@ -11,18 +11,24 @@
         div.btn-container
           v-btn(href="https://app.unfederalreserve.com")
             | Stake
-          dropdown-menu(v-model="show", :closeOnClickOutside="closeOnClickOutside")
-            div.btn-drop
-              | Documents
-            div.menu-drop(slot="dropdown")
-              a(
-                :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-                target="_blank",
-              ) Whitepaper
-              a(
-                :href="require('docs/LitePaperRSDL.pdf')",
-                target="_blank",
-              ) Litepaper
+          a.btn-round(
+            :href="require('docs/LitePaperRSDL.pdf')",
+            target="_blank",
+          )
+            | Lending
+            div.new
+              | new
+          div.documentsContainer
+            | Our &nbsp
+            a(
+              :href="require('docs/LitePaperRSDL.pdf')",
+              target="_blank",
+            ) litepaper
+            | &nbsp and &nbsp
+            a(
+              :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
+              target="_blank",
+            ) whitepaper
 </template>
 
 
@@ -100,9 +106,11 @@ export default {
         span
           color: $blue
       .btn-container
+        width: 87%
         display: flex
         flex-wrap: wrap
         align-items: center
+        justify-content: center
         .v-btn:nth-child(1)
           margin-bottom: 20px
           height: 70px
@@ -113,60 +121,46 @@ export default {
             min-width: 145px
             span
               display: none
-        .dropdown
+        .btn-round
           margin-bottom: 20px
           width: 160px
-          .btn-drop
-            background: $blue-20
-            color: $blue
-            min-width:  220px
-            cursor: pointer
-            border-radius: 100px
-            height: 70px
-            box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)
-            align-items: center
-            display: inline-flex
-            justify-content: center
-            font-size: 24px
-            flex: 0 0 auto
-            font-weight: 600
-            letter-spacing: normal
-            outline: 0
-            position: relative
-            border: solid 3px $blue
-            &:hover
-              background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
-            &:after
-              display: inline-block
-              margin-left: .255em
-              vertical-align: .255em
-              content: ""
-              border-top: .3em solid
-              border-right: .3em solid transparent
-              border-bottom: 0
-              border-left: .3em solid transparent
-          .menu-drop
-            display: flex
-            flex-direction: column
-            border: 3px solid #8199d2
-            background: #EFF6FF
+          background: $blue-20
+          color: $blue
+          min-width:  220px
+          cursor: pointer
+          border-radius: 100px
+          height: 70px
+          box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)
+          align-items: center
+          display: inline-flex
+          justify-content: center
+          font-size: 24px
+          flex: 0 0 auto
+          font-weight: 600
+          letter-spacing: normal
+          outline: 0
+          position: relative
+          border: solid 3px $blue
+          &:hover
+            background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
+          .new
+            font-weight: 700
             position: absolute
-            margin-top: 20px
-            border-radius: 20px
-            min-width:  220px
-            a
-              font-size: 24px
-              color: $blue
-              font-weight: 600
-              padding: 10px 30px
-              &:nth-child(1)
-                padding-top: 30px
-                border-top-right-radius: 20px
-                border-top-left-radius: 20px
-              &:last-child
-                border-bottom-left-radius: 20px
-                border-bottom-right-radius: 20px
-                padding-bottom: 30px
-              &:hover
-                background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
+            top: -15px
+            right: 30px
+            padding: 0 7px
+            border-radius: 10px
+            background: #eff6ff
+            color: #d1797c
+            text-transform: uppercase
+            font-size: 18px
+        .documentsContainer
+          display: flex
+          justify-content: center
+          color: black
+          a
+            color: #2C4DC1
+            font-weight: 600
+            @media screen and (max-width: 576px)
+              color: white
 </style>
