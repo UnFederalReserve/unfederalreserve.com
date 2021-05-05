@@ -19,12 +19,12 @@
             div.new
               | new
           div.documentsContainer
-            | Our &nbsp
+            | Our &nbsp;
             a(
-              :href="require('docs/LitePaperRSDL.pdf')",
+              :href="https://lending.unfederalreserve.com/",
               target="_blank",
             ) litepaper
-            | &nbsp and &nbsp
+            | &nbsp; and &nbsp;
             a(
               :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
               target="_blank",
