@@ -12,7 +12,7 @@
           v-btn(href="https://app.unfederalreserve.com")
             | Stake
           a.btn-round(
-            :href="require('docs/LitePaperRSDL.pdf')",
+            href="https://lending.unfederalreserve.com/",
             target="_blank",
           )
             | Lending
@@ -21,7 +21,7 @@
           div.documentsContainer
             | Our &nbsp;
             a(
-              :href="https://lending.unfederalreserve.com/",
+              :href="require('docs/LitePaperRSDL.pdf')",
               target="_blank",
             ) litepaper
             | &nbsp; and &nbsp;
