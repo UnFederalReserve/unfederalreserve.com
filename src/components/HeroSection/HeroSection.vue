@@ -143,6 +143,8 @@ export default {
           border: solid 3px $blue
           &:hover
             background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
+            .new
+              background: linear-gradient(180deg, #eff6ff 0%, #eff6ff 0.01%, #dfe7ff 100%)
           .new
             font-weight: 700
             position: absolute
@@ -151,7 +153,7 @@ export default {
             padding: 0 7px
             border-radius: 10px
             background: #eff6ff
-            color: #d1797c
+            color: #F9762A
             text-transform: uppercase
             font-size: 18px
         .documentsContainer
@@ -161,6 +163,8 @@ export default {
           a
             color: #2C4DC1
             font-weight: 600
+            &:hover
+              text-decoration: underline
             @media screen and (max-width: 576px)
               color: white
 </style>
