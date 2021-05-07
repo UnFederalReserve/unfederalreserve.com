@@ -46,7 +46,7 @@
         .footer-content-row__more
           h5 More
           a(
-            href="https://info.uniswap.org/token/0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
+            href="https://v2.info.uniswap.org/token/0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
             target="_blank",
           ) Buy on Uniswap
       .all-rights
