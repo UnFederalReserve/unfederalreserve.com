@@ -1,5 +1,6 @@
 <template lang="pug">
   .TheHeaderMenu.menu
+    slot(name="additionalItem")
     router-link(
       v-for="(item, i) in menu",
       :key="i",
