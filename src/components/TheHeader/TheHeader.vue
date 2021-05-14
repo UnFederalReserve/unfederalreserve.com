@@ -7,6 +7,11 @@
         TheHeaderMenu.header-menu(
           :menu="menu"
         )
+          template(v-slot:additionalItem)
+            router-link(
+              :to="{name: 'home'}"
+              @click.native="onLogoClick"
+            ) Home
         TheHeaderTogglerBtn(
           @click.native="togglerValue = !togglerValue",
           :value="togglerValue",
@@ -45,10 +50,6 @@ export default {
   computed: {
     menu() {
       return [
-        {
-          path: 'home',
-          name: 'Home',
-        },
         {
           path: 'home',
           name: 'How it works',
