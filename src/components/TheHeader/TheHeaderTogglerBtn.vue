@@ -18,18 +18,30 @@ export default {
 
 <style lang="sass" scoped>
 @import '~Styles/_variables'
+
+.header
+  .fixed
+    .navbar-toggler
+      top: 26px
+      span
+        background: #042751
+        &:before,
+        &:after
+          background: #042751
+
 .navbar-toggler
   position: absolute
   right: 15px
-  top: 20px
-  width: 20px
-  height: 20px
+  top: 22px
+  width: 32px
+  height: 22px
   outline: none
+  transition: 0.3s
   z-index: 2
   @media screen and (min-width: 992px)
     display: none
   span
-    transition: background 0s 0.2s
+    transition: 0.3s
     display: block
     position: absolute
     top: 50%
@@ -37,8 +49,8 @@ export default {
     left: 0px
     right: 0px
     height: 3px
-    border-radius: 2px
-    background: $secondary
+    border-radius: 6px
+    background: #fff
     &:before,
     &:after
       position: absolute
@@ -46,25 +58,25 @@ export default {
       left: 0
       width: 100%
       height: 3px
-      border-radius: 2px
-      background-color: $secondary
+      border-radius: 6px
+      background-color: #fff
       content: ""
     &:before
-      top: -7px
-      transition: transform 0.3s ease-out, top 0.3s ease 0.2s
+      top: -9px
+      transition: 0.3s
       transform: rotate(0deg)
     &:after
-      bottom: -7px
-      transition: transform 0.3s ease-out, bottom 0.3s ease 0.2s
+      bottom: -9px
+      transition: 0.3s
       transform: rotate(0deg)
 
 .navbar-toggler.is_open
   span
-    background: none
+    background: none!important
     transition: background 0s 0.1s
     &:before,
     &:after
-      background-color: $periwinkle
+      background-color: #748DE3!important
     &:before
       top: 0
       transform: rotate(45deg)
