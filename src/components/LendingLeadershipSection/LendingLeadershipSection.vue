@@ -20,8 +20,12 @@
             .leadership-item__name Howard Krieger
             .leadership-item__about
               p Howard Krieger currently serves as co-founder and CEO of unFederalReserve.
-              p Prior to founding unFederalReserve, Krieger served as Managing Director at CBIZ Valuation Group, Valuation Director at WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms. 
-              p Krieger is well-versed in intangible business valuation, intellectual property valuation, financial modeling, valuation of equity-participating instruments, and exotic financial assets and liabilities. Krieger holds a bachelor's degree in business administration from James Madison University and a MBA with a concentration in qualitative finance from Rutgers University.
+              p Prior to founding unFederalReserve, Krieger served as Managing Director at CBIZ Valuation Group, 
+                | Valuation Director at WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms. 
+              p Krieger is well-versed in intangible business valuation, intellectual property valuation, financial modeling, 
+                | valuation of equity-participating instruments, and exotic financial assets and liabilities. 
+                | Krieger holds a bachelor's degree in business administration from James Madison University 
+                | and a MBA with a concentration in qualitative finance from Rutgers University.
           .leadership-item
             .leadership-item__img
               a.leadership-item__social
@@ -37,9 +41,13 @@
             .leadership-item__position Founder & CTO
             .leadership-item__name Ryan Medlin
             .leadership-item__about
-              p Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist whose most recent success was the sale of his proximity tracking and measurement company, Datasnap.io, to Neustar in 2015.
-              p Medlin stayed with the company and led a team of engineers to build out Neustar's IoT Identity initiatives. IoT Identity improved upon already existing public key infrastructure (PKI) by providing cryptography-based policy enforcement and identity management in a secure, decentralized architecture.
-              p The IoT Identity project became the foundation for building out additional blockchain and DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.
+              p Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist whose most 
+                | recent success was the sale of his proximity tracking and measurement company, Datasnap.io, to Neustar in 2015.
+              p Medlin stayed with the company and led a team of engineers to build out Neustar's IoT Identity initiatives. 
+                | IoT Identity improved upon already existing public key infrastructure (PKI) by providing 
+                | cryptography-based policy enforcement and identity management in a secure, decentralized architecture.
+              p The IoT Identity project became the foundation for building out additional blockchain 
+                | and DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.
         .leadership-more
           a.btn-rounded.btn.btn-tsp.btn-default Show More
       .bottom-info

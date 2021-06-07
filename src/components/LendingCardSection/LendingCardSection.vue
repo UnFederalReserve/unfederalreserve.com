@@ -26,7 +26,8 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Claim Receipt
-                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt for the portion of assets being supplied to the asset pool.
+                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt 
+                    | for the portion of assets being supplied to the asset pool.
                 .card-info__right
                   BaseImage.eth-icon-2(
                     :src="require('images/spa-icon-2.svg')",
@@ -83,7 +84,8 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Borrow assets
-                  p Enabling collateral creates “Borrowing Power” which is directly correlated to the amount of collateral provided on the supply side.
+                  p Enabling collateral creates “Borrowing Power” which is directly correlated to 
+                    | the amount of collateral provided on the supply side.
                 .card-info__right
                   BaseImage.eth-icon-6(
                     :src="require('images/spa-icon-6.svg')",
@@ -98,7 +100,8 @@
                         alt="icon",
                       )
                     span Liquidation Risks
-                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, Reserve Lending® exchanges the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
+                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, Reserve Lending® exchanges 
+                    | the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
                 .card-info__right
                   BaseImage.eth-icon-7(
                     :src="require('images/spa-icon-7.svg')",

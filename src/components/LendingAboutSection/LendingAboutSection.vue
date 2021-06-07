@@ -4,8 +4,11 @@
       h2.s-title
         span About us
       .s-about__text
-        p Since its founding, unfederalreserve.com has been focused on transparency, efficiency, and professionalism. 
-        p Our goal is to exceed clients' expectations as they enjoy seamless lending and borrowing experiences. Please reach out to learn more about the unFederalReserve management team, the company, and the additional services we provide.
+        p Since its founding, unfederalreserve.com has been focused on transparency, 
+          | efficiency, and professionalism. 
+        p Our goal is to exceed clients' expectations as they enjoy seamless lending and borrowing experiences. 
+          | Please reach out to learn more about the unFederalReserve management team, 
+          | the company, and the additional services we provide.
 </template>
 
 <script>
