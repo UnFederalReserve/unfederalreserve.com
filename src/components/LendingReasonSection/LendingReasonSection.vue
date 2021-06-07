@@ -302,6 +302,8 @@ export default {
       display: none
   .s-title
     margin-bottom: 63px
+    @media screen and (max-width: 991px)
+      margin-bottom: 50px
 
 .rsn-wrap
   display: flex
@@ -321,6 +323,11 @@ export default {
   background: rgba(0, 0, 0, 0.11)
   height: 93px
   margin-bottom: 20px
+  @media screen and (max-width: 991px)
+    height: 73px
+    margin-bottom: 12px
+  @media screen and (max-width: 374px)
+    height: 97px
 
 .rsn-left-item
   display: flex
@@ -342,6 +349,8 @@ export default {
     display: flex
     align-items: center
     margin-right: 29px
+    @media screen and (max-width: 991px)
+      margin-right: 18px
     @media screen and (max-width: 400px)
       margin-right: 10px
     @media screen and (max-width: 374px)
@@ -369,6 +378,7 @@ export default {
   letter-spacing: 0.01em
   color: #FFFFFF
   font-style: italic
+  margin-top: -10px
   @media screen and (max-width: 991px)
     margin-top: 34px
 
@@ -377,7 +387,7 @@ export default {
   box-shadow: 0px 4px 25px rgba(5, 35, 95, 0.45)
   border-radius: 26px
   position: relative
-  margin-top: 60px
+  margin-top: 53px
   padding: 40px 50px 34px 63px
   display: flex
   align-items: center
@@ -390,6 +400,7 @@ export default {
     flex-direction: column
     text-align: center
     padding: 40px 15px 30px 15px
+    margin-top: 22px
   &__icon
     position: absolute
     top: 27px
@@ -418,7 +429,7 @@ export default {
     color: #1A2D86
     margin-bottom: 8px
     @media screen and (max-width: 991px)
-      margin-bottom: 16px
+      margin-bottom: 20px
 
 .slider-arrows
   position: absolute

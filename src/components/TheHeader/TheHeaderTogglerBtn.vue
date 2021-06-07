@@ -31,8 +31,8 @@ export default {
 
 .navbar-toggler
   position: absolute
-  right: 15px
-  top: 22px
+  right: 24px
+  top: 38px
   width: 32px
   height: 22px
   outline: none
@@ -40,6 +40,8 @@ export default {
   z-index: 2
   @media screen and (min-width: 992px)
     display: none
+  @media screen and (max-width: 374px)
+    right: 15px
   span
     transition: 0.3s
     display: block

@@ -20,7 +20,7 @@ export default {
 <style lang="sass" scoped>
 
 .s-about
-  padding: 0 0 160px
+  padding: 0 0 133px
   position: relative
   &::before
     @media screen and (max-width: 991px)
@@ -33,7 +33,7 @@ export default {
       background: url('~images/figure.svg') no-repeat center
       background-size: cover
   @media screen and (max-width: 991px)
-    padding: 0 0 100px
+    padding: 0 0 75px
   &__text
     text-align: center
     font-weight: 500
@@ -43,6 +43,8 @@ export default {
     max-width: 730px
     margin: 0 auto
     position: relative
+    @media screen and (max-width: 991px)
+      padding: 0 10px
     &::before
       content: ""
       position: absolute
@@ -58,6 +60,8 @@ export default {
   .s-title
     margin-bottom: 48px
     position: relative
+    @media screen and (max-width: 991px)
+      font-size: 32px
     span
       position: relative
       z-index: 2

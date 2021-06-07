@@ -120,6 +120,9 @@ export default {
     align-items: center
     justify-content: center
     padding: 10px
+    &:last-child
+      @media screen and (max-width: 991px)
+        margin-bottom: 30px
     span
       color: #748de3
     ul
@@ -131,4 +134,9 @@ export default {
   background: rgba(0, 0, 0, 0.11)
   height: 93px
   margin-bottom: 20px
+  @media screen and (max-width: 991px)
+    height: 73px
+    margin-bottom: 12px
+  @media screen and (max-width: 374px)
+    height: 97px
 </style>

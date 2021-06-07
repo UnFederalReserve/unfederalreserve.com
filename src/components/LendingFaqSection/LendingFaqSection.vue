@@ -69,10 +69,10 @@ export default {
 <style lang="sass" scoped>
 
 .s-faq
-  padding: 0 0 215px
+  padding: 0 0 210px
   @media screen and (max-width: 991px)
     padding-bottom: 86px
   .s-title
-    margin-bottom: 37px
+    margin-bottom: 32px
 
 </style>

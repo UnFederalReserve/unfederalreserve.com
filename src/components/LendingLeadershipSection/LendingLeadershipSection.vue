@@ -97,12 +97,16 @@ export default {
       bottom: -630px
       left: -65px
   .s-title
-    margin-bottom: 98px
+    margin-bottom: 83px
+    @media screen and (max-width: 991px)
+      font-size: 32px
+      margin-bottom: 98px
 
 .leadership-wrap
   margin-bottom: 130px
   @media screen and (max-width: 991px)
     margin-bottom: 100px
+    padding: 0 10px
   
 .leadership-items
   display: flex
@@ -120,12 +124,12 @@ export default {
   position: relative
   width: calc(50% - 30px)
   margin-bottom: 42px
-  padding: 74px 40px 37px 40px
+  padding: 74px 40px 13px 40px
   @media screen and (max-width: 991px)
     width: 100%
     margin-bottom: 98px
   @media screen and (max-width: 374px)
-    padding: 74px 20px 37px 20px
+    padding: 74px 20px 13px 20px
   &:last-child
     @media screen and (max-width: 991px)
       margin-bottom: 32px
@@ -165,6 +169,7 @@ export default {
     font-size: 16px
     line-height: 170%
     letter-spacing: 0.01em
+    margin-bottom: 8px
     color: #FFFFFF
   &__name
     font-weight: 700
@@ -181,7 +186,7 @@ export default {
       line-height: 180%
       letter-spacing: 0.01em
       color: #FFFFFF
-      margin-bottom: 20px
+      margin-bottom: 25px
 
 .leadership-more
   text-align: center
@@ -201,9 +206,11 @@ export default {
     text-align: center
     letter-spacing: 0.01em
     color: #FFFFFF
-    margin-bottom: 30px
+    margin-bottom: 35px
+    margin-right: 75px
     @media screen and (max-width: 991px)
       font-size: 40px
+      margin-right: 0
     span
       margin-left: 18px
       @media screen and (max-width: 991px)
@@ -220,5 +227,7 @@ export default {
     margin: 0 auto 36px
     @media screen and (max-width: 991px)
       margin-bottom: 52px
-
+    @media screen and (max-width: 767px)
+      max-width: 261px
+      width: 100%
 </style>

@@ -66,6 +66,8 @@ export default {
   &.is-active
     .accordion-item__title-wrap
       padding-bottom: 17px
+      @media screen and (max-width: 991px)
+        padding-bottom: 10px
     .accordion-item__arrow
       transform: rotate(180deg)
       img
@@ -81,7 +83,7 @@ export default {
     margin-right: 10px
   &__title-wrap
     display: flex
-    align-items: center
+    align-items: flex-start
     justify-content: space-between
     padding: 26px 15px
     cursor: pointer
@@ -92,6 +94,7 @@ export default {
     display: flex
     align-items: center
     transition: 0.3s
+    margin-top: 17px
   &__details
     overflow: hidden
     font-weight: 500
@@ -102,6 +105,8 @@ export default {
     max-width: 783px
     width: 100%
     padding-left: 15px
+    @media screen and (max-width: 991px)
+      padding-left: 9px
   &__details-inner
     padding-bottom: 39px
     @media screen and (max-width: 991px)

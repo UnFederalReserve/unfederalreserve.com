@@ -8,10 +8,10 @@
           :menu="menu"
         )
           template(v-slot:additionalItem)
-            router-link(
-              :to="{name: 'home'}"
-              @click.native="onLogoClick"
-            ) Home
+            //- router-link(
+            //-   :to="{name: 'home'}"
+            //-   @click.native="onLogoClick"
+            //- ) Home
         a.header-btn Get Started
         TheHeaderTogglerBtn(
           @click.native="togglerValue = !togglerValue",
@@ -206,7 +206,7 @@ export default {
     @media screen and (max-width: 1199px)
       padding-top: 28px
     @media screen and (max-width: 767px)
-      padding-top: 10px
+      padding-top: 30px
       padding-bottom: 10px
     .header-menu
       @media screen and (max-width: 991px)

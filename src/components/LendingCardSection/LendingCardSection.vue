@@ -152,6 +152,8 @@ export default {
   position: relative
   @media screen and (max-width: 1199px)
     padding-bottom: 73px
+  @media screen and (max-width: 991px)
+    padding-bottom: 96px
   &::before
     content: ""
     position: absolute
@@ -164,11 +166,16 @@ export default {
     background-size: cover
     @media screen and (max-width: 1199px)
       top: -388px
+    @media screen and (max-width: 991px)
+      top: -627px
   
 .s-title
   margin-bottom: 105px
+  font-size: 42px
   @media screen and (max-width: 1199px)
     margin-bottom: 76px
+  @media screen and (max-width: 991px)
+    margin-bottom: 68px
 
 .card-items
   display: flex
@@ -223,6 +230,9 @@ export default {
     padding: 0 30px 30px 30px
     position: relative
     margin-bottom: 34px
+    @media screen and (max-width: 991px)
+      padding-bottom: 18px
+      margin-bottom: 28px
     &::after
       content: ""
       position: absolute
@@ -245,6 +255,7 @@ export default {
     margin-bottom: 4px
     @media screen and (max-width: 991px)
       font-size: 37px
+      margin-bottom: 8px
     @media screen and (max-width: 374px)
       font-size: 32px
       line-height: 140%
@@ -258,6 +269,8 @@ export default {
     color: #748DE3
     max-width: 344px
     margin: 0 auto
+    @media screen and (max-width: 767px)
+      max-width: 276px
   &__lists
     list-style-type: none
     margin: 0
@@ -268,9 +281,10 @@ export default {
   display: flex
   justify-content: space-between
   align-items: flex-start
-  margin-bottom: 33px
+  margin-bottom: 30px
   @media screen and (max-width: 991px)
     padding: 0 30px
+    margin-bottom: 34px
   &.card-accent
     padding: 12px 35px 14px 55px 
     background: linear-gradient(90deg, rgba(229, 55, 55, 0.22) 0%, rgba(183, 52, 52, 0.11) 92.71%)
@@ -326,7 +340,7 @@ export default {
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 35px 42px 36px 48px
+  padding: 35px 42px 30px 48px
   @media screen and (max-width: 1199px)
     padding: 29px 35px 30px 48px
 

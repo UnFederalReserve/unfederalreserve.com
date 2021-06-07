@@ -64,6 +64,7 @@ export default {
     width: calc(50% - 24px)
   @media screen and (max-width: 767px)
     width: 100%
+    margin: 0 0 62px
   &:hover
     .info-item__inner
       background: linear-gradient(180deg, #0D32A8 0%, #1A2B89 100%)
@@ -79,7 +80,7 @@ export default {
           fill: #fff
   &__video-img
     position: absolute
-    top: -20px
+    top: -30px
     max-width: 237px
     width: 100%
     left: 50%
@@ -91,7 +92,7 @@ export default {
   &__inner
     background: rgba(0, 0, 0, 0.11)
     border-radius: 25px
-    padding: 177px 30px 20px 30px
+    padding: 177px 24px 20px 30px
     display: flex
     flex: 1
     flex-direction: column
@@ -99,6 +100,8 @@ export default {
     border: 2px solid transparent
     @media screen and (max-width: 1199px)
       padding: 177px 15px 20px 27px
+    @media screen and (max-width: 991px)
+      padding-top: 172px
   &__title
     font-weight: bold
     font-size: 22px
@@ -124,6 +127,8 @@ export default {
     display: flex
     align-items: center
     position: relative
+    @media screen and (max-width: 767px)
+      margin-right: 18px
     &::before
       content: ""
       position: absolute

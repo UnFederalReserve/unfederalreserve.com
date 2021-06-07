@@ -22,7 +22,7 @@ export default {
 <style lang="sass" scoped>
 
 .s-news
-  padding: 0 0 220px
+  padding: 0 0 208px
   text-align: center
   position: relative
   &::before
@@ -42,6 +42,7 @@ export default {
       top: -40px
   .s-title
     margin-bottom: 37px
+    font-size: 42px
 
 .news-wrap
   overflow: hidden

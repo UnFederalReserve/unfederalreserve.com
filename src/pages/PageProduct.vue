@@ -59,11 +59,11 @@ export default {
   color: #fff
 
 .s-top
-  padding: 146px 0 180px
+  padding: 146px 0 135px
   @media screen and (max-width: 1199px)
     padding: 126px 0 50px
   @media screen and (max-width: 991px)
-    padding-bottom: 100px
+    padding: 132px 0 102px
   &__info
     font-weight: 600
     font-size: 18px
@@ -71,6 +71,8 @@ export default {
     letter-spacing: 0.01em
     color: #FFFFFF
     margin-bottom: 32px
+    @media screen and (max-width: 767px)
+      margin-bottom: 38px
   &__right
     @media screen and (max-width: 991px)
       display: none
@@ -80,6 +82,8 @@ export default {
     @media screen and (max-width: 991px)
       margin-right: 0
       flex: 1
+    @media screen and (max-width: 767px)
+      padding-left: 9px
     p
       font-size: 16px
       line-height: 170%
@@ -98,5 +102,7 @@ export default {
   letter-spacing: 0.01em
   color: #FFFFFF
   margin-bottom: 36px
+  @media screen and (max-width: 767px)
+    margin-bottom: 24px
 
 </style>

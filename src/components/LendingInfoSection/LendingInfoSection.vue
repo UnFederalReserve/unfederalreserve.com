@@ -85,7 +85,7 @@ export default {
   @media screen and (max-width: 1199px)
     padding-bottom: 111px
   @media screen and (max-width: 991px)
-    padding: 55px 0 133px
+    padding: 55px 0 58px
   &::before
     content: ""
     position: absolute
@@ -111,11 +111,13 @@ export default {
   flex-wrap: wrap
   @media screen and (max-width: 1199px)
     margin: 0 -12px
+  @media screen and (max-width: 767px)
+    margin: 0
+    padding: 0 10px
+  @media screen and (max-width: 374px)
+    padding: 0
 .learn-more
   text-align: center
-  margin-top: -22px
-  @media screen and (max-width: 1199px)
-    margin-top: -35px
-
+  margin-top: -35px
 
 </style>
