@@ -3,7 +3,11 @@
     .s-container
       h2.s-title Latest news
       .news-wrap
-        a.twitter-timeline(href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw" data-height="600" data-width="100%" data-chrome="nofooter") Tweets by Unfederalreser1 
+        a.twitter-timeline(
+          href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw" 
+          data-height="600" 
+          data-width="100%" 
+          data-chrome="nofooter") Tweets by Unfederalreser1 
 
 </template>
 

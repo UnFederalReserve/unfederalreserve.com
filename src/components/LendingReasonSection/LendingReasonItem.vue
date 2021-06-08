@@ -19,7 +19,7 @@
       )
         ul
           li {{dataVal.value1}}  -  {{dataVal.value2}}
-          li {{dataVal.value3}} 
+          li {{dataVal.value3}}&nbsp;
             span - {{dataVal.value4}}
 </template> 
 
