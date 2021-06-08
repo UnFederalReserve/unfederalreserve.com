@@ -3,10 +3,12 @@
     .s-container
       h2.s-title Latest news
       .news-wrap
-        BaseImage.tw-post-img(
-          :src="require('images/tw-post-img.jpg')",
-          alt="image",
-        )
+        a.twitter-timeline(
+          href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw" 
+          data-height="600" 
+          data-width="100%" 
+          data-chrome="nofooter") Tweets by Unfederalreser1 
+
 </template>
 
 <script>
@@ -49,6 +51,8 @@ export default {
   border-radius: 15px
   display: inline-flex
   align-items: center
+  max-width: 700px
+  width: 100%
   img
     max-width: 100%
 

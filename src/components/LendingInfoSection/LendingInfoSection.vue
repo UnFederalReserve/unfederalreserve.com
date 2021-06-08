@@ -34,42 +34,42 @@ export default {
           img: require('images/video-preview.png'),
           title: "How To: Connect a Wallet",
           description: "Watch our tutorial about connecting a wallet",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 2,
           img: require('images/video-preview.png'),
           title: "How To: Supply an Asset",
           description: "Watch our tutorial about supplying an assets",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 3,
           img: require('images/video-preview.png'),
           title: "How to: Borrow an Asset",
           description: "Watch our tutorial about borrowing an assets",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 4,
           img: require('images/video-preview.png'),
           title: "How To: Repay a Borrow",
           description: "Watch our tutorial about repaying a borrow",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 5,
           img: require('images/video-preview.png'),
           title: "How To: Withdraw",
           description: "Watch our tutorial about withdrawing",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 6,
           img: require('images/video-preview.png'),
           title: "How To: Claim Rewards",
           description: "Watch our tutorial about claiming rewards",
-          videoSrc: "https://www.youtube.com/embed/NpEaa2P7qZI"
+          videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         }
       ]
     }
