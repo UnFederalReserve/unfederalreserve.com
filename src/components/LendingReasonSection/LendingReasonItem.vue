@@ -19,7 +19,7 @@
       )
         ul
           li {{dataVal.value1}}  -  {{dataVal.value2}}
-          li {{dataVal.value3}}
+          li {{dataVal.value3}} 
             span - {{dataVal.value4}}
 </template> 
 
@@ -67,6 +67,12 @@ export default {
     border-radius: 25px
     .row-style
       background-color: transparent
+    .rsn-item__data
+      ul 
+        li
+          span
+            color: #00ffc2
+            font-weight: 800
   &__top
     height: 260px
     text-align: center
