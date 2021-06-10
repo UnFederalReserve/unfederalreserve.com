@@ -70,9 +70,7 @@
           target="_blank",
         ) whitepaper
         |  , are available for review below, and please feel free to reach out with additional
-        |  questions or concerns you may have.&nbsp;
-        router-link.link-1(:to="{name: 'home', hash: '#get-in-touch'}") let us know
-        | .
+        |  questions or concerns you may have.
         ul.btn-container
           li
             a.v-btn(

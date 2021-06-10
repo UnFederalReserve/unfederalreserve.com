@@ -6,15 +6,14 @@
         h2 Warning:
           br
           | Navigating Uncharted Waters...
-        p We understand that the term "DeFi" gives rise to apprehension
-          |  out anonymous lenders and borrowers engaged in digital trading
-          |  whose only concern is to leverage their existing positions in the
-          |  crypto-verse.
-        p UnFederalReseve has selected premium elements of the crypto ecosystem
+        p We understand that the term "DeFi" gives rise to apprehension because anonymous
+          |  lenders and borrowers engage in digital trading whose only concern is to
+          |  leverage their existing positions in the crypto-verse.
+        p unFederalReserve has selected premium elements of the crypto ecosystem
           |  and wrapped it in a best-in-class regulatory framework that delivers its
           |  middle-market clients a B2B lending, cash reporting, and overnight
           |  lending/borrowing utility tool. We offer the security of immutable records,
-          |  near an instantaneous settlement, and encryption well beyond what the
+          |  near instantaneous settlement, and encryption well beyond what the
           |  largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
