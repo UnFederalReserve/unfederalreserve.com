@@ -39,7 +39,7 @@ export default {
         {
           id: 3,
           active: false,
-          title: 'How I can Capitalize?',
+          title: 'How can I reduce my gas fee?',
           details: `This may be because the ethereum network is experiencing heavy traffic at the time of you 
             sending your transaction through, this may result in higher gas fees being displayed 
             and longer duration for your transaction to come through.`        

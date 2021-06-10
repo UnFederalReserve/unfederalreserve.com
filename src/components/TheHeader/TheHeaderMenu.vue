@@ -31,7 +31,7 @@ export default {
   a
     margin: 0 21px
     color: $menu !important
-    font-weight: 600 !important
+    font-weight: 500 !important
     letter-spacing: 0.01em
     font-size: 16px!important
     opacity: 1!important
