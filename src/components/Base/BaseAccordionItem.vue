@@ -63,6 +63,8 @@ export default {
 
 .accordion-item
   border-bottom: 1px solid #25298B
+  li
+    margin-bottom: 20px
   &.is-active
     .accordion-item__title-wrap
       padding-bottom: 17px
@@ -111,4 +113,5 @@ export default {
     padding-bottom: 39px
     @media screen and (max-width: 991px)
       padding-bottom: 26px
+
 </style>

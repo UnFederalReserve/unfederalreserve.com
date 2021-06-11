@@ -28,6 +28,14 @@ export default {
         &:before,
         &:after
           background: #042751
+  .black-header
+    &:not(.fixed)
+      .navbar-toggler
+        span
+          background: #042751
+          &:before,
+          &:after
+            background: #042751
 
 .navbar-toggler
   position: absolute

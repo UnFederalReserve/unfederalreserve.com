@@ -48,8 +48,6 @@
                 | cryptography-based policy enforcement and identity management in a secure, decentralized architecture.
               p The IoT Identity project became the foundation for building out additional blockchain 
                 | and DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.
-        .leadership-more
-          a.btn-rounded.btn.btn-tsp.btn-default Show More
       .bottom-info
         h2.bottom-info__title 
           BaseImage.earn-icon(
@@ -57,21 +55,19 @@
             alt="earn-icon",
           )
           span Ready to earn?
-        p Go to Reserve Lending® platform and start supplying asstets today
-        a.btn-rounded.btn-with-arrow.btn-gradient Get Started
-          BaseImage.arrow-right(
-            :src="require('images/arrow-right.svg')",
-            alt="arrow-right",
-          )
+        p Go to ReserveLending® platform and start supplying asstets today
+        BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :withArrow="true")
 
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
+import BaseBtn from 'Components/Base/BaseBtn';
 export default {
   name: "LendingLeadershipSection",
   components: {
-    BaseImage
+    BaseImage,
+    BaseBtn
   }
 }
 </script>
@@ -99,7 +95,7 @@ export default {
   .s-title
     margin-bottom: 83px
     @media screen and (max-width: 991px)
-      font-size: 32px
+      font-size: 38px
       margin-bottom: 98px
 
 .leadership-wrap
@@ -209,8 +205,10 @@ export default {
     margin-bottom: 35px
     margin-right: 75px
     @media screen and (max-width: 991px)
-      font-size: 40px
+      font-size: 38px
       margin-right: 0
+    @media screen and (max-width: 400px)
+      font-size: 28px
     span
       margin-left: 18px
       @media screen and (max-width: 991px)

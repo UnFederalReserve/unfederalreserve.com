@@ -2,6 +2,8 @@ const base = {
   urls: {
     frontend: process.env.FRONTEND_URL,
     hubspotForm: 'https://api.hsforms.com/submissions/v3/integration/submit',
+    lendingMain: process.env.LENDING_MAIN_URL,
+    docsMain: process.env.DOCS_MAIN_URL
   },
   staticDataPath: process.env.WEBPACK_DEV_SERVER ? '/staticdata' : '/static',
   seo: {

@@ -8,11 +8,7 @@
           :menu="menu"
         )
           template(v-slot:additionalItem)
-            //- router-link(
-            //-   :to="{name: 'home'}"
-            //-   @click.native="onLogoClick"
-            //- ) Home
-        a.header-btn Get Started
+        BaseBtn(classes="header-btn" text="Get Started")
         TheHeaderTogglerBtn(
           @click.native="togglerValue = !togglerValue",
           :value="togglerValue",
@@ -27,6 +23,7 @@
 <script>
 import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
+import BaseBtn from 'Components/Base/BaseBtn';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
 import logo from 'images/svg-icons/logo.svg';
 import TheHeaderMenu from './TheHeaderMenu';
@@ -36,6 +33,7 @@ export default {
   name: 'TheHeader',
   components: {
     BaseImage,
+    BaseBtn,
     TheHeaderMenu,
     NavigationDrawerMenu,
     TheHeaderTogglerBtn,
@@ -45,7 +43,7 @@ export default {
     return {
       scrollPosition: 0,
       isFixed: false,
-      togglerValue: false,
+      togglerValue: false
     };
   },
   computed: {
@@ -163,6 +161,10 @@ export default {
       ::v-deep .header-menu
         a
           color: $menu!important
+          &.router-link-active[aria-current]
+            color: #FFFFFF!important
+            &::before
+              opacity: 1
           &:hover 
             color: #fff!important
       .site-logo

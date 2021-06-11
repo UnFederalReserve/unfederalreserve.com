@@ -61,7 +61,7 @@ export default {
     margin-bottom: 48px
     position: relative
     @media screen and (max-width: 991px)
-      font-size: 32px
+      font-size: 38px
     span
       position: relative
       z-index: 2

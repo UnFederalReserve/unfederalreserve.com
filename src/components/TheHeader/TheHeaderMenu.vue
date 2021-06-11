@@ -1,20 +1,29 @@
 <template lang="pug">
   .TheHeaderMenu.menu
     slot(name="additionalItem")
-    router-link(
-      v-for="(item, i) in menu",
-      :key="i",
-      :to="{name: item.path, hash: item.hash}"
-    ) {{ item.name }}
+    router-link(to="/") Home
+    router-link(to="product") Lending
+    a(:href="linkDocs" target="_blank") Education Center
+    router-link(to="team") About Us
+    //- router-link(
+    //-   v-for="(item, i) in menu",
+    //-   :key="i",
+    //-   :to="{name: item.path, hash: item.hash}"
+    //- ) {{ item.name }}
 </template>
 
 <script>
-
+import CONFIG from 'Config';
 export default {
   name: 'TheHeaderMenu',
   props: {
     menu: Array,
   },
+  data() {
+    return {
+      linkDocs: CONFIG.urls.docsMain
+    }
+  }
 };
 </script>
 <style lang="sass" scoped>
@@ -61,8 +70,19 @@ export default {
   &.fixed
     .menu
       a
+        &.router-link-active[aria-current]
+          color: #3357CF!important
+          &::before
+            opacity: 1
+            background: #3357cf
         &:hover
           color: #3357CF!important
           &::before
             background: #3357CF!important
+  &.black-header
+    &:not(.fixed)
+      .header-menu.menu
+        a
+          &.router-link-active[aria-current]
+            color: #042751!important
 </style>
