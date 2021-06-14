@@ -10,11 +10,12 @@
       alt="chest",
       force,
     )
-    BaseImage.right-footer-rock(
-      :src="require('images/top-left-footer-rock.svg')",
-      alt="right-footer-rock",
-      force,
-    )
+    template(v-if="currentRouteName != 'product'")
+      BaseImage.right-footer-rock(
+        :src="require('images/top-left-footer-rock.svg')",
+        alt="right-footer-rock",
+        force,
+      )
     .footer-content
       .footer-content-row
         .footer-content-row__contacts.column
@@ -31,6 +32,7 @@
             :href="require('docs/LitePaperRSDL.pdf')",
             target="_blank",
           ) Lite paper
+          router-link(:to="{name: 'terms'}") Terms
         .footer-content-row__home.column
           h5 Home
           router-link(:to="{name: 'home', hash: '#how-it-works'}") How it works
@@ -60,6 +62,11 @@ import SocialLinks from 'Components/SocialLinks/SocialLinks';
 export default {
   name: 'TheFooter',
   components: { BaseImage, SocialLinks },
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    }
+  }
 };
 </script>
 

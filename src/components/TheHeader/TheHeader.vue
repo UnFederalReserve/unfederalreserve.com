@@ -8,10 +8,7 @@
           :menu="menu"
         )
           template(v-slot:additionalItem)
-            router-link(
-              :to="{name: 'home'}"
-              @click.native="onLogoClick"
-            ) Home
+        BaseBtn(classes="header-btn" text="Get Started" :link="link")
         TheHeaderTogglerBtn(
           @click.native="togglerValue = !togglerValue",
           :value="togglerValue",
@@ -26,15 +23,18 @@
 <script>
 import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
+import BaseBtn from 'Components/Base/BaseBtn';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
 import logo from 'images/svg-icons/logo.svg';
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
+import CONFIG from 'Config';
 
 export default {
   name: 'TheHeader',
   components: {
     BaseImage,
+    BaseBtn,
     TheHeaderMenu,
     NavigationDrawerMenu,
     TheHeaderTogglerBtn,
@@ -42,9 +42,10 @@ export default {
   },
   data() {
     return {
+      link: CONFIG.urls.lendingMain,
       scrollPosition: 0,
       isFixed: false,
-      togglerValue: false,
+      togglerValue: false
     };
   },
   computed: {
@@ -52,28 +53,20 @@ export default {
       return [
         {
           path: 'home',
-          name: 'How it works',
-          hash: '#how-it-works',
+          name: 'Home',
+        },
+        {
+          path: 'product',
+          name: 'Lending',
         },
         {
           path: 'home',
-          name: 'Whitepaper',
-          hash: '#whitepaper',
-        },
-        {
-          path: 'home',
-          name: 'Roadmap',
-          hash: '#roadmap',
+          name: 'Education Center'
         },
         {
           path: 'team',
           name: 'About us',
-        },
-        {
-          path: 'home',
-          name: 'Contact us',
-          hash: '#get-in-touch',
-        },
+        }
       ];
     },
     isBlackHeader() {
@@ -117,25 +110,76 @@ export default {
   top: 0
   z-index: 4
   left: 0
+  .header-btn
+    border: 2px solid #FFFFFF
+    border-radius: 35px
+    font-weight: 600
+    font-size: 14px
+    padding: 10px 21px 9px 21px
+    line-height: 21px
+    opacity: 1
+    white-space: nowrap
+    color: #FFFFFF
+    margin-left: 37px
+    @media screen and (max-width: 991px)
+      display: none
+    &:hover
+      background-color: #fff
+      border-color: #fff
+      color: #3357CF
   .general-wrap
     width: 100%
+    +mt(.3s)
     &.fixed
       position: fixed
       left: 0
       top: 0
       width: 100%
-      z-index: 3
+      z-index: 99
       background-color: #fff
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
-      +mt(.3s)
+      @media screen and (max-width: 991px)
+        box-shadow: none
+      .header-wrap
+        padding-top: 24px
+        padding-bottom: 24px
+        @media screen and (max-width: 991px)
+          padding-top: 15px
+          padding-bottom: 15px
+      .header-btn
+        color: #3357CF
+        border-color: #3357CF
+        &:hover
+          box-shadow: 0px 0px 0px 5px rgba(91, 123, 255, 0.24)
+          background: linear-gradient(180deg, #4382FF 0%, #2450DB 100%, #0433BF 100%)
+          color: #fff
+      .menu
+        a
+          &:hover
+            color: #3357CF!important
+            &::before
+              background: #3357CF!important
     &:not(.fixed)
       ::v-deep .header-menu
         a
-          color: #EEF6FF !important
+          color: $menu!important
+          &.router-link-active[aria-current]
+            color: #FFFFFF!important
+            &::before
+              opacity: 1
+          &:hover 
+            color: #fff!important
       .site-logo
         path
           fill: $white
     &.black-header
+      .header-btn
+        color: #3357CF
+        border-color: #3357CF
+        &:hover
+          box-shadow: 0px 0px 0px 5px rgb(91 123 255 / 24%)
+          background: linear-gradient(180deg, #4382FF 0%, #2450DB 100%, #0433BF 100%)
+          color: #fff
       &:not(.fixed)
         .site-logo
           path
@@ -144,6 +188,8 @@ export default {
           a
             color: #042751 !important
             opacity: 0.5
+            &::before
+              background: #042751
             &:hover
               opacity: 1
   &-wrap
@@ -151,7 +197,7 @@ export default {
     max-width: 1140px
     padding-left: 15px
     padding-right: 15px
-    padding-top: 20px
+    padding-top: 42px
     padding-bottom: 20px
     margin: 0 auto
     display: flex
@@ -161,8 +207,10 @@ export default {
     position: relative
     background-color: transparent
     +mt(.3s)
+    @media screen and (max-width: 1199px)
+      padding-top: 28px
     @media screen and (max-width: 767px)
-      padding-top: 10px
+      padding-top: 30px
       padding-bottom: 10px
     .header-menu
       @media screen and (max-width: 991px)
@@ -182,6 +230,8 @@ export default {
     img
       width: 100%
     @media screen and (max-width: 991px)
-      width: 155px
+      max-width: 250px
+      width: 100%
       height: 100%
+
 </style>

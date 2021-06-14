@@ -19,7 +19,7 @@
       .roadmap-item
         h4 Q2 2021
         ul
-          li Reserve Lending® Alpha testing and product launch, with single-side staking and Chainlink® price oracle integration
+          li ReserveLending® Alpha testing and product launch, with single-side staking and Chainlink® price oracle integration
           li Voting on Tier 1 exchange listing and key relationships
           li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin maker/taker protocols)
     .roadmap-row
