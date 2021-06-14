@@ -3,18 +3,18 @@
     section.s-top
       .s-container
         .s-top__left
-          h1.top-main-title Reserve Lending®
-          p Reserve Lending® is one of the leading protocols for lending and borrowing in the DeFi space. As an asset-liability DeFi lending tool and fork of Compound® protocol, Reserve Lending® stands out as one of the markets top secure algorithmic money market protocols.
-          .s-top__info Click the button below to access the Reserve Lending® platform and manage your account.
-          a.btn-rounded.btn-with-arrow.btn-white Get Started
-            BaseImage.arrow-right(
-              :src="require('images/arrow-right.svg')",
-              alt="arrow-right",
-            )
+          h1.top-main-title 
+            span Reserve
+            span Lending®
+          p ReserveLending® is one of the leading protocols for lending and borrowing in the DeFi space. 
+            | As an asset-liability DeFi lending tool and fork of Compound® protocol, 
+            | ReserveLending® stands out as one of the markets top secure algorithmic money market protocols.
+          .s-top__info Click the button below to access the ReserveLending® platform and manage your account.
+          BaseBtn(classes="btn-rounded btn-with-arrow btn-white" text="Get Started" :link="link" :withArrow="true")
         .s-top__right
           BaseImage.rl-img(
             :src="require('images/rl-img.png')",
-            alt="Reserve Lending",
+            alt="ReserveLending®",
           )
     LendingCardSection
     LendingReasonSection
@@ -28,6 +28,7 @@
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
+import BaseBtn from 'Components/Base/BaseBtn';
 import LendingCardSection from 'Components/LendingCardSection/LendingCardSection';
 import LendingReasonSection from 'Components/LendingReasonSection/LendingReasonSection';
 import LendingInfoSection from 'Components/LendingInfoSection/LendingInfoSection';
@@ -35,6 +36,7 @@ import LendingFaqSection from 'Components/LendingFaqSection/LendingFaqSection';
 import LendingNewsSection from 'Components/LendingNewsSection/LendingNewsSection';
 import LendingAboutSection from 'Components/LendingAboutSection/LendingAboutSection';
 import LendingLeadershipSection from 'Components/LendingLeadershipSection/LendingLeadershipSection';
+import CONFIG from 'Config';
 export default {
   name: 'PageProduct',
   components: {
@@ -45,7 +47,13 @@ export default {
     LendingFaqSection,
     LendingNewsSection,
     LendingAboutSection,
-    LendingLeadershipSection
+    LendingLeadershipSection,
+    BaseBtn
+  },
+  data() {
+    return {
+      link: CONFIG.urls.lendingMain
+    }
   }
 };
 </script>
@@ -102,7 +110,12 @@ export default {
   letter-spacing: 0.01em
   color: #FFFFFF
   margin-bottom: 36px
+  display: flex    
+  flex-wrap: wrap  
   @media screen and (max-width: 767px)
     margin-bottom: 24px
+    font-size: 38px
+  @media screen and (max-width: 400px)
+    font-size: 28px
 
 </style>

@@ -50,12 +50,12 @@ export default {
         {
           number: '01',
           title: 'Create an account',
-          text: 'Easily set up a Reserve Lending account from your desktop, laptop, or mobile device.',
+          text: 'Easily set up a ReserveLending® account from your desktop, laptop, or mobile device.',
         },
         {
           number: '02',
           title: 'Participate today',
-          text: 'For everyday DeFi users, experience the Reserve Lending advantage of superior customer service and support.',
+          text: 'For everyday DeFi users, experience the ReserveLending® advantage of superior customer service and support.',
         },
         {
           number: '03',

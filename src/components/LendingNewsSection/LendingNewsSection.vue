@@ -17,6 +17,18 @@ export default {
   name: "LendingNewsSection",
   components: {
     BaseImage
+  },
+  methods: {
+    initTw() {
+      const script = document.createElement('script');
+      script.async = true;
+      script.defer = true;
+      script.src = "https://platform.twitter.com/widgets.js";
+      document.querySelector('head').appendChild(script);
+    }
+  },
+  mounted() {
+    this.initTw()
   }
 }
 </script>
@@ -45,6 +57,8 @@ export default {
   .s-title
     margin-bottom: 37px
     font-size: 42px
+    @media screen and (max-width: 991px)
+      font-size: 38px
 
 .news-wrap
   overflow: hidden

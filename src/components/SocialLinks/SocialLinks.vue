@@ -14,6 +14,8 @@
       Reddit.svg-icon
     a(href="https://unfederalreserve.medium.com" target="_blank").link
       Medium.svg-icon
+    a(href="https://defipulse.com/defi-lending" target="_blank").link
+      Defi.svg-icon
 </template>
 
 <script>
@@ -25,6 +27,7 @@ import Twitt from 'images/svg-icons/twitt.svg';
 import Youtube from 'images/svg-icons/youtube.svg';
 import Medium from 'images/svg-icons/medium.svg';
 import Reddit from 'images/svg-icons/reddit.svg';
+import Defi from 'images/svg-icons/defi.svg';
 
 export default {
   name: 'SocialLinks',
@@ -37,6 +40,7 @@ export default {
     Youtube,
     Medium,
     Reddit,
+    Defi
   },
 };
 </script>
