@@ -11,7 +11,7 @@
         strong APY %
         ul
           li Supply  -  Borrow
-          li Cost of Loan  -  Rank
+          li Cost of Loan  -  Supply Rank
     .rsn-item__content
       .rsn-item__data.row-style(
         v-for="dataVal in data"
@@ -113,7 +113,7 @@ export default {
       margin: 0
       padding: 0
       li
-        font-size: 13px
+        font-size: 12px
         line-height: 22px
   &__data
     font-weight: 500

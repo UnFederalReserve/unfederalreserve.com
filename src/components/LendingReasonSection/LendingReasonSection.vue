@@ -41,11 +41,12 @@
                 )
               span ETH
           .rsn-right
-            LendingReasonItem(
-              v-for="item in items"
-              :key="item.id"
-              v-bind="item", 
-            )
+            .rsn-right-items
+              LendingReasonItem(
+                v-for="item in items"
+                :key="item.id"
+                v-bind="item", 
+              )
             .slider-arrows
               .arrow-prev(@click="changeSlide(-1)")
                 BaseImage.slider-arrow(
@@ -371,6 +372,10 @@ export default {
   display: flex
   flex: 1
   position: relative
+
+.rsn-right-items
+  display: flex
+  flex: 1
 
 .rsn-info
   text-align: right

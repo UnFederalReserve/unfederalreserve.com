@@ -29,7 +29,7 @@ export default {
   },
   data() {
     return {
-      linkDocs: CONFIG.urls.docsMain,
+      linkDocs: CONFIG.urls.docsMain + "/docs/instructions/",
       items: [
         {
           id: 1,
@@ -104,10 +104,13 @@ export default {
       display: none
   .s-title
     margin-bottom: 105px
+    z-index: 1
+    position: relative
     @media screen and (max-width: 991px)
       margin-bottom: 77px
       font-size: 38px
-
+  .s-container
+    position: static
 .info-items
   margin: 0 -15px
   display: flex
@@ -122,5 +125,7 @@ export default {
 .learn-more
   text-align: center
   margin-top: -35px
+  position: relative
+  z-index: 1
 
 </style>
