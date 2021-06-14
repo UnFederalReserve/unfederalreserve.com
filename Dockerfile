@@ -4,7 +4,7 @@ COPY . /app
 
 WORKDIR /app
 
-RUN . ./.env.dev && \
+RUN . ./.env.master && \
     yarn install && \
     yarn build && \
     mkdir -p dist/static/img/ && \
