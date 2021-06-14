@@ -11,6 +11,7 @@ steps:
   - name: build_dest
     path: /dest
   commands:
+  - . ./.env.master
   - yarn install
   - yarn build
   - rm -rf /dest/*
