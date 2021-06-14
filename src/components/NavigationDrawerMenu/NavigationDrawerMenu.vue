@@ -12,14 +12,22 @@
     ref="drawer"
   )
     .nav-drw-wrap
-      ul
-        li(
-          v-for="(item, i) in menu",
-          :key="i",
-        )
-          router-link.small-link(
-            :to="{name: item.path, hash: item.hash}"
-          ) {{ item.name }}
+      ul 
+        li
+          router-link(to="/") Home
+        li
+          router-link(to="product") Lending
+        li
+          a(:href="linkDocs" target="_blank") Education Center
+        li
+          router-link(to="team") About Us
+        //- li(
+        //-   v-for="(item, i) in menu",
+        //-   :key="i",
+        //- )
+        //-   router-link.small-link(
+        //-     :to="{name: item.path, hash: item.hash}"
+        //-   ) {{ item.name }}
       a.btn-rounded.btn-white Get Started
 </template>
 
@@ -27,6 +35,7 @@
 import { VNavigationDrawer } from 'vuetify/lib';
 import { scrollToTop } from 'Helpers/utils/view';
 import BaseImage from 'Components/Base/BaseImage';
+import CONFIG from 'Config';
 
 export default {
   name: 'NavigationDrawerMenu',
@@ -41,6 +50,7 @@ export default {
   data() {
     return {
       isRenderDrawerMenu: false,
+      linkDocs: CONFIG.urls.docsMain
     };
   },
   computed: {
@@ -105,6 +115,12 @@ export default {
           letter-spacing: 0.01em
           line-height: 100%
           position: relative
+          opacity: 1
+          &.router-link-active[aria-current]
+            color: #3357CF
+            &::before
+              opacity: 1
+              background: #3357CF
           &::before
             content: ""
             position: absolute
@@ -115,10 +131,6 @@ export default {
             bottom: -8px
             opacity: 0
             transition: 0.3s
-          &:hover
-            color: #3357CF
-            &::before
-              opacity: 1
   &--open
     width: 414px !important
   ::v-deep .v-navigation-drawer__border

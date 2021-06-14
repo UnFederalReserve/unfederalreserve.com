@@ -1,7 +1,7 @@
 <template lang="pug">
     section.s-reason
       .s-container
-        h2.s-title Top reason to go Reserve Lending®
+        h2.s-title Top reason to use ReserveLending®
         .rsn-wrap
           .rsn-left
             .rsn-left-item.empty
@@ -63,7 +63,7 @@
                   :src="require('images/slider-arrow.svg')",
                   alt="arrow",
                 )
-        .rsn-info *APY% displayed as of 18:20 UTC 05/20/2021
+        .rsn-info *APY% displayed as of 20:07 UTC 06/10/2021
         .earn
           .earn__icon
             BaseImage.earn-icon(
@@ -74,107 +74,107 @@
             h3.earn__title Earn APY right NOW
             p Connect you wallet and start using the best lending platform.
           .earn__right
-            a.btn-rounded.btn-with-arrow.btn-gradient Get started
-              BaseImage.arrow-right(
-                :src="require('images/arrow-right.svg')",
-                alt="arrow-right",
-              )
+            BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
 import LendingReasonItem from 'Components/LendingReasonSection/LendingReasonItem';
+import BaseBtn from 'Components/Base/BaseBtn';
+import CONFIG from 'Config';
 export default {
   name: 'LendingReasonSection',
   components: {
     BaseImage,
-    LendingReasonItem
+    LendingReasonItem,
+    BaseBtn
   },
   data() {
     return {
+      link: CONFIG.urls.lendingMain,
       items: [
         {
           id: 1,
           icon: require('images/rsn-logo-1.png'),
           name: "AAVE",
-          classes: "active",
+          classes: "hide",
           data: [
             {
               id: 1,
-              value1: "28.85%",
-              value2: "35.60%",
-              value3: "6.75%",
-              value4: "4th"
+              value1: "2.08%",
+              value2: "3.07%",
+              value3: "0.99%",
+              value4: "3rd"
             },
             {
               id: 2,
-              value1: "3.08%",
-              value2: "3.75%",
-              value3: "0.67%",
-              value4: "2nd"
+              value1: "2.25%",
+              value2: "3.28%",
+              value3: "1.03%",
+              value4: "3rd"
             },
             {
               id: 3,
-              value1: "5.07%",
-              value2: "6.78%",
-              value3: "1.71%",
-              value4: "3rd"
+              value1: "2.60%",
+              value2: "3.75%",
+              value3: "1.15%",
+              value4: "4th"
             },
             {
               id: 4,
-              value1: "5.07%",
-              value2: "6.78%",
-              value3: "1.71%",
-              value4: "3rd"
+              value1: "0.01%",
+              value2: "0.45%",
+              value3: "0.44%",
+              value4: "4th"
             },
             {
               id: 5,
-              value1: "5.07%",
-              value2: "6.78%",
-              value3: "1.71%",
-              value4: "3rd"
+              value1: "0.07%",
+              value2: "0.97%",
+              value3: "0.90%",
+              value4: "4th"
             }
           ]
         },
         {
           id: 2,
           icon: require('images/rsn-logo-2.svg'),
-          name: "Reserve Lending®",
-          classes: "hide",
+          name: "ReserveLending®",
+          classes: "active",
           data: [
             {
               id: 1,
-              value1: "12.67%",
-              value2: "12.77%",
-              value3: "0.10%",
+              value1: "12.17%",
+              value2: "12.70%",
+              value3: "0.53%",
               value4: "1st"
             },
             {
               id: 2,
-              value1: "11.73%",
-              value2: "12.63%",
-              value3: "0.90%",
+              value1: "9.83%",
+              value2: "12.35%",
+              value3: "2.52%",
               value4: "1st"
             },
             {
               id: 3,
-              value1: "11.73%",
-              value2: "12.63%",
-              value3: "0.90%",
+              value1: "10.70%",
+              value2: "12.48%",
+              value3: "1.78%",
               value4: "1st"
             },
             {
               id: 4,
-              value1: "11.73%",
-              value2: "12.63%",
-              value3: "0.90%",
+              value1: "6.04%",
+              value2: "11.73%",
+              value3: "5.69%",
               value4: "1st"
             },
             {
               id: 5,
-              value1: "11.73%",
-              value2: "12.63%",
-              value3: "0.90%",
+              value1: "4.32%",
+              value2: "11.42%",
+              value3: "7.10%",
               value4: "1st"
             }
           ]
@@ -187,81 +187,81 @@ export default {
           data: [
             {
               id: 1,
-              value1: "2.73%",
-              value2: "4.16%",
-              value3: "1.43%",
-              value4: "2nd"
+              value1: "1.50%",
+              value2: "3.08%",
+              value3: "1.58%",
+              value4: "4th"
             },
             {
               id: 2,
-              value1: "2.85%",
-              value2: "4.25%",
-              value3: "1.40%",
-              value4: "3rd"
+              value1: "1.85%",
+              value2: "3.42%",
+              value3: "1.57%",
+              value4: "4th"
             },
             {
               id: 3,
-              value1: "3.14%",
-              value2: "4.66%",
-              value3: "1.52%",
-              value4: "2nd"
+              value1: "2.72%",
+              value2: "4.33%",
+              value3: "1.61%",
+              value4: "3rd"
             },
             {
               id: 4,
-              value1: "3.14%",
-              value2: "4.66%",
-              value3: "1.52%",
-              value4: "2nd"
+              value1: "0.31%",
+              value2: "4.60%",
+              value3: "4.29%",
+              value4: "3rd"
             },
             {
               id: 5,
-              value1: "3.14%",
-              value2: "4.66%",
-              value3: "1.52%",
-              value4: "2nd"
+              value1: "0.13%",
+              value2: "2.95%",
+              value3: "2.82%",
+              value4: "3rd"
             }
           ]
         },
         {
           id: 4,
-          icon: require('images/rsn-logo-4.png'),
-          name: "Venus",
+          icon: require('images/rsn-logo-4.svg'),
+          name: "Cream",
           classes: "hide",
           data: [
             {
               id: 1,
-              value1: "17.1%",
-              value2: "20.72%",
-              value3: "3.62%",
-              value4: "3rd"
+              value1: "9.26%",
+              value2: "19.32%",
+              value3: "10.06%",
+              value4: "2nd"
             },
             {
               id: 2,
-              value1: "10.31%",
-              value2: "13.22%",
-              value3: "2.91%",
-              value4: "3th"
+              value1: "3.32%",
+              value2: "10.98%",
+              value3: "7.66%",
+              value4: "2nd"
             },
             {
               id: 3,
-              value1: "3.97%",
-              value2: "8.56%",
-              value3: "4.59%",
-              value4: "4th"
+              value1: "9.83%",
+              value2: "19.29%",
+              value3: "9.46%",
+              value4: "2nd"
             },
             {
               id: 4,
-              value1: "3.97%",
-              value2: "8.56%",
-              value3: "4.59%",
-              value4: "4th"
+              value1: "2.35%",
+              value2: "10.05%",
+              value3: "7.70%",
+              value4: "2nd"
             },
             {
               id: 5,
-              value1: "3.97%",
-              value2: "8.56%",
-              value3: "4.59%",
-              value4: "4th"
+              value1: "1.16%",
+              value2: "7.34%",
+              value3: "6.18%",
+              value4: "2nd"
             }
           ]
         }
@@ -304,6 +304,8 @@ export default {
     margin-bottom: 63px
     @media screen and (max-width: 991px)
       margin-bottom: 50px
+    @media screen and (max-width: 768px)
+      font-size: 38px
 
 .rsn-wrap
   display: flex

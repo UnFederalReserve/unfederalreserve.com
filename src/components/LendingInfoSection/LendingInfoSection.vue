@@ -9,7 +9,7 @@
           v-bind="item",
         )
       .learn-more
-        a.btn-rounded.btn-with-arrow.btn-tsp Learn More
+        a.btn-rounded.btn-with-arrow.btn-tsp(:href="linkDocs" target="_blank") Learn More
           BaseImage.arrow-right(
             :src="require('images/arrow-right.svg')",
             alt="arrow-right",
@@ -20,6 +20,7 @@
 
 import LendingInfoItem from 'Components/LendingInfoSection/LendingInfoItem';
 import BaseImage from 'Components/Base/BaseImage';
+import CONFIG from 'Config';
 export default {
   name: "LendingInfoSection",
   components: {
@@ -28,6 +29,7 @@ export default {
   },
   data() {
     return {
+      linkDocs: CONFIG.urls.docsMain,
       items: [
         {
           id: 1,
@@ -104,6 +106,7 @@ export default {
     margin-bottom: 105px
     @media screen and (max-width: 991px)
       margin-bottom: 77px
+      font-size: 38px
 
 .info-items
   margin: 0 -15px

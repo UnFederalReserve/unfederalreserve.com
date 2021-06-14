@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-card-info
       .s-container
-        h2.s-title Use Reserve Lending®
+        h2.s-title Use ReserveLending®
         .card-items
           .card-item
             .card-item__label.safe SAFE
@@ -12,12 +12,12 @@
                   alt="eth-icon",
                 )
               .card-item__title Supply Assets
-              .card-item__title-descr Supply (deposit) assets to the Reserve Lending® platform and earn interest + rewards*
+              .card-item__title-descr Supply (deposit) assets to the ReserveLending® platform and earn interest + rewards*
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Supply Assets
-                  p Reserve Lending® platform allows you to supply assets in an easy, safe, and secure way.
+                  p ReserveLending® platform allows you to supply assets in an easy, safe, and secure way.
                 .card-info__right
                   BaseImage.eth-icon-1(
                     :src="require('images/spa-icon-1.svg')",
@@ -45,7 +45,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title No Lock-up Period
-                  p Redeem your unTokens for the portion of the Reserve Lending® asset pool they represent at any time.
+                  p Redeem your unTokens for the portion of the ReserveLending® asset pool they represent at any time.
                 .card-info__right
                   BaseImage.eth-icon-4(
                     :src="require('images/spa-icon-4.svg')",
@@ -65,7 +65,7 @@
                   alt="eth-icon",
                 )
               .card-item__title Borrow Assets
-              .card-item__title-descr You can borrow assets on the Reserve Lending® platform after enabling colleteral
+              .card-item__title-descr You can borrow assets on the ReserveLending® platform after enabling colleteral
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
@@ -75,7 +75,7 @@
                         :src="require('images/toggle-icon.svg')",
                         alt="toggle-icon",
                       )
-                  p Supplying assets to the Reserve Lending® platform allows you to use your supplied assets as collateral.
+                  p Supplying assets to the ReserveLending® platform allows you to use your supplied assets as collateral.
                 .card-info__right
                   BaseImage.eth-icon-5(
                     :src="require('images/spa-icon-5.svg')",
@@ -100,7 +100,7 @@
                         alt="icon",
                       )
                     span Liquidation Risks
-                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, Reserve Lending® exchanges 
+                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending® exchanges 
                     | the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
                 .card-info__right
                   BaseImage.eth-icon-7(
@@ -127,19 +127,23 @@
               h3.revards__title ERSDL Rewards 
               p Earn rewards in the form of eRSDL for participating in the platform
           .revards__right
-            a.btn-rounded.btn-with-arrow.btn-gradient Get started
-              BaseImage.arrow-right(
-                :src="require('images/arrow-right.svg')",
-                alt="arrow-right",
-              )
+            BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
 import BaseImage from 'Components/Base//BaseImage';
+import BaseBtn from 'Components/Base/BaseBtn';
+import CONFIG from 'Config';
 export default {
   name: 'LendingCardSection',
   components: {
-    BaseImage
+    BaseImage,
+    BaseBtn
+  },
+  data() {
+    return {
+      link: CONFIG.urls.lendingMain
+    }
   }
 };
 </script>
@@ -176,6 +180,8 @@ export default {
     margin-bottom: 76px
   @media screen and (max-width: 991px)
     margin-bottom: 68px
+  @media screen and (max-width: 768px)
+    font-size: 38px
 
 .card-items
   display: flex

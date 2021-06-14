@@ -1,28 +1,17 @@
 <template lang="pug">
   .info-item
-    .info-item__video-img(@click="showModal = true")
-      BaseImage.video-preview(
-        :src="img",
-        alt="preview",
-      )
-    a.info-item__inner
+    .info-item__inner(@click="showModal = true")
+      .info-item__video-img
+        BaseImage.video-preview(
+          :src="img",
+          alt="preview",
+        )
       span.info-item__title {{title}}
       span.info-item__bottom
         span.info-item__text {{description}}
-        span.info-item__icon
-          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="28" cy="28" r="27" stroke="url(#paint0_linear)" stroke-width="2"/>
-            <path d="M18.3824 27.0147C18.4765 26.9998 18.5718 26.993 18.6671 26.9942H34.8931L34.5393 26.8343C34.1935 26.6752 33.8788 26.4587 33.6095 26.1946L29.0593 21.7732C28.46 21.2174 28.3594 20.3231 28.8207 19.6545C29.3576 18.942 30.3873 18.7872 31.1207 19.309C31.1799 19.3512 31.2362 19.3971 31.2892 19.4466L39.5174 27.4419C40.1604 28.066 40.161 29.0785 39.5186 29.7033C39.5182 29.7037 39.5178 29.7042 39.5174 29.7046L31.2892 37.6999C30.6456 38.3235 29.6037 38.3221 28.9619 37.6967C28.9114 37.6475 28.8642 37.5952 28.8207 37.54C28.3594 36.8713 28.46 35.9771 29.0593 35.4212L33.6013 30.9918C33.8427 30.757 34.1203 30.56 34.4241 30.4082L34.9178 30.1923H18.7576C17.917 30.2226 17.1794 29.652 17.0215 28.8491C16.876 27.9773 17.4853 27.1561 18.3824 27.0147Z" fill="#496DEA"/>
-            <defs>
-              <linearGradient id="paint0_linear" x1="28" y1="0" x2="28" y2="56" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#4C71EE"/>
-                <stop offset="1" stop-color="#1438AE"/>
-              </linearGradient>
-            </defs>
-          </svg>
-      BaseModal(v-if="showModal" @close="showModal = false")
-        template(slot="content")
-          iframe(width="100%" height="535" :src="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    BaseModal(v-if="showModal" @close="showModal = false")
+      template(slot="content")
+        iframe(width="100%" height="535" :src="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 </template>
 
@@ -88,13 +77,13 @@ export default {
     z-index: 1
     display: flex
     align-items: center
-    cursor: pointer
   &__inner
     background: rgba(0, 0, 0, 0.11)
     border-radius: 25px
     padding: 177px 24px 20px 30px
     display: flex
     flex: 1
+    cursor: pointer
     flex-direction: column
     opacity: 1!important
     border: 2px solid transparent
