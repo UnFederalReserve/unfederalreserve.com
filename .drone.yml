@@ -12,6 +12,9 @@ steps:
     path: /dest
   commands:
   - . ./.env.master
+  - echo $DOCS_MAIN_URL
+  - source ./.env.master
+  - echo $DOCS_MAIN_URL
   - yarn install
   - yarn build
   - rm -rf /dest/*
