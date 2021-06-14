@@ -9,21 +9,16 @@
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
-import CONFIG from 'Config';
 export default {
   name: "BaseBtn",
   props: {
     text: String,
     classes: String,
-    withArrow: Boolean
+    withArrow: Boolean,
+    link: String
   },
   components: {
     BaseImage
-  },
-  data() {
-    return {
-      link: CONFIG.urls.lendingMain
-    }
   }
 }
 </script>

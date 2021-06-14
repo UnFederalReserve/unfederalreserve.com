@@ -74,13 +74,14 @@
             h3.earn__title Earn APY right NOW
             p Connect you wallet and start using the best lending platform.
           .earn__right
-            BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :withArrow="true")
+            BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
 import LendingReasonItem from 'Components/LendingReasonSection/LendingReasonItem';
 import BaseBtn from 'Components/Base/BaseBtn';
+import CONFIG from 'Config';
 export default {
   name: 'LendingReasonSection',
   components: {
@@ -90,6 +91,7 @@ export default {
   },
   data() {
     return {
+      link: CONFIG.urls.lendingMain,
       items: [
         {
           id: 1,

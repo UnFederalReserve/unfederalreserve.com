@@ -8,7 +8,7 @@
           :menu="menu"
         )
           template(v-slot:additionalItem)
-        BaseBtn(classes="header-btn" text="Get Started")
+        BaseBtn(classes="header-btn" text="Get Started" :link="link")
         TheHeaderTogglerBtn(
           @click.native="togglerValue = !togglerValue",
           :value="togglerValue",
@@ -28,6 +28,7 @@ import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDraw
 import logo from 'images/svg-icons/logo.svg';
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
+import CONFIG from 'Config';
 
 export default {
   name: 'TheHeader',
@@ -41,6 +42,7 @@ export default {
   },
   data() {
     return {
+      link: CONFIG.urls.lendingMain,
       scrollPosition: 0,
       isFixed: false,
       togglerValue: false

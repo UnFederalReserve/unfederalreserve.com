@@ -56,18 +56,24 @@
           )
           span Ready to earn?
         p Go to ReserveLending® platform and start supplying asstets today
-        BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :withArrow="true")
+        BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
+import CONFIG from 'Config';
 export default {
   name: "LendingLeadershipSection",
   components: {
     BaseImage,
     BaseBtn
+  },
+  data() {
+    return {
+      link: CONFIG.urls.lendingMain
+    }
   }
 }
 </script>
