@@ -38,11 +38,6 @@ steps:
         export $(cat ./.env.dev | sed 's/#.*//g' | xargs)
       fi
 
-      if [ "$$CLUSTER_NAME" = "" ]; then
-        echo "Not building on branch $BRANCH_NAME"
-        exit;
-      fi
-
       yarn build
 
 # build docker image
