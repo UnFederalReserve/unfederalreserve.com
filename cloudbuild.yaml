@@ -24,31 +24,9 @@ steps:
       yarn install
 
 - name: 'gcr.io/cloud-builders/yarn'
-  id: lint
-  waitFor:
-    - init
-  entrypoint: 'sh'
-  args:
-    - '-c'
-    - |
-      . ./.cloudbuild.env.sh
-      if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then
-        export $(cat ./.env.$BRANCH_NAME | sed 's/#.*//g' | xargs)
-      else
-        export $(cat ./.env.dev | sed 's/#.*//g' | xargs)
-      fi
-
-      if [ "$$CLUSTER_NAME" = "" ]; then
-        echo "Not building on branch $BRANCH_NAME"
-        exit;
-      fi
-
-      yarn lint
-
-- name: 'gcr.io/cloud-builders/yarn'
   id: build
   waitFor:
-    - lint
+    - init
   entrypoint: 'sh'
   args:
     - '-c'
