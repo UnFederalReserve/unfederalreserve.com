@@ -41,15 +41,15 @@ export default {
         {
           id: 2,
           img: require('images/video-preview.png'),
-          title: "How To: Supply an Asset",
-          description: "Watch our tutorial about supplying an assets",
+          title: "How To: Supply Asset",
+          description: "Watch our tutorial about supplying assets",
           videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {
           id: 3,
           img: require('images/video-preview.png'),
-          title: "How to: Borrow an Asset",
-          description: "Watch our tutorial about borrowing an assets",
+          title: "How to: Borrow Asset",
+          description: "Watch our tutorial about borrowing assets",
           videoSrc: "https://www.youtube.com/embed/BBTVYIXXrag"
         },
         {

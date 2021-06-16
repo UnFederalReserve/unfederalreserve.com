@@ -73,7 +73,7 @@
             )
           .earn__left
             h3.earn__title Earn APY right NOW
-            p Connect you wallet and start using the best lending platform.
+            p Connect your wallet and start using the best lending platform.
           .earn__right
             BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
