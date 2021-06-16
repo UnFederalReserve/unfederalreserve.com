@@ -65,7 +65,7 @@
                   alt="eth-icon",
                 )
               .card-item__title Borrow Assets
-              .card-item__title-descr You can borrow assets on the ReserveLending® platform after enabling colleteral
+              .card-item__title-descr You can borrow assets on the ReserveLending® platform after enabling collateral
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
