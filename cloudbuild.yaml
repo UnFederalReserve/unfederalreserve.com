@@ -1,0 +1,70 @@
+substitutions:
+  _SERVICE_NAME: home
+steps:
+
+# init environment
+- name: 'gcr.io/cloud-builders/yarn'
+  id: init
+  waitFor: ['-']
+  entrypoint: 'sh'
+  args:
+    - '-c'
+    - |
+      echo > .cloudbuild.env.sh
+      if [ "$BRANCH_NAME" = "master" ]; then
+        echo 'export CLUSTER_NAME=app' >> .cloudbuild.env.sh
+      fi
+      if [ "$BRANCH_NAME" = "stage" ]; then
+        echo 'export CLUSTER_NAME=stage' >> .cloudbuild.env.sh
+      fi
+      if [ "$BRANCH_NAME" = "dev" ]; then
+        echo 'export CLUSTER_NAME=dev' >> .cloudbuild.env.sh
+      fi
+
+      yarn install
+
+- name: 'gcr.io/cloud-builders/yarn'
+  id: build
+  waitFor:
+    - init
+  entrypoint: 'sh'
+  args:
+    - '-c'
+    - |
+      . ./.cloudbuild.env.sh
+      if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then
+        export $(cat ./.env.$BRANCH_NAME | sed 's/#.*//g' | xargs)
+      else
+        export $(cat ./.env.dev | sed 's/#.*//g' | xargs)
+      fi
+
+      yarn build
+
+# build docker image
+- name: 'gcr.io/cloud-builders/gsutil'
+  id: deploy
+  waitFor:
+    - build
+  entrypoint: 'sh'
+  args:
+    - '-c'
+    - |
+      . ./.cloudbuild.env.sh
+
+      if [ "$$CLUSTER_NAME" = "" ]; then
+        echo "Not building on branch $BRANCH_NAME"
+        exit;
+      fi
+
+      cd dist
+
+      if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then
+        gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$CLUSTER_NAME-$_SERVICE_NAME
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$CLUSTER_NAME-$_SERVICE_NAME/index.html
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$CLUSTER_NAME-$_SERVICE_NAME/js/*
+
+        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/index.html"
+        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/*"
+      else
+        exit;
+      fi
