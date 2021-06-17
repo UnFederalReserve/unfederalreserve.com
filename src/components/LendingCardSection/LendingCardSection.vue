@@ -12,7 +12,7 @@
                   alt="eth-icon",
                 )
               .card-item__title Supply Assets
-              .card-item__title-descr Supply (deposit) assets to the ReserveLending® platform and earn interest + rewards*
+              .card-item__title-descr Supply (deposit) assets to the ReserveLending® platform and earn interest
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
@@ -116,18 +116,18 @@
                     :src="require('images/spa-icon-8.svg')",
                     alt="icon",
                   )
-        .revards
-          .revards__left
-            .revards__logo
-              BaseImage.un-logo(
-                :src="require('images/un-logo.svg')",
-                alt="logo",
-              )
-            .revards__text
-              h3.revards__title ERSDL Rewards 
-              p Earn rewards in the form of eRSDL for participating in the platform
-          .revards__right
-            BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
+        //- .revards
+        //-   .revards__left
+        //-     .revards__logo
+        //-       BaseImage.un-logo(
+        //-         :src="require('images/un-logo.svg')",
+        //-         alt="logo",
+        //-       )
+        //-     .revards__text
+        //-       h3.revards__title ERSDL Rewards 
+        //-       p Earn rewards in the form of eRSDL for participating in the platform
+        //-   .revards__right
+        //-     BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
