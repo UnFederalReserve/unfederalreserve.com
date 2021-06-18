@@ -10,7 +10,7 @@
       alt="chest",
       force,
     )
-    template(v-if="currentRouteName != 'product'")
+    template(v-if="currentRouteName != 'product' && currentRouteName != 'brand'")
       BaseImage.right-footer-rock(
         :src="require('images/top-left-footer-rock.svg')",
         alt="right-footer-rock",
