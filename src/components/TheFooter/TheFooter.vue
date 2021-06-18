@@ -33,6 +33,7 @@
             target="_blank",
           ) Lite paper
           router-link(:to="{name: 'terms'}") Terms
+          router-link(:to="{name: 'brand'}") Brand Assets
         .footer-content-row__home.column
           h5 Home
           router-link(:to="{name: 'home', hash: '#how-it-works'}") How it works
