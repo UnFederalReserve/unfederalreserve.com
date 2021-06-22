@@ -15,7 +15,7 @@ steps:
       echo "export PROJECT_NAME=$(cut -d '-' -f1 <<< $PROJECT_ID)" >> .cloudbuild.env.sh
       
       if [ "$BRANCH_NAME" = "master" ]; then
-        echo 'export CLUSTER_NAME=app' >> .cloudbuild.env.sh
+        echo 'export CLUSTER_NAME=master' >> .cloudbuild.env.sh
       fi
       if [ "$BRANCH_NAME" = "stage" ]; then
         echo 'export CLUSTER_NAME=stage' >> .cloudbuild.env.sh
