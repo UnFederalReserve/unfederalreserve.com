@@ -1,5 +1,6 @@
 substitutions:
   _SERVICE_NAME: home
+  _PROJECT_NAME: unfederalreserve
 steps:
 
 # init environment
@@ -59,9 +60,9 @@ steps:
       cd dist
 
       if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then
-        gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$CLUSTER_NAME-$_SERVICE_NAME
-        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$CLUSTER_NAME-$_SERVICE_NAME/index.html
-        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$CLUSTER_NAME-$_SERVICE_NAME/js/*
+        gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$_PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$_PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME/index.html
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$_PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME/js/*
 
         gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/index.html"
         gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/*"
