@@ -6,7 +6,7 @@ steps:
 - name: 'gcr.io/cloud-builders/yarn'
   id: init
   waitFor: ['-']
-  entrypoint: 'sh'
+  entrypoint: 'bash'
   args:
     - '-c'
     - |
