@@ -55,7 +55,7 @@
             alt="earn-icon",
           )
           span Ready to earn?
-        p Go to ReserveLending® platform and start supplying asstets today
+        p Go to ReserveLending® platform and start supplying assets today
         BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 
 </template>
