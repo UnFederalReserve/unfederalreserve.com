@@ -14,14 +14,12 @@
         ul
           li Voting on additional entrants and required staking levels to borrow from the community
           li Outreach to additional Lenders to add eRSDL as a liquidity source
-          li Qualified CeFI entities borrow up to 50% of their staked capital and can lend as much as they'd like
     .roadmap-row
       .roadmap-item
         h4 Q2 2021
         ul
-          li ReserveLending® Alpha testing and product launch, with single-side staking and Chainlink® price oracle integration
+          li ReserveLending® Alpha testing and product launch, with single-side staking
           li Voting on Tier 1 exchange listing and key relationships
-          li Develop Treasurer’s Toolkit (KYC-Chain integration, ALDash and members only USD Stablecoin maker/taker protocols)
     .roadmap-row
       .roadmap-item
         h4 Q3 2021
@@ -82,6 +80,7 @@ export default {
       margin-bottom: 20px
   &-row
     display: flex
+    margin-bottom: 50px
     @media screen and (max-width: 767px)
       margin-bottom: 20px
     &:nth-child(2)
@@ -105,13 +104,17 @@ export default {
         @media screen and (max-width: 767px)
           margin-left: 0
     &:nth-child(5)
+      margin-bottom: 0
       justify-content: flex-end
+      @media screen and (max-width: 767px)
+        margin-bottom: 20px
       .roadmap-item
         margin-right: 20px
         margin-top: 20px
         @media screen and (max-width: 767px)
           margin-right: 0
     &:nth-child(6)
+      margin-bottom: 0
       .roadmap-item
         margin-left: 50px
         margin-top: 0px
