@@ -1,6 +1,7 @@
 <template lang="pug">
   section.RoadmapSection.roadmap
     h2 Roadmap
+      span *
     .roadmap-row
       .roadmap-item
         h4 Q4 2020
@@ -107,6 +108,14 @@ export default {
   h2
     color: $white
     text-align: center
+    span
+      font-weight: 500
+      font-size: 20px
+      line-height: 46px
+      position: relative
+      top: -20px
+      @media screen and (max-width: 767px)
+        top: -10px
   &-item
     width: 100%
     max-width: 380px
