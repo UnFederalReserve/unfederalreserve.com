@@ -24,7 +24,7 @@
           li Tier 1 Exchange Listing
           li Complete organizational chart
           li Gather business requirements for ReserveFunding
-          li Chainlink® price oracle integration for all non eRSDL tokens.
+          li Chainlink® price oracle integration for all non eRSDL tokens
     .roadmap-row
       .roadmap-item
         h4 Q3 2021
@@ -32,8 +32,8 @@
           li MVP with Partner non-bank lenders
           li Apply for multi-jurisdictional regulatory licenses
           li Use DeFI platform to fund CeFI entities
-          li Creation of a KYC/AML only fork of ReserveLending© (new ReserveFunding product) with perks for volunteering to get KYC'd.
-          li Implement strategies for putting excess supply to work in DeFi and a never been done CeFi (USA regulatory compliant) yield strategy.
+          li Creation of a KYC/AML only fork of ReserveLending© (new ReserveFunding product) with perks for volunteering to get KYC'd
+          li Implement strategies for putting excess supply to work in DeFi and a never been done CeFi (USA regulatory compliant) yield strategy
           li Manually process cash flows and replace them with pipes
           li Start repurchasing eRSDL as ReserveFunding non-bank lenders start shadow licensing our platform to access liquidity
     .roadmap-row
@@ -45,7 +45,7 @@
           li Launch ReserveFunding (Lightning® and Thunder®)
           li Platform integration with Treasury tool provider
           li ReserveFunding 80% automated volume at $200mn daily
-          li Goal: Repurchase eRSDL out of the market at 1% (annualized) of total non-bank lender outstanding loan balances for lock, use by parent or burn
+          li Goal: purchase eRSDL out of the market at a rate equivalent to a reasonable licensing fee for the software
           li Combination CeFI and DeFI funding CeFI
     .roadmap-row
       .roadmap-item
@@ -56,9 +56,7 @@
           li Add additional Tier 1 exchanges
     .footnote
       span *
-      p The Roadmap is subject to change. It is a forward-looking statement and 
-        | is subject to many risks and uncertainties. No guarantee of performance 
-        | is intended or implied. Know the risks and speak to a financial advisor before making a decision.
+      p The information provided is subject to change, contains forward-looking statements, and is subject to many risks. No guarantee of performance is intended or implied.
 </template>
 
 <script>
