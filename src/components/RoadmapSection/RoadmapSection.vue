@@ -32,10 +32,11 @@
           li MVP with Partner non-bank lenders
           li Apply for multi-jurisdictional regulatory licenses
           li Use DeFI platform to fund CeFI entities
-          li Creation of a KYC/AML only fork of ReserveLending© (new ReserveFunding product) with perks for volunteering to get KYC'd
+          li Creation of a KYC/AML only fork of ReserveLending® (new ReserveFunding product) with perks for volunteering to get KYC'd
           li Implement strategies for putting excess supply to work in DeFi and a never been done CeFi (USA regulatory compliant) yield strategy
           li Manually process cash flows and replace them with pipes
           li Start repurchasing eRSDL as ReserveFunding non-bank lenders start shadow licensing our platform to access liquidity
+          li Be in Top 10 TVL consisting mostly of stablecoin ($100mn)
     .roadmap-row
       .roadmap-item
         h4 Q4 2021
@@ -47,6 +48,7 @@
           li ReserveFunding 80% automated volume at $200mn daily
           li Goal: purchase eRSDL out of the market at a rate equivalent to a reasonable licensing fee for the software
           li Combination CeFI and DeFI funding CeFI
+          li Institute sponsor-bank model for expanding user base
     .roadmap-row
       .roadmap-item
         h4 Q1 2022
@@ -159,7 +161,7 @@ export default {
         margin-bottom: 20px
       .roadmap-item
         margin-right: 20px
-        margin-top: -180px
+        margin-top: -220px
         @media screen and (max-width: 991px)
           margin-right: 0
           margin-top: 0
@@ -169,7 +171,7 @@ export default {
         margin-bottom: 20px
       .roadmap-item
         margin-left: 50px
-        margin-top: -15px
+        margin-top: -100px
         @media screen and (max-width: 991px)
           margin-left: 0
           margin-top: 0
