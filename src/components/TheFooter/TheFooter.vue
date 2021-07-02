@@ -10,7 +10,7 @@
       alt="chest",
       force,
     )
-    template(v-if="currentRouteName != 'product'")
+    template(v-if="currentRouteName != 'product' && currentRouteName != 'brand'")
       BaseImage.right-footer-rock(
         :src="require('images/top-left-footer-rock.svg')",
         alt="right-footer-rock",
@@ -33,6 +33,7 @@
             target="_blank",
           ) Lite paper
           router-link(:to="{name: 'terms'}") Terms
+          router-link(:to="{name: 'brand'}") Brand Assets
         .footer-content-row__home.column
           h5 Home
           router-link(:to="{name: 'home', hash: '#how-it-works'}") How it works

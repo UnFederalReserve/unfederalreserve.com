@@ -1,5 +1,6 @@
 const PageMain = () => import(/* webpackChunkName: 'PageMain' */ 'Pages/PageMain');
 const PageProduct = () => import(/* webpackChunkName: 'PageProduct' */ 'Pages/PageProduct');
+const PageBrand = () => import(/* webpackChunkName: 'PageBrand' */ 'Pages/PageBrand');
 const PageUiKit = () => import(/* webpackChunkName: 'PageUiKit' */ 'Pages/PageUiKit');
 const PageTeam = () => import(/* webpackChunkName: 'PageTeam' */ 'Pages/PageTeam');
 const PageTerms = () => import(/* webpackChunkName: 'PageTerms' */ 'Pages/PageTerms');
@@ -23,6 +24,11 @@ export default [
     path: '/product',
     name: 'product',
     component: PageProduct,
+  },
+  {
+    path: '/brand',
+    name: 'brand',
+    component: PageBrand,
   },
   {
     path: '/terms',
