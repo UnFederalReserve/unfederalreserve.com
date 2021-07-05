@@ -50,7 +50,7 @@
           |  Unsophisticated lenders, however, would be at the mercy of seasoned
           |  borrowing professionals, which poses a risk to the lending industry.
           |  The unFederalReserve safe harbor ensures that only qualified, vetted
-          |  parties have access to safe, legally compliant liquidity. And talk
+          |  parties have access to safe, legally compliant liquidity. Talking
           |  about speed... short-term lending and borrowing transactions settle
           |  almost instantaneously on our blockchain-enabled platform.
       .island-item__image
