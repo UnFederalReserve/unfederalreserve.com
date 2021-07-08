@@ -4,6 +4,7 @@ const PageBrand = () => import(/* webpackChunkName: 'PageBrand' */ 'Pages/PageBr
 const PageUiKit = () => import(/* webpackChunkName: 'PageUiKit' */ 'Pages/PageUiKit');
 const PageTeam = () => import(/* webpackChunkName: 'PageTeam' */ 'Pages/PageTeam');
 const PageTerms = () => import(/* webpackChunkName: 'PageTerms' */ 'Pages/PageTerms');
+const PageNotFound = () => import(/* webpackChunkName: 'PageNotFound' */ 'Pages/PageNotFound');
 
 export default [
   {
@@ -40,8 +41,13 @@ export default [
     name: 'ui',
     component: PageUiKit,
   },
+  { 
+    path: '/404', 
+    name: '404', 
+    component: PageNotFound, 
+  },
   {
     path: '*',
-    redirect: { name: '404' },
+    redirect: {name: '404'}
   },
 ];
