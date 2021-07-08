@@ -34,6 +34,7 @@ export default {
   @media screen and (max-width: 991px)
     min-height: 650px
     margin-bottom: -300px
+    padding-top: 300px
   .btn-white
     text-transform: uppercase
 
