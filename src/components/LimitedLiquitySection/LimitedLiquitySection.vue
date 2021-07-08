@@ -3,16 +3,16 @@
   section.limited-liquity.limited-liquity-today
     h2 Liquidity is Limited
     .wrap
-      .illustration-wrap
+      .illustration-wrap.absolute
         Bank.illustration.desktop
         BankMobile.illustration.mobile
-      .limited-liquity__text
-        p Middle-market B2B lenders sometimes experience payment latency or
-          |  acceleration, and either instance can incur a cost for the lender.
-          |  Excess cash sits fallow, while a cash deficit forces an emergency draw
-          |  on a line of credit. Because typical loan interest rates are calculated
-          |  based on borrowing for weeks and not hours, lenders can incur unnecessary
-          |  charges when processing such short-term loans.
+      .limited-liquity__text.wide
+        p Middle-market B2B lenders sometimes experience payment latency 
+          | or acceleration, and either instance can incur a cost for the lender.
+        BaseInfoBox
+          p Excess cash sits fallow, while a cash deficit forces an emergency draw on a line of credit.
+        p Because typical loan interest rates are calculated based on borrowing for weeks 
+          | and not hours, lenders can incur unnecessary charges when processing such short-term loans.
   section.limited-liquity.limited-liquity-great
     .wrap
       .limited-liquity__text
@@ -42,6 +42,7 @@ import Bank from 'images/svg-icons/bank-1.svg';
 import BankNext from 'images/svg-icons/bank-2.svg';
 import BankMobile from 'images/svg-icons/bank-1-mobile.svg';
 import BankNextMobile from 'images/svg-icons/bank-2-mobile.svg';
+import BaseInfoBox from 'Components/Base/BaseInfoBox';
 
 export default {
   name: 'LimitedLiquitySection',
@@ -51,6 +52,7 @@ export default {
     BankNext,
     BankMobile,
     BankNextMobile,
+    BaseInfoBox
   },
 };
 </script>
@@ -93,6 +95,8 @@ section
       position: relative
       display: flex
       justify-content: flex-end
+      &.absolute
+        position: absolute
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
@@ -107,6 +111,10 @@ section
     &__text
       *
         color: $white
+        font-weight: 500
+        font-size: 18px
+        line-height: 160%
+        letter-spacing: 0.01em
       h2
         margin-bottom: 20px
   &.limited-liquity-today
@@ -126,6 +134,9 @@ section
       width: 100%
       max-width: 413px
       margin-top: 100px
+      &.wide
+        max-width: 100%
+        padding-left: 50%
       @media screen and (max-width: 1140px)
         margin-top: 0
       @media screen and (max-width: 767px)
