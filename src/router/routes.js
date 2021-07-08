@@ -4,7 +4,7 @@ const PageBrand = () => import(/* webpackChunkName: 'PageBrand' */ 'Pages/PageBr
 const PageUiKit = () => import(/* webpackChunkName: 'PageUiKit' */ 'Pages/PageUiKit');
 const PageTeam = () => import(/* webpackChunkName: 'PageTeam' */ 'Pages/PageTeam');
 const PageTerms = () => import(/* webpackChunkName: 'PageTerms' */ 'Pages/PageTerms');
-const Page404 = () => import(/* webpackChunkName: 'Page404' */ 'Pages/Page404');
+const PageNotFound = () => import(/* webpackChunkName: 'PageNotFound' */ 'Pages/PageNotFound');
 
 export default [
   {
@@ -44,7 +44,7 @@ export default [
   { 
     path: '/404', 
     name: '404', 
-    component: Page404, 
+    component: PageNotFound, 
   },
   {
     path: '*',
