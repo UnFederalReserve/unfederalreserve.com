@@ -23,17 +23,9 @@
           |  tailored to meet clients' unique workflows. Middle-market bank and non-bank lenders
           |  can feel confident in both lending to vetted third-parties directly and placing
           |  excess capital into the marketplace.
-      BaseImage.polygons(
-        :src="require('images/polygons-2.svg')",
-        alt="polygons",
-      )
       .illustration-wrap
         BankNext.illustration.desktop
         BankNextMobile.illustration.mobile
-        BaseImage.tick(
-          :src="require('images/tick.svg')",
-          alt="tick",
-        )
 </template>
 
 <script>
@@ -97,6 +89,9 @@ section
       justify-content: flex-end
       &.absolute
         position: absolute
+        bottom: -145px
+        left: -112px
+        max-width: 790px
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
