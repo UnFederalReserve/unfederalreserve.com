@@ -1,22 +1,12 @@
 <template lang="pug">
 .LimitedLiquitySection
   section.limited-liquity.limited-liquity-today
+    h2 Liquidity is Limited
     .wrap
-      BaseImage.polygons(
-        :src="require('images/polygons.svg')",
-        alt="polygons",
-      )
       .illustration-wrap
         Bank.illustration.desktop
         BankMobile.illustration.mobile
-        BaseImage.close(
-          :src="require('images/close.svg')",
-          alt="close",
-        )
       .limited-liquity__text
-        h2 Liquidity
-          br
-          | is Limited
         p Middle-market B2B lenders sometimes experience payment latency or
           |  acceleration, and either instance can incur a cost for the lender.
           |  Excess cash sits fallow, while a cash deficit forces an emergency draw
@@ -70,6 +60,16 @@ export default {
 section
   width: 100%
   position: relative
+  h2
+    font-weight: 700
+    font-size: 42px
+    line-height: 130%
+    text-align: center
+    padding: 0 15px
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    position: relative
+    z-index: 1
   @media screen and (max-width: 767px)
     margin-top: 50px
   .wrap
@@ -79,6 +79,7 @@ section
     display: flex
     flex-direction: row
     justify-content: space-between
+    position: relative
     @media screen and (max-width: 767px)
       flex-direction: column
       flex-wrap: wrap
@@ -109,6 +110,18 @@ section
       h2
         margin-bottom: 20px
   &.limited-liquity-today
+    padding-top: 120px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      top: -860px
+      left: 0
+      right: 0
+      width: 100%
+      height: 2364px
+      background: url("~images/wave-3.svg") no-repeat center
+      background-size: cover
     .limited-liquity__text
       width: 100%
       max-width: 413px
