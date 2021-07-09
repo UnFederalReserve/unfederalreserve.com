@@ -84,5 +84,5 @@ export default {
       .header-menu.menu
         a
           &.router-link-active[aria-current]
-            color: #042751!important
+            color: #3357CF!important
 </style>

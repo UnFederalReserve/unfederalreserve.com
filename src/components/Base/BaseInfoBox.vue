@@ -60,6 +60,8 @@ export default {
     letter-spacing: 0.01em
     color: #021859!important
     margin-bottom: 24px!important
+    span
+      color: #F3B328
     &:last-child
       margin-bottom: 0!important
   

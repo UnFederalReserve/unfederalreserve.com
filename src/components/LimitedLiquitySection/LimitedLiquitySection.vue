@@ -3,7 +3,7 @@
   section.limited-liquity.limited-liquity-today
     h2 Liquidity is Limited
     .wrap
-      .illustration-wrap.absolute
+      .illustration-wrap.absolute-left
         Bank.illustration.desktop
         BankMobile.illustration.mobile
       .limited-liquity__text.wide
@@ -14,24 +14,30 @@
         p Because typical loan interest rates are calculated based on borrowing for weeks 
           | and not hours, lenders can incur unnecessary charges when processing such short-term loans.
   section.limited-liquity.limited-liquity-great
+    h2 Accessible Liquidity,
+      br
+      | Lower Costs
     .wrap
       .limited-liquity__text
-        h2 Accessible Liquidity,
-          br
-          | Lower Costs
-        p unFederalReserve uses an Auction Rate Bond (ARB) platform that can be specifically
-          |  tailored to meet clients' unique workflows. Middle-market bank and non-bank lenders
-          |  can feel confident in both lending to vetted third-parties directly and placing
-          |  excess capital into the marketplace.
-      .illustration-wrap
-        BankNext.illustration.desktop
+        BaseInfoBox
+          p 
+            span unFederalReserve 
+            | uses an Auction Rate Bond (ARB) platform that 
+            | can be specifically tailored to meet clients' unique workflows.
+        p Middle-market bank and non-bank lenders can feel confident in both 
+          | lending to vetted third-parties directly and placing excess capital into the marketplace.
+      .illustration-wrap.absolute-right
+        BaseImage.illustration.desktop(
+          :src="require('images/bank-2.svg')",
+          alt="illustration-2",
+          force
+        )
         BankNextMobile.illustration.mobile
 </template>
 
 <script>
 import BaseImage from 'Components/Base//BaseImage';
 import Bank from 'images/svg-icons/bank-1.svg';
-import BankNext from 'images/svg-icons/bank-2.svg';
 import BankMobile from 'images/svg-icons/bank-1-mobile.svg';
 import BankNextMobile from 'images/svg-icons/bank-2-mobile.svg';
 import BaseInfoBox from 'Components/Base/BaseInfoBox';
@@ -41,7 +47,6 @@ export default {
   components: {
     BaseImage,
     Bank,
-    BankNext,
     BankMobile,
     BankNextMobile,
     BaseInfoBox
@@ -87,10 +92,15 @@ section
       position: relative
       display: flex
       justify-content: flex-end
-      &.absolute
+      &.absolute-left
         position: absolute
         bottom: -145px
         left: -112px
+        max-width: 790px
+      &.absolute-right
+        position: absolute
+        bottom: -212px
+        right: -20px
         max-width: 790px
       @media screen and (max-width: 1140px)
         max-width: 50%
@@ -158,7 +168,7 @@ section
       @media screen and (max-width: 1140px)
         display: none
   &.limited-liquity-great
-    margin-top: 150px
+    margin-top: 230px
     @media screen and (max-width: 767px)
       margin-top: 50px
     .illustration-wrap
@@ -166,7 +176,7 @@ section
       max-width: 670px
       .illustration
         height: 100%
-        max-height: 540px
+        max-width: 100%
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
@@ -179,7 +189,7 @@ section
           width: 100%
     .limited-liquity__text
       width: 100%
-      max-width: 413px
+      max-width: 445px
       margin-top: 130px
       @media screen and (max-width: 1140px)
         margin-top: 0

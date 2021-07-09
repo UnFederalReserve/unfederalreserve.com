@@ -13,4 +13,5 @@ export default {
   screenHeight: state => state.screenHeight,
   portraitOrientation: state => state.portraitOrientation,
   isSmallScreen: state => state.screenWidth < 1170,
+  getTeam: state => state.team
 };

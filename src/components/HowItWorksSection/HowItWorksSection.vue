@@ -24,12 +24,12 @@
           .carousel-next(@click="moveCarousel(1)")
             img(:src="require('images/carousel-arrow-bottom.svg')" alt="arrow")
       
-      //- .how-it-works-items
-      //-   HowItWorksSectionItem(
-      //-     v-for="(item, i) in items"
-      //-     :key="i"
-      //-     v-bind="item"
-      //-   )
+      .how-it-works-items
+        HowItWorksSectionItem(
+          v-for="(item, i) in items"
+          :key="i"
+          v-bind="item"
+        )
 </template>
 
 <script>
@@ -181,6 +181,8 @@ h2
 .carousel-wrap
   position: relative
   padding-right: 65px
+  @media screen and (max-width: 1199px)
+    display: none
 
 .cards-carousel
   padding: 30px

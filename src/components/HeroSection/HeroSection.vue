@@ -63,7 +63,7 @@ export default {
     height: 1200px
   @media screen and (min-width: 2700px)
     height: 1500px
-  @media screen and (max-width: 900px)
+  @media screen and (max-width: 1199px)
     background-position: left bottom
     background-image: url('~images/hero-section-mobile.svg')
   @media screen and (max-width: 576px)

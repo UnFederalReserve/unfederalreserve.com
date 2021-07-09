@@ -7,11 +7,12 @@
     TokenomicsSection#whitepaper
     RoadmapSection#roadmap
     MoreAboutUsSection#about
-    OurLeadersSection(:team="team")
+    OurLeadersSection(:team="getTeam")
     GetInTouch#get-in-touch
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import pageMixin from 'Mixins/pageMixin';
 import HeroSection from 'Components/HeroSection/HeroSection';
 import HowItWorksSection from 'Components/HowItWorksSection/HowItWorksSection';
@@ -39,6 +40,7 @@ export default {
   },
   mixins: [pageMixin],
   computed: {
+    ...mapGetters('view', ['getTeam']),
     pageTitle() {
       return 'Merchant Banking DeFI';
     },
@@ -78,49 +80,7 @@ export default {
           text: 'Accounting, financial, and tax reporting integration with existing systems available.',
         },
       ];
-    },
-
-    team() {
-      return [
-        {
-          name: 'Howard Krieger',
-          title: 'Founder & CEO',
-          image: 'team/howard100x100.png',
-          description: '<p> Howard Krieger currently serves as co-founder and CEO of unFederalReserve. </p>'
-              + '<p>Prior to founding unFederalReserve, Krieger served as Managing Director at CBIZ Valuation Group, Valuation Director at '
-              + 'WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms. Krieger is well-versed in intangible business '
-              + 'valuation, intellectual property valuation, financial modeling, valuation of equity-participating instruments, and exotic financial assets '
-              + 'and liabilities. Krieger holds a bachelor\'s degree in business administration from James Madison University and a MBA with a '
-              + 'concentration in qualitative finance from Rutgers University.</p>',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/howardjkrieger/',
-            },
-          ],
-        },
-        {
-          name: 'Ryan Medlin',
-          title: 'Founder & CTO',
-          image: 'team/ryan100x100.png',
-          description: '<p> Ryan Medlin is a seasoned Silicon Valley entrepreneur and technologist '
-            + 'whose most recent success was the sale of his proximity tracking and measurement '
-            + 'company, Datasnap.io, to Neustar in 2015.</p>'
-            + '<p>Medlin stayed with the company and led '
-            + 'a team of engineers to build out Neustar\'s IoT Identity initiatives. IoT Identity '
-            + 'improved upon already existing public key infrastructure (PKI) by providing '
-            + 'cryptography-based policy enforcement and identity management in a secure, decentralized architecture.</p>'
-            + '<p>The IoT Identity project became the foundation for building out additional blockchain and '
-            + 'DLT-based prototypes: IoTA, Ethereum, Hyperledger, Rootstock, Lisk, NEO, Telehash, and Cothority protocols.</p>',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/ryanmedlin/',
-            },
-          ],
-        },
-      ];
-    },
+    }
   },
   watch: {
     '$route.hash': {

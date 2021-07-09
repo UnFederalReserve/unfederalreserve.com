@@ -163,6 +163,8 @@ export default {
     &.item-image-right
       .illustration
         right: 0%
+        @media screen and (max-width: 1660px)
+          right: -300px
         @media screen and (max-width: 1170px)
           right: -17%
         @media screen and (max-width: 1024px)
@@ -174,6 +176,8 @@ export default {
     &.item-image-left
       .illustration
         left: 0%
+        @media screen and (max-width: 1660px)
+          left: -300px
         @media screen and (max-width: 1170px)
           left: -17%
         @media screen and (max-width: 1024px)
