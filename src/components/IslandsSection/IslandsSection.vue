@@ -2,7 +2,7 @@
 .IslandsSection.islands
   section.island
     .island-item.item-image-right
-      .island-item__text
+      .island-item__text.first
         h2 Warning:
           br
           | Navigating Uncharted
@@ -41,11 +41,12 @@
             | (represented by the boats) can transact with any lender (represented by the ports).
           p The challenge, then, from the perspective of the DeFi community, is the engagement of 
             | sophisticated borrowers (e.g., Treasurers at middle-market companies).
-        p Without proper sophistication, individual lenders cannot perform proper risk-based pricing, 
-          | and discrepancies in experience can lead to arbitrage that can harm the entire community. 
-        p 
-          span Metaphorically speaking, the open ocean of DeFi is not a place where 
-            | sailboats should approach large container ships.
+        .island-item__text-group
+          p Without proper sophistication, individual lenders cannot perform proper risk-based pricing, 
+            | and discrepancies in experience can lead to arbitrage that can harm the entire community. 
+          p 
+            span Metaphorically speaking, the open ocean of DeFi is not a place where 
+              | sailboats should approach large container ships.
 
   section.island.next
     .island-item.item-image-center
@@ -90,21 +91,20 @@ export default {
 <style lang="sass" scoped>
 @import '~Styles/_variables'
 .islands
-  margin-top: -50px
   position: relative
   z-index: 1
-  @media screen and (max-width: 767px)
-    margin-top: 50px
+  @media screen and (max-width: 1199px)
+    margin-top: 0
 .island
   position: relative
+  &.next.two
+    padding-bottom: 150px
+    padding-top: 130px
+    @media screen and (max-width: 767px)
+      padding-top: 60px 
+      padding-bottom: 100px
   @media screen and (max-width: 767px)
     margin-top: 0
-  &.next
-    margin-top: -100px
-    &.two
-      margin-top: -500px
-    @media screen and (max-width: 767px)
-      margin-top: 50px
   &-item
     display: flex
     flex-direction: row
@@ -123,11 +123,20 @@ export default {
       .info-box
         margin-left: auto
         margin-right: auto
+        @media screen and (max-width: 767px)
+          width: calc(100% - 20px)
+          margin-left: 10px
+      .base-image
+        max-width: 100%
     &__text
       max-width: 635px
       flex-shrink: 0
       position: relative
       z-index: 1
+      &.first
+        h2
+          @media screen and (max-width: 767px)
+            max-width: 324px
       @media screen and (max-width: 767px)
         max-width: 100%
       p
@@ -148,42 +157,55 @@ export default {
         line-height: 140%
         color: $white
         letter-spacing: 0.01em
+        @media screen and (max-width: 767px)
+          font-size: 32px
     &__image
       min-height: 1300px
+      position: absolute
       @media screen and (max-width: 991px)
-        min-height: 800px
+        min-height: 500px
       img
         height: 100%
-      @media screen and (max-width: 767px)
-        display: none
     .illustration
       position: absolute
       right: 0
       top: 0
     &.item-image-right
+      .info-box
+        margin-left: 30px
+        width: calc(100% - 30px)
+      .island-item__image
+        right: 0
+        @media screen and (max-width: 991px)
+          top: -230px
       .illustration
         right: 0%
         @media screen and (max-width: 1660px)
           right: -300px
-        @media screen and (max-width: 1170px)
-          right: -17%
-        @media screen and (max-width: 1024px)
-          right: -20%
+        @media screen and (max-width: 1199px)
+          right: -550px
         @media screen and (max-width: 991px)
-          right: -28%
-        @media screen and (max-width: 800px)
-          right: -40%
+          right: -160px
     &.item-image-left
+      justify-content: flex-end
+      .island-item__text-group
+        @media screen and (max-width: 767px)
+          padding-left: 132px
+          text-align: center
+      .info-box
+        @media screen and (max-width: 767px)
+          margin-left: 30px
+          width: calc(100% - 30px)
+      .island-item__image
+        left: 0
+        @media screen and (max-width: 991px)
+          bottom: 100px
       .illustration
         left: 0%
         @media screen and (max-width: 1660px)
           left: -300px
-        @media screen and (max-width: 1170px)
-          left: -17%
-        @media screen and (max-width: 1024px)
-          left: -20%
+        @media screen and (max-width: 1199px)
+          left: -550px 
         @media screen and (max-width: 991px)
-          left: -28%
-        @media screen and (max-width: 800px)
-          left: -40%
+          left: -160px
 </style>

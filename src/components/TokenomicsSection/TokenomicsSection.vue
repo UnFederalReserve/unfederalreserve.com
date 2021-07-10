@@ -72,6 +72,10 @@ export default {
   color: #fff
   text-align: center
   position: relative
+  @media screen and (max-width: 1199px)
+    margin-top: 180px
+  @media screen and (max-width: 991px)
+    margin-top: 100px
   &::before
     content: ""
     position: absolute
@@ -83,6 +87,8 @@ export default {
     top: 35px
     width: 1042px
     height: 1042px
+    @media screen and (max-width: 991px)
+      top: -500px
   &__title
     font-weight: 700
     font-size: 42px
@@ -92,6 +98,8 @@ export default {
     color: #FFFFFF
     margin-bottom: 48px
     position: relative
+    @media screen and (max-width: 767px)
+      font-size: 32px
   &__title-descr
     font-weight: 500
     font-size: 18px
@@ -102,6 +110,9 @@ export default {
     max-width: 730px
     margin: 0 auto 100px
     position: relative
+    @media screen and (max-width: 767px)
+      margin-bottom: 32px
+
   
 .tokenomics-wrap
   max-width: 730px
@@ -116,6 +127,8 @@ export default {
     letter-spacing: 0.01em
     color: #FFFFFF
     margin-bottom: 60px
+    @media screen and (max-width: 767px)
+      margin-bottom: 30px
     span
       color: #F3B328
 
@@ -128,6 +141,9 @@ export default {
 .tokenomics-item
   width: calc(50% - 50px)
   margin-bottom: 30px
+  @media screen and (max-width: 767px)
+    width: 100%
+    margin-bottom: 50px
   &__img
     display: flex
     justify-content: center

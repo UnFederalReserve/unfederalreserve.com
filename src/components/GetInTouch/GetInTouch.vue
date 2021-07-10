@@ -23,6 +23,8 @@ export default {
   margin: 0 auto
   padding: 0 15px
   position: relative
+  @media screen and (max-width: 767px)
+    padding-bottom: 100px
   &::before
     content: ""
     position: absolute
@@ -31,6 +33,9 @@ export default {
     bottom: -100px
     width: 265px
     height: 401px
+    @media screen and (max-width: 767px)
+      right: -82px
+      bottom: -30px
   @media screen and (max-width: 767px)
     margin-top: 100px
   .s-title

@@ -82,7 +82,11 @@ export default {
     height: 131px
     z-index: 2
     bottom: 0
-    left: calc((100% - 1140px) / 2)   
+    left: calc((100% - 1140px) / 2)  
+    @media screen and (max-width: 767px)
+      left: auto
+      right: -50px
+      bottom: -55px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
@@ -98,6 +102,8 @@ export default {
     align-items: flex-start
     justify-content: flex-end
     padding-bottom: 100px
+    @media screen and (max-width: 767px)
+      padding-bottom: 30px
     &-inner
       position: relative
       width: 100% 
@@ -130,6 +136,7 @@ export default {
       height: 100%
     &-row
       display: flex
+      flex-wrap: wrap
       flex-direction: row
       width: 100%
       position: relative
@@ -137,12 +144,8 @@ export default {
       &.between
         justify-content: space-between
         align-items: flex-end
-      @media screen and (max-width: 767px)
-        justify-content: space-between
-      @media screen and (max-width: 695px)
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
+        @media screen and (max-width: 767px)
+          display: block
       &.last-row
         margin-top: 65px
         justify-content: flex-start
@@ -154,58 +157,47 @@ export default {
         width: 100%
         max-width: 500px
         margin-right: 50px
-        margin-top: 40px
         &.column
           a
             margin-bottom: 0!important
         @media screen and (max-width: 767px)
           margin-right: 30px
-        @media screen and (max-width: 695px)
-          max-width: 100%
-          margin-right: 0
-          margin-bottom: 30px
         ::v-deep .social-links
           margin-left: -12px
       &__documents
         width: 100%
         max-width: 180px
         margin-right: 104px
+        margin-bottom: 40px
         @media screen and (max-width: 767px)
-          margin-right: 30px
-        @media screen and (max-width: 695px)
+          margin-right: 65px
+        @media screen and (max-width: 480px)
           margin-right: 0
-          max-width: 50%
       &__home
         width: 100%
         max-width: 125px
         margin-right: 104px
-        @media screen and (max-width: 695px)
-          max-width: 50%
+        margin-bottom: 40px
+        @media screen and (max-width: 767px)
+          margin-right: 65px
       &__leaders
         width: 100%
         max-width: 135px
         margin-right: 50px
+        margin-bottom: 40px
         @media screen and (max-width: 767px)
-          margin-right: 30px
-        @media screen and (max-width: 695px)
-          max-width: 50%
-          margin-right: 0
+          margin-right: 65px
       &__more
         width: 100%
         max-width: 180px
+        margin-bottom: 40px
         @media screen and (max-width: 767px)
-          margin-right: 30px
-        @media screen and (max-width: 695px)
-          max-width: 50%
-          margin-right: 0
+          margin-right: 65px
       &__btn
         @media screen and (max-width: 695px)
           width: 100%
           text-align: center
           margin-top: 30px
-        @media screen and (max-width: 360px)
-          .v-btn
-            font-size: 16px !important
     h5
       font-weight: 600
       font-size: 18px
@@ -231,12 +223,17 @@ export default {
       position: relative
       z-index: 2
       margin-bottom: 10px
+      @media screen and (max-width: 767px)
+        margin-bottom: 0
+        margin-top: 40px
       p
         color: $white
         font-size: 14px
         line-height: 170%
         text-align: right
         letter-spacing: 0.01em
+        @media screen and (max-width: 767px)
+          text-align: left
   .right-footer-rock
     position: absolute
     left: calc((100% - 1140px) / 2)
@@ -244,5 +241,7 @@ export default {
     max-width: 300px
     z-index: 1
     @media screen and (max-width: 767px)
-      display: none
+      left: -50px
+      top: -100px
+      max-width: 200px
 </style>

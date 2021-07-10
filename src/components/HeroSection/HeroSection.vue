@@ -66,9 +66,9 @@ export default {
   @media screen and (max-width: 1199px)
     background-position: left bottom
     background-image: url('~images/hero-section-mobile.svg')
-  @media screen and (max-width: 576px)
-    height: 1100px
-
+  @media screen and (max-width: 767px)
+    background-image: url('~images/hero-section-mobile-xs.svg')
+    min-height: 1100px
   &-content
     width: 100%
     margin: 0 auto
@@ -80,15 +80,17 @@ export default {
       padding-top: 170px
       max-width: 635px
       width: 100%
-
+      @media screen and (max-width: 767px)
+        padding-top: 112px
       h1
         font-size: 56px
         letter-spacing: 0.01em
         line-height: 130%
         color: #002490
         margin-bottom: 30px
-        @media screen and (max-width: 576px)
-          max-width: 225px
+        @media screen and (max-width: 767px)
+          font-size: 32px
+          margin-bottom: 24px
 
       @media screen and (max-width: 576px)
         padding-top: 90px
@@ -103,8 +105,6 @@ export default {
         color: #021859
         &.bold-descr
           margin-bottom: 21px
-        @media screen and (max-width: 576px)
-          max-width: 283px
 
         strong
           font-weight: 600
@@ -127,6 +127,4 @@ export default {
           color: #366CEF
           &:hover
             text-decoration: underline
-          @media screen and (max-width: 576px)
-            color: white
 </style>

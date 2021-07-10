@@ -138,6 +138,9 @@ export default {
       z-index: 99
       background-color: #fff
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      .site-logo
+        path
+          fill: #002490
       @media screen and (max-width: 991px)
         box-shadow: none
       .header-wrap
@@ -180,6 +183,9 @@ export default {
           box-shadow: 0px 0px 0px 5px rgb(91 123 255 / 24%)
           background: linear-gradient(180deg, #4382FF 0%, #2450DB 100%, #0433BF 100%)
           color: #fff
+      .site-logo
+          path
+            fill: #002490
       &:not(.fixed)
         .site-logo
           path

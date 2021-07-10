@@ -26,4 +26,6 @@ export default {
     max-width: 1972px
     background: url("~images/figure-1.svg") no-repeat center
     background-size: cover
+    @media screen and (max-width: 767px)
+      right: 0
 </style>

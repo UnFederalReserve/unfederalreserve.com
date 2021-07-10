@@ -148,11 +148,17 @@ export default {
   margin: 0
   list-style-type: none
   position: relative
+  @media screen and (max-width: 991px)
+    padding-left: 33px
   > li
     &:last-child 
       margin-bottom: 46px
+      @media screen and (max-width: 991px)
+        margin-bottom: 30px
     &:nth-child(2)
       margin-top: 160px
+      @media screen and (max-width: 991px)
+        margin-top: 0
       .timeline-list-item
         &::before
           background: linear-gradient(180deg, #5CEFFF 0%, #0A88E3 90.34%)
@@ -216,6 +222,10 @@ export default {
     height: 100%
     background: linear-gradient(180deg, rgba(92, 239, 255, 0) 10.84%, rgba(92, 239, 255, 0.909091) 30.44%, #5CEFFF 30.45%, #0A88E3 52.98%, rgba(92, 239, 255, 0.9091) 57.69%, rgba(255, 255, 255, 0) 93.69%)
     border-radius: 26px
+    @media screen and (max-width: 991px)
+      left: 0
+      background: linear-gradient(180deg, rgba(92, 239, 255, 0) 0, rgba(92, 239, 255, 0.909091) 30.44%, #5CEFFF 30.45%, #0A88E3 52.98%, rgba(92, 239, 255, 0.9091) 57.69%, rgba(255, 255, 255, 0) 93.69%)
+
 
 .timeline-wrap
   &::before, 
@@ -233,25 +243,43 @@ export default {
   float: left
   clear: left
   padding-right: 158px
+  @media screen and (max-width: 991px)
+    float: right
+    clear: right
+    padding-right: 0
   .timeline-badge
     right: -84px
+    @media screen and (max-width: 991px)
+      right: 0
     &::before
       left: -73px
+      @media screen and (max-width: 991px)
+        left: -25px
 
 .timeline-right
   float: right
   clear: right
   padding-left: 158px
+  @media screen and (max-width: 991px)
+    padding-left: 0
   .timeline-badge
     left: -84px
+    @media screen and (max-width: 991px)
+      left: 0
     &::before
       right: -73px
+      @media screen and (max-width: 991px)
+        right: 0
+        left: -25px
 
 .timeline-left,
 .timeline-right
   width: 50%
   margin-bottom: 80px
   position: relative
+  @media screen and (max-width: 991px)
+    margin-bottom: 40px
+    width: 100%
 
 
 .timeline-lists
@@ -282,6 +310,11 @@ export default {
   position: absolute
   margin-bottom: 200px
   top: 80px
+  @media screen and (max-width: 991px)
+    position: relative
+    width: 140px
+    top: 0 !important
+    margin-bottom: 16px
   &::before
     content: ""
     position: absolute
@@ -289,6 +322,8 @@ export default {
     height: 1px
     border-bottom: 1px dashed #4382FF
     top: 50%
+    @media screen and (max-width: 991px)
+      width: 20px
   .text
     width: 169px
     height: 50px
@@ -306,6 +341,8 @@ export default {
     border-radius: 40px
     z-index: 2
     position: relative
+    @media screen and (max-width: 991px)
+      width: 140px
   .border
     background: linear-gradient(#4382FF 0%, #205CD4 100%)
     position: absolute
@@ -327,8 +364,8 @@ export default {
   width: 100%
   display: flex
   @media screen and (max-width: 991px)
-    margin-left: 0
-    margin-top: 40px
+    margin-left: 30px
+    margin-top: 0
   span
     margin-right: 6px
     color: #fff
@@ -346,6 +383,8 @@ export default {
     background-image: none
     margin-top: 100px
     height: auto
+  @media screen and (max-width: 767px)
+    margin-top: 60px
   h2
     color: $white
     text-align: center

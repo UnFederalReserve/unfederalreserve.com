@@ -5,7 +5,11 @@
     .wrap
       .illustration-wrap.absolute-left
         Bank.illustration.desktop
-        BankMobile.illustration.mobile
+        BaseImage.illustration.mobile(
+          :src="require('images/bank-mob-1.svg')",
+          alt="illustration-2",
+          force
+        )
       .limited-liquity__text.wide
         p Middle-market B2B lenders sometimes experience payment latency 
           | or acceleration, and either instance can incur a cost for the lender.
@@ -32,7 +36,11 @@
           alt="illustration-2",
           force
         )
-        BankNextMobile.illustration.mobile
+        BaseImage.illustration.mobile(
+          :src="require('images/bank-mob-2.svg')",
+          alt="illustration-2",
+          force
+        )
 </template>
 
 <script>
@@ -69,6 +77,8 @@ section
     color: #FFFFFF
     position: relative
     z-index: 1
+    @media screen and (max-width: 767px)
+      font-size: 32px  
   @media screen and (max-width: 767px)
     margin-top: 50px
   .wrap
@@ -79,8 +89,8 @@ section
     flex-direction: row
     justify-content: space-between
     position: relative
-    @media screen and (max-width: 767px)
-      flex-direction: column
+    @media screen and (max-width: 991px)
+      flex-direction: column-reverse
       flex-wrap: wrap
       align-items: center
     .illustration-wrap
@@ -91,17 +101,33 @@ section
       margin-right: 30px
       position: relative
       display: flex
+      z-index: 1
       justify-content: flex-end
       &.absolute-left
         position: absolute
         bottom: -145px
         left: -112px
         max-width: 790px
+        @media screen and (max-width: 991px)
+          max-width: 400px
+          position: relative
+          bottom: 0
+          left: 0
+          margin-right: 0
       &.absolute-right
         position: absolute
         bottom: -212px
         right: -20px
         max-width: 790px
+        @media screen and (max-width: 1199px)
+          max-width: 640px
+          bottom: -100px
+        @media screen and (max-width: 991px)
+          max-width: 400px
+          position: relative
+          bottom: 0
+          right: 0
+          margin-right: 0
       @media screen and (max-width: 1140px)
         max-width: 50%
         img
@@ -125,6 +151,8 @@ section
   &.limited-liquity-today
     padding-top: 120px
     position: relative
+    @media screen and (max-width: 991px)
+      padding-top: 55px
     &::before
       content: ""
       position: absolute
@@ -139,11 +167,17 @@ section
       width: 100%
       max-width: 413px
       margin-top: 100px
+      .info-box
+        @media screen and (max-width: 991px)
+          margin-left: 20px
+          width: calc(100% - 20px)
+      @media screen and (max-width: 991px)
+        margin-top: 50px
       &.wide
         max-width: 100%
         padding-left: 50%
-      @media screen and (max-width: 1140px)
-        margin-top: 0
+        @media screen and (max-width: 991px)
+          padding-left: 0
       @media screen and (max-width: 767px)
         order: -1
         max-width: 100%
@@ -169,6 +203,15 @@ section
         display: none
   &.limited-liquity-great
     margin-top: 230px
+    .wrap
+      @media screen and (max-width: 991px)
+        flex-direction: column
+    @media screen and (max-width: 991px)
+      margin-top: 100px
+    .info-box
+      @media screen and (max-width: 1199px)
+        margin-left: 20px
+        width: calc(100% - 20px)
     @media screen and (max-width: 767px)
       margin-top: 50px
     .illustration-wrap
@@ -191,10 +234,9 @@ section
       width: 100%
       max-width: 445px
       margin-top: 130px
-      @media screen and (max-width: 1140px)
-        margin-top: 0
-      @media screen and (max-width: 767px)
+      @media screen and (max-width: 991px)
         max-width: 100%
+        margin-top: 50px
     .tick
       position: absolute
       left: -70px
@@ -218,9 +260,10 @@ section
   .illustration
     height: 100%
     &.desktop
-      @media screen and (max-width: 767px)
+      @media screen and (max-width: 991px)
         display: none
     &.mobile
-      @media screen and (min-width: 768px)
-        display: none
+      display: none
+      @media screen and (max-width: 991px)
+        display: flex
 </style>

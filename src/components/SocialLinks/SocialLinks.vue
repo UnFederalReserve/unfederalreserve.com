@@ -51,6 +51,8 @@ export default {
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  @media screen and (max-width: 767px)
+    margin-top: 10px
 .link
   width: 50px
   height: 50px
@@ -60,6 +62,9 @@ export default {
   flex-direction: row
   justify-content: center
   align-items: center
+  @media screen and (max-width: 767px)
+    width: 45px
+    height: 45px
   &:before
     content: ''
     position: absolute

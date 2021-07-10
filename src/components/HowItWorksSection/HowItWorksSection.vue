@@ -34,11 +34,13 @@
 
 <script>
 import HowItWorksCarouselItem from './HowItWorksCarouselItem';
+import HowItWorksSectionItem from './HowItWorksSectionItem';
 
 export default {
   name: 'HowItWorksSection',
   components: {
     HowItWorksCarouselItem,
+    HowItWorksSectionItem
   },
   props: {
     items: Array,
@@ -140,6 +142,7 @@ export default {
 
 <style lang="sass" scoped>
 @import '~Styles/_variables'
+
 .how-it-works
   width: 100%
   margin: 0 auto
@@ -147,6 +150,12 @@ export default {
   padding: 178px 15px 0
   position: relative
   min-height: 920px
+  @media screen and (max-width: 1199px)
+    padding: 20px 15px 0
+    min-height: 875px
+  @media screen and (max-width: 767px)
+    margin-top: -100px
+    padding-bottom: 80px
   &::before
     content: ''
     position: absolute
@@ -154,25 +163,24 @@ export default {
     width: 1000px
     height: 1000px
     left: -300px
-    top: 0
-  @media screen and (max-width: 767px)
-    margin-top: 100px
+    top: -120px
+    @media screen and (max-width: 767px)
+      top: 0
+      left: 50%
+      transform: translateX(-50%)
   &-items
-    margin: 0 -15px
-    margin-top: 90px
-    display: flex
-    flex-direction: row
+    display: none
     flex-wrap: wrap
     justify-content: space-between
-    @media screen and (max-width: 1140px)
-      justify-content: center
+    @media screen and (max-width: 1199px)
       margin-top: 20px
+      display: flex
 h2
   color: $white
   text-align: center
   margin-bottom: 140px
-  @media screen and (max-width: 1170px)
-    text-align: center
+  @media screen and (max-width: 1199px)
+    margin-bottom: 80px
 
 .how-it-works-wrap
   position: relative
