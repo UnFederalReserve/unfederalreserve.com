@@ -1,5 +1,5 @@
 <template lang="pug">
-  .GetInTouchForm
+  .GetInTouchForm.get-in-touch-form
     v-form#getintouchform(@submit.prevent="send", ref="form",)
       v-text-field(
         v-model="model.name"
@@ -73,7 +73,7 @@ export default {
 <style lang="sass" scoped>
 @import '~Styles/_variables'
 
-.GetInTouchForm
+.get-in-touch-form
   max-width: 350px
   width: 100% 
   margin: 0 auto

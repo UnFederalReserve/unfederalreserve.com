@@ -79,4 +79,21 @@ export default {
 body,
 .v-application
   background: linear-gradient(180deg, #3357CF 1.17%, #3357CF 1.17%, #3357CF 10.58%, #010450 43.43%) !important
+.body-page-404
+  position: relative
+  background: none !important
+  .right-footer-rock
+    display: none
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    height: 905px
+    background: url('~images/404-top-bg.svg') no-repeat center top
+    background-size: cover
+  .v-application
+    background: none !important
 </style>

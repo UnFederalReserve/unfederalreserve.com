@@ -146,6 +146,9 @@ section
         font-size: 18px
         line-height: 160%
         letter-spacing: 0.01em
+      p
+        &+.info-box
+          margin-top: 32px
       h2
         margin-bottom: 20px
   &.limited-liquity-today

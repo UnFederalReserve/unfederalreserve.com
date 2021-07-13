@@ -70,7 +70,7 @@ export default {
       ];
     },
     isBlackHeader() {
-      return Boolean(['home', 'terms'].includes(this.$route.name));
+      return Boolean(['home', 'terms', '404'].includes(this.$route.name));
     },
   },
   watch: {

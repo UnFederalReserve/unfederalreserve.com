@@ -364,7 +364,7 @@ export default {
   width: 100%
   display: flex
   @media screen and (max-width: 991px)
-    margin-left: 30px
+    padding-left: 30px
     margin-top: 0
   span
     margin-right: 6px
