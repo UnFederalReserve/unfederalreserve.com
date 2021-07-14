@@ -37,9 +37,6 @@ export default {
   },
   components: {
     BaseImage
-  },
-  mounted() {
-    console.log("dfgdfg", this.social[0].path)
   }
 }
 </script>

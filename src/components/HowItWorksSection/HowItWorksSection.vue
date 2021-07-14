@@ -50,6 +50,7 @@ export default {
       currentOffset: 0,
       paginationFactor: 130,
       sliderPosition: 1,
+      interval: null,
       carouselItems: [
         {
           id: 1,
@@ -125,6 +126,7 @@ export default {
         this.currentOffset += this.paginationFactor;
         this.currentPosition();
       }
+      
     },
     currentPosition() {
       this.sliderPosition= this.findSlideIdx("active") + 1;
@@ -135,7 +137,40 @@ export default {
     changeSlideClass(index, property, direction) {
       this.carouselItems[index][property] = false;
       this.carouselItems[index+direction][property] = true;
+    },
+    setSlideItemProperty(item, firstVal, secondVal) {
+      item.active = firstVal;
+      item.nextEl = secondVal;
+    },
+    resetSlider() {
+      this.carouselItems.forEach((item, idx) => {
+        if(idx === 0) {
+          this.setSlideItemProperty(item, true, false);
+        } else if(idx === 1) {
+          this.setSlideItemProperty(item, false, true);
+        } else {
+          this.setSlideItemProperty(item, false, false);
+        }
+      });
+    },
+    autoMoveSlide() {
+      const activeIdx = this.findSlideIdx("active");
+      if(activeIdx === this.carouselItems.length - 1) {
+        this.currentOffset = 0;
+        this.resetSlider();
+        this.moveCarousel(-1);
+      } else {
+        this.moveCarousel(1);
+      }
     }
+  },
+  mounted() {
+    this.interval = setInterval(() => {
+      this.autoMoveSlide();
+    }, 3000);
+  },
+  beforeDestroy() {
+    clearInterval(this.interval);
   }
 };
 </script>

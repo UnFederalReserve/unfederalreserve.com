@@ -100,9 +100,6 @@ export default {
           font-size: 32px
           margin-bottom: 24px
 
-      @media screen and (max-width: 576px)
-        padding-top: 90px
-
       p
         margin-bottom: 24px
         max-width: 520px
