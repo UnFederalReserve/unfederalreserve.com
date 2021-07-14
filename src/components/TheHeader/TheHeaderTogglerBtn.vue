@@ -24,18 +24,18 @@ export default {
     .navbar-toggler
       top: 26px
       span
-        background: #042751
+        background: #002490
         &:before,
         &:after
-          background: #042751
+          background: #002490
   .black-header
     &:not(.fixed)
       .navbar-toggler
         span
-          background: #042751
+          background: #002490
           &:before,
           &:after
-            background: #042751
+            background: #002490
 
 .navbar-toggler
   position: absolute
