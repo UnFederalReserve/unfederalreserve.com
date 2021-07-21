@@ -40,7 +40,7 @@
           p Any major DeFi protocol relies on democratized systems so that any borrower 
             | (represented by the boats) can transact with any lender (represented by the ports).
           p The challenge, then, from the perspective of the DeFi community, is the engagement of 
-            | sophisticated borrowers (e.g., Treasurers at middle-market companies).
+            | sophisticated borrowers (e.g. Treasurers at middle-market companies).
         .island-item__text-group
           p Without proper sophistication, individual lenders cannot perform proper risk-based pricing, 
             | and discrepancies in experience can lead to arbitrage that can harm the entire community. 
