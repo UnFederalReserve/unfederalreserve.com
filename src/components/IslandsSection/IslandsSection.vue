@@ -58,7 +58,7 @@
           | Unsophisticated lenders, however, would be at the mercy of seasoned borrowing professionals, 
           | which poses a risk to the lending industry. 
         BaseInfoBox(bottomIcon)
-          p The unFederalReserve safe harbor ensures that only qualified,
+          p The unFederalReserve safe harbor ensures that only qualified, 
             | vetted parties have access to safe, legally compliant liquidity.
           p And talk about speed... 
             span short-term lending 
