@@ -18,7 +18,7 @@
           | , cash reporting, and overnight lending/borrowing utility tool. 
         BaseInfoBox
           h3.info-box__title We offer
-          p the security of immutable records, near instantaneous settlement, and 
+          p The security of immutable records, near instantaneous settlement, and 
             | encryption well beyond what the largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
