@@ -18,7 +18,7 @@
           | , cash reporting, and overnight lending/borrowing utility tool. 
         BaseInfoBox
           h3.info-box__title We offer
-          p the security of immutable records, near instantaneous settlement, and 
+          p The security of immutable records, near instantaneous settlement, and 
             | encryption well beyond what the largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
@@ -58,7 +58,7 @@
           | Unsophisticated lenders, however, would be at the mercy of seasoned borrowing professionals, 
           | which poses a risk to the lending industry. 
         BaseInfoBox(bottomIcon)
-          p The unFederalReserve safe harbor ensures that only qualified,
+          p The unFederalReserve safe harbor ensures that only qualified, 
             | vetted parties have access to safe, legally compliant liquidity.
           p And talk about speed... 
             span short-term lending 

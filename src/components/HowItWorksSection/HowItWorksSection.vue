@@ -90,7 +90,7 @@ export default {
           nextEl: false,
           number: "05",
           title: "Integrate",
-          text: "Connect your balance sheet to CM-Dash(R) and all your liquidity sources and uses can be monitored on our simple to use the platform."
+          text: "Connect your balance sheet to CM-Dash(R) and all your liquidity sources and uses can be monitored on our simple to use platform."
         },
         {
           id: 6,
@@ -98,7 +98,7 @@ export default {
           nextEl: false,
           number: "06",
           title: "Reporting",
-          text: "Accounting, financial, and tax reporting integration with existing systems available."
+          text: "Accounting, financial and tax reporting integration with existing systems available."
         }
       ]
     }
@@ -167,7 +167,7 @@ export default {
   mounted() {
     this.interval = setInterval(() => {
       this.autoMoveSlide();
-    }, 3000);
+    }, 5000);
   },
   beforeDestroy() {
     clearInterval(this.interval);
