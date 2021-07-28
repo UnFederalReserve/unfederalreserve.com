@@ -12,10 +12,12 @@
       Twitt.svg-icon
     a(href="https://www.reddit.com/r/unFederalReserve" target="_blank").link
       Reddit.svg-icon
-    a(href="https://unfederalreserve.medium.com" target="_blank").link
-      Medium.svg-icon
     a(href="https://defipulse.com/defi-lending" target="_blank").link
       Defi.svg-icon
+    a(href="https://www.coingecko.com/en/coins/unfederalreserve" target="_blank").link
+      Geco.svg-icon
+    a(href="https://coinmarketcap.com/currencies/unfederalreserve/" target="_blank").link
+      cointMarket.svg-icon
 </template>
 
 <script>
@@ -25,9 +27,10 @@ import GroupIcon from 'images/svg-icons/group-icon.svg';
 import Vector from 'images/svg-icons/vector.svg';
 import Twitt from 'images/svg-icons/twitt.svg';
 import Youtube from 'images/svg-icons/youtube.svg';
-import Medium from 'images/svg-icons/medium.svg';
 import Reddit from 'images/svg-icons/reddit.svg';
 import Defi from 'images/svg-icons/defi.svg';
+import cointMarket from 'images/svg-icons/coin-market.svg';
+import Geco from 'images/svg-icons/geco.svg';
 
 export default {
   name: 'SocialLinks',
@@ -38,9 +41,10 @@ export default {
     Vector,
     Twitt,
     Youtube,
-    Medium,
     Reddit,
-    Defi
+    Defi,
+    cointMarket,
+    Geco,
   },
 };
 </script>
