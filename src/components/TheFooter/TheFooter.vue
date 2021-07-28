@@ -21,6 +21,7 @@
         .footer-content-row__contacts.column
           h5 Contacts
           a(href="mailto:info@unfederalreserve.com") info@unfederalreserve.com
+          a(href="mailto:askhoward@unfederalreserve.com") Submit Town hall Questions
           SocialLinks
         .footer-content-row__documents.column
           h5 Documents
@@ -79,9 +80,9 @@ export default {
   bottom: -1px
   z-index: 2
   @media screen and (min-width: 695px)
-    height: 500px
+    height: 550px
   @media screen and (min-width: 1800px)
-    height: 429px
+    height: 500px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
