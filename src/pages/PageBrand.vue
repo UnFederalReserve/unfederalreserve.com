@@ -4,10 +4,14 @@
       .s-container
         .s-top__wrap
           h1.top-title Brand Assets
-          p.top-descr Our Brand Book is a basic guide for anyone using 
+          p.top-descr Our Brand Book is a basic guide for anyone using
             | the unFederalReserve brand to create promotional materials.
           .top-info Please read the guidelines before using
-          a(href="#" class="btn-rounded btn-white-bd") Download
+          a(
+            href="https://drive.google.com/drive/u/1/folders/1F8K_0PgHQwFw6NlAuglr5IFPPIDmxaM9"
+            target="_blank"
+            class="btn-rounded btn-white-bd"
+          ) Download
     BrandLogotypeSection
     BrandSymbolSection
     BrandColorSection
@@ -26,8 +30,8 @@ export default {
     BrandLogotypeSection,
     BrandSymbolSection,
     BrandColorSection,
-    BrandFontSection
-  }
+    BrandFontSection,
+  },
 };
 </script>
 
@@ -81,7 +85,7 @@ export default {
   color: #FFFFFF
   margin-bottom: 37px
 
-.top-info 
+.top-info
   font-weight: 600
   font-size: 18px
   line-height: 170%

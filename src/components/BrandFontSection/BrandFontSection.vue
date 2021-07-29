@@ -14,11 +14,11 @@
             span.semi-bold SemiBold
             span.bold Bold
       .font-download
-        a(href="#" class="btn-rounded btn-white-bd") Download
-
-
-
-      
+        a(
+          href="https://drive.google.com/drive/u/1/folders/1F8K_0PgHQwFw6NlAuglr5IFPPIDmxaM9"
+          target="_blank"
+          class="btn-rounded btn-white-bd"
+        ) Download
 
 </template>
 
@@ -26,11 +26,11 @@
 import BaseImage from 'Components/Base/BaseImage';
 
 export default {
-  name: "BrandFontSection",
+  name: 'BrandFontSection',
   components: {
-    BaseImage
-  }
-}
+    BaseImage,
+  },
+};
 </script>
 
 <style lang="sass" scoped>
@@ -71,8 +71,8 @@ export default {
     margin-top: 28px
   @media screen and (max-width: 400px)
     padding-left: 0
-  
-.font-name 
+
+.font-name
   font-weight: 600
   font-size: 45px
   line-height: 67px
@@ -86,7 +86,7 @@ export default {
   line-height: 170%
   letter-spacing: 0.01em
   color: #FFFFFF
-  
+
 .font-letters
   font-weight: 600
   font-size: 64px
