@@ -4,11 +4,11 @@
       .hero-content__wrap
         .cloud-items
           .cloud-item.cloud-supply
-            .cloud-item__value $50,651,897.00
+            .cloud-item__value $51,061,113.00
             .cloud-item__label Total Supply
           .cloud-item.cloud-apy
             .cloud-item__top-info Earn up to
-            .cloud-item__value 43.85%
+            .cloud-item__value 34.63%
             .cloud-item__label USDC APY
         p.hero-content__text
           strong unFederalReserve&nbsp;
