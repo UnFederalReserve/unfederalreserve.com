@@ -1,6 +1,7 @@
 <template lang="pug">
   v-app
     BaseSpinner(:value="isAppLoading && !_isMounted" zIndex="999" full opaque)
+    TheNotification
     TheHeader
     v-main
       router-view
@@ -12,6 +13,7 @@ import { mapActions, mapGetters } from 'vuex';
 import BaseSpinner from 'Components/Base/BaseSpinner';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
+import TheNotification from 'Components/TheNotification/TheNotification';
 
 
 export default {
@@ -20,6 +22,7 @@ export default {
     BaseSpinner,
     TheHeader,
     TheFooter,
+    TheNotification,
   },
   computed: {
     ...mapGetters('router', [

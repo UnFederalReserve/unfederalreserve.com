@@ -140,7 +140,7 @@ export default {
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
       .site-logo
         path
-          fill: #002490
+          fill: #042751
       @media screen and (max-width: 991px)
         box-shadow: none
       .header-wrap

@@ -29,9 +29,19 @@ export default {
   width: 100%
   margin: 0 auto
   max-width: 1140px
-  padding-left: 15px
-  padding-right: 15px
-  margin-top: -50px
+  padding: 50px 15px 0 15px
+  position: relative
+  &::before
+    content: ""
+    width: 51px
+    height: 51px
+    right: 15px
+    top: 130px
+    position: absolute
+    background-image: url('~images/bubble.svg')
+    background-repeat: no-repeat
+    @media screen and (max-width: 767px)
+      display: none
   @media screen and (max-width: 767px)
     margin-top: 100px
   &-items
