@@ -2,44 +2,48 @@
   section.HeroSection.hero
     .hero-content
       .hero-content__wrap
-        h1 Your Middle-Market DeFi Solution
-        p unFederalReserve is a banking Saas company built on blockchain technology.
-          |  Our banking products are designed for smaller U.S. Treasury chartered banks
-          |  and non-bank lenders in need of greater liquidity without sacrificing security
-          |  or compliance.
-          span  Hit the button below and create or manage a stake account and purchase our token.
+        .cloud-items
+          .cloud-item.cloud-supply
+            .cloud-item__value $50,651,897.00
+            .cloud-item__label Total Supply
+          .cloud-item.cloud-apy
+            .cloud-item__top-info Earn up to
+            .cloud-item__value 43.85%
+            .cloud-item__label USDC APY
+        p.hero-content__text
+          strong unFederalReserve&nbsp;
+          | is a banking SaaS company
+          | built on blockchain technology. Our banking products are designed
+          | for smaller U.S. Treasury chartered banks and non-bank lenders in
+          | need of greater liquidity without sacrificing security or compliance.
+          | ReserveLending is our live DeFI or P2P lending and borrowing platform.
+          | Get the most from your crypto while enjoying a safe and easy user
+          | experience by clicking the button below
         div.btn-container
-          v-btn(href="https://app.unfederalreserve.com")
-            | Stake
-          a.btn-round(
-            href="https://lending.unfederalreserve.com/",
-            target="_blank",
+          BaseBtn(
+            classes="btn-rounded btn-with-arrow btn-gradient"
+            text="Get Started"
+            :link="link"
           )
-            | Lending
-            div.new
-              | new
-          div.documentsContainer
-            | Our &nbsp;
-            a(
-              :href="require('docs/LitePaperRSDL.pdf')",
-              target="_blank",
-            ) litepaper
-            | &nbsp; and &nbsp;
-            a(
-              :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-              target="_blank",
-            ) whitepaper
+          BaseBtn(
+            classes="btn-rounded btn-with-arrow btn-grey-border"
+            text="LP Staking"
+            link="https://app.unfederalreserve.com/farms/eRSDL-ETH%20UNI-V2%20LP"
+          )
 </template>
 
 
 <script>
 
 import DropdownMenu from 'Components/DropdownMenu/DropdownMenu';
+import BaseBtn from 'Components/Base/BaseBtn';
+import CONFIG from 'Config';
 
 export default {
   name: 'HeroSection',
   components: {
     DropdownMenu,
+    BaseBtn
   },
   data() {
     return {
@@ -49,6 +53,7 @@ export default {
       interactive: false,
       transition: false,
       closeOnClickOutside: true,
+      link: CONFIG.urls.lendingMain
     };
   },
 };
@@ -63,17 +68,13 @@ export default {
   background-position: center bottom
   background-size: cover
   width: 100%
-  height: 1200px
+  height: 920px
   @media screen and (min-width: 2200px)
     height: 1200px
   @media screen and (min-width: 2700px)
     height: 1500px
-  @media screen and (max-width: 900px)
-    background-position: left bottom
-    background-image: url('~images/hero-section-mobile.svg')
-  @media screen and (max-width: 576px)
-    height: 1100px
-
+  @media screen and (max-width: 767px)
+    min-height: 1100px
   &-content
     width: 100%
     margin: 0 auto
@@ -81,90 +82,114 @@ export default {
     padding-left: 15px
     padding-right: 15px
 
-    &__wrap
-      padding-top: 160px
-      max-width: 486px
+    &__text
+      margin: 24px auto 24px
       width: 100%
+      max-width: 663px
+      font-size: 14px
+      line-height: 170%
+      letter-spacing: 0.01em
+      color: #021859
+      text-align: center
+      margin-bottom: 53px
+      &.bold-descr
+        margin-bottom: 21px
 
+      strong
+        font-weight: 700
+        font-size: 18px
+        line-height: 170%
+        letter-spacing: 0.01em
+        color: $blue-23
+
+    &__wrap
+      padding-top: 110px
+      width: 100%
+      @media screen and (max-width: 767px)
+        padding-top: 112px
       h1
-        font-size: 60px
-        line-height: 60px
-
-      @media screen and (max-width: 576px)
-        padding-top: 90px
-
-      h1
-        margin-bottom: 40px
-        @media screen and (max-width: 576px)
-          max-width: 225px
-
-      p
-        margin-bottom: 40px
-        @media screen and (max-width: 576px)
-          max-width: 283px
-
-        span
-          color: $blue
+        font-size: 56px
+        letter-spacing: 0.01em
+        line-height: 130%
+        color: #002490
+        margin-bottom: 30px
+        @media screen and (max-width: 767px)
+          font-size: 32px
+          margin-bottom: 24px
       .btn-container
-        width: 87%
+        margin-bottom: 20px
         display: flex
         flex-wrap: wrap
-        align-items: center
         justify-content: center
-        .v-btn:nth-child(1)
-          margin-bottom: 20px
-          height: 70px
-          min-width: auto
-          padding: 0 50px
-          margin-right: 30px
-          @media screen and (max-width: 576px)
-            min-width: 145px
-            span
-              display: none
-        .btn-round
-          margin-bottom: 20px
-          width: 160px
-          background: $blue-20
-          color: $blue
-          min-width:  220px
-          cursor: pointer
-          border-radius: 100px
-          height: 70px
-          box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%)
-          align-items: center
-          display: inline-flex
-          justify-content: center
-          font-size: 24px
-          flex: 0 0 auto
-          font-weight: 600
-          letter-spacing: normal
-          outline: 0
-          position: relative
-          border: solid 3px $blue
+        align-items: center
+        .btn-rounded
+          margin: 0 7px 10px
+      .hero-bottom-links
+        display: flex
+        color: black
+        font-weight: 500
+        font-size: 16px
+        line-height: 160%
+        letter-spacing: 0.01em
+        color: #042751
+        a
+          color: #366CEF
           &:hover
-            background: linear-gradient(180deg, #D7E0FF 0%, #EAEFFF 0.01%, #D1DCFF 100%)
-            .new
-              background: linear-gradient(180deg, #eff6ff 0%, #eff6ff 0.01%, #dfe7ff 100%)
-          .new
-            font-weight: 700
-            position: absolute
-            top: -15px
-            right: 30px
-            padding: 0 7px
-            border-radius: 10px
-            background: #eff6ff
-            color: #F9762A
-            text-transform: uppercase
-            font-size: 18px
-        .documentsContainer
-          display: flex
-          justify-content: center
-          color: black
-          a
-            color: #2C4DC1
-            font-weight: 600
-            &:hover
-              text-decoration: underline
-            @media screen and (max-width: 576px)
-              color: white
+            text-decoration: underline
+
+.cloud-items
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+.cloud-item
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  background-size: contain
+  background-repeat: no-repeat
+  min-height: 215px
+  width: 100%
+  flex-shrink: 0
+  margin: 0 20px
+  @media screen and (max-width: 1199px)
+    min-height: 150px
+  &.cloud-supply
+    background-image: url('~images/cloud-1.svg')
+    max-width: 477px
+    padding-top: 20px
+    @media screen and (max-width: 1199px)
+      max-width: 320px
+  &.cloud-apy
+    background-image: url('~images/cloud-2.svg')
+    max-width: 463px
+    @media screen and (max-width: 1199px)
+      max-width: 320px
+  &__value
+    font-weight: 700
+    font-size: 46px
+    line-height: 130%
+    letter-spacing: 0.01em
+    color: $blue-21
+    margin-bottom: 2px
+    margin-top: 7px
+    @media screen and (max-width: 1199px)
+      font-size: 28px
+  &__label
+    font-weight: 600
+    font-size: 18px
+    line-height: 130%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: $blue-22
+  &__top-info
+    font-weight: 600
+    font-size: 14px
+    line-height: 130%
+    letter-spacing: 0.01em
+    text-transform: uppercase
+    color: $blue-21
+
+
 </style>

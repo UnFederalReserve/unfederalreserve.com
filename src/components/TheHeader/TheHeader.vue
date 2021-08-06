@@ -70,7 +70,7 @@ export default {
       ];
     },
     isBlackHeader() {
-      return Boolean(['home', 'terms'].includes(this.$route.name));
+      return Boolean(['home', 'terms', '404'].includes(this.$route.name));
     },
   },
   watch: {
@@ -138,6 +138,9 @@ export default {
       z-index: 99
       background-color: #fff
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
+      .site-logo
+        path
+          fill: #042751
       @media screen and (max-width: 991px)
         box-shadow: none
       .header-wrap
@@ -168,30 +171,32 @@ export default {
             &::before
               opacity: 1
           &:hover 
-            color: #fff!important
+            color: #fff !important
       .site-logo
         path
           fill: $white
     &.black-header
       .header-btn
-        color: #3357CF
-        border-color: #3357CF
+        color: #4382FF
+        border-color: #4382FF
         &:hover
           box-shadow: 0px 0px 0px 5px rgb(91 123 255 / 24%)
           background: linear-gradient(180deg, #4382FF 0%, #2450DB 100%, #0433BF 100%)
           color: #fff
+      .site-logo
+          path
+            fill: #042751
       &:not(.fixed)
         .site-logo
           path
             fill: #042751
         ::v-deep .header-menu
           a
-            color: #042751 !important
-            opacity: 0.5
             &::before
-              background: #042751
+              background: #3357CF
             &:hover
               opacity: 1
+              color: #3357CF!important
   &-wrap
     width: 100%
     max-width: 1140px

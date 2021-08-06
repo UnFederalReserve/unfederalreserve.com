@@ -1,6 +1,7 @@
 <template lang="pug">
   v-app
     BaseSpinner(:value="isAppLoading && !_isMounted" zIndex="999" full opaque)
+    TheNotification
     TheHeader
     v-main
       router-view
@@ -12,6 +13,7 @@ import { mapActions, mapGetters } from 'vuex';
 import BaseSpinner from 'Components/Base/BaseSpinner';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
+import TheNotification from 'Components/TheNotification/TheNotification';
 
 
 export default {
@@ -20,6 +22,7 @@ export default {
     BaseSpinner,
     TheHeader,
     TheFooter,
+    TheNotification,
   },
   computed: {
     ...mapGetters('router', [
@@ -78,5 +81,5 @@ export default {
 @import 'styles/app.scss'
 body,
 .v-application
-  background: linear-gradient(180deg, #2F53CB 0%, #2F53CB 10%, #010450 100%) !important
+  background: linear-gradient(180deg, #345BD8 0%, #010450 100%) !important
 </style>
