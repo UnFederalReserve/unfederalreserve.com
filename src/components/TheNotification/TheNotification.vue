@@ -8,10 +8,17 @@
           .notification-item__icon
             Warning
           p
-            strong.intro Please note:&nbsp;
-            | That&nbsp;
-            a(href="https://app.unfederalreserve.com/" target="_blank") app.unfederalreserve.com
-            | &nbsp;platform no longer pays rewards for LP staking
+            a(
+              href="https://unfederalreserve.medium.com/safety-first-when-choosing-an-exchange-b7cca0d332e9" 
+              target="_blank"
+              class="link-intro"
+            )
+              strong.intro Important Note:
+            | &nbsp;Safety First When Choosing an Exchange&nbsp;
+            a(
+              href="https://unfederalreserve.medium.com/safety-first-when-choosing-an-exchange-b7cca0d332e9" 
+              target="_blank"
+            ) more info
         .notification-item__close(
           @click="closeNotif"
         )
@@ -95,6 +102,8 @@ export default {
       text-decoration: underline!important
       opacity: 1!important
       font-size: 14px!important
+      &.link-intro
+        text-decoration: none !important
       @media screen and (max-width: 767px)
         font-size: 12px!important
       &:hover
