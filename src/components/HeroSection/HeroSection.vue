@@ -4,11 +4,11 @@
       .hero-content__wrap
         .cloud-items
           .cloud-item.cloud-supply
-            .cloud-item__value $51,061,113.00
+            .cloud-item__value {{ formatToCurrency(totalSupply.toFixed(2)) }}
             .cloud-item__label Total Supply
           .cloud-item.cloud-apy
             .cloud-item__top-info Earn up to
-            .cloud-item__value 34.63%
+            .cloud-item__value {{ supplyApy.toFixed(2) }}%
             .cloud-item__label USDC APY
         p.hero-content__text
           strong unFederalReserve&nbsp;
@@ -38,12 +38,15 @@
 import DropdownMenu from 'Components/DropdownMenu/DropdownMenu';
 import BaseBtn from 'Components/Base/BaseBtn';
 import CONFIG from 'Config';
+import {
+  formatToCurrency,
+} from '@/helpers/utils/common';
 
 export default {
   name: 'HeroSection',
   components: {
     DropdownMenu,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
@@ -53,8 +56,42 @@ export default {
       interactive: false,
       transition: false,
       closeOnClickOutside: true,
-      link: CONFIG.urls.lendingMain
+      link: CONFIG.urls.lendingMain,
+      marketData: [],
+      totalSupply: 0,
+      supplyApy: 0,
     };
+  },
+  async mounted() {
+    await this.marketDetailsHundler();
+  },
+  methods: {
+    formatToCurrency,
+    handleError(response) {
+      if (!response.ok) throw new Error(response);
+
+      return response.json();
+    },
+    getMarketDetails(apiUrl) {
+      const url = `${apiUrl}/all_markets`;
+
+      return fetch(url)
+        .then(this.handleError)
+        .catch(err => console.error(err));
+    },
+    async marketDetailsHundler() {
+      this.marketData = await this.getMarketDetails(CONFIG.urls.marketApi);
+
+      this.marketData.forEach((market) => {
+        const [nowSupply] = market.supplyDaily;
+        const symbol = market.symbol.slice(2);
+        this.totalSupply += Number(nowSupply.total);
+
+        if (symbol === 'USDC') {
+          this.supplyApy = market.supplyDaily[0].apy;
+        }
+      });
+    },
   },
 };
 </script>

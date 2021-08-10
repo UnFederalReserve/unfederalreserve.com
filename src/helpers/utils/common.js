@@ -1,3 +1,13 @@
+const formatOptions = {
+  style: 'currency',
+  currency: 'USD',
+};
+
+const intlCurrency = Intl.NumberFormat('en-US', formatOptions);
+
+export function formatToCurrency(number) {
+  return intlCurrency.format(number);
+}
 
 export function isNil(value) {
   return value === undefined || value === null;
