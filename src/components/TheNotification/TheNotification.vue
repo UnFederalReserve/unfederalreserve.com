@@ -56,6 +56,8 @@ export default {
       top: 75px
     .header-wrap
       padding-top: 30px
+    .v-navigation-drawer
+      padding-top: 130px !important
     &+.v-main
       margin-top: 55px!important
       @media screen and (max-width: 480px)

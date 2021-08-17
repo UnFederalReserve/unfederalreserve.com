@@ -21,9 +21,15 @@
           a(:href="linkDocs" target="_blank") Education Center
         li
           router-link(to="team") About Us
+        li
+          a(
+            href="https://www.branditpromo.com/stores/unFederalReserve"
+            target="_blank"
+          ) Merch
       a(
         class="btn-rounded btn-white"
         :href="linkLending"
+        target="_blank"
       ) Get Started
 </template>
 
