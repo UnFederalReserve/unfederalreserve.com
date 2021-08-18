@@ -1,6 +1,6 @@
 <template lang="pug">
-  header.TheHeader.header(ref="header")
-    .general-wrap(height="77" :class="{'fixed': isFixed || togglerValue, 'black-header': isBlackHeader}")
+  header.TheHeader.header(ref="header" :style="offsetTop")
+    .general-wrap(height="77" :style="offsetTop" :class="{'fixed': isFixed || togglerValue, 'black-header': isBlackHeader}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
           logo.site-logo
@@ -40,12 +40,15 @@ export default {
     TheHeaderTogglerBtn,
     logo,
   },
+  props: {
+    offset: Number,
+  },
   data() {
     return {
       link: CONFIG.urls.lendingMain,
       scrollPosition: 0,
       isFixed: false,
-      togglerValue: false
+      togglerValue: false,
     };
   },
   computed: {
@@ -61,16 +64,19 @@ export default {
         },
         {
           path: 'home',
-          name: 'Education Center'
+          name: 'Education Center',
         },
         {
           path: 'team',
           name: 'About us',
-        }
+        },
       ];
     },
     isBlackHeader() {
       return Boolean(['home', 'terms', '404'].includes(this.$route.name));
+    },
+    offsetTop() {
+      return this.offset ? `top: ${this.offset}px` : '';
     },
   },
   watch: {

@@ -2,23 +2,25 @@
   .notification-wrap(
     v-if="isOpen"
   )
-    .notification-item
+    .notification-item(ref="notifItem")
       .notification-item__container
         .notification-item__info
           .notification-item__icon
             Warning
           p
             a(
-              href="https://unfederalreserve.medium.com/safety-first-when-choosing-an-exchange-b7cca0d332e9" 
+              href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
               target="_blank"
               class="link-intro"
             )
-              strong.intro Important Note:
-            | &nbsp;Safety First When Choosing an Exchange&nbsp;
+              strong.intro Update unFed Agents:
+            | &nbsp;Please be advised in accordance with our newly launched policy,
+            | adjustments will be made to APY model for #stablecoins.
+            | You may notice a change in rates as a result.&nbsp;
             a(
-              href="https://unfederalreserve.medium.com/safety-first-when-choosing-an-exchange-b7cca0d332e9" 
+              href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
               target="_blank"
-            ) more info
+            ) More info
         .notification-item__close(
           @click="closeNotif"
         )
@@ -40,9 +42,23 @@ export default {
       isOpen: true,
     };
   },
+  mounted() {
+    window.addEventListener('resize', this.resizeHundler);
+    this.resizeHundler();
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.resizeHundler);
+  },
   methods: {
     closeNotif() {
       this.isOpen = false;
+      this.$emit('notif-height', 0);
+    },
+    resizeHundler() {
+      if (this.isOpen) {
+        const height = this.$refs.notifItem.clientHeight;
+        this.$emit('notif-height', height);
+      }
     },
   },
 };
@@ -51,22 +67,18 @@ export default {
 <style lang="sass">
 .notification-wrap
   &+.header
-    top: 55px
-    @media screen and (max-width: 480px)
-      top: 75px
     .header-wrap
       padding-top: 30px
     .v-navigation-drawer
       padding-top: 130px !important
-    &+.v-main
-      margin-top: 55px!important
+      @media screen and (max-width: 575px)
+        padding-top: 150px !important
       @media screen and (max-width: 480px)
-        margin-top: 75px!important
-    .general-wrap
-      &.fixed
-        top: 55px
-        @media screen and (max-width: 480px)
-          top: 75px
+        padding-top: 180px !important
+    &+.v-main
+      padding-top: 55px!important
+      @media screen and (max-width: 480px)
+        padding-top: 80px!important
 .notification-item
   background: #274191
   position: fixed
@@ -75,7 +87,7 @@ export default {
   min-height: 55px
   display: flex
   align-items: center
-  padding: 10px 0
+  padding: 7px 0
   @media screen and (max-width: 480px)
     min-height: 75px
   &__container
@@ -89,10 +101,10 @@ export default {
     margin: 0 auto
   &__info
     display: flex
-    align-items: center
+    align-items: flex-start
     font-weight: 400
     font-size: 14px
-    line-height: 170%
+    line-height: 150%
     letter-spacing: 0.01em
     color: #FFFFFF
     word-break: break-word
@@ -121,6 +133,7 @@ export default {
     align-items: center
     flex-shrink: 0
     margin-right: 10px
+    margin-top: 4px
   &__close
     display: flex
     align-items: center
