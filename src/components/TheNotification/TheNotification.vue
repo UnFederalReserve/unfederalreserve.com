@@ -15,7 +15,7 @@
             )
               strong.intro Update unFed Agents:
             | &nbsp;Please be advised in accordance with our newly launched policy,
-            | adjustments will be made to APY model for #stablecoins.
+            | adjustments will be made to APY model for stablecoins.
             | You may notice a change in rates as a result.&nbsp;
             a(
               href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
