@@ -129,7 +129,7 @@ export default {
       @media screen and (max-width: 695px)
         flex-wrap: wrap
         justify-content: center
-        align-items: center
+        align-items: flex-start
       &.last-row
         margin-top: 65px
         justify-content: flex-start
