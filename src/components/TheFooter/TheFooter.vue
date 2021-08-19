@@ -85,9 +85,9 @@ export default {
   bottom: -1px
   z-index: 2
   @media screen and (min-width: 695px)
-    height: 550px
+    height: 590px
   @media screen and (min-width: 1800px)
-    height: 500px
+    height: 570px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
@@ -213,7 +213,7 @@ export default {
   .right-footer-rock
     position: absolute
     left: 0
-    top: -290px
+    top: -250px
     max-width: 300px
     z-index: 1
     @media screen and (max-width: 767px)
