@@ -53,6 +53,11 @@
             href="https://v2.info.uniswap.org/token/0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
             target="_blank",
           ) Buy on Uniswap
+          br
+          a(
+            href="https://trade.kucoin.com/ERSDL-USDT",
+            target="_blank",
+          ) Buy on KuCoin
       .all-rights
         p.mb-0 All rights reserved ©2021
 </template>
