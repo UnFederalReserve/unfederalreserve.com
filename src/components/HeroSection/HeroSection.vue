@@ -18,7 +18,7 @@
           | need of greater liquidity without sacrificing security or compliance.
           | ReserveLending is our live DeFI or P2P lending and borrowing platform.
           | Get the most from your crypto while enjoying a safe and easy user
-          | experience by clicking the button below
+          | experience by clicking the button below.
         div.btn-container
           BaseBtn(
             classes="btn-rounded btn-with-arrow btn-gradient"
@@ -105,7 +105,7 @@ export default {
   background-position: center bottom
   background-size: cover
   width: 100%
-  height: 920px
+  height: 1000px
   @media screen and (min-width: 2200px)
     height: 1200px
   @media screen and (min-width: 2700px)

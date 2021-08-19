@@ -1,8 +1,8 @@
 <template lang="pug">
   v-app
     BaseSpinner(:value="isAppLoading && !_isMounted" zIndex="999" full opaque)
-    TheNotification
-    TheHeader
+    TheNotification(@notif-height="notifHundler")
+    TheHeader(:offset="notifHeight")
     v-main
       router-view
     TheFooter
@@ -23,6 +23,11 @@ export default {
     TheHeader,
     TheFooter,
     TheNotification,
+  },
+  data() {
+    return {
+      notifHeight: 0,
+    };
   },
   computed: {
     ...mapGetters('router', [
@@ -72,6 +77,9 @@ export default {
     setBodyPageClass() {
       document.body.removeAttribute('class');
       document.body.classList.add(`body-page-${this.$route.name}`);
+    },
+    notifHundler(value) {
+      this.notifHeight = value;
     },
   },
 };
