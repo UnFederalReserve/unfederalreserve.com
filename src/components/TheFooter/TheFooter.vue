@@ -53,6 +53,11 @@
             href="https://v2.info.uniswap.org/token/0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
             target="_blank",
           ) Buy on Uniswap
+          br
+          a(
+            href="https://trade.kucoin.com/ERSDL-USDT",
+            target="_blank",
+          ) Buy on KuCoin
       .all-rights
         p.mb-0 All rights reserved ©2021
 </template>
@@ -80,9 +85,9 @@ export default {
   bottom: -1px
   z-index: 2
   @media screen and (min-width: 695px)
-    height: 550px
+    height: 590px
   @media screen and (min-width: 1800px)
-    height: 500px
+    height: 570px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
@@ -124,7 +129,7 @@ export default {
       @media screen and (max-width: 695px)
         flex-wrap: wrap
         justify-content: center
-        align-items: center
+        align-items: flex-start
       &.last-row
         margin-top: 65px
         justify-content: flex-start
@@ -208,7 +213,7 @@ export default {
   .right-footer-rock
     position: absolute
     left: 0
-    top: -290px
+    top: -250px
     max-width: 300px
     z-index: 1
     @media screen and (max-width: 767px)
