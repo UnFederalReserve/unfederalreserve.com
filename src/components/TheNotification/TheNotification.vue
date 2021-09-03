@@ -13,9 +13,9 @@
               target="_blank"
               class="link-intro"
             )
-              strong.intro Update unFed Agents:
+              strong.intro Update for unFed Agents:
             | &nbsp;Please be advised in accordance with our newly launched policy,
-            | adjustments will be made to APY model for stablecoins.
+            | adjustments will be made to the APY model for stablecoins.
             | You may notice a change in rates as a result.&nbsp;
             a(
               href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
@@ -99,9 +99,11 @@ export default {
     padding-left: 15px
     padding-right: 15px
     margin: 0 auto
+    @media screen and (max-width: 767px)
+      align-items: flex-start
   &__info
     display: flex
-    align-items: flex-start
+    align-items: center
     font-weight: 400
     font-size: 14px
     line-height: 150%
@@ -112,6 +114,7 @@ export default {
     @media screen and (max-width: 767px)
       font-size: 12px
       line-height: 150%
+      align-items: flex-start
     a
       text-decoration: underline!important
       opacity: 1!important
@@ -133,12 +136,15 @@ export default {
     align-items: center
     flex-shrink: 0
     margin-right: 10px
-    margin-top: 4px
+    @media screen and (max-width: 767px)
+      margin-top: 3px
   &__close
     display: flex
     align-items: center
     cursor: pointer
     transition: 0.3s
+    @media screen and (max-width: 767px)
+      margin-top: 4px
     &:hover
       opacity: 0.8
 </style>
