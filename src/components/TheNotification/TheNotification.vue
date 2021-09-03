@@ -13,7 +13,7 @@
               target="_blank"
               class="link-intro"
             )
-              strong.intro Update unFed Agents:
+              strong.intro Update for unFed Agents:
             | &nbsp;Please be advised in accordance with our newly launched policy,
             | adjustments will be made to the APY model for stablecoins.
             | You may notice a change in rates as a result.&nbsp;
