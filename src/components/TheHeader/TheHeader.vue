@@ -26,9 +26,9 @@ import BaseImage from 'Components/Base//BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
 import logo from 'images/svg-icons/logo.svg';
+import CONFIG from 'Config';
 import TheHeaderMenu from './TheHeaderMenu';
 import TheHeaderTogglerBtn from './TheHeaderTogglerBtn';
-import CONFIG from 'Config';
 
 export default {
   name: 'TheHeader',
@@ -45,7 +45,7 @@ export default {
       link: CONFIG.urls.lendingMain,
       scrollPosition: 0,
       isFixed: false,
-      togglerValue: false
+      togglerValue: false,
     };
   },
   computed: {
@@ -61,12 +61,12 @@ export default {
         },
         {
           path: 'home',
-          name: 'Education Center'
+          name: 'Education Center',
         },
         {
           path: 'team',
           name: 'About us',
-        }
+        },
       ];
     },
     isBlackHeader() {
@@ -140,7 +140,7 @@ export default {
       box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.05)
       .site-logo
         path
-          fill: #002490
+          fill: #042751
       @media screen and (max-width: 991px)
         box-shadow: none
       .header-wrap
@@ -170,7 +170,7 @@ export default {
             color: #FFFFFF!important
             &::before
               opacity: 1
-          &:hover 
+          &:hover
             color: #fff !important
       .site-logo
         path
@@ -185,11 +185,11 @@ export default {
           color: #fff
       .site-logo
           path
-            fill: #002490
+            fill: #042751
       &:not(.fixed)
         .site-logo
           path
-            fill: #002490
+            fill: #042751
         ::v-deep .header-menu
           a
             &::before

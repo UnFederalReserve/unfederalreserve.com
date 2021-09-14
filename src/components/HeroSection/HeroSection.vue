@@ -2,31 +2,24 @@
   section.HeroSection.hero
     .hero-content
       .hero-content__wrap
-        h1 Your Middle-Market DeFi Solution
-        p unFederalReserve is a banking Saas company built on blockchain technology.&nbsp;
-          | Our banking products are designed for smaller U.S.
-          | Treasury chartered banks and non-bank lenders in need of greater
-          | liquidity without sacrificing security or compliance.
+        h1 Be the Bank.
+        h2 Fintech SaaS Solutions
+        p unFederalReserve is a fintech SaaS company combining
+          | software built on blockchain technology and 200 years
+          | of consumer lending experience. ReserveLending is our live DeFI or P2P
+          | lending and borrowing platform. Get the most from your crypto while
+          | enjoying a safe and easy user experience by clicking the button below.
         p.bold-descr
-          strong Hit the button below and create or manage a stake account and purchase our token.
+          | Our banking products are designed for smaller U.S. Treasury
+          | chartered banks and non-bank lenders in need of a DeFi strategy and
+          | greater liquidity without sacrificing security or compliance. <br/>
+          a(href="#") Click here to learn more
         div.btn-container
           BaseBtn(
-            classes="btn-rounded btn-with-arrow btn-gradient"
+            classes="btn-rounded btn-with-arrow btn-blue"
             text="Get Started"
             :link="link"
-            :withArrow="true"
           )
-        div.hero-bottom-links
-          | Our &nbsp;
-          a(
-            :href="require('docs/LitePaperRSDL.pdf')",
-            target="_blank",
-          ) litepaper
-          | &nbsp; and &nbsp;
-          a(
-            :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-            target="_blank",
-          ) whitepaper
 </template>
 
 
@@ -40,7 +33,7 @@ export default {
   name: 'HeroSection',
   components: {
     DropdownMenu,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
@@ -90,33 +83,43 @@ export default {
       @media screen and (max-width: 767px)
         padding-top: 112px
       h1
-        font-size: 56px
+        font-weight: 700
+        font-size: 55px
+        line-height: 120%
         letter-spacing: 0.01em
-        line-height: 130%
-        color: #002490
-        margin-bottom: 30px
+        color: #2C2C2C
         @media screen and (max-width: 767px)
           font-size: 32px
-          margin-bottom: 24px
-
+      h2
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        letter-spacing: 0.01em
+        color: #3377FF
+        margin-bottom: 16px
       p
-        margin-bottom: 24px
+        margin-bottom: 25px
         max-width: 520px
         width: 100%
-        font-size: 16px
+        font-size: 14px
         line-height: 170%
         letter-spacing: 0.01em
-        color: #021859
+        color: #6C8AAE
         &.bold-descr
-          margin-bottom: 21px
-
-        strong
+          max-width: 506px
           font-weight: 600
-          font-size: 18px
+          margin-bottom: 32px
+        a
+          font-weight: 600
+          font-size: 14px
           line-height: 170%
           letter-spacing: 0.01em
-          color: #021859
-          opacity: 0.8
+          color: #6C8AAE
+          text-decoration: underline
+          opacity: 1
+          &:hover
+            opacity: 0.8
+            color: #6C8AAE
       .btn-container
         margin-bottom: 20px
       .hero-bottom-links
