@@ -7,7 +7,7 @@ const TerserUglifyJsPlugin = require('terser-webpack-plugin');
 
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 // const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
-const Fibers = require('fibers');
+// const Fibers = require('fibers');
 const sass = require('sass');
 const HtmlWebpackMultiBuildPlugin = require('./HtmlWebpackMultiBuildPlugin');
 const lintPugConfig = require('../.pug-lintrc.js');
@@ -150,7 +150,7 @@ const config = {
             loader: 'sass-loader',
             options: {
               implementation: sass,
-              fiber: Fibers,
+              // fiber: Fibers,
               indentedSyntax: true, // optional
               data: '@import "~@/styles/settings/_variables.scss"',
             },
