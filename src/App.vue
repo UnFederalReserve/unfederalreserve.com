@@ -1,7 +1,8 @@
 <template lang="pug">
   v-app
     BaseSpinner(:value="isAppLoading && !_isMounted" zIndex="999" full opaque)
-    TheHeader
+    TheNotification(@notif-height="notifHundler")
+    TheHeader(:offset="notifHeight")
     v-main
       router-view
     TheFooter
@@ -12,6 +13,7 @@ import { mapActions, mapGetters } from 'vuex';
 import BaseSpinner from 'Components/Base/BaseSpinner';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
+import TheNotification from 'Components/TheNotification/TheNotification';
 
 
 export default {
@@ -20,6 +22,12 @@ export default {
     BaseSpinner,
     TheHeader,
     TheFooter,
+    TheNotification,
+  },
+  data() {
+    return {
+      notifHeight: 0,
+    };
   },
   computed: {
     ...mapGetters('router', [
@@ -69,6 +77,9 @@ export default {
     setBodyPageClass() {
       document.body.removeAttribute('class');
       document.body.classList.add(`body-page-${this.$route.name}`);
+    },
+    notifHundler(value) {
+      this.notifHeight = value;
     },
   },
 };
