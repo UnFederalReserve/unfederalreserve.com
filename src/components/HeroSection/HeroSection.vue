@@ -43,7 +43,7 @@ export default {
       interactive: false,
       transition: false,
       closeOnClickOutside: true,
-      link: CONFIG.urls.lendingMain
+      link: CONFIG.urls.lendingMain,
     };
   },
 };
