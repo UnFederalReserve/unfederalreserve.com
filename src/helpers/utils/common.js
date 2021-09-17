@@ -35,6 +35,14 @@ export function beautifyNumber(n, isCurrency) {
       : n;
 }
 
+export function truncateText(text, amount = 150) {
+  return text.substring(0, amount);
+}
+
+export function cleanTextFromHtml(text) {
+  return text.replace(/<\/?[^>]+>/gi, '');
+}
+
 export function isNil(value) {
   return value === undefined || value === null;
 }

@@ -2,6 +2,8 @@
   .PageMain.page-main
     HeroSection
     SupplySection
+    BlogPostSection
+    LearnMoreSection
     IslandsSection
     LimitedLiquitySection
     TokenomicsSection#whitepaper
@@ -16,6 +18,8 @@ import { mapGetters } from 'vuex';
 import pageMixin from 'Mixins/pageMixin';
 import HeroSection from 'Components/HeroSection/HeroSection';
 import SupplySection from 'Components/SupplySection/SupplySection';
+import BlogPostSection from 'Components/BlogPostSection/BlogPostSection';
+import LearnMoreSection from 'Components/LearnMoreSection/LearnMoreSection';
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
 import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
 import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
@@ -30,6 +34,7 @@ export default {
   components: {
     HeroSection,
     SupplySection,
+    BlogPostSection,
     IslandsSection,
     LimitedLiquitySection,
     RoadmapSection,
@@ -37,6 +42,7 @@ export default {
     OurLeadersSection,
     GetInTouch,
     TokenomicsSection,
+    LearnMoreSection,
   },
   mixins: [pageMixin],
   computed: {

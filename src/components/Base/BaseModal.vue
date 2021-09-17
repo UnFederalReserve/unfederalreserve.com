@@ -15,11 +15,11 @@
 import BaseImage from 'Components/Base/BaseImage';
 
 export default {
-  name: "BaseModal",
+  name: 'BaseModal',
   components: {
-    BaseImage
-  }
-}
+    BaseImage,
+  },
+};
 </script>
 
 <style lang="sass" scoped>
