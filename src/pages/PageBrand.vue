@@ -26,8 +26,8 @@ export default {
     BrandLogotypeSection,
     BrandSymbolSection,
     BrandColorSection,
-    BrandFontSection
-  }
+    BrandFontSection,
+  },
 };
 </script>
 

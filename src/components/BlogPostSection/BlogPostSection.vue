@@ -2,28 +2,41 @@
   section.BlogPostSection.s-blog-post
     .s-container
       h2.s-title Blog Posts
-      .blog-post-items
-        BlogPostSectionItem(
-          v-for="(item, idx) in partBlogItems"
-          :key="item.pubDate+idx"
-          :blogItem="item"
-        )
-      .load-more
-        .btn-rounded.btn-tsp.btn-default(@click="loadMoreItems") Load More
+      BaseLoading(v-if="isLoading")
+      template(v-else)
+        .blog-post-items
+          BlogPostSectionItem(
+            v-for="(item, idx) in partBlogItems"
+            :key="item.pubDate+idx"
+            :blogItem="item"
+          )
+        .load-more
+          .btn-rounded.btn-tsp.btn-default(
+            v-if="partBlogItems.length !== 10"
+            @click="loadMoreItems"
+          ) Show More
+          a(
+            v-else
+            href="https://unfederalreserve.medium.com/"
+            target="_blank"
+          ).btn-rounded.btn-tsp.btn-default Show More on Medium
 
 </template>
 
 <script>
 import CONFIG from 'Config';
 import BlogPostSectionItem from './BlogPostSectionItem';
+import BaseLoading from '@/components/Base/BaseLoading';
 
 export default {
   name: 'BlogPostSection',
   components: {
     BlogPostSectionItem,
+    BaseLoading,
   },
   data() {
     return {
+      isLoading: true,
       blogPostItems: [],
       postLimit: 4,
     };
@@ -52,6 +65,7 @@ export default {
     async blogPostHundler() {
       const blogPostData = await this.getBlogPost(CONFIG.urls.blogPostApi);
       this.blogPostItems = blogPostData.items;
+      this.isLoading = false;
     },
   },
 };
@@ -71,8 +85,7 @@ export default {
   margin-top: 60px
   text-align: center
   .btn-default
-    max-width: 169px
-    width: 100%
+    padding: 7px 35px 8px 35px
 .fade-enter-active,
 .fade-leave-active
   transition: opacity .5s

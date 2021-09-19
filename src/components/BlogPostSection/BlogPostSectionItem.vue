@@ -1,5 +1,5 @@
 <template lang="pug">
-  a(:href="blogItem.link" target="_blank").blog-post-item
+  a(:href="blogItem.link" target="_blank").blog-post-item.fadeIn
     .blog-post-item__top
       .blog-post-item__label {{ pubDate }}
       h3.blog-post-item__title {{ blogItem.title }}
@@ -125,5 +125,4 @@ export default {
     text-align: right
     letter-spacing: 0.01em
     color: #748DE3
-
 </style>

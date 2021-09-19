@@ -71,6 +71,8 @@ export default {
     height: 702px
     background: url('~images/lm-bg.svg') no-repeat
     background-size: cover
+  .s-container
+    position: static
 .learn-more
   margin-top: 65px
   display: flex

@@ -2,13 +2,15 @@
   section.SupplySection.s-supply
     .s-container
       h2.s-title.text-left Total Supply
-      .total-supply {{ formatToCurrency(totalSupply.toFixed(2)) }}
-      .supply-items
-        SupplySectionItem(
-          v-for="item in supplyItems"
-          :key="item.icon"
-          :itemData="item"
-        )
+      BaseLoading(v-if="isLoading")
+      template(v-else)
+        .total-supply.fadeIn {{ formatToCurrency(totalSupply.toFixed(2)) }}
+        .supply-items.fadeIn
+          SupplySectionItem(
+            v-for="item in supplyItems"
+            :key="item.icon"
+            :itemData="item"
+          )
 
 </template>
 
@@ -17,6 +19,7 @@
 
 import CONFIG from 'Config';
 import SupplySectionItem from './SupplySectionItem';
+import BaseLoading from '@/components/Base/BaseLoading';
 import {
   formatToCurrency,
 } from '@/helpers/utils/common';
@@ -25,9 +28,11 @@ export default {
   name: 'SupplySection',
   components: {
     SupplySectionItem,
+    BaseLoading,
   },
   data() {
     return {
+      isLoading: true,
       marketData: [],
       supplyItems: [],
       totalSupply: 0,
@@ -81,6 +86,7 @@ export default {
           this.pushToSupplyItem(supplyData, 'ERSDL');
         }
       });
+      this.isLoading = false;
     },
   },
 };
