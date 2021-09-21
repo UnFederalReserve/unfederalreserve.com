@@ -34,6 +34,7 @@
             target="_blank",
           ) Lite paper
           router-link(:to="{name: 'terms'}") Terms
+          router-link(:to="{name: 'privacy'}") Privacy
           router-link(:to="{name: 'brand'}") Brand Assets
         .footer-content-row__home.column
           h5 Home
@@ -72,8 +73,8 @@ export default {
   computed: {
     currentRouteName() {
       return this.$route.name;
-    }
-  }
+    },
+  },
 };
 </script>
 
