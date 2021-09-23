@@ -72,9 +72,6 @@ steps:
         gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/index.html
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/js/*
-
-        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$BRANCH_NAME-$$CLUSTER_NAME-https-lb --async --path "/index.html"
-        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$BRANCH_NAME-$$CLUSTER_NAME-https-lb --async --path "/*"
       else
         exit 0
       fi
