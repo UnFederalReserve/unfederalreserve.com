@@ -48,7 +48,6 @@ export default {
         setTimeout(() => {
           if (item.classList.contains('active')) {
             this.top = item.clientHeight;
-            console.log('true');
           }
         }, 100);
       });
@@ -129,6 +128,7 @@ export default {
   display: flex
   align-items: center
   position: absolute
+  z-index: 1
   right: 0
   top: 50px
   list-style-type: none

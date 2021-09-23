@@ -13,8 +13,8 @@
         .footer-content-row
           .footer-content-row__home.column
             h5 Main
-            router-link(:to="{name: 'home', hash: '#how-it-works'}") Home
-            router-link(:to="{name: 'home', hash: '#about'}") Lending
+            router-link(:to="{name: 'home'}") Home
+            router-link(:to="{name: 'product'}") Lending
             router-link(:to="{name: 'home', hash: '#about'}") About Us
             a(
               href="https://unfederalreserve.medium.com/",
@@ -24,50 +24,42 @@
             h5 Documents
             router-link(:to="{name: 'terms'}") Terms &#38; Conditions
             router-link(:to="{name: 'brand'}") Brand Assets
-            router-link(:to="{name: 'brand'}") Bug Bounty
-            router-link(:to="{name: 'brand'}") Education Center
-            //- a(
-            //-   :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-            //-   target="_blank",
-            //- ) White paper
-            //- a(
-            //-   :href="require('docs/LitePaperRSDL.pdf')",
-            //-   target="_blank",
-            //- ) Lite paper
+            router-link(:to="{name: 'home'}") Bug Bounty
+            a(:href="linkDocs" target="_blank") Education Center
           .footer-content-row__home.column
             h5 Exchanges
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="https://app.uniswap.org/#/swap",
               target="_blank",
             ) Uniswap
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="#",
               target="_blank",
             ) Sushiswap
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="#",
               target="_blank",
             ) KuCoin
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="#",
               target="_blank",
             ) Bancor
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="#",
               target="_blank",
             ) LA Token
             a(
-              href="https://unfederalreserve.medium.com/",
+              href="#",
               target="_blank",
             ) BitMart
           .footer-content-row__more.column
             h5 More
             a(
-              href="https://v2.info.uniswap.org/token/0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
+              href="#",
               target="_blank",
             ) LP Staking
             a(
-              href="https://trade.kucoin.com/ERSDL-USDT",
+              href="#",
               target="_blank",
             ) Merch Store
         .footer-content-row.between
@@ -83,6 +75,7 @@
 </template>
 
 <script>
+import CONFIG from 'Config';
 import BaseImage from 'Components/Base//BaseImage';
 import SocialLinks from 'Components/SocialLinks/SocialLinks';
 import logo from 'images/svg-icons/logo.svg';
@@ -90,11 +83,16 @@ import logo from 'images/svg-icons/logo.svg';
 export default {
   name: 'TheFooter',
   components: { BaseImage, SocialLinks, logo },
+  data() {
+    return {
+      linkDocs: CONFIG.urls.docsMain,
+    };
+  },
   computed: {
     currentRouteName() {
       return this.$route.name;
-    }
-  }
+    },
+  },
 };
 </script>
 

@@ -14,6 +14,7 @@
 
 <script>
 import CONFIG from 'Config';
+
 export default {
   name: 'TheHeaderMenu',
   props: {
@@ -21,9 +22,9 @@ export default {
   },
   data() {
     return {
-      linkDocs: CONFIG.urls.docsMain
-    }
-  }
+      linkDocs: CONFIG.urls.docsMain,
+    };
+  },
 };
 </script>
 <style lang="sass" scoped>
