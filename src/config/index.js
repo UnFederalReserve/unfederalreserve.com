@@ -2,9 +2,10 @@ const base = {
   urls: {
     frontend: process.env.FRONTEND_URL,
     hubspotForm: 'https://api.hsforms.com/submissions/v3/integration/submit',
-    lendingMain: process.env.LENDING_MAIN_URL || 'https://lending.unfederalreserve.com',
-    docsMain: process.env.DOCS_MAIN_URL || 'https://lending-docs.unfederalreserve.com',
+    lendingMain: process.env.LENDING_MAIN_URL,
+    docsMain: process.env.DOCS_MAIN_URL,
     marketApi: process.env.API_URL_MAINNET,
+    blogPostApi: 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@unfederalreserve',
   },
   staticDataPath: process.env.WEBPACK_DEV_SERVER ? '/staticdata' : '/static',
   seo: {

@@ -22,11 +22,12 @@
     LendingFaqSection
     LendingNewsSection
     LendingAboutSection
-    LendingLeadershipSection
+    LendingLeadershipSection(:team="getTeam")
 
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 import BaseImage from 'Components/Base/BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
 import LendingCardSection from 'Components/LendingCardSection/LendingCardSection';
@@ -54,6 +55,9 @@ export default {
     return {
       link: CONFIG.urls.lendingMain
     }
+  },
+  computed: {
+    ...mapGetters('view', ['getTeam'])
   }
 };
 </script>

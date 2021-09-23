@@ -1,93 +1,50 @@
 <template lang="pug">
   section.TokenomicsSection.tokenomics
-    //.tokenomics-progress
-    //  .tokenomics-progress__row
-    //    .label
-    //      ArrowDownSmall.svg-icon
-    //      span Market Potential
-    //    .progress-wrap
-    //      .circle(:style="{left: '72%'}")
-    //      v-progress-linear(value="85" color="#2BE48D")
-    //      .value 4.5
-    //  .tokenomics-progress__row
-    //    .label
-    //      ArrowDownSmall.svg-icon
-    //      span Token Mechanics
-    //    .progress-wrap
-    //      .circle(:style="{left: '64%'}")
-    //      v-progress-linear(value="75" color="#2BE48D")
-    //      .value 3.5
-    //  .tokenomics-progress__row
-    //    .label
-    //      ArrowDownSmall.svg-icon
-    //      span Competitive Advantage
-    //    .progress-wrap
-    //      .circle(:style="{left: '64%'}")
-    //      v-progress-linear(value="75" color="#2BE48D")
-    //      .value 3.5
-    //  .tokenomics-progress__row
-    //    .label
-    //      ArrowDownSmall.svg-icon
-    //      span User Adoption
-    //    .progress-wrap
-    //      .circle(:style="{left: '72%'}")
-    //      v-progress-linear(value="85" color="#2BE48D")
-    //      .value 4.5
-    //  .tokenomics-progress__row
-    //    .label
-    //      ArrowDownSmall.svg-icon
-    //      span Management Team
-    //    .progress-wrap
-    //      .circle(:style="{left: '68%'}")
-    //      v-progress-linear(value="80" color="#2BE48D")
-    //      .value 4.0
-    //  .tokenomics-progress__bottom
-    //    p Here we leverage Jeffery Timmons’, “Timmons Model of Entrepreneurship”
-    //    .progress-wrap
-    //      // ProgressCircle
-    //      BaseImage.progress-circle(
-    //        :src="require('images/progress-circle.svg')",
-    //        alt="progress",
-    //        force,
-    //      )
-    //      .text Overall Score
-    //      .number 4.0
-    .tokenomics-text
-      h2 Whitepaper & LitePaper
-      p We know it can be difficult to read, retain and process multiple sources of information;
-        |  especially when that information may not be publicly available through our corporate
-        |  work papers, social media handles, or websites. Market participants expect to understand
-        |  the uses, rights, privileges (if applicable), and other possible factors that might impact
-        |  the price of the token over time.
-        |  Our&nbsp;
-        a.link-1(
-          :href="require('docs/LitePaperRSDL.pdf')",
-          target="_blank",
-        ) litepaper
-        |  and&nbsp;
-        a.link-1(
-          :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-          target="_blank",
-        ) whitepaper
-        |  , are available for review below, and please feel free to reach out with additional
-        |  questions or concerns you may have.
-        ul.btn-container
-          li
-            a.v-btn(
+    h2.tokenomics__title Whitepaper & LitePaper
+    p.tokenomics__title-descr We know it can be difficult to read, retain and process multiple sources of information; 
+      | especially when that information may not be publicly available through our 
+      | corporate work papers, social media handles, or websites. 
+    .tokenomics-wrap
+      p.tokenomics-wrap__top-text Our 
+        span litepaper 
+        | and 
+        span whitepaper
+        | , are available for review below, 
+        | and please feel free to reach out with additional questions or concerns you may have.
+      .tokenomics-items
+        .tokenomics-item
+          .tokenomics-item__img
+            BaseImage(
+              :src="require('images/tokenomics-img-1.svg')",
+              alt="itokenomics img",
+              force,
+            )
+          .tokenomics-item__btn
+            a.btn-rounded.btn-with-arrow.btn-gradient(
               :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
               target="_blank",
             ) Whitepaper
-          li
-            a.v-btn(
+              img(:src="require('images/btn-arrow.svg')" alt="arrow")
+        .tokenomics-item
+          .tokenomics-item__img
+            BaseImage(
+              :src="require('images/tokenomics-img-2.svg')",
+              alt="tokenomics img",
+              force,
+            )
+          .tokenomics-item__btn
+            a.btn-rounded.btn-with-arrow.btn-gradient-variant(
               :href="require('docs/LitePaperRSDL.pdf')",
               target="_blank",
             ) Litepaper
+              img(:src="require('images/btn-arrow.svg')" alt="arrow")
 </template>
 
 <script>
 import ArrowDownSmall from 'images/svg-icons/arrow-down-small.svg';
 import ProgressCircle from 'images/svg-icons/progress-circle.svg';
 import BaseImage from 'Components/Base//BaseImage';
+
 
 import {
   VProgressLinear,
@@ -99,7 +56,7 @@ export default {
     ArrowDownSmall,
     VProgressLinear,
     ProgressCircle,
-    BaseImage,
+    BaseImage
   },
 };
 </script>
@@ -110,152 +67,88 @@ export default {
   width: 100%
   max-width: 1140px
   margin: 0 auto
-  margin-top: 200px
+  margin-top: 270px
   padding: 0 15px
-  display: flex
-  flex-direction: row
-  justify-content: flex-end
+  color: #fff
+  text-align: center
+  position: relative
+  @media screen and (max-width: 1199px)
+    margin-top: 180px
   @media screen and (max-width: 991px)
-    flex-wrap: wrap
-    justify-content: center
-  @media screen and (max-width: 767px)
-    margin-top: 50px
-  &-progress
-    display: flex
-    flex-direction: column
-    width: 100%
-    max-width: 522px
-    padding: 40px
-    background: rgba(255, 255, 255, 0.03)
-    border-radius: 10px
-    position: relative
-    margin-right: 30px
-    &__row
-      display: flex
-      flex-direction: row
-      align-items: center
-      justify-content: space-between
-      width: 100%
-      margin-bottom: 25px
-      @media screen and (max-width: 640px)
-        flex-direction: column
-      .label
-        color: $white
-        display: flex
-        flex-direction: row
-        align-items: center
-        justify-content: flex-start
-        width: 265px
-        font-size: 13px
-        span
-          margin-left: 15px
-      .v-progress-linear
-        width: 100%
-        ::v-deep .v-progress-linear__buffer
-          background: $white
-          border-radius: 5px
-        ::v-deep .v-progress-linear__determinate
-          border-radius: 5px
-          background: linear-gradient(90deg, #476FEE 0%, #A7BCFF 100%)
-      .progress-wrap
-        position: relative
-        width: 299px
-        display: flex
-        flex-direction: row
-        align-items: center
-        .value
-          color: $white
-          margin-left: 15px
-          +font(600)
-          font-size: 18px
-        .circle
-          position: absolute
-          width: 21px
-          height: 21px
-          top: 4px
-          left: 10%
-          &:before
-            content: ''
-            position: absolute
-            right: 0
-            top: 0
-            z-index: 2
-            left: 0
-            top: 0
-            width: 21px
-            height: 21px
-            background-repeat: no-repeat
-            background-size: contain
-            background-image: url('~images/hover-bubble-btn.svg')
-          &:after
-            content: ''
-            position: absolute
-            left: 2px
-            top: 2px
-            width: calc(100% - 4px)
-            height: calc(100% - 4px)
-            background: #2140A5
-            z-index: 1
-            border-radius: 100px
-    &__bottom
-      margin-top: 20px
-      .progress-wrap
-        width: 175px
-        position: absolute
-        right: 40px
-        bottom: -100px
-        @media screen and (max-width: 640px)
-          position: relative
-          bottom: 0
-          right: auto
-          left: 25%
-        img
-          width: 175px
-          height: 175px
-        .text
-          font-size: 10px
-          opacity: 0.8
-          +font(500)
-          color: $white
-          position: absolute
-          left: 50%
-          transform: translate(-50%, -50%)
-          top: 38%
-        .number
-          +font(700)
-          font-size: 37px
-          color: $white
-          position: absolute
-          left: 50%
-          transform: translate(-50%, -50%)
-          top: 55%
-      p
-        color: $white
-        width: 100%
-        max-width: 260px
-        opacity: 0.8
-        font-size: 13px
-  &-text
-    width: 100%
-    max-width: 545px
-    ul.btn-container
-      list-style-type: none
-      display: flex
-      padding-left: 0
-      padding-top: 20px
-      flex-wrap: wrap
-      li
-        margin: 0 15px 15px 0
-        a.v-btn
-          min-width: auto
-          padding: 10px 20px
-          border-radius: 13px
+    margin-top: 100px
+  &::before
+    content: ""
+    position: absolute
+    background: url("~images/news-circle-bg.svg") no-repeat center
+    background-size: cover
+    left: 50%
+    transform: translateX(-50%)
+    right: 0
+    top: 35px
+    width: 1042px
+    height: 1042px
     @media screen and (max-width: 991px)
-      margin-top: 150px
-      max-width: 100%
-    *
-      color: $white
-    p
-      margin-top: 25px
-      opacity: 0.8
+      top: -500px
+  &__title
+    font-weight: 700
+    font-size: 42px
+    line-height: 130%
+    text-align: center
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    margin-bottom: 48px
+    position: relative
+    @media screen and (max-width: 767px)
+      font-size: 32px
+  &__title-descr
+    font-weight: 500
+    font-size: 18px
+    line-height: 160%
+    text-align: center
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    max-width: 730px
+    margin: 0 auto 100px
+    position: relative
+    @media screen and (max-width: 767px)
+      margin-bottom: 32px
+
+  
+.tokenomics-wrap
+  max-width: 730px
+  width: 100%
+  margin: 0 auto
+  position: relative
+  &__top-text
+    font-weight: 500
+    font-size: 16px
+    line-height: 160%
+    text-align: center
+    letter-spacing: 0.01em
+    color: #FFFFFF
+    margin-bottom: 60px
+    @media screen and (max-width: 767px)
+      margin-bottom: 30px
+    span
+      color: #F3B328
+
+.tokenomics-items
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  align-items: flex-start
+
+.tokenomics-item
+  width: calc(50% - 50px)
+  margin-bottom: 30px
+  @media screen and (max-width: 767px)
+    width: 100%
+    margin-bottom: 50px
+  &__img
+    display: flex
+    justify-content: center
+    align-items: flex-start
+  .btn-rounded
+    max-width: 180px
+
 </style>
