@@ -1,51 +1,83 @@
 <template lang="pug">
   footer.TheFooter.footer
     template(v-if="currentRouteName != 'product' && currentRouteName != 'brand'")
-      BaseImage.right-footer-rock(
-        :src="require('images/top-left-footer-rock.svg')",
-        alt="right-footer-rock",
-        force,
-      )
+      //- BaseImage.right-footer-rock(
+      //-   :src="require('images/top-left-footer-rock.svg')",
+      //-   alt="right-footer-rock",
+      //-   force,
+      //- )
     .footer-content
       .footer-content-inner
         router-link.footer-logo-link(:to="{name: 'home'}")
           logo.footer-logo
         .footer-content-row
           .footer-content-row__home.column
-            h5 Home
-            router-link(:to="{name: 'home', hash: '#how-it-works'}") How it works
-            router-link(:to="{name: 'home', hash: '#about'}") About us
+            h5 Main
+            router-link(:to="{name: 'home', hash: '#how-it-works'}") Home
+            router-link(:to="{name: 'home', hash: '#about'}") Lending
+            router-link(:to="{name: 'home', hash: '#about'}") About Us
             a(
               href="https://unfederalreserve.medium.com/",
               target="_blank",
             ) Blog
           .footer-content-row__documents.column
             h5 Documents
-            a(
-              :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
-              target="_blank",
-            ) White paper
-            a(
-              :href="require('docs/LitePaperRSDL.pdf')",
-              target="_blank",
-            ) Lite paper
             router-link(:to="{name: 'terms'}") Terms &#38; Conditions
             router-link(:to="{name: 'brand'}") Brand Assets
+            router-link(:to="{name: 'brand'}") Bug Bounty
+            router-link(:to="{name: 'brand'}") Education Center
+            //- a(
+            //-   :href="require('docs/Residual_Token_Whitepaper_091520_CONFIDE.pdf')",
+            //-   target="_blank",
+            //- ) White paper
+            //- a(
+            //-   :href="require('docs/LitePaperRSDL.pdf')",
+            //-   target="_blank",
+            //- ) Lite paper
+          .footer-content-row__home.column
+            h5 Exchanges
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) Uniswap
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) Sushiswap
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) KuCoin
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) Bancor
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) LA Token
+            a(
+              href="https://unfederalreserve.medium.com/",
+              target="_blank",
+            ) BitMart
           .footer-content-row__more.column
             h5 More
             a(
               href="https://v2.info.uniswap.org/token/0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
               target="_blank",
-            ) Buy on Uniswap
+            ) LP Staking
             a(
               href="https://trade.kucoin.com/ERSDL-USDT",
               target="_blank",
-            ) Buy on KuCoin
+            ) Merch Store
         .footer-content-row.between
           .footer-content-row__contacts.column
-              h5 Contacts
-              a(href="mailto:info@unfederalreserve.com") info@unfederalreserve.com
-              SocialLinks          
+              h5 We Want to Hear from You
+              .link-group
+                a(href="mailto:feedback@unfedferalreseve.com") feedback@unfedferalreseve.com
+                a(href="mailto:info@unfederalreserve.com" class="email-info") info@unfederalreserve.com
+                span Submit Town hall Questions
+              SocialLinks
           .all-rights
             p.mb-0 All rights reserved ©2021
 </template>
@@ -73,20 +105,7 @@ export default {
   position: relative
   bottom: -1px
   z-index: 2
-  min-height: 756px
-  &::before
-    content: ""
-    position: absolute
-    background: url("~images/footer-bg-el.svg") no-repeat
-    width: 703px
-    height: 131px
-    z-index: 2
-    bottom: 0
-    left: calc((100% - 1140px) / 2)  
-    @media screen and (max-width: 767px)
-      left: auto
-      right: -50px
-      bottom: -55px
+  min-height: 862px
   @media screen and (max-width: 695px)
     height: 100%
     padding-top: 130px
@@ -106,7 +125,7 @@ export default {
       padding-bottom: 30px
     &-inner
       position: relative
-      width: 100% 
+      width: 100%
       z-index: 2
     .footer-logo
       position: relative
@@ -157,6 +176,24 @@ export default {
         width: 100%
         max-width: 500px
         margin-right: 50px
+        .link-group
+          display: flex
+          flex-direction: column
+          margin-bottom: 10px
+        span
+          font-size: 12px
+          line-height: 170%
+          letter-spacing: 0.01em
+          color: #909AB6
+        h5
+          margin-bottom: 11px!important
+        .email-info
+          margin-top: 15px
+        a
+          color: #fff!important
+          font-size: 14px!important
+          &:hover
+            text-decoration: underline
         &.column
           a
             margin-bottom: 0!important
@@ -166,31 +203,24 @@ export default {
           margin-left: -12px
       &__documents
         width: 100%
-        max-width: 180px
-        margin-right: 104px
-        margin-bottom: 40px
+        max-width: fit-content
+        margin-right: 80px
+        margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
         @media screen and (max-width: 480px)
           margin-right: 0
       &__home
         width: 100%
-        max-width: 125px
-        margin-right: 104px
-        margin-bottom: 40px
-        @media screen and (max-width: 767px)
-          margin-right: 65px
-      &__leaders
-        width: 100%
-        max-width: 135px
-        margin-right: 50px
-        margin-bottom: 40px
+        max-width: fit-content
+        margin-right: 80px
+        margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
       &__more
         width: 100%
-        max-width: 180px
-        margin-bottom: 40px
+        max-width: fit-content
+        margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
       &__btn
@@ -214,7 +244,7 @@ export default {
         margin-bottom: 10px
         font-size: 16px
         opacity: 1
-        line-height: 170%
+        line-height: 24px
         letter-spacing: 0.01em
         color: #909AB6
         &:last-child

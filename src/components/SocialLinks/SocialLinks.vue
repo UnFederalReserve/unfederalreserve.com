@@ -6,6 +6,8 @@
       GroupIcon.svg-icon
     a(href="https://www.linkedin.com/company/unfederalreserve" target="_blank").link
       Linkedin.svg-icon
+    a(href="#" target="_blank").link
+      Facebook.svg-icon
     a(href="https://t.me/unfedres_staking" target="_blank").link
       Vector.svg-icon
     a(href="https://twitter.com/Unfederalreser1" target="_blank").link
@@ -16,6 +18,8 @@
       Geco.svg-icon
     a(href="https://coinmarketcap.com/currencies/unfederalreserve/" target="_blank").link
       cointMarket.svg-icon
+    a(href="#" target="_blank").link
+      SocIcon.svg-icon
 </template>
 
 <script>
@@ -28,6 +32,7 @@ import Youtube from 'images/svg-icons/youtube.svg';
 import Geco from 'images/svg-icons/geco.svg';
 import Reddit from 'images/svg-icons/reddit.svg';
 import cointMarket from 'images/svg-icons/coin-market.svg';
+import SocIcon from 'images/svg-icons/soc-icon.svg';
 
 export default {
   name: 'SocialLinks',
@@ -40,7 +45,8 @@ export default {
     Youtube,
     Geco,
     Reddit,
-    cointMarket
+    cointMarket,
+    SocIcon,
   },
 };
 </script>

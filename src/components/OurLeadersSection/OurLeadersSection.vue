@@ -32,7 +32,7 @@ export default {
   width: 100%
   max-width: 1140px
   padding: 0 15px
-  margin: 71px auto 122px
+  margin: 71px auto 200px
   position: relative
   z-index: 1
   @media screen and (max-width: 991px)

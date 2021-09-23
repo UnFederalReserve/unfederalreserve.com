@@ -13,14 +13,6 @@
             :src="require('images/learn-more.png')",
             alt="img",
           )
-          BaseModal(v-if="showModal" @close="showModal = false")
-            template(slot="content")
-              iframe(
-                width="100%" height="535" src="https://www.youtube.com/embed/BBTVYIXXrag"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              )
         .learn-more__right
           BaseImage.rf-logo(
             :src="require('images/rf-logo.svg')",
@@ -32,7 +24,14 @@
             | fund of funds that allows crypto holders to provide cash to
             | non-bank lenders leveraging SaaS and traditional financial service rails.
           BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Join the Waitlist" :link="link" :withArrow="true")
-
+        BaseModal(v-if="showModal" @close="showModal = false")
+          template(slot="content")
+            iframe(
+              width="100%" height="535" src="https://www.youtube.com/embed/BBTVYIXXrag"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            )
 </template>
 
 <script>
@@ -61,7 +60,6 @@ export default {
 @import '~Styles/_variables'
 .s-learn-more
   position: relative
-  z-index: 1
   padding: 75px 0 160px
   &::before
     content: ""
@@ -74,13 +72,18 @@ export default {
     background-size: cover
   .s-container
     position: static
+.s-title
+  position: relative
+  z-index: 1
 .learn-more
   margin-top: 65px
   display: flex
   align-items: center
   justify-content: space-between
   &__left, &__right
+    position: relative
     width: calc(50% - 25px)
+    z-index: 1
   &__left
     position: relative
     display: flex

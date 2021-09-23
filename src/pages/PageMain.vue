@@ -15,7 +15,8 @@
     //- RoadmapSection#roadmap
     MoreAboutUsSection#about
     OurLeadersSection(:team="getTeam")
-    GetInTouch#get-in-touch
+    BottomHomeSection
+    //- GetInTouch#get-in-touch
 </template>
 
 <script>
@@ -30,6 +31,7 @@ import ReviewSection from 'Components/ReviewSection/ReviewSection';
 import GovernanceSection from 'Components/GovernanceSection/GovernanceSection';
 import RatingSection from 'Components/RatingSection/RatingSection';
 import ApprovalSection from 'Components/ApprovalSection/ApprovalSection';
+import BottomHomeSection from 'Components/BottomHomeSection/BottomHomeSection';
 
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
 import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
@@ -51,6 +53,7 @@ export default {
     ReviewSection,
     GovernanceSection,
     RatingSection,
+    BottomHomeSection,
     ApprovalSection,
     LimitedLiquitySection,
     RoadmapSection,

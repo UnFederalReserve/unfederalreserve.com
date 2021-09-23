@@ -32,7 +32,7 @@ export default {
           id: 2,
           img: 'person-img-2.png',
           text: 'unFederalReserve leadership have assembled an amazing team with significant experience in both the DeFi and traditional financial services space',
-          name: 'Nick DAngelo',
+          name: "Nick D'Angelo",
           description: 'unFederalReserve Strategic Advisor Former SVP & Chief of Staff at Wells Fargo',
         },
         {
@@ -41,6 +41,20 @@ export default {
           text: 'Everyone in the financial world wants to leverage blockchain, but relatively few companies have the mix of blockchain expertise AND industry domain knowledge to be successful in the space. unFederalReserve has both!',
           name: 'Dave Stone',
           description: 'Product and Engineering Advisor at unFederalReserve Currently Director of Product Management at Salesforce',
+        },
+        {
+          id: 4,
+          img: 'person-img-4.png',
+          text: 'unFed is uniquely positioned to be the type of bridge between technology and real-world, everyday usage',
+          name: 'Alex Lee',
+          description: 'Advisor at unFederalReserve Founder at Liquidigy.com',
+        },
+        {
+          id: 5,
+          img: 'person-img-5.png',
+          text: 'During my career as a consultant I was an advisor to a major crypto currency company where I provided regulatory advice and program enhancements',
+          name: 'Ralph Fatigate',
+          description: 'Financial Advisor at UnfederalReserve Former Advisor at AXA Advisors, LLC and Bear Stearns and Co',
         },
       ],
     };
