@@ -24,10 +24,9 @@
 
 
 <script>
-
+import CONFIG from 'Config';
 import DropdownMenu from 'Components/DropdownMenu/DropdownMenu';
 import BaseBtn from 'Components/Base/BaseBtn';
-import CONFIG from 'Config';
 
 export default {
   name: 'HeroSection',
@@ -45,6 +44,36 @@ export default {
       closeOnClickOutside: true,
       link: CONFIG.urls.lendingMain,
     };
+  },
+  async mounted() {
+    await this.marketDetailsHundler();
+  },
+  methods: {
+    handleError(response) {
+      if (!response.ok) throw new Error(response);
+
+      return response.json();
+    },
+    getMarketDetails(apiUrl) {
+      const url = `${apiUrl}/all_markets`;
+
+      return fetch(url)
+        .then(this.handleError)
+        .catch(err => console.error(err));
+    },
+    async marketDetailsHundler() {
+      this.marketData = await this.getMarketDetails(CONFIG.urls.marketApi);
+
+      this.marketData.forEach((market) => {
+        const [nowSupply] = market.supplyDaily;
+        const symbol = market.symbol.slice(2);
+        this.totalSupply += Number(nowSupply.total);
+
+        if (symbol === 'USDC') {
+          this.supplyApy = market.supplyDaily[0].apy;
+        }
+      });
+    },
   },
 };
 </script>

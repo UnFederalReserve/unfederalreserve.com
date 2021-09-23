@@ -127,6 +127,8 @@ export default {
     white-space: nowrap
     color: #FFFFFF
     margin-left: 37px
+    @media screen and (max-width: 1199px)
+      margin-left: 25px
     @media screen and (max-width: 991px)
       display: none
     &:hover
@@ -240,7 +242,7 @@ export default {
       top: 0
     img
       width: 100%
-    @media screen and (max-width: 991px)
+    @media screen and (max-width: 1199px)
       max-width: 250px
       width: 100%
       height: 100%

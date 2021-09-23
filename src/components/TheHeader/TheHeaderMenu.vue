@@ -5,11 +5,10 @@
     router-link(to="product") Lending
     a(:href="linkDocs" target="_blank") Education Center
     router-link(to="team") About Us
-    //- router-link(
-    //-   v-for="(item, i) in menu",
-    //-   :key="i",
-    //-   :to="{name: item.path, hash: item.hash}"
-    //- ) {{ item.name }}
+    a(
+      href="https://www.branditpromo.com/stores/unFederalReserve"
+      target="_blank"
+    ) Merch
 </template>
 
 <script>
@@ -57,6 +56,8 @@ export default {
       border-radius: 6px
       opacity: 0
       transition: 0.3s
+    @media screen and (max-width: 1199px)
+      margin: 0 18px
     @media screen and (max-width: 991px)
       margin: 0 5px
     &:hover

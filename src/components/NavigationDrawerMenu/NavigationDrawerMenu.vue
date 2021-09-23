@@ -12,7 +12,7 @@
     ref="drawer"
   )
     .nav-drw-wrap
-      ul 
+      ul
         li
           router-link(to="/") Home
         li
@@ -21,14 +21,16 @@
           a(:href="linkDocs" target="_blank") Education Center
         li
           router-link(to="team") About Us
-        //- li(
-        //-   v-for="(item, i) in menu",
-        //-   :key="i",
-        //- )
-        //-   router-link.small-link(
-        //-     :to="{name: item.path, hash: item.hash}"
-        //-   ) {{ item.name }}
-      a.btn-rounded.btn-white Get Started
+        li
+          a(
+            href="https://www.branditpromo.com/stores/unFederalReserve"
+            target="_blank"
+          ) Merch
+      a(
+        class="btn-rounded btn-white"
+        :href="linkLending"
+        target="_blank"
+      ) Get Started
 </template>
 
 <script>
@@ -50,7 +52,8 @@ export default {
   data() {
     return {
       isRenderDrawerMenu: false,
-      linkDocs: CONFIG.urls.docsMain
+      linkDocs: CONFIG.urls.docsMain,
+      linkLending: CONFIG.urls.lendingMain,
     };
   },
   computed: {
