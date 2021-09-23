@@ -17,7 +17,7 @@ import LeadershipItem from 'Components/LendingLeadershipSection/LeadershipItem';
 export default {
   name: 'OurLeadersSection',
   components: {
-    LeadershipItem
+    LeadershipItem,
   },
   props: {
     team: Array,
@@ -32,9 +32,7 @@ export default {
   width: 100%
   max-width: 1140px
   padding: 0 15px
-  margin: 0 auto
-  margin-top: 190px
-  margin-bottom: 122px
+  margin: 71px auto 122px
   position: relative
   z-index: 1
   @media screen and (max-width: 991px)

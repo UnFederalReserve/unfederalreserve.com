@@ -61,6 +61,7 @@ export default {
 @import '~Styles/_variables'
 .s-learn-more
   position: relative
+  z-index: 1
   padding: 75px 0 160px
   &::before
     content: ""

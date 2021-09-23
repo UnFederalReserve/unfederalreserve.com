@@ -4,10 +4,15 @@
     SupplySection
     BlogPostSection
     LearnMoreSection
-    IslandsSection
-    LimitedLiquitySection
-    TokenomicsSection#whitepaper
-    RoadmapSection#roadmap
+    PartnersSection
+    ReviewSection
+    GovernanceSection
+    RatingSection
+    ApprovalSection
+    //- IslandsSection
+    //- LimitedLiquitySection
+    //- TokenomicsSection#whitepaper
+    //- RoadmapSection#roadmap
     MoreAboutUsSection#about
     OurLeadersSection(:team="getTeam")
     GetInTouch#get-in-touch
@@ -20,6 +25,12 @@ import HeroSection from 'Components/HeroSection/HeroSection';
 import SupplySection from 'Components/SupplySection/SupplySection';
 import BlogPostSection from 'Components/BlogPostSection/BlogPostSection';
 import LearnMoreSection from 'Components/LearnMoreSection/LearnMoreSection';
+import PartnersSection from 'Components/PartnersSection/PartnersSection';
+import ReviewSection from 'Components/ReviewSection/ReviewSection';
+import GovernanceSection from 'Components/GovernanceSection/GovernanceSection';
+import RatingSection from 'Components/RatingSection/RatingSection';
+import ApprovalSection from 'Components/ApprovalSection/ApprovalSection';
+
 import IslandsSection from 'Components/IslandsSection/IslandsSection';
 import LimitedLiquitySection from 'Components/LimitedLiquitySection/LimitedLiquitySection';
 import RoadmapSection from 'Components/RoadmapSection/RoadmapSection';
@@ -36,6 +47,11 @@ export default {
     SupplySection,
     BlogPostSection,
     IslandsSection,
+    PartnersSection,
+    ReviewSection,
+    GovernanceSection,
+    RatingSection,
+    ApprovalSection,
     LimitedLiquitySection,
     RoadmapSection,
     MoreAboutUsSection,
