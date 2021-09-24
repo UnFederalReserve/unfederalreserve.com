@@ -4,6 +4,7 @@ const PageBrand = () => import(/* webpackChunkName: 'PageBrand' */ 'Pages/PageBr
 const PageUiKit = () => import(/* webpackChunkName: 'PageUiKit' */ 'Pages/PageUiKit');
 const PageTeam = () => import(/* webpackChunkName: 'PageTeam' */ 'Pages/PageTeam');
 const PageTerms = () => import(/* webpackChunkName: 'PageTerms' */ 'Pages/PageTerms');
+const PagePrivacyPolicy = () => import(/* webpackChunkName: 'PageTerms' */ 'Pages/PagePrivacyPolicy');
 
 export default [
   {
@@ -34,6 +35,11 @@ export default [
     path: '/terms',
     name: 'terms',
     component: PageTerms,
+  },
+  {
+    path: '/privacy',
+    name: 'privacy',
+    component: PagePrivacyPolicy,
   },
   {
     path: '/ui',
