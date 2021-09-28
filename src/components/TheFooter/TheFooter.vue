@@ -33,23 +33,23 @@
               target="_blank",
             ) Uniswap
             a(
-              href="#",
+              href="https://app.sushi.com/swap",
               target="_blank",
             ) Sushiswap
             a(
-              href="#",
+              href="https://www.kucoin.com/",
               target="_blank",
             ) KuCoin
             a(
-              href="#",
+              href="https://app.bancor.network/eth/data/",
               target="_blank",
             ) Bancor
             a(
-              href="#",
+              href="https://latoken.com/exchange/USDT",
               target="_blank",
             ) LA Token
             a(
-              href="#",
+              href="https://www.bitmart.com/",
               target="_blank",
             ) BitMart
           .footer-content-row__more.column
@@ -59,7 +59,7 @@
               target="_blank",
             ) LP Staking
             a(
-              href="#",
+              href="https://www.branditpromo.com/stores/unFederalReserve",
               target="_blank",
             ) Merch Store
         .footer-content-row.between
@@ -103,10 +103,7 @@ export default {
   position: relative
   bottom: -1px
   z-index: 2
-  min-height: 862px
-  @media screen and (max-width: 695px)
-    height: 100%
-    padding-top: 130px
+  padding-top: 200px
   &-content
     width: 100%
     height: 100%
@@ -206,6 +203,7 @@ export default {
         margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
+          margin-bottom: 33px
         @media screen and (max-width: 480px)
           margin-right: 0
       &__home
@@ -215,12 +213,14 @@ export default {
         margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
+          margin-bottom: 33px
       &__more
         width: 100%
         max-width: fit-content
         margin-bottom: 20px
         @media screen and (max-width: 767px)
           margin-right: 65px
+          margin-bottom: 33px
       &__btn
         @media screen and (max-width: 695px)
           width: 100%

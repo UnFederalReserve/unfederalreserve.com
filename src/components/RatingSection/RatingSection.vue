@@ -3,7 +3,7 @@
     .s-container
       h2.s-title DeFi Safety Rating Approval
       .overal-score
-        img(:src="require('images/score.svg')")
+        img(:src="require('images/score.svg')" class="overal-score__img")
         .overal-score__text
           strong 74%
           span Overall Score
@@ -59,6 +59,8 @@ export default {
 @import '~Styles/_variables'
 .s-rating
   padding-bottom: 126px
+  @media screen and (max-width: 767px)
+    padding-bottom: 60px
   &__img
     text-align: center
     display: flex
@@ -66,9 +68,14 @@ export default {
     justify-content: center
 .s-title
   margin-bottom: 40px
+  @media screen and (max-width: 767px)
+    font-size: 38px!important
 .overal-score
   position: relative
   text-align: center
+  &__img
+    position: relative
+    left: -3px
   &__text
     margin-top: -120px
   strong
@@ -98,6 +105,8 @@ export default {
   box-shadow: 0px 4px 25px rgba(5, 35, 95, 0.45)
   border-radius: 20px
   margin-bottom: 11px
+  @media screen and (max-width: 767px)
+    padding: 24px 20px 25px 20px
   &::before
     content: ""
     position: absolute
@@ -111,6 +120,8 @@ export default {
   margin-bottom: 17px
   display: flex
   align-items: center
+  @media screen and (max-width: 767px)
+    margin-bottom: 15px
   &:last-child
     margin-bottom: 0
   &__label
@@ -124,9 +135,10 @@ export default {
   &__score
     margin-right: 10px
     position: relative
+    width: calc(100% - 180px)
   &__score-line
     position: relative
-    width: 193px
+    width: 100%
     height: 3px
     background-color: rgba(54, 63, 200, 0.21)
     border-radius: 3px

@@ -1,15 +1,6 @@
 <template lang="pug">
-  .carousel-component(:style="{'height': `${itemHeight}px`}")
-    .carousel-component__inner
-      ul.carousel-dots(
-        :style="{'top': `calc((100% - ${top}px) + 20px)`}"
-      )
-        li(
-          v-for="(dot, index) in data"
-          :key="dot.id"
-          class="dot-item"
-          :class="current === index ? ' active' : ''"
-        )
+  .carousel-component(:style="{'min-height': `${itemHeight}px`}")
+    .carousel-component__inner(:style="{'min-height': `${itemHeight}px`}")
       .carousel-item-wrap(
         v-for="(item, index) in data"
         :key="item.id"
@@ -18,6 +9,15 @@
         ref="carousel"
       )
         slot(:data="item")
+    ul.carousel-dots(
+        :style="{'top': `calc((${itemHeight}px - ${top}px) / 2 + 20px)`}"
+      )
+        li(
+          v-for="(dot, index) in data"
+          :key="dot.id"
+          class="dot-item"
+          :class="current === index ? ' active' : ''"
+        )
     .carousel-prev(@click="decreaseCurrent")
       img(:src="require('images/slider-arrow-left.svg')")
     .carousel-next(@click="increaseCurrent")
@@ -40,14 +40,15 @@ export default {
   },
   mounted() {
     this.checkHeight();
-    this.top = this.$refs.carousel[0].clientHeight;
+    this.dotSetOffset();
   },
   methods: {
     dotSetOffset() {
       this.$refs.carousel.forEach((item) => {
+        const el = item.querySelector('.content-height');
         setTimeout(() => {
           if (item.classList.contains('active')) {
-            this.top = item.clientHeight;
+            this.top = el.clientHeight;
           }
         }, 100);
       });
@@ -85,10 +86,11 @@ export default {
   display: flex
   align-items: center
   justify-content: center
+  @media screen and (max-width: 991px)
+    padding-bottom: 65px
   &__inner
     max-width: 934px
     width: 100%
-    height: 100%
     margin: 0 auto
     position: relative
     overflow: hidden
@@ -117,6 +119,10 @@ export default {
   border-radius: 100%
   cursor: pointer
   transition: 0.3s
+  z-index: 9
+  @media screen and (max-width: 991px)
+    top: auto
+    bottom: -10px
   &:hover
     opacity: 0.8
 
@@ -132,6 +138,18 @@ export default {
   right: 0
   top: 50px
   list-style-type: none
+  width: 100%
+  max-width: 934px
+  left: 0
+  margin: 0 auto
+  padding-left: 0
+  justify-content: flex-end
+  @media screen and (max-width: 991px)
+    top: auto!important
+    bottom: 25px
+    width: 100%
+    justify-content: center
+    padding: 0
 .dot-item
   width: 9px
   height: 9px

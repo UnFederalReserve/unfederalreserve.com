@@ -61,6 +61,8 @@ export default {
 .s-learn-more
   position: relative
   padding: 75px 0 160px
+  @media screen and (max-width: 767px)
+    padding: 0
   &::before
     content: ""
     position: absolute
@@ -70,24 +72,35 @@ export default {
     height: 702px
     background: url('~images/lm-bg.svg') no-repeat
     background-size: cover
+    @media screen and (max-width: 767px)
+      display: none
   .s-container
     position: static
 .s-title
   position: relative
   z-index: 1
+  @media screen and (max-width: 767px)
+    font-size: 38px!important
 .learn-more
   margin-top: 65px
   display: flex
   align-items: center
   justify-content: space-between
+  @media screen and (max-width: 767px)
+    display: block
   &__left, &__right
     position: relative
     width: calc(50% - 25px)
     z-index: 1
+    @media screen and (max-width: 767px)
+      width: 100%
   &__left
     position: relative
     display: flex
     align-items: center
+    @media screen and (max-width: 767px)
+      justify-content: center
+      margin-bottom: 45px
     .play-video-btn
       position: absolute
       z-index: 1

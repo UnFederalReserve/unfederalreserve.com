@@ -87,17 +87,10 @@ export default {
   background-position: center bottom
   background-size: cover
   width: 100%
-  height: 920px
-  @media screen and (min-width: 2200px)
-    height: 1200px
-  @media screen and (min-width: 2700px)
-    height: 1500px
-  @media screen and (max-width: 1199px)
-    background-position: left bottom
-    background-image: url('~images/hero-section-mobile.svg')
+  min-height: 920px
   @media screen and (max-width: 767px)
-    background-image: url('~images/hero-section-mobile-xs.svg')
-    min-height: 1100px
+    background-image: url('~images/mob-hero.svg')
+    padding-bottom: 215px
   &-content
     width: 100%
     margin: 0 auto
@@ -118,7 +111,7 @@ export default {
         letter-spacing: 0.01em
         color: #2C2C2C
         @media screen and (max-width: 767px)
-          font-size: 32px
+          margin-bottom: 9px
       h2
         font-weight: 700
         font-size: 30px
@@ -126,6 +119,8 @@ export default {
         letter-spacing: 0.01em
         color: #3377FF
         margin-bottom: 16px
+        @media screen and (max-width: 767px)
+          font-size: 28px
       p
         margin-bottom: 25px
         max-width: 520px

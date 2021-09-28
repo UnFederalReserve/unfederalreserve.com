@@ -47,6 +47,8 @@ export default {
 @import '~Styles/_variables'
 .s-bottom
   position: relative
+  @media screen and (max-width: 767px)
+    display: none
   .s-container
     position: static
   &::before
@@ -114,6 +116,8 @@ export default {
   text-align: left
   letter-spacing: 0.01em
   color: #FFFFFF
+  @media screen and (max-width: 1199px)
+    margin-right: 0
   a
     opacity: 1!important
     &:hover

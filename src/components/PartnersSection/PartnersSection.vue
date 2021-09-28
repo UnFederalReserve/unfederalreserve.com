@@ -10,6 +10,7 @@
               v-for="item in partnersSafety"
               :key="item.id"
               :href="item.href"
+              target="_blank"
             )
               img(:src="require(`images/partners-logo/${item.logoName}`)")
         .partner-item
@@ -19,24 +20,27 @@
               v-for="item in partnersInclusion"
               :key="item.id"
               :href="item.href"
+              target="_blank"
             )
               img(:src="require(`images/partners-logo/${item.logoName}`)")
-        .partner-item
+        .partner-item.efficiency
           .partner-item__title Efficiency
           .partner-item__logos
             a.partner-item__logo(
               v-for="item in partnersEfficiency"
               :key="item.id"
               :href="item.href"
+              target="_blank"
             )
               img(:src="require(`images/partners-logo/${item.logoName}`)")
-        .partner-item
+        .partner-item.exchange
           .partner-item__title Exchange Listings
           .partner-item__logos
             a.partner-item__logo(
               v-for="item in partnersExchange"
               :key="item.id"
               :href="item.href"
+              target="_blank"
             )
               img(:src="require(`images/partners-logo/${item.logoName}`)")
 
@@ -53,163 +57,163 @@ export default {
       partnersSafety: [
         {
           id: 1,
-          href: '#',
+          href: 'https://www.galaxydigital.io/',
           logoName: '1.png',
         },
         {
           id: 2,
-          href: '#',
+          href: 'https://onlinelendersalliance.org/',
           logoName: '2.png',
         },
         {
           id: 3,
-          href: '#',
+          href: 'https://www.afponline.org/',
           logoName: '3.png',
         },
         {
           id: 4,
-          href: '#',
+          href: 'https://www.chainalysis.com/',
           logoName: '4.png',
         },
         {
           id: 5,
-          href: '#',
+          href: 'https://www.trailofbits.com/',
           logoName: '5.png',
         },
         {
           id: 6,
-          href: '#',
+          href: 'https://www.bbb.org/',
           logoName: '6.png',
         },
         {
           id: 7,
-          href: '#',
+          href: 'https://www.wsba.co/',
           logoName: '7.png',
         },
         {
           id: 8,
-          href: '#',
+          href: 'https://www.acg.org/',
           logoName: '8.png',
         },
       ],
       partnersInclusion: [
         {
           id: 1,
-          href: '#',
+          href: 'https://www.atipanacapital.com/',
           logoName: '9.png',
         },
         {
           id: 2,
-          href: '#',
+          href: 'https://percent.com/',
           logoName: '10.png',
         },
         {
           id: 3,
-          href: '#',
+          href: 'https://www.peerstreet.com/',
           logoName: '11.png',
         },
         {
           id: 4,
-          href: '#',
+          href: 'https://www.yieldstreet.com/',
           logoName: '12.png',
         },
         {
           id: 5,
-          href: '#',
+          href: 'http://www.cadrefinancial.com/process.html',
           logoName: '13.png',
         },
       ],
       partnersEfficiency: [
         {
           id: 1,
-          href: '#',
+          href: 'https://nextplaytechnologies.com/home/default.aspx',
           logoName: '14.png',
         },
         {
           id: 2,
-          href: '#',
+          href: 'https://chain.link/',
           logoName: '15.png',
         },
         {
           id: 3,
-          href: '#',
+          href: 'https://www.fireblocks.com/',
           logoName: '16.png',
         },
         {
           id: 4,
-          href: '#',
+          href: 'https://www.ifeb.bank/',
           logoName: '17.png',
         },
         {
           id: 5,
-          href: '#',
+          href: 'https://www.computis.io/',
           logoName: '18.png',
         },
         {
           id: 6,
-          href: '#',
+          href: 'https://kyc-chain.com/',
           logoName: '19.png',
         },
         {
           id: 7,
-          href: '#',
+          href: 'https://www.circle.com/',
           logoName: '20.png',
         },
         {
           id: 8,
-          href: '#',
+          href: 'https://www.corelogic.com/',
           logoName: '21.png',
         },
         {
           id: 9,
-          href: '#',
+          href: 'https://securitize.io/',
           logoName: '22.png',
         },
         {
           id: 10,
-          href: '#',
+          href: 'https://www.lexisnexis.com/',
           logoName: '23.png',
         },
         {
           id: 11,
-          href: '#',
+          href: 'https://plaid.com/',
           logoName: '14.png',
         },
         {
           id: 12,
-          href: '#',
+          href: 'http://equitytrust.org/',
           logoName: '25.png',
         },
       ],
       partnersExchange: [
         {
           id: 1,
-          href: '#',
+          href: 'https://www.kucoin.com/',
           logoName: '26.png',
         },
         {
           id: 2,
-          href: '#',
+          href: 'https://www.bitmart.com/',
           logoName: '27.png',
         },
         {
           id: 3,
-          href: '#',
+          href: 'https://latoken.com/',
           logoName: '28.png',
         },
         {
           id: 4,
-          href: '#',
+          href: 'https://uniswap.org/',
           logoName: '29.png',
         },
         {
           id: 5,
-          href: '#',
+          href: 'https://sushi.com/',
           logoName: '30.png',
         },
         {
           id: 6,
-          href: '#',
+          href: 'https://app.bancor.network/',
           logoName: '31.png',
         },
       ],
@@ -223,6 +227,8 @@ export default {
 .s-partners
   position: relative
   padding: 160px 0 95px
+  @media screen and (max-width: 767px)
+    padding: 60px 0 20px
   &::before
     content: ""
     position: absolute
@@ -233,10 +239,41 @@ export default {
     height: 3621px
     background: url("~images/wave-4.svg") no-repeat center top
     background-size: cover
+    @media screen and (max-width: 767px)
+      display: none
+  .s-title
+    @media screen and (max-width: 767px)
+      font-size: 38px!important
 .partners-wrap
   margin-top: 45px
+  @media screen and (max-width: 767px)
+    margin-top: 32px
 .partner-item
+  $root: &
+
   margin-bottom: 23px
+  &.efficiency
+    #{$root}__logo
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(7),
+      &:nth-child(8)
+        width: 166px
+      &:nth-child(3),
+      &:nth-child(9)
+        width: 214px
+      &:nth-child(4),
+      &:nth-child(10)
+        width: 149px
+      &:nth-child(5),
+      &:nth-child(11)
+        width: 113px
+      &:nth-child(6),
+      &:nth-child(12)
+        width: 129px
+  &.exchange
+    #{$root}__logo
+      width: 157px
   &__title
     font-weight: 600
     font-size: 22px
