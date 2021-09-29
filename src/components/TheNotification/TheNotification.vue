@@ -15,6 +15,7 @@
             a(
               href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
               target="_blank"
+              class="more-info"
             ) More info
         .notification-item__close(
           @click="closeNotif"
@@ -94,6 +95,7 @@ export default {
     margin: 0 auto
     @media screen and (max-width: 767px)
       align-items: flex-start
+      padding-left: 0
   &__info
     width: 100%
     display: flex
@@ -129,6 +131,11 @@ export default {
     justify-content: space-between
     padding: 7px 15px
     background-color: #203884
+    @media screen and (max-width: 1300px)
+      padding-right: 35px
+    @media screen and (max-width: 767px)
+      display: block
+      line-height: 18px
     p
       max-width: 671px
       width: 100%
@@ -136,6 +143,13 @@ export default {
       font-size: 12px
       line-height: 18px
       letter-spacing: 0.01em
+      @media screen and (max-width: 767px)
+        display: inline
+    .more-info
+      white-space: nowrap
+      margin-left: 10px
+      @media screen and (max-width: 767px)
+        margin-left: 0
   &__icon
     flex-shrink: 0
     display: flex
@@ -143,7 +157,7 @@ export default {
     flex-shrink: 0
     margin-right: 15px
     @media screen and (max-width: 767px)
-      margin-top: 3px
+      display: none
   &__close
     position: absolute
     right: -36px
@@ -151,8 +165,8 @@ export default {
     align-items: center
     cursor: pointer
     transition: 0.3s
+    @media screen and (max-width: 1300px)
+      right: 10px
     @media screen and (max-width: 767px)
-      margin-top: 4px
-    &:hover
-      opacity: 0.8
+      margin-top: 10px
 </style>

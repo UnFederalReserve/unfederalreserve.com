@@ -64,6 +64,8 @@ export default {
   padding: 30px
   background: linear-gradient(180deg, #0D32A8 0%, #1B2F99 100%)
   border-radius: 25px
+  @media screen and (max-width: 767px)
+    width: 100%
   &::before
     position: absolute
     z-index: 1
@@ -86,6 +88,8 @@ export default {
       visibility: visible
   &__top
     margin-bottom: 6px
+    @media screen and (max-width: 767px)
+      margin-bottom: 14px
   &__label
     margin-bottom: 6px
     font-weight: 500
@@ -107,6 +111,7 @@ export default {
     line-height: 156.5%
     letter-spacing: 0.01em
     color: #748DE3
+    word-break: break-all
   &__bottom
     display: flex
     align-items: center

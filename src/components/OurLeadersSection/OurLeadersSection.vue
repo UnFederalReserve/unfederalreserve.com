@@ -36,12 +36,14 @@ export default {
   position: relative
   z-index: 1
   @media screen and (max-width: 991px)
-    margin-top: 25px
+    margin-top: 0
     margin-bottom: 100px
+  @media screen and (max-width: 767px)
+    margin-bottom: 30px
   .s-title
     margin-bottom: 83px
     @media screen and (max-width: 767px)
-      font-size: 32px
+      font-size: 32px!important
   &__team
     display: flex
     flex-wrap: wrap

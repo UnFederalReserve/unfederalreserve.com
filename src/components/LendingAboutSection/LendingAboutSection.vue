@@ -2,7 +2,7 @@
   section.s-about
     .s-container
       h2.s-title
-        span About us
+        span About Us
       .s-about__text
         p Since its founding, unfederalreserve.com has been focused on transparency,
           | efficiency, and professionalism.
@@ -32,6 +32,8 @@ export default {
       width: 1050px
       background: url('~images/figure.svg') no-repeat center
       background-size: cover
+    @media screen and (max-width: 767px)
+      display: none
   @media screen and (max-width: 991px)
     padding: 0 0 75px
   &__text
@@ -53,6 +55,8 @@ export default {
     position: relative
     @media screen and (max-width: 991px)
       font-size: 38px
+    @media screen and (max-width: 767px)
+      font-size: 38px!important
     span
       position: relative
       z-index: 2

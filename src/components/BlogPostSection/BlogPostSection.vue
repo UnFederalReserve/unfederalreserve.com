@@ -75,15 +75,21 @@ export default {
 @import '~Styles/_variables'
 .s-blog-post
   padding-bottom: 75px
+  .s-title
+    @media screen and (max-width: 400px)
+      font-size: 38px!important
 .blog-post-items
   width: 100%
   margin-top: 43px
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+  @media screen and (max-width: 767px)
 .load-more
   margin-top: 60px
   text-align: center
+  @media screen and (max-width: 767px)
+    margin-top: 12px
   .btn-default
     padding: 7px 35px 8px 35px
 .fade-enter-active,

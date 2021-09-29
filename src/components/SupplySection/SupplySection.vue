@@ -96,6 +96,12 @@ export default {
 @import '~Styles/_variables'
 .s-supply
   padding-bottom: 60px
+  @media screen and (max-width: 767px)
+    margin-top: -50px
+  .s-title
+    @media screen and (max-width: 767px)
+      font-size: 20px!important
+      margin-bottom: 10px
 .total-supply
   margin-bottom: 57px
   font-weight: 700
@@ -103,6 +109,12 @@ export default {
   line-height: 100%
   letter-spacing: 0.01em
   color: #FFFFFF
+  word-break: break-all
+  @media screen and (max-width: 767px)
+    font-size: 50px
+    margin-bottom: 30px
+  @media screen and (max-width: 575px)
+    font-size: 40px
 .supply-items
   margin: 0 -15px
   display: flex

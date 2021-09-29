@@ -67,6 +67,8 @@ export default {
 .s-review
   position: relative
   padding: 95px 0 150px
+  @media screen and (max-width: 767px)
+    padding: 0 0 25px
   &::before
     content: ""
     position: absolute
@@ -77,7 +79,12 @@ export default {
     height: 964px
     background: url('~images/circle-bg.svg') no-repeat center top
     background-size: cover
+    @media screen and (max-width: 767px)
+      display: none
 
 .s-title
   margin-bottom: 65px
+  @media screen and (max-width: 767px)
+    font-size: 38px!important
+    margin-bottom: 30px
 </style>

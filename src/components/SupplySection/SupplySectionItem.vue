@@ -38,6 +38,11 @@ export default {
   background: linear-gradient(180deg, #2542CC 0%, #2039AE 100%)
   border-radius: 25px
   overflow: hidden
+  @media screen and (max-width: 991px)
+    width: calc(50% - 30px)
+  @media screen and (max-width: 767px)
+    width: 100%
+    margin-bottom: 20px
 
   &__top
     display: flex

@@ -51,8 +51,10 @@ export default {
   border: 3px solid #3377FF
   opacity: 1!important
   border-radius: 64px
+  @media screen and (max-width: 767px)
+    padding: 11px 20px
   &:hover
-    opacity: 0.8!important
+    box-shadow: 0px 0px 0px 5px rgba(91, 123, 255, 0.24)
   &__img
     margin-right: 8px
     display: flex
@@ -81,4 +83,6 @@ export default {
 
 .s-title
   margin-bottom: 37px
+  @media screen and (max-width: 767px)
+    font-size: 38px!important
 </style>

@@ -2,7 +2,7 @@
   section.ApprovalSection.s-approval
     .s-container
       h2.s-title DeFi Llama Approval
-      .approval-item
+      a(href="https://defillama.com/protocol/unfederalreserve" target="_blank").approval-item
         span unFederalReserve on
         img(:src="require('images/defilama.png')" class="defilama-img")
       .approval-wrap
@@ -48,6 +48,8 @@ export default {
 @import '~Styles/_variables'
 .s-approval
   padding-bottom: 284px
+  @media screen and (max-width: 767px)
+    padding-bottom: 200px
 .approval-item
   position: relative
   max-width: 350px
@@ -61,11 +63,14 @@ export default {
   background: linear-gradient(90deg, #273490 0%, #132172 100%)
   border: 3px solid #3377FF
   border-radius: 64px
-  font-weight: 700
-  font-size: 14px
+  font-weight: 700!important
+  font-size: 14px!important
   line-height: 130%
   letter-spacing: 0.01em
   color: #FFFFFF
+  opacity: 1!important
+  &:hover
+    box-shadow: 0px 0px 0px 5px rgba(91, 123, 255, 0.24)
   &::before
     content: ""
     position: absolute
@@ -81,6 +86,8 @@ export default {
     margin-top: 8px
 .s-title
   margin-bottom: 40px
+  @media screen and (max-width: 767px)
+    font-size: 38px!important
 .approval-wrap
   position: relative
   &::before
@@ -103,6 +110,9 @@ export default {
   text-align: center
   border-radius: 26px
   overflow: hidden
+  @media screen and (max-width: 767px)
+    margin-top: 117px
+    padding: 74px 22px 22px 22px
   &::after
     content: ""
     width: 100%
@@ -136,6 +146,8 @@ export default {
       text-align: center
       letter-spacing: 0.01em
       color: #FFFFFF
+      @media screen and (max-width: 767px)
+        text-align: left
       strong
         font-size: 25px
         font-weight: 700
@@ -147,6 +159,10 @@ export default {
     text-align: center
     letter-spacing: 0.01em
     color: #FFFFFF
+    word-break: break-all
+    @media screen and (max-width: 767px)
+      font-size: 38px
+      text-align: left
   &__bottom-descr
     padding-top: 22px
     margin-top: 35px
