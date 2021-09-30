@@ -12,12 +12,12 @@
             )
         .youtube-info
           span More video on our YouTube channel
-          a(href="#")
+          a(href="https://www.youtube.com/c/unFederalReserve/" target="_blank")
             img(:src="require('images/youtube.svg')")
         BaseModal(v-if="showModal" @close="showModal = false")
           template(slot="content")
             iframe(
-              width="100%" height="535" src="https://www.youtube.com/embed/BBTVYIXXrag"
+              width="100%" height="535" src="https://www.youtube.com/embed/uiZc0RcZpNU?autoplay=1"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

@@ -19,7 +19,7 @@
                 | We offer the security of immutable records, near instantaneous settlement and encryption well
                 | beyond what the largest global banks currently use.
               h3.approval-text__title unFederalReserve Creates a Safe Harbor
-              p Sophisticated borrowers are experts at identifying mispriced opportunities.
+              p Sophisticated borrowers are experts at identifying mispriced opportunities.&nbsp;
                 | Unsophisticated lenders, however, can be at the mercy of seasoned borrowing
                 | professionals seeking to exploit risk vs yield mismatches. The unFederalReserve
                 | safe harbor use algorithm settings targeted to minimize those situations.
@@ -82,6 +82,7 @@ export default {
     top: -40px
   span
     margin-right: 12px
+    word-break: break-all
   .defilama-img
     margin-top: 8px
 .s-title

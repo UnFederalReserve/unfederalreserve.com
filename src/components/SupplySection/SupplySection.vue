@@ -82,8 +82,6 @@ export default {
           this.pushToSupplyItem(supplyData, 'Tether');
         } else if (symbol === 'DAI') {
           this.pushToSupplyItem(supplyData, 'Dai');
-        } else if (symbol === 'eRSDL') {
-          this.pushToSupplyItem(supplyData, 'ERSDL');
         }
       });
       this.isLoading = false;
@@ -110,6 +108,8 @@ export default {
   letter-spacing: 0.01em
   color: #FFFFFF
   word-break: break-all
+  @media screen and (max-width: 991px)
+    font-size: 75px
   @media screen and (max-width: 767px)
     font-size: 50px
     margin-bottom: 30px

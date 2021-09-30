@@ -93,7 +93,7 @@
                   )
               li.card-item__li.card-info.card-accent
                 .card-info__left
-                  h4.card-info__title 
+                  h4.card-info__title
                     span.card-info__title-icon.left
                       BaseImage.warning-red-icon(
                         :src="require('images/warning-red-icon.svg')",
@@ -124,27 +124,28 @@
         //-         alt="logo",
         //-       )
         //-     .revards__text
-        //-       h3.revards__title ERSDL Rewards 
+        //-       h3.revards__title ERSDL Rewards
         //-       p Earn rewards in the form of eRSDL for participating in the platform
         //-   .revards__right
         //-     BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
+import CONFIG from 'Config';
 import BaseImage from 'Components/Base//BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
-import CONFIG from 'Config';
+
 export default {
   name: 'LendingCardSection',
   components: {
     BaseImage,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
-      link: CONFIG.urls.lendingMain
-    }
-  }
+      link: CONFIG.urls.lendingMain,
+    };
+  },
 };
 </script>
 
@@ -152,12 +153,8 @@ export default {
 @import '~Styles/_variables'
 
 .s-card-info
-  padding-bottom: 150px
+  padding-bottom: 50px
   position: relative
-  @media screen and (max-width: 1199px)
-    padding-bottom: 73px
-  @media screen and (max-width: 991px)
-    padding-bottom: 96px
   &::before
     content: ""
     position: absolute
@@ -172,7 +169,6 @@ export default {
       top: -388px
     @media screen and (max-width: 991px)
       top: -627px
-  
 .s-title
   margin-bottom: 105px
   font-size: 42px
@@ -266,7 +262,7 @@ export default {
       font-size: 32px
       line-height: 140%
       margin-bottom: 8px
-  &__title-descr 
+  &__title-descr
     font-weight: 500
     font-size: 14px
     line-height: 22px
@@ -283,7 +279,7 @@ export default {
     padding: 0
 
 .card-info
-  padding: 0 35px 0 55px 
+  padding: 0 35px 0 55px
   display: flex
   justify-content: space-between
   align-items: flex-start
@@ -292,11 +288,11 @@ export default {
     padding: 0 30px
     margin-bottom: 34px
   &.card-accent
-    padding: 12px 35px 14px 55px 
+    padding: 12px 35px 14px 55px
     background: linear-gradient(90deg, rgba(229, 55, 55, 0.22) 0%, rgba(183, 52, 52, 0.11) 92.71%)
     margin-bottom: 19px
     @media screen and (max-width: 991px)
-      padding: 12px 30px 14px 30px 
+      padding: 12px 30px 14px 30px
     .card-info__left
       p
         color: #E53737

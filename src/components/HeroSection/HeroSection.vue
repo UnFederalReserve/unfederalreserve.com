@@ -4,16 +4,16 @@
       .hero-content__wrap
         h1 Be the Bank.
         h2 Fintech SaaS Solutions
-        p unFederalReserve is a fintech SaaS company combining
+        p unFederalReserve is a fintech SaaS company combining&nbsp;
           | software built on blockchain technology and 200 years
-          | of consumer lending experience. ReserveLending is our live DeFI or P2P
+          | of consumer lending experience. ReserveLending is our live DeFi or P2P
           | lending and borrowing platform. Get the most from your crypto while
           | enjoying a safe and easy user experience by clicking the button below.
         p.bold-descr
           | Our banking products are designed for smaller U.S. Treasury
           | chartered banks and non-bank lenders in need of a DeFi strategy and
           | greater liquidity without sacrificing security or compliance. <br/>
-          a(href="#") Click here to learn more
+          a(:href="link" target="_blank") Click here to learn more
         div.btn-container
           BaseBtn(
             classes="btn-rounded btn-with-arrow btn-blue"

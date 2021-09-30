@@ -45,22 +45,6 @@ export default {
           ],
         },
         {
-          name: 'Kevin Thompson',
-          title: 'Publications',
-          image: 'team/kevin-t100x100.png',
-          description: '<p><b>Publications</b></p>'
-            + '<p>Avoiding Surprises in Structuring Stock-Based Compensation Awards Considerations to Keep in '
-            + 'Mind When Issuing Stock Options.</p>'
-            + '<p><b>Organizations</b></p>'
-            + '<p>Fair Value Measurements Impact on Financial Reporting.</p>',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/kevin-t-81b71b3/',
-            },
-          ],
-        },
-        {
           name: 'Ryan Medlin',
           title: 'Founder & CTO',
           image: 'team/ryan100x100.png',

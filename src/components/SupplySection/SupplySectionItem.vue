@@ -33,7 +33,7 @@ export default {
 <style lang="sass" scoped>
 @import '~Styles/_variables'
 .supply-item
-  width: calc(25% - 30px)
+  width: calc(33.3333% - 30px)
   margin: 0 15px 30px
   background: linear-gradient(180deg, #2542CC 0%, #2039AE 100%)
   border-radius: 25px

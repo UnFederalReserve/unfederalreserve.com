@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { scrollToElement } from 'Utils/view';
+// import { scrollToElement } from 'Utils/view';
 import BaseImage from 'Components/Base//BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
 import NavigationDrawerMenu from 'Components/NavigationDrawerMenu/NavigationDrawerMenu';
@@ -126,7 +126,7 @@ export default {
     },
     onLogoClick() {
       this.togglerValue = false;
-      scrollToElement(this.$refs.header);
+      // scrollToElement(this.$refs.header);
     },
   },
 };

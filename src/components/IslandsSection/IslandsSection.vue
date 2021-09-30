@@ -6,19 +6,19 @@
         h2 Warning:
           br
           | Navigating Uncharted
-          br 
+          br
           | Waters...
-        p We understand that the term "DeFi" gives rise to apprehension because 
-          | anonymous lenders and borrowers engage in digital trading whose only concern 
+        p We understand that the term "DeFi" gives rise to apprehension because
+          | anonymous lenders and borrowers engage in digital trading whose only concern
           | is to leverage their existing positions in the crypto-verse.
-        p unFederalReserve has selected premium elements of the 
-          span crypto ecosystem 
-          | and wrapped it in a best-in-class regulatory framework that 
+        p unFederalReserve has selected premium elements of the
+          span crypto ecosystem
+          | and wrapped it in a best-in-class regulatory framework that
           span delivers its middle-market clients a B2B lending
-          | , cash reporting, and overnight lending/borrowing utility tool. 
+          | , cash reporting, and overnight lending/borrowing utility tool.
         BaseInfoBox
           h3.info-box__title We offer
-          p The security of immutable records, near instantaneous settlement, and 
+          p The security of immutable records, near instantaneous settlement, and
             | encryption well beyond what the largest global banks currently use.
       .island-item__image
         BaseImage.illustration(
@@ -37,15 +37,15 @@
       .island-item__text
         h2 Open Ocean
         BaseInfoBox
-          p Any major DeFi protocol relies on democratized systems so that any borrower 
+          p Any major DeFi protocol relies on democratized systems so that any borrower
             | (represented by the boats) can transact with any lender (represented by the ports).
-          p The challenge, then, from the perspective of the DeFi community, is the engagement of 
+          p The challenge, then, from the perspective of the DeFi community, is the engagement of
             | sophisticated borrowers (e.g. Treasurers at middle-market companies).
         .island-item__text-group
-          p Without proper sophistication, individual lenders cannot perform proper risk-based pricing, 
-            | and discrepancies in experience can lead to arbitrage that can harm the entire community. 
-          p 
-            span Metaphorically speaking, the open ocean of DeFi is not a place where 
+          p Without proper sophistication, individual lenders cannot perform proper risk-based pricing,
+            | and discrepancies in experience can lead to arbitrage that can harm the entire community.
+          p
+            span Metaphorically speaking, the open ocean of DeFi is not a place where
               | sailboats should approach large container ships.
 
   section.island.next
@@ -54,18 +54,18 @@
         h2 unFederalReserve Creates
           br
           | a Safe Harbor
-        p Sophisticated borrowers are experts at identifying mispriced opportunities. 
-          | Unsophisticated lenders, however, would be at the mercy of seasoned borrowing professionals, 
-          | which poses a risk to the lending industry. 
+        p Sophisticated borrowers are experts at identifying mispriced opportunities.
+          | Unsophisticated lenders, however, would be at the mercy of seasoned borrowing professionals,
+          | which poses a risk to the lending industry.
         BaseInfoBox(bottomIcon)
-          p The unFederalReserve safe harbor ensures that only qualified, 
+          p The unFederalReserve safe harbor ensures that only qualified,
             | vetted parties have access to safe, legally compliant liquidity.
-          p And talk about speed... 
-            span short-term lending 
-            | and 
-            span borrowing transactions 
-            | settle almost 
-            span instantaneously 
+          p And talk about speed...
+            span short-term lending
+            | and
+            span borrowing transactions
+            | settle almost
+            span instantaneously
             | on our blockchain-enabled platform.
       .island-item__image-center
         BaseImage(
@@ -83,7 +83,7 @@ export default {
   name: 'IslandsSection',
   components: {
     BaseImage,
-    BaseInfoBox
+    BaseInfoBox,
   },
 };
 </script>
@@ -101,7 +101,7 @@ export default {
     padding-bottom: 150px
     padding-top: 130px
     @media screen and (max-width: 767px)
-      padding-top: 60px 
+      padding-top: 60px
       padding-bottom: 100px
   @media screen and (max-width: 767px)
     margin-top: 0
@@ -205,7 +205,7 @@ export default {
         @media screen and (max-width: 1660px)
           left: -300px
         @media screen and (max-width: 1199px)
-          left: -550px 
+          left: -550px
         @media screen and (max-width: 991px)
           left: -160px
 </style>

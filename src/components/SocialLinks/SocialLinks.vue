@@ -6,8 +6,6 @@
       GroupIcon.svg-icon
     a(href="https://www.linkedin.com/company/unfederalreserve" target="_blank").link
       Linkedin.svg-icon
-    a(href="#" target="_blank").link
-      Facebook.svg-icon
     a(href="https://t.me/unfedres_staking" target="_blank").link
       Vector.svg-icon
     a(href="https://twitter.com/Unfederalreser1" target="_blank").link
@@ -18,13 +16,12 @@
       Geco.svg-icon
     a(href="https://coinmarketcap.com/currencies/unfederalreserve/" target="_blank").link
       cointMarket.svg-icon
-    a(href="#" target="_blank").link
+    a(href="https://linktr.ee/unfederalreserve" target="_blank").link
       SocIcon.svg-icon
 </template>
 
 <script>
 import Linkedin from 'images/svg-icons/linkedin.svg';
-import Facebook from 'images/svg-icons/facebook.svg';
 import GroupIcon from 'images/svg-icons/group-icon.svg';
 import Vector from 'images/svg-icons/vector.svg';
 import Twitt from 'images/svg-icons/twitt.svg';
@@ -38,7 +35,6 @@ export default {
   name: 'SocialLinks',
   components: {
     Linkedin,
-    Facebook,
     GroupIcon,
     Vector,
     Twitt,
