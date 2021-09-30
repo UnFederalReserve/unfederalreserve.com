@@ -24,7 +24,7 @@
             h5 Documents
             router-link(:to="{name: 'terms'}") Terms &#38; Conditions
             router-link(:to="{name: 'brand'}") Brand Assets
-            router-link(:to="{name: 'home'}") Bug Bounty
+            a(:href="`${linkDocs}/docs/security/bug-bounty/`" target="_blank") Bug Bounty
             a(:href="linkDocs" target="_blank") Education Center
           .footer-content-row__home.column
             h5 Exchanges
@@ -55,7 +55,7 @@
           .footer-content-row__more.column
             h5 More
             a(
-              href="#",
+              href="https://app.unfederalreserve.com/farms/eRSDL-ETH%20UNI-V2%20LP",
               target="_blank",
             ) LP Staking
             a(

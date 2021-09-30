@@ -76,6 +76,7 @@ export default {
   &__img
     position: relative
     left: -3px
+    max-width: 100%
   &__text
     margin-top: -120px
   strong

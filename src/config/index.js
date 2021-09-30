@@ -4,6 +4,7 @@ const base = {
     hubspotForm: 'https://api.hsforms.com/submissions/v3/integration/submit',
     lendingMain: process.env.LENDING_MAIN_URL,
     docsMain: process.env.DOCS_MAIN_URL,
+    fundingMain: process.env.FUNDING_MAIN_URL,
     marketApi: process.env.API_URL_MAINNET,
     blogPostApi: 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@unfederalreserve',
   },

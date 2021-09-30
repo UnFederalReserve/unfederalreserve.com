@@ -27,7 +27,7 @@
         BaseModal(v-if="showModal" @close="showModal = false")
           template(slot="content")
             iframe(
-              width="100%" height="535" src="https://www.youtube.com/embed/BBTVYIXXrag"
+              width="100%" height="535" src="https://www.youtube.com/embed/iiLPxlK49OQ?autoplay=1"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -49,7 +49,7 @@ export default {
   },
   data() {
     return {
-      link: CONFIG.urls.lendingMain,
+      link: CONFIG.urls.fundingMain,
       showModal: false,
     };
   },

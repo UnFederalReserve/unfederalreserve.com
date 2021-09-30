@@ -177,7 +177,7 @@ export default {
         {
           id: 11,
           href: 'https://plaid.com/',
-          logoName: '14.png',
+          logoName: '24.png',
         },
         {
           id: 12,

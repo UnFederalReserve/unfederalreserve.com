@@ -2,15 +2,25 @@
   section.GovernanceSection.s-governance
     .s-container
       h2.s-title Governance
-      a(href="#").snapshot-item
-        .snapshot-item__img
-          img(:src="require('images/lightning.png')")
-        .snapshot-item__right
-          .snapshot-item__text
-            span unersdl and ersdl Voting on
-            strong snapshot
-          .snapshot-item__icon
-            img(:src="require('images/external-link.svg')")
+      .snapshot-items
+        a(href="https://snapshot.org/#/unfederalreserve.eth" target="_blank").snapshot-item
+          .snapshot-item__img
+            img(:src="require('images/lightning-2.png')")
+          .snapshot-item__right
+            .snapshot-item__text
+              span ersdl Voting on
+              strong snapshot
+            .snapshot-item__icon
+              img(:src="require('images/external-link.svg')")
+        a(href="https://snapshot.org/#/unersdl.eth" target="_blank").snapshot-item
+          .snapshot-item__img
+            img(:src="require('images/lightning-1.png')")
+          .snapshot-item__right
+            .snapshot-item__text
+              span unersdl Voting on
+              strong snapshot
+            .snapshot-item__icon
+              img(:src="require('images/external-link.svg')")
 </template>
 
 <script>
@@ -41,12 +51,18 @@ export default {
     height: 786px
     background: url('~images/wave-5.svg') no-repeat center top
     background-size: cover
+.snapshot-items
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
 .snapshot-item
   max-width: 350px
   width: 100%
-  margin: 0 auto
+  margin: 0 15px 20px
   padding: 11px 28px
   display: flex
+  align-items: center
   background: linear-gradient(90deg, #273490 0%, #132172 100%)
   border: 3px solid #3377FF
   opacity: 1!important
@@ -56,10 +72,12 @@ export default {
   &:hover
     box-shadow: 0px 0px 0px 5px rgba(91, 123, 255, 0.24)
   &__img
-    margin-right: 8px
+    margin-right: 10px
     display: flex
     align-items: center
+    flex-shrink: 0
   &__right
+    width: 100%
     display: flex
     align-items: center
     span
@@ -76,10 +94,13 @@ export default {
       line-height: 29px
       letter-spacing: 0.01em
       color: #FFFFFF
+  &__text
+    width: 100%
   &__icon
     display: flex
     align-items: center
     margin-left: 15px
+    flex-shrink: 0
 
 .s-title
   margin-bottom: 37px

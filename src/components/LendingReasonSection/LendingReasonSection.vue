@@ -1,70 +1,70 @@
 <template lang="pug">
     section.s-reason
       .s-container
-        h2.s-title Top reason to use ReserveLending®
-        .rsn-wrap
-          .rsn-left
-            .rsn-left-item.empty
-            .rsn-left-item.row-style
-              .rsn-left-item__icon
-                BaseImage.rsn-icon-1(
-                  :src="require('images/rsn-icon-1.png')",
-                  alt="icon",
-                )
-              span USDT
-            .rsn-left-item.row-style
-              .rsn-left-item__icon
-                BaseImage.rsn-icon-2(
-                  :src="require('images/rsn-icon-2.png')",
-                  alt="icon",
-                )
-              span USDC
-            .rsn-left-item.row-style
-              .rsn-left-item__icon
-                BaseImage.rsn-icon-3(
-                  :src="require('images/rsn-icon-3.png')",
-                  alt="icon",
-                )
-              span DAI
-            .rsn-left-item.row-style
-              .rsn-left-item__icon
-                BaseImage.rsn-icon-4(
-                  :src="require('images/rsn-icon-4.svg')",
-                  alt="icon",
-                )
-              span WBTC
-            .rsn-left-item.row-style
-              .rsn-left-item__icon
-                BaseImage.rsn-icon-5(
-                  :src="require('images/rsn-icon-5.png')",
-                  alt="icon",
-                )
-              span ETH
-          .rsn-right
-            .rsn-right-items
-              LendingReasonItem(
-                v-for="item in items"
-                :key="item.id"
-                v-bind="item", 
-              )
-            .slider-arrows
-              .arrow-prev(@click="changeSlide(-1)")
-                BaseImage.slider-arrow(
-                  :src="require('images/slider-arrow.svg')",
-                  alt="arrow",
-                )
-              ul.slider-dots
-                li.dot-item(
-                  v-for="item in items"
-                  :key="item.id"
-                  :class="{'active': item.classes === 'active'}"
-                )
-              .arrow-next(@click="changeSlide(1)")
-                BaseImage.slider-arrow(
-                  :src="require('images/slider-arrow.svg')",
-                  alt="arrow",
-                )
-        .rsn-info *APY% displayed as of 20:07 UTC 06/10/2021
+        //- h2.s-title Top reason to use ReserveLending®
+        //- .rsn-wrap
+        //-   .rsn-left
+        //-     .rsn-left-item.empty
+        //-     .rsn-left-item.row-style
+        //-       .rsn-left-item__icon
+        //-         BaseImage.rsn-icon-1(
+        //-           :src="require('images/rsn-icon-1.png')",
+        //-           alt="icon",
+        //-         )
+        //-       span USDT
+        //-     .rsn-left-item.row-style
+        //-       .rsn-left-item__icon
+        //-         BaseImage.rsn-icon-2(
+        //-           :src="require('images/rsn-icon-2.png')",
+        //-           alt="icon",
+        //-         )
+        //-       span USDC
+        //-     .rsn-left-item.row-style
+        //-       .rsn-left-item__icon
+        //-         BaseImage.rsn-icon-3(
+        //-           :src="require('images/rsn-icon-3.png')",
+        //-           alt="icon",
+        //-         )
+        //-       span DAI
+        //-     .rsn-left-item.row-style
+        //-       .rsn-left-item__icon
+        //-         BaseImage.rsn-icon-4(
+        //-           :src="require('images/rsn-icon-4.svg')",
+        //-           alt="icon",
+        //-         )
+        //-       span WBTC
+        //-     .rsn-left-item.row-style
+        //-       .rsn-left-item__icon
+        //-         BaseImage.rsn-icon-5(
+        //-           :src="require('images/rsn-icon-5.png')",
+        //-           alt="icon",
+        //-         )
+        //-       span ETH
+        //-   .rsn-right
+        //-     .rsn-right-items
+        //-       LendingReasonItem(
+        //-         v-for="item in items"
+        //-         :key="item.id"
+        //-         v-bind="item",
+        //-       )
+        //-     .slider-arrows
+        //-       .arrow-prev(@click="changeSlide(-1)")
+        //-         BaseImage.slider-arrow(
+        //-           :src="require('images/slider-arrow.svg')",
+        //-           alt="arrow",
+        //-         )
+        //-       ul.slider-dots
+        //-         li.dot-item(
+        //-           v-for="item in items"
+        //-           :key="item.id"
+        //-           :class="{'active': item.classes === 'active'}"
+        //-         )
+        //-       .arrow-next(@click="changeSlide(1)")
+        //-         BaseImage.slider-arrow(
+        //-           :src="require('images/slider-arrow.svg')",
+        //-           alt="arrow",
+        //-         )
+        //- .rsn-info *APY% displayed as of 20:07 UTC 06/10/2021
         .earn
           .earn__icon
             BaseImage.earn-icon(
@@ -79,16 +79,17 @@
 </template>
 
 <script>
+import CONFIG from 'Config';
 import BaseImage from 'Components/Base/BaseImage';
 import LendingReasonItem from 'Components/LendingReasonSection/LendingReasonItem';
 import BaseBtn from 'Components/Base/BaseBtn';
-import CONFIG from 'Config';
+
 export default {
   name: 'LendingReasonSection',
   components: {
     BaseImage,
     LendingReasonItem,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
@@ -97,188 +98,188 @@ export default {
         {
           id: 1,
           icon: require('images/rsn-logo-1.png'),
-          name: "AAVE",
-          classes: "hide",
+          name: 'AAVE',
+          classes: 'hide',
           data: [
             {
               id: 1,
-              value1: "2.08%",
-              value2: "3.07%",
-              value3: "0.99%",
-              value4: "3rd"
+              value1: '2.08%',
+              value2: '3.07%',
+              value3: '0.99%',
+              value4: '3rd',
             },
             {
               id: 2,
-              value1: "2.25%",
-              value2: "3.28%",
-              value3: "1.03%",
-              value4: "3rd"
+              value1: '2.25%',
+              value2: '3.28%',
+              value3: '1.03%',
+              value4: '3rd',
             },
             {
               id: 3,
-              value1: "2.60%",
-              value2: "3.75%",
-              value3: "1.15%",
-              value4: "4th"
+              value1: '2.60%',
+              value2: '3.75%',
+              value3: '1.15%',
+              value4: '4th',
             },
             {
               id: 4,
-              value1: "0.01%",
-              value2: "0.45%",
-              value3: "0.44%",
-              value4: "4th"
+              value1: '0.01%',
+              value2: '0.45%',
+              value3: '0.44%',
+              value4: '4th',
             },
             {
               id: 5,
-              value1: "0.07%",
-              value2: "0.97%",
-              value3: "0.90%",
-              value4: "4th"
-            }
-          ]
+              value1: '0.07%',
+              value2: '0.97%',
+              value3: '0.90%',
+              value4: '4th',
+            },
+          ],
         },
         {
           id: 2,
           icon: require('images/rsn-logo-2.svg'),
-          name: "ReserveLending®",
-          classes: "active",
+          name: 'ReserveLending®',
+          classes: 'active',
           data: [
             {
               id: 1,
-              value1: "12.17%",
-              value2: "12.70%",
-              value3: "0.53%",
-              value4: "1st"
+              value1: '12.17%',
+              value2: '12.70%',
+              value3: '0.53%',
+              value4: '1st',
             },
             {
               id: 2,
-              value1: "9.83%",
-              value2: "12.35%",
-              value3: "2.52%",
-              value4: "1st"
+              value1: '9.83%',
+              value2: '12.35%',
+              value3: '2.52%',
+              value4: '1st',
             },
             {
               id: 3,
-              value1: "10.70%",
-              value2: "12.48%",
-              value3: "1.78%",
-              value4: "1st"
+              value1: '10.70%',
+              value2: '12.48%',
+              value3: '1.78%',
+              value4: '1st',
             },
             {
               id: 4,
-              value1: "6.04%",
-              value2: "11.73%",
-              value3: "5.69%",
-              value4: "1st"
+              value1: '6.04%',
+              value2: '11.73%',
+              value3: '5.69%',
+              value4: '1st',
             },
             {
               id: 5,
-              value1: "4.32%",
-              value2: "11.42%",
-              value3: "7.10%",
-              value4: "1st"
-            }
-          ]
+              value1: '4.32%',
+              value2: '11.42%',
+              value3: '7.10%',
+              value4: '1st',
+            },
+          ],
         },
         {
           id: 3,
           icon: require('images/rsn-logo-3.png'),
-          name: "Compound",
-          classes: "hide",
+          name: 'Compound',
+          classes: 'hide',
           data: [
             {
               id: 1,
-              value1: "1.50%",
-              value2: "3.08%",
-              value3: "1.58%",
-              value4: "4th"
+              value1: '1.50%',
+              value2: '3.08%',
+              value3: '1.58%',
+              value4: '4th',
             },
             {
               id: 2,
-              value1: "1.85%",
-              value2: "3.42%",
-              value3: "1.57%",
-              value4: "4th"
+              value1: '1.85%',
+              value2: '3.42%',
+              value3: '1.57%',
+              value4: '4th',
             },
             {
               id: 3,
-              value1: "2.72%",
-              value2: "4.33%",
-              value3: "1.61%",
-              value4: "3rd"
+              value1: '2.72%',
+              value2: '4.33%',
+              value3: '1.61%',
+              value4: '3rd',
             },
             {
               id: 4,
-              value1: "0.31%",
-              value2: "4.60%",
-              value3: "4.29%",
-              value4: "3rd"
+              value1: '0.31%',
+              value2: '4.60%',
+              value3: '4.29%',
+              value4: '3rd',
             },
             {
               id: 5,
-              value1: "0.13%",
-              value2: "2.95%",
-              value3: "2.82%",
-              value4: "3rd"
-            }
-          ]
+              value1: '0.13%',
+              value2: '2.95%',
+              value3: '2.82%',
+              value4: '3rd',
+            },
+          ],
         },
         {
           id: 4,
           icon: require('images/rsn-logo-4.svg'),
-          name: "Cream",
-          classes: "hide",
+          name: 'Cream',
+          classes: 'hide',
           data: [
             {
               id: 1,
-              value1: "9.26%",
-              value2: "19.32%",
-              value3: "10.06%",
-              value4: "2nd"
+              value1: '9.26%',
+              value2: '19.32%',
+              value3: '10.06%',
+              value4: '2nd',
             },
             {
               id: 2,
-              value1: "3.32%",
-              value2: "10.98%",
-              value3: "7.66%",
-              value4: "2nd"
+              value1: '3.32%',
+              value2: '10.98%',
+              value3: '7.66%',
+              value4: '2nd',
             },
             {
               id: 3,
-              value1: "9.83%",
-              value2: "19.29%",
-              value3: "9.46%",
-              value4: "2nd"
+              value1: '9.83%',
+              value2: '19.29%',
+              value3: '9.46%',
+              value4: '2nd',
             },
             {
               id: 4,
-              value1: "2.35%",
-              value2: "10.05%",
-              value3: "7.70%",
-              value4: "2nd"
+              value1: '2.35%',
+              value2: '10.05%',
+              value3: '7.70%',
+              value4: '2nd',
             },
             {
               id: 5,
-              value1: "1.16%",
-              value2: "7.34%",
-              value3: "6.18%",
-              value4: "2nd"
-            }
-          ]
-        }
-      ]
-    }
+              value1: '1.16%',
+              value2: '7.34%',
+              value3: '6.18%',
+              value4: '2nd',
+            },
+          ],
+        },
+      ],
+    };
   },
   methods: {
     changeSlide(number) {
-      let slideIdx = this.items.findIndex(item => item.classes === 'active');
-      if(slideIdx === this.items.length-1 && number === 1 || slideIdx === 0 && number === -1) {
-        return
+      const slideIdx = this.items.findIndex(item => item.classes === 'active');
+      if (slideIdx === this.items.length - 1 && number === 1 || slideIdx === 0 && number === -1) {
+        return;
       }
       this.items[slideIdx].classes = 'hide';
-      this.items[slideIdx+number].classes = 'active';
+      this.items[slideIdx + number].classes = 'active';
     },
-  }
+  },
 };
 </script>
 
@@ -286,6 +287,7 @@ export default {
 
 .s-reason
   position: relative
+  padding-bottom: 100px
   &::before
     content: ""
     position: absolute
