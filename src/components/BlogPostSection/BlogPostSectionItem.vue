@@ -30,7 +30,7 @@ export default {
       const diff = Math.abs(Math.floor((currentDate - pubDate) / 1000));
       const date = Math.floor(diff / (24 * 60 * 60));
       if (date === 0) {
-        return 'recently';
+        return 'Recently';
       }
       if (date > 7) {
         return new Date(this.blogItem.pubDate).toLocaleDateString('en-US', {
@@ -104,6 +104,9 @@ export default {
     line-height: 40px
     letter-spacing: 0.01em
     color: #FFFFFF
+    @media screen and (max-width: 374px)
+      font-size: 22px
+      line-height: 32px
   &__text
     margin-bottom: 0
     font-weight: 500
@@ -111,7 +114,7 @@ export default {
     line-height: 156.5%
     letter-spacing: 0.01em
     color: #748DE3
-    word-break: break-all
+    word-break: break-word
   &__bottom
     display: flex
     align-items: center

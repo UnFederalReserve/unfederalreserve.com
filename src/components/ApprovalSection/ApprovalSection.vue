@@ -10,9 +10,7 @@
           .approval-text__content
             .approval-text__icon
             .approval-text__inner
-              p We are the&nbsp;
-                strong Buoy You Can Trust&nbsp;
-                | when navigating uncharted waters.
+              p We are your safe harbor when navigating uncharted waters.
                 | unFederalReserve has selected premium elements of the crypto ecosystem
                 | and wrapped it in a best-in-class regulatory framework that delivers its
                 | middle-market clients a B2B lending, cash reporting and overnight lending/borrowing utility tool.
@@ -22,7 +20,7 @@
               p Sophisticated borrowers are experts at identifying mispriced opportunities.&nbsp;
                 | Unsophisticated lenders, however, can be at the mercy of seasoned borrowing
                 | professionals seeking to exploit risk vs yield mismatches. The unFederalReserve
-                | safe harbor use algorithm settings targeted to minimize those situations.
+                | safe harbor uses algorithm settings targeted to minimize those situations.
                 | When it comes to speed, lending and borrowing transactions settle almost
                 | instantaneously on our blockchain-enabled platform.
               .approval-text__bottom-descr

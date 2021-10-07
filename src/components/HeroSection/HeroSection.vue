@@ -91,6 +91,8 @@ export default {
   @media screen and (max-width: 767px)
     background-image: url('~images/mob-hero.svg')
     padding-bottom: 215px
+  @media screen and (min-width: 2700px)
+    min-height: 1200px
   &-content
     width: 100%
     margin: 0 auto

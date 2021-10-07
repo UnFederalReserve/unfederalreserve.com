@@ -4,7 +4,7 @@
     p
       b Notice:
       |  A short term loan provides the cash needed to meet an immediate
-      |  short-term cash flow problem. It is not a solution for longer term
+      |  short term cash flow problem. It is not a solution for longer term
       |  financial problems for which longer term financing may be more appropriate.
       |  You may want to discuss your financial situation with a nonprofit financial
       |  counseling service in your community. You may be charged additional fees if
@@ -13,7 +13,7 @@
     p  Age Restriction and Acknowledgement BY USING, ACCESSING THE WEBSITE OR ANY
       |  MATERIALS OR CONTENT ON WEBSITE, YOU, THE USER ARE REPRESENTING THAT YOU
       |  ARE EIGHTEEN YEARS OLD OR OLDER ALL USERS MUST BE AT LEAST 18 YEARS OF
-      |  AGE OR OLDER THERE ARE NO EXCEPTIONS
+      |  AGE OR OLDER. THERE ARE NO EXCEPTIONS.
     h3 Your Acceptance
     p By using, and by accessing the materials at Websites or
       |  interfacing in any matter with the Website and/or visiting this website
@@ -44,12 +44,11 @@
       |  agree to the terms, conditions, and notices contained or referenced herein. Further
       |  you consent to the use of electronic signatures under the Esignature Act and any
       |  similar state Act.
-    h3 Electronic and telephone Communications
+    h3 Electronic and Telephone Communications
     p The following terms and conditions
       |  govern electronic communications in connection with this Agreement, discussions
       |  with crypto fintech architects, and the transaction evidenced hereby (the "Consent").
-      |  By this Agreement, you agree that any notices we are required to make to you may be
-      |  delivered to you electronically. You agree that any notices we are required to make
+      |  By this Agreement you agree that any notices we are required to make
       |  to you may be delivered to you electronically. You expressly consent to the Company
       |  contacting you at any phone number listed on your application or contract, including
       |  home address or email address provided on this document, updated by you or provided
@@ -75,12 +74,12 @@
           |  the new address/telephone number(s) by writing to us or sending us an email, at
           |  least five (5) days before the change.
         li In order to receive electronic communications, you will need a working connection to
-          |  the Internet and an email account. . Your browser must support the Secure Sockets
+          |  the Internet and an email account. Your browser must support the Secure Sockets
           |  Layer (SSL) protocol. You must have a printer or sufficient hard drive space
           |  available to save the information. If you have a question about your browser
           |  and the SSL protocol, please contact your Internet Service Provider or a qualified
           |  information technology service provider.
-        li We may amend (add to, delete or change) the term of this Consent by providing you with advance notice
+        li We may amend (add to, delete or change) the term of this Consent by providing you with advance notice.
     h3 Text Messaging
     p This SMS Statement Notifications
       |  Disclosure ("Disclosure") applies to your account with the Lender if you have elected
@@ -88,7 +87,7 @@
     p As used in this Disclosure, "SMS Statement Notifications" means any SMS (text message)
       |  communications from us to you pertaining to your Agreement, including but not limited
       |  to payment information, account information, due dates, delinquent accounts, program
-      |  updates, promotions, coupons and other marketing messages
+      |  updates, promotions, coupons and other marketing messages.
     p How To Unsubscribe: You may withdraw your consent to receive SMS Statement Notifications
       |  by calling us at Lender's phone number provided at the top of this agreement. We will
       |  not impose any fee to process the withdrawal of your consent to receive SMS Statement
@@ -144,7 +143,7 @@
       |  or loan issued by a third party shall be serviced entirely by that third party and not
       |  by residualtoken.com, and shall be subject to the terms set forth by that third party
       |  lender providing the loan or services.
-    h3 Security for the Site.
+    h3 Security for the Site
     p As a condition of your use of this Site, you agree that you will not, and you will not
       |  take any action intended to: (a) view, download or access data that is not intended
       |  for any party other than you; (b) invade the privacy of, obtain the identity of, or
@@ -157,10 +156,10 @@
       |  "spamming," or "crashing;" or (e) send unsolicited mail, including promotions and/or
       |  advertising of products and services or execution files. Violations of system or network
       |  security may result in civil or criminal liability.
-    h3 Disclaimers of Warranty and General Disclaimers.
+    h3 Disclaimers of Warranty and General Disclaimers
     p YOU AGREE THAT YOUR USE OF THE COMPANIES' WEBSITE(S) SHALL BE AT YOUR OWN SOLE RISK. TO THE
       |  FULLEST EXTENT PERMITTED BY LAW. THE COMPANY, ITS OFFICERS, DIRECTORS, EMPLOYEES,
-      |  ASSIGNEE, AFFILITIES, AND AGENTS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN
+      |  ASSIGNEE, AFFILIATES, AND AGENTS DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN
       |  CONNECTION WITH THE WEBSITE, ANY USE OF THE WEBSITE OR ANY COMMUNICATION THAT YOU
       |  OR ANY USER MAY HAVE WITH ANY OTHER USER OR PERSONS OR ENTITY REFERENCING SERVICES
       |  ON THE WEBSITE. COMPANY MAKES NO WARRANTIES OR REPRESENTATIONS ABOUT THE ACCURACY OR
@@ -190,7 +189,7 @@
       |  COLLECTORS, SUCCESSORS OR ASSIGNS OF EACH, SHALL BE LIABLE TO YOU FOR ANY INDIRECT,
       |  CONSEQUENTIAL, EXEMPLARY, INCIDENTAL OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS UNLESS
       |  OTHERWISE EXPRESSLY SET FORTH IN A WRITTEN AGREEMENT WITH YOU, Residual Token, Inc.
-      |  d/b/a residualtoken.com 'S MAXIMUM LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING
+      |  d/b/a residualtoken.com MAXIMUM LIABILITY FOR ALL CLAIMS ARISING OUT OF OR RELATING
       |  TO THIS SITE, OR ITS CONTENT, WHETHER IN CONTRACT, TORT OR OTHERWISE SHALL BE LIMITED
       |  TO THE AMOUNT YOU PAID TO ACCESS THIS SITE. In the event that the jurisdiction or
       |  state does not permit a limitation of liability as set forth above, then this limitation

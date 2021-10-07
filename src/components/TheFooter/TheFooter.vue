@@ -8,12 +8,12 @@
       //- )
     .footer-content
       .footer-content-inner
-        router-link.footer-logo-link(:to="{name: 'home'}")
+        router-link.footer-logo-link(:to="{name: 'home'}" @click.native="onLogoClick")
           logo.footer-logo
         .footer-content-row
           .footer-content-row__home.column
             h5 Main
-            router-link(:to="{name: 'home'}") Home
+            router-link(:to="{name: 'home'}" @click.native="onLogoClick") Home
             router-link(:to="{name: 'product'}") Lending
             router-link(:to="{name: 'home', hash: '#about'}") About Us
             a(
@@ -91,6 +91,11 @@ export default {
   computed: {
     currentRouteName() {
       return this.$route.name;
+    },
+  },
+  methods: {
+    onLogoClick() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     },
   },
 };

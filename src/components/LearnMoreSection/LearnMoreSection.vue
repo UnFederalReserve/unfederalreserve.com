@@ -19,9 +19,11 @@
             alt="logo",
           )
           span Powered by unFederalReserve
+          br
           p
-            | The first licensee of Residual Token, Inc.  ReserveFunding is a
-            | fund of funds that allows crypto holders to provide cash to
+            | The first licensee of Residual Token, Inc.
+            br
+            | ReserveFunding is a fund of funds that allows crypto holders to provide cash to
             | non-bank lenders leveraging SaaS and traditional financial service rails.
           BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Join the Waitlist" :link="link" :withArrow="true")
         BaseModal(v-if="showModal" @close="showModal = false")
