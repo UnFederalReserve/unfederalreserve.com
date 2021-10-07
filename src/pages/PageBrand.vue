@@ -4,7 +4,7 @@
       .s-container
         .s-top__wrap
           h1.top-title Brand Assets
-          p.top-descr Our Brand Book is a basic guide for anyone using
+          p.top-descr Our Brand Book is a basic guide for anyone using&nbsp;
             | the unFederalReserve brand to create promotional materials.
           .top-info Please read the guidelines before using
           a(
