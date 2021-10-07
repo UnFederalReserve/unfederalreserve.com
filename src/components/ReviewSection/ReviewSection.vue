@@ -37,7 +37,7 @@ export default {
         },
         {
           id: 3,
-          img: 'person-img-3.png',
+          img: 'person-img-3.jpg',
           text: 'Everyone in the financial world wants to leverage blockchain, but relatively few companies have the mix of blockchain expertise AND industry domain knowledge to be successful in the space. unFederalReserve has both!',
           name: 'Dave Stone',
           description: 'Product and Engineering Advisor at unFederalReserve Currently Director of Product Management at Salesforce',
