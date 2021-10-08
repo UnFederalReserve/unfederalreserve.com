@@ -143,6 +143,7 @@ export default {
     z-index: 1
     display: flex
     align-items: center
+    justify-content: center
     overflow: hidden
     border-radius: 100%
     @media screen and (max-width: 991px)
