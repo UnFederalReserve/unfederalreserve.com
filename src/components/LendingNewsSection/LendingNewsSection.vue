@@ -4,33 +4,38 @@
       h2.s-title Latest news
       .news-wrap
         a.twitter-timeline(
-          href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw" 
-          data-height="600" 
-          data-width="100%" 
-          data-chrome="nofooter") Tweets by Unfederalreser1 
+          href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw"
+          data-height="600"
+          data-width="100%"
+          data-chrome="nofooter") Tweets by Unfederalreser1
 
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
+
 export default {
-  name: "LendingNewsSection",
+  name: 'LendingNewsSection',
   components: {
-    BaseImage
+    BaseImage,
+  },
+  mounted() {
+    this.initTw();
   },
   methods: {
     initTw() {
-      const script = document.createElement('script');
-      script.async = true;
-      script.defer = true;
-      script.src = "https://platform.twitter.com/widgets.js";
-      document.querySelector('head').appendChild(script);
-    }
+      const twt = document.getElementById('twt');
+      if (!twt) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.defer = true;
+        script.src = 'https://platform.twitter.com/widgets.js';
+        script.setAttribute('id', 'twt');
+        document.querySelector('head').appendChild(script);
+      }
+    },
   },
-  mounted() {
-    this.initTw()
-  }
-}
+};
 </script>
 
 <style lang="sass" scoped>
