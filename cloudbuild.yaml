@@ -1,5 +1,7 @@
 substitutions:
   _SERVICE_NAME: home
+  _PROD_DOMAIN: unfederalreserve.com
+  _DEV_DOMAIN: unfederalreservetesting.com
 steps:
 
 # init environment
@@ -14,14 +16,17 @@ steps:
 
       echo "export PROJECT_NAME=$(cut -d '-' -f1 <<< $PROJECT_ID)" >> .cloudbuild.env.sh
 
-      if [ "$BRANCH_NAME" = "master" ]; then
+      if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "new-prod" ]; then
         echo 'export CLUSTER_NAME=master' >> .cloudbuild.env.sh
+        echo 'export DOMAIN=$_PROD_DOMAIN' >> .cloudbuild.env.sh
       elif [ "$BRANCH_NAME" = "stage" ]; then
         echo 'export CLUSTER_NAME=stage' >> .cloudbuild.env.sh
-      elif [ "$BRANCH_NAME" = "dev" ]; then
+        echo 'export URL_ENV_PART=-stage' >> .cloudbuild.env.sh
+        echo 'export DOMAIN=$_DEV_DOMAIN' >> .cloudbuild.env.sh
+      elif [ "$BRANCH_NAME" = "dev" ] || [ "$BRANCH_NAME" = "new-dev" ] || [ "$BRANCH_NAME" = "nikolay" ]; then
         echo 'export CLUSTER_NAME=dev' >> .cloudbuild.env.sh
-      else
-        echo 'export CLUSTER_NAME=dev' >> .cloudbuild.env.sh
+        echo 'export URL_ENV_PART=-dev' >> .cloudbuild.env.sh
+        echo 'export DOMAIN=$_DEV_DOMAIN' >> .cloudbuild.env.sh
       fi
 
       yarn install
@@ -66,12 +71,16 @@ steps:
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME/index.html
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME/js/*
 
-        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/index.html"
-        gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/*"
+        gcloud compute url-maps invalidate-cdn-cache apps-https-lb --async --path "/index.html" --host="$_SERVICE_NAME$$URL_ENV_PART.$$DOMAIN"
+        gcloud compute url-maps invalidate-cdn-cache apps-https-lb --async --path "/*" --host="$_SERVICE_NAME$$URL_ENV_PART.$$DOMAIN"
       elif [ "$BRANCH_NAME" = "nikolay" ]; then
         gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/index.html
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/js/*
+      elif [ "$BRANCH_NAME" = "new-dev" ] || [ "$BRANCH_NAME" = "new-prod" ]; then
+        gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new/index.html
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new/js/*
       else
         exit 0
       fi
