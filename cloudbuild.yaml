@@ -1,6 +1,6 @@
 substitutions:
   _SERVICE_NAME: home
-    _PROD_DOMAIN: unfederalreserve.com
+  _PROD_DOMAIN: unfederalreserve.com
   _DEV_DOMAIN: unfederalreservetesting.com
 steps:
 
