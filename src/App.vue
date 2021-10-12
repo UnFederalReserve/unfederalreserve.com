@@ -4,7 +4,9 @@
     TheNotification(@notif-height="notifHundler")
     TheHeader(:offset="notifHeight")
     v-main
-      router-view
+      template(v-if="this.$route.name !== 'product'")
+        router-view
+      PageProduct(v-show="this.$route.name === 'product'")
     TheFooter
 </template>
 
@@ -14,6 +16,7 @@ import BaseSpinner from 'Components/Base/BaseSpinner';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
 import TheNotification from 'Components/TheNotification/TheNotification';
+import PageProduct from 'Pages/PageProduct';
 
 
 export default {
@@ -23,6 +26,7 @@ export default {
     TheHeader,
     TheFooter,
     TheNotification,
+    PageProduct,
   },
   data() {
     return {
