@@ -20,6 +20,8 @@ steps:
         echo 'export CLUSTER_NAME=stage' >> .cloudbuild.env.sh
       elif [ "$BRANCH_NAME" = "dev" ]; then
         echo 'export CLUSTER_NAME=dev' >> .cloudbuild.env.sh
+      elif [ "$BRANCH_NAME" = "new-prod" ]; then
+        echo 'export CLUSTER_NAME=master' >> .cloudbuild.env.sh
       else
         echo 'export CLUSTER_NAME=dev' >> .cloudbuild.env.sh
       fi
@@ -68,10 +70,14 @@ steps:
 
         gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/index.html"
         gcloud compute url-maps invalidate-cdn-cache $_SERVICE_NAME-$$CLUSTER_NAME-https-lb --async --path "/*"
-      elif [ "$BRANCH_NAME" = "nikolay" ]; then
+      elif [ "$BRANCH_NAME" = "nikolay" ] || [ "$BRANCH_NAME" = "new" ] || [ "$BRANCH_NAME" = "new" ]; then
         gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/index.html
         gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-$BRANCH_NAME/js/*
+      elif [ "$BRANCH_NAME" = "new-dev" ] || [ "$BRANCH_NAME" = "new-prod" ]; then
+        gsutil -m -h "Cache-Control:public,max-age=1209600" cp -z html,js,css,svg -R * gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new/index.html
+        gsutil setmeta -h "Cache-Control:private, max-age=0, no-transform" gs://$$PROJECT_NAME-$$CLUSTER_NAME-$_SERVICE_NAME-new/js/*
       else
         exit 0
       fi
