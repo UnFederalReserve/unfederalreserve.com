@@ -3,7 +3,7 @@
     .s-container
       h2.s-title DeFi Llama Approval
       a(href="https://defillama.com/protocol/unfederalreserve" target="_blank").approval-item
-        span unFederalReserve on
+        span unFederalReserve™ on
         img(:src="require('images/defilama.png')" class="defilama-img")
       .approval-wrap
         .approval-text
@@ -11,20 +11,20 @@
             .approval-text__icon
             .approval-text__inner
               p We are your safe harbor when navigating uncharted waters.
-                | unFederalReserve has selected premium elements of the crypto ecosystem
+                | unFederalReserve™ has selected premium elements of the crypto ecosystem
                 | and wrapped it in a best-in-class regulatory framework that delivers its
                 | middle-market clients a B2B lending, cash reporting and overnight lending/borrowing utility tool.
                 | We offer the security of immutable records, near instantaneous settlement and encryption well
                 | beyond what the largest global banks currently use.
-              h3.approval-text__title unFederalReserve Creates a Safe Harbor
+              h3.approval-text__title unFederalReserve™ Creates a Safe Harbor
               p Sophisticated borrowers are experts at identifying mispriced opportunities.&nbsp;
                 | Unsophisticated lenders, however, can be at the mercy of seasoned borrowing
-                | professionals seeking to exploit risk vs yield mismatches. The unFederalReserve
+                | professionals seeking to exploit risk vs yield mismatches. The unFederalReserve™
                 | safe harbor uses algorithm settings targeted to minimize those situations.
                 | When it comes to speed, lending and borrowing transactions settle almost
                 | instantaneously on our blockchain-enabled platform.
               .approval-text__bottom-descr
-                p IRL Liquidity is limited. With unFederalReserve get
+                p IRL Liquidity is limited. With unFederalReserve™ get
                   strong Accessible Liquidity and Lower Costs
 
 </template>

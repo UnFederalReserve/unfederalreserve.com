@@ -5,16 +5,16 @@
         .s-top__left
           h1.top-main-title 
             span Reserve
-            span Lending®
-          p ReserveLending® is one of the leading protocols for lending and borrowing in the DeFi space. 
-            | As an asset-liability DeFi lending tool and fork of Compound® protocol, 
-            | ReserveLending® stands out as one of the markets top secure algorithmic money market protocols.
-          .s-top__info Click the button below to access the ReserveLending® platform and manage your account.
+            span Lending™
+          p ReserveLending™ is one of the leading protocols for lending and borrowing in the DeFi space.
+            | As an asset-liability DeFi lending tool and fork of Compound™ protocol,
+            | ReserveLending™ stands out as one of the markets top secure algorithmic money market protocols.
+          .s-top__info Click the button below to access the ReserveLending™ platform and manage your account.
           BaseBtn(classes="btn-rounded btn-with-arrow btn-white" text="Get Started" :link="link" :withArrow="true")
         .s-top__right
           BaseImage.rl-img(
             :src="require('images/rl-img.png')",
-            alt="ReserveLending®",
+            alt="ReserveLending™",
           )
     LendingCardSection
     LendingReasonSection

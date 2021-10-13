@@ -11,11 +11,11 @@
           force
         )
       .limited-liquity__text.wide
-        p Middle-market B2B lenders sometimes experience payment latency 
+        p Middle-market B2B lenders sometimes experience payment latency
           | or acceleration, and either instance can incur a cost for the lender.
         BaseInfoBox
           p Excess cash sits fallow, while a cash deficit forces an emergency draw on a line of credit.
-        p Because typical loan interest rates are calculated based on borrowing for weeks 
+        p Because typical loan interest rates are calculated based on borrowing for weeks
           | and not hours, lenders can incur unnecessary charges when processing such short-term loans.
   section.limited-liquity.limited-liquity-great
     h2 Accessible Liquidity,
@@ -25,10 +25,10 @@
       .limited-liquity__text
         BaseInfoBox
           p 
-            span unFederalReserve 
-            | uses an Auction Rate Bond (ARB) platform that 
+            span unFederalReserve™
+            | uses an Auction Rate Bond (ARB) platform that
             | can be specifically tailored to meet clients' unique workflows.
-        p Middle-market bank and non-bank lenders can feel confident in both 
+        p Middle-market bank and non-bank lenders can feel confident in both
           | lending to vetted third-parties directly and placing excess capital into the marketplace.
       .illustration-wrap.absolute-right
         BaseImage.illustration.desktop(

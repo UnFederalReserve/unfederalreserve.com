@@ -1,7 +1,7 @@
 <template lang="pug">
   section.BottomHomeSection.s-bottom
     .s-container
-      h2.s-title Watch a Video About unFederalReserve
+      h2.s-title Watch a Video About unFederalReserve™
       .tv-wrap
         .tv-img
           img(:src="require('images/tv.svg')")

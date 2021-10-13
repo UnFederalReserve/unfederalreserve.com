@@ -18,7 +18,7 @@
             :src="require('images/rf-logo.svg')",
             alt="logo",
           )
-          span Powered by unFederalReserve
+          span Powered by unFederalReserve™
           br
           p
             | The first licensee of Residual Token, Inc.
