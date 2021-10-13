@@ -28,7 +28,7 @@
             span.border
           .timeline-body
             ul.timeline-lists
-              li.timeline-list-item ReserveLending® Alpha testing and product launch, with single-side staking
+              li.timeline-list-item ReserveLending™ Alpha testing and product launch, with single-side staking
               li.timeline-list-item Voting on Tier 1 exchange listing and key relationships
               li.timeline-list-item Tier 1 Exchange Listing
               li.timeline-list-item Complete organizational chart
@@ -43,7 +43,7 @@
               li.timeline-list-item MVP with Partner non-bank lenders
               li.timeline-list-item Apply for multi-jurisdictional regulatory licenses
               li.timeline-list-item Use DeFI platform to fund CeFI entities
-              li.timeline-list-item Creation of a KYC/AML only fork of ReserveLending® (new ReserveFunding product) with perks for volunteering to get KYC'd
+              li.timeline-list-item Creation of a KYC/AML only fork of ReserveLending™ (new ReserveFunding product) with perks for volunteering to get KYC'd
               li.timeline-list-item Implement strategies for putting excess supply to work in DeFi and a never been done CeFi (USA regulatory compliant) yield strategy
               li.timeline-list-item Manually process cash flows and replace them with pipes
               li.timeline-list-item Start repurchasing eRSDL as ReserveFunding non-bank lenders start shadow licensing our platform to access liquidity

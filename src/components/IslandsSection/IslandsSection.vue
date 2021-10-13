@@ -11,7 +11,7 @@
         p We understand that the term "DeFi" gives rise to apprehension because
           | anonymous lenders and borrowers engage in digital trading whose only concern
           | is to leverage their existing positions in the crypto-verse.
-        p unFederalReserve has selected premium elements of the
+        p unFederalReserve™ has selected premium elements of the
           span crypto ecosystem
           | and wrapped it in a best-in-class regulatory framework that
           span delivers its middle-market clients a B2B lending
@@ -51,14 +51,14 @@
   section.island.next
     .island-item.item-image-center
       .island-item__text
-        h2 unFederalReserve Creates
+        h2 unFederalReserve™ Creates
           br
           | a Safe Harbor
         p Sophisticated borrowers are experts at identifying mispriced opportunities.
           | Unsophisticated lenders, however, would be at the mercy of seasoned borrowing professionals,
           | which poses a risk to the lending industry.
         BaseInfoBox(bottomIcon)
-          p The unFederalReserve safe harbor ensures that only qualified,
+          p The unFederalReserve™ safe harbor ensures that only qualified,
             | vetted parties have access to safe, legally compliant liquidity.
           p And talk about speed...
             span short-term lending
