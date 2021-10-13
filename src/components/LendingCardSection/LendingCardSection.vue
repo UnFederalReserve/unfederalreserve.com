@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-card-info
       .s-container
-        h2.s-title Use ReserveLending®
+        h2.s-title Use ReserveLending™
         .card-items
           .card-item
             .card-item__label.safe SAFE
@@ -12,12 +12,12 @@
                   alt="eth-icon",
                 )
               .card-item__title Supply Assets
-              .card-item__title-descr Supply (deposit) assets to the ReserveLending® platform and earn interest
+              .card-item__title-descr Supply (deposit) assets to the ReserveLending™ platform and earn interest
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Supply Assets
-                  p ReserveLending® platform allows you to supply assets in an easy, safe, and secure way.
+                  p ReserveLending™ platform allows you to supply assets in an easy, safe, and secure way.
                 .card-info__right
                   BaseImage.eth-icon-1(
                     :src="require('images/spa-icon-1.svg')",
@@ -45,7 +45,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title No Lock-up Period
-                  p Redeem your unTokens for the portion of the ReserveLending® asset pool they represent at any time.
+                  p Redeem your unTokens for the portion of the ReserveLending™ asset pool they represent at any time.
                 .card-info__right
                   BaseImage.eth-icon-4(
                     :src="require('images/spa-icon-4.svg')",
@@ -65,7 +65,7 @@
                   alt="eth-icon",
                 )
               .card-item__title Borrow Assets
-              .card-item__title-descr You can borrow assets on the ReserveLending® platform after enabling collateral
+              .card-item__title-descr You can borrow assets on the ReserveLending™ platform after enabling collateral
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
@@ -75,7 +75,7 @@
                         :src="require('images/toggle-icon.svg')",
                         alt="toggle-icon",
                       )
-                  p Supplying assets to the ReserveLending® platform allows you to use your supplied assets as collateral.
+                  p Supplying assets to the ReserveLending™ platform allows you to use your supplied assets as collateral.
                 .card-info__right
                   BaseImage.eth-icon-5(
                     :src="require('images/spa-icon-5.svg')",
@@ -84,7 +84,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Borrow assets
-                  p Enabling collateral creates “Borrowing Power” which is directly correlated to 
+                  p Enabling collateral creates “Borrowing Power” which is directly correlated to
                     | the amount of collateral provided on the supply side.
                 .card-info__right
                   BaseImage.eth-icon-6(
@@ -100,7 +100,7 @@
                         alt="icon",
                       )
                     span Liquidation Risks
-                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending® exchanges 
+                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending™ exchanges
                     | the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
                 .card-info__right
                   BaseImage.eth-icon-7(
