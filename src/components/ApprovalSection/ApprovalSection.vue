@@ -50,10 +50,10 @@ export default {
     padding-bottom: 200px
 .approval-item
   position: relative
-  max-width: 350px
+  max-width: 365px
   width: 100%
   height: 71px
-  padding: 5px 20px
+  padding: 5px 15px
   margin: 0 auto
   display: flex
   align-items: center
@@ -153,12 +153,12 @@ export default {
   &__title
     margin-bottom: 20px
     font-weight: 700
-    font-size: 40px
+    font-size: 38px
     line-height: 119%
     text-align: center
     letter-spacing: 0.01em
     color: #FFFFFF
-    word-break: break-all
+    word-break: break-word
     @media screen and (max-width: 767px)
       font-size: 38px
       text-align: left
