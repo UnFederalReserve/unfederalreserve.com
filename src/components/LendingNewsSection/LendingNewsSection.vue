@@ -20,19 +20,25 @@ export default {
     BaseImage,
   },
   mounted() {
-    this.initTw();
+    // setTimeout(() => {
+    //   this.initTw();
+    // }, 300);
+    this.$nextTick(() => {
+      this.initTw();
+    });
+  },
+  beforeDestroy() {
+    const twt = document.getElementById('twt');
+    twt.parentNode.removeChild(twt);
   },
   methods: {
     initTw() {
-      const twt = document.getElementById('twt');
-      if (!twt) {
-        const script = document.createElement('script');
-        script.async = true;
-        script.defer = true;
-        script.src = 'https://platform.twitter.com/widgets.js';
-        script.setAttribute('id', 'twt');
-        document.querySelector('head').appendChild(script);
-      }
+      const script = document.createElement('script');
+      script.async = true;
+      script.defer = true;
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.setAttribute('id', 'twt');
+      document.querySelector('head').appendChild(script);
     },
   },
 };
