@@ -29,29 +29,29 @@
           .footer-content-row__home.column
             h5 Exchanges
             a(
-              href="https://app.uniswap.org/#/swap",
+              href="https://app.bancor.network/eth/data/",
               target="_blank",
-            ) Uniswap
+            ) Bancor
             a(
-              href="https://app.sushi.com/swap",
+              href="https://www.bitmart.com/",
               target="_blank",
-            ) Sushiswap
+            ) BitMart
             a(
               href="https://www.kucoin.com/",
               target="_blank",
             ) KuCoin
             a(
-              href="https://app.bancor.network/eth/data/",
-              target="_blank",
-            ) Bancor
-            a(
               href="https://latoken.com/exchange/USDT",
               target="_blank",
-            ) LA Token
+            ) LATOKEN
             a(
-              href="https://www.bitmart.com/",
+              href="https://app.sushi.com/swap",
               target="_blank",
-            ) BitMart
+            ) Sushiswap
+            a(
+              href="https://app.uniswap.org/#/swap",
+              target="_blank",
+            ) Uniswap
           .footer-content-row__more.column
             h5 More
             a(
@@ -68,7 +68,7 @@
               .link-group
                 a(href="mailto:feedback@unfederalreserve.com") feedback@unfederalreserve.com
                 a(href="mailto:info@unfederalreserve.com" class="email-info") info@unfederalreserve.com
-                a(href="mailto:askhoward@unfederalreserve.com") Submit Town hall Questions
+                a(href="mailto:askhoward@unfederalreserve.com") Submit Town Hall Questions
               SocialLinks
           .all-rights
             p.mb-0 All rights reserved ©2021

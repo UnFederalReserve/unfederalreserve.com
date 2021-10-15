@@ -14,6 +14,7 @@ import BaseSpinner from 'Components/Base/BaseSpinner';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
 import TheNotification from 'Components/TheNotification/TheNotification';
+import PageProduct from 'Pages/PageProduct';
 
 
 export default {
@@ -23,6 +24,7 @@ export default {
     TheHeader,
     TheFooter,
     TheNotification,
+    PageProduct,
   },
   data() {
     return {

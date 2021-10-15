@@ -2,7 +2,7 @@
   .TheHeaderMenu.menu
     slot(name="additionalItem")
     router-link(to="/") Home
-    router-link(to="product") Lending
+    router-link(to="/product") Lending
     a(:href="linkDocs" target="_blank") Education Center
     router-link(to="team") About Us
     a(
