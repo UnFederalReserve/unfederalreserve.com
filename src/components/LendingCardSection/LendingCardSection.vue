@@ -26,7 +26,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Claim Receipt
-                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt 
+                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt
                     | for the portion of assets being supplied to the asset pool.
                 .card-info__right
                   BaseImage.eth-icon-2(
@@ -116,18 +116,6 @@
                     :src="require('images/spa-icon-8.svg')",
                     alt="icon",
                   )
-        //- .revards
-        //-   .revards__left
-        //-     .revards__logo
-        //-       BaseImage.un-logo(
-        //-         :src="require('images/un-logo.svg')",
-        //-         alt="logo",
-        //-       )
-        //-     .revards__text
-        //-       h3.revards__title ERSDL Rewards
-        //-       p Earn rewards in the form of eRSDL for participating in the platform
-        //-   .revards__right
-        //-     BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
