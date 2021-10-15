@@ -4,9 +4,7 @@
     TheNotification(@notif-height="notifHundler")
     TheHeader(:offset="notifHeight")
     v-main
-      //- template(v-if="this.$route.name !== 'product'")
       router-view
-      //- PageProduct(v-show="this.$route.name === 'product'")
     TheFooter
 </template>
 
