@@ -3,7 +3,7 @@
     section.s-top
       .s-container
         .s-top__left
-          h1.top-main-title 
+          h1.top-main-title
             span Reserve
             span Lending™
           p ReserveLending™ is one of the leading protocols for lending and borrowing in the DeFi space.
@@ -38,6 +38,7 @@ import LendingNewsSection from 'Components/LendingNewsSection/LendingNewsSection
 import LendingAboutSection from 'Components/LendingAboutSection/LendingAboutSection';
 import LendingLeadershipSection from 'Components/LendingLeadershipSection/LendingLeadershipSection';
 import CONFIG from 'Config';
+
 export default {
   name: 'PageProduct',
   components: {
@@ -49,16 +50,16 @@ export default {
     LendingNewsSection,
     LendingAboutSection,
     LendingLeadershipSection,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
-      link: CONFIG.urls.lendingMain
-    }
+      link: CONFIG.urls.lendingMain,
+    };
   },
   computed: {
-    ...mapGetters('view', ['getTeam'])
-  }
+    ...mapGetters('view', ['getTeam']),
+  },
 };
 </script>
 
@@ -114,8 +115,8 @@ export default {
   letter-spacing: 0.01em
   color: #FFFFFF
   margin-bottom: 36px
-  display: flex    
-  flex-wrap: wrap  
+  display: flex
+  flex-wrap: wrap
   @media screen and (max-width: 767px)
     margin-bottom: 24px
     font-size: 38px
