@@ -100,7 +100,7 @@
                         alt="icon",
                       )
                     span Liquidation Risks
-                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending™ exchanges
+                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending™ exchanges&nbsp;
                     | the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
                 .card-info__right
                   BaseImage.eth-icon-7(

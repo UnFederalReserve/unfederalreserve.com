@@ -68,7 +68,7 @@
               .link-group
                 a(href="mailto:feedback@unfederalreserve.com") feedback@unfederalreserve.com
                 a(href="mailto:info@unfederalreserve.com" class="email-info") info@unfederalreserve.com
-                a(href="mailto:askhoward@unfederalreserve.com") Submit Town hall Questions
+                a(href="mailto:askhoward@unfederalreserve.com") Submit Town Hall Questions
               SocialLinks
           .all-rights
             p.mb-0 All rights reserved ©2021
