@@ -41,13 +41,13 @@ export default [
     name: 'ui',
     component: PageUiKit,
   },
-  { 
-    path: '/404', 
-    name: '404', 
-    component: PageNotFound, 
+  {
+    path: '/404',
+    name: '404',
+    component: PageNotFound,
   },
   {
     path: '*',
-    redirect: {name: '404'}
+    redirect: { name: '404' },
   },
 ];
