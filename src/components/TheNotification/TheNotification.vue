@@ -6,20 +6,16 @@
       .notification-item__container
         .notification-item__info
           .notification-item__icon
-            Warning
-          p
+            NotifIcon
+          .notification-item__text
+            p
+              | Please be advised in accordance with our newly launched policy,
+              | adjustments will be made to the APY model for stablecoins.
+              | You may notice a change in rates as a result.&nbsp;
             a(
               href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
               target="_blank"
-              class="link-intro"
-            )
-              strong.intro Update for unFed Agents:
-            | &nbsp;Please be advised in accordance with our newly launched policy,
-            | adjustments will be made to the APY model for stablecoins.
-            | You may notice a change in rates as a result.&nbsp;
-            a(
-              href="https://unfederalreserve.medium.com/new-stablecoin-apy-methodology-and-impact-on-liquidity-for-reservelending-participants-f36686e763da"
-              target="_blank"
+              class="more-info"
             ) More info
         .notification-item__close(
           @click="closeNotif"
@@ -28,14 +24,14 @@
 </template>
 
 <script>
-import Warning from 'images/svg-icons/warning.svg';
 import Close from 'images/svg-icons/close.svg';
+import NotifIcon from 'images/svg-icons/notif-icon.svg';
 
 export default {
   name: 'TheNotification',
   components: {
-    Warning,
     Close,
+    NotifIcon,
   },
   data() {
     return {
@@ -84,41 +80,37 @@ export default {
   position: fixed
   width: 100%
   z-index: 9
-  min-height: 55px
   display: flex
   align-items: center
-  padding: 7px 0
   @media screen and (max-width: 480px)
     min-height: 75px
   &__container
+    position: relative
     display: flex
     align-items: center
     justify-content: space-between
     width: 100%
     max-width: 1140px
     padding-left: 15px
-    padding-right: 15px
     margin: 0 auto
     @media screen and (max-width: 767px)
       align-items: flex-start
+      padding-left: 0
   &__info
+    width: 100%
     display: flex
     align-items: center
-    font-weight: 400
-    font-size: 14px
-    line-height: 150%
-    letter-spacing: 0.01em
     color: #FFFFFF
     word-break: break-word
-    padding-right: 10px
     @media screen and (max-width: 767px)
-      font-size: 12px
-      line-height: 150%
       align-items: flex-start
     a
       text-decoration: underline!important
       opacity: 1!important
-      font-size: 14px!important
+      font-weight: 500!important
+      font-size: 12px!important
+      line-height: 170%
+      letter-spacing: 0.01em
       &.link-intro
         text-decoration: none !important
       @media screen and (max-width: 767px)
@@ -131,20 +123,50 @@ export default {
       font-weight: 600
       &.intro
         white-space: nowrap
+  &__text
+    min-height: 55px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 7px 15px
+    background-color: #203884
+    @media screen and (max-width: 1300px)
+      padding-right: 35px
+    @media screen and (max-width: 767px)
+      display: block
+      line-height: 18px
+    p
+      max-width: 671px
+      width: 100%
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+      letter-spacing: 0.01em
+      @media screen and (max-width: 767px)
+        display: inline
+    .more-info
+      white-space: nowrap
+      margin-left: 10px
+      @media screen and (max-width: 767px)
+        margin-left: 0
   &__icon
+    flex-shrink: 0
     display: flex
     align-items: center
     flex-shrink: 0
-    margin-right: 10px
+    margin-right: 15px
     @media screen and (max-width: 767px)
-      margin-top: 3px
+      display: none
   &__close
+    position: absolute
+    right: -36px
     display: flex
     align-items: center
     cursor: pointer
     transition: 0.3s
+    @media screen and (max-width: 1300px)
+      right: 10px
     @media screen and (max-width: 767px)
-      margin-top: 4px
-    &:hover
-      opacity: 0.8
+      margin-top: 10px
 </style>

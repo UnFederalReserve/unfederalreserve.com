@@ -1,6 +1,6 @@
 <template lang="pug">
   .GetInTouch.get-in-touch
-    h2 Get in Touch
+    h2.s-title Get in Touch
     GetInTouchForm
 </template>
 
@@ -22,10 +22,22 @@ export default {
   max-width: 951px
   margin: 0 auto
   padding: 0 15px
+  position: relative
+  @media screen and (max-width: 767px)
+    padding-bottom: 100px
+  &::before
+    content: ""
+    position: absolute
+    background: url("~images/bulbul.png") no-repeat
+    right: 0
+    bottom: -100px
+    width: 265px
+    height: 401px
+    @media screen and (max-width: 767px)
+      right: -82px
+      bottom: -30px
   @media screen and (max-width: 767px)
     margin-top: 100px
-  h2
-    color: $white
-    margin-bottom: 50px
-    text-align: center
+  .s-title
+    margin-bottom: 40px
 </style>

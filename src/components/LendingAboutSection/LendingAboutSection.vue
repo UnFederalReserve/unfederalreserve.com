@@ -2,25 +2,25 @@
   section.s-about
     .s-container
       h2.s-title
-        span About us
+        span About Us
       .s-about__text
-        p Since its founding, unfederalreserve.com has been focused on transparency, 
-          | efficiency, and professionalism. 
-        p Our goal is to exceed clients' expectations as they enjoy seamless lending and borrowing experiences. 
-          | Please reach out to learn more about the unFederalReserve management team, 
-          | the company, and the additional services we provide.
+        p Since its founding, unFederalReserve.com has been focused on transparency,&nbsp;
+          | efficiency and professionalism.
+        p Our goal is to exceed clients' expectations as they enjoy seamless lending and borrowing experiences.&nbsp;
+          | Please reach out to learn more about the unFederalReserve™ management team,
+          | the company and the additional services we provide.
 </template>
 
 <script>
+
 export default {
-  name: "LendingAboutSection"
-}
+  name: 'LendingAboutSection',
+};
 </script>
 
 <style lang="sass" scoped>
 
 .s-about
-  padding: 0 0 133px
   position: relative
   &::before
     @media screen and (max-width: 991px)
@@ -32,6 +32,8 @@ export default {
       width: 1050px
       background: url('~images/figure.svg') no-repeat center
       background-size: cover
+    @media screen and (max-width: 767px)
+      display: none
   @media screen and (max-width: 991px)
     padding: 0 0 75px
   &__text
@@ -45,15 +47,6 @@ export default {
     position: relative
     @media screen and (max-width: 991px)
       padding: 0 10px
-    &::before
-      content: ""
-      position: absolute
-      background: url('~images/about-bg.svg') no-repeat center
-      background-size: cover
-      width: 369px
-      height: 403px
-      left: -400px
-      top: -150px
     p
       margin-bottom: 30px
     color: #FFFFFF
@@ -62,6 +55,8 @@ export default {
     position: relative
     @media screen and (max-width: 991px)
       font-size: 38px
+    @media screen and (max-width: 767px)
+      font-size: 38px!important
     span
       position: relative
       z-index: 2
@@ -76,7 +71,4 @@ export default {
       left: 0
       right: 0
       bottom: -20px
-
-
-
 </style>

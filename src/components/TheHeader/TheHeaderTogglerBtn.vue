@@ -22,25 +22,26 @@ export default {
 .header
   .fixed
     .navbar-toggler
-      top: 26px
+      top: 50%
+      transform: translateY(-50%)
       span
-        background: #042751
+        background: #002490
         &:before,
         &:after
-          background: #042751
+          background: #002490
   .black-header
     &:not(.fixed)
       .navbar-toggler
         span
-          background: #042751
+          background: #002490
           &:before,
           &:after
-            background: #042751
+            background: #002490
 
 .navbar-toggler
   position: absolute
   right: 24px
-  top: 38px
+  top: 25px
   width: 32px
   height: 22px
   outline: none

@@ -141,7 +141,7 @@ export default {
         {
           id: 2,
           icon: require('images/rsn-logo-2.svg'),
-          name: 'ReserveLending®',
+          name: 'ReserveLending™',
           classes: 'active',
           data: [
             {

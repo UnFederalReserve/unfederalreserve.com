@@ -1,6 +1,6 @@
 <template lang="pug">
   header.TheHeader.header(ref="header" :style="offsetTop")
-    .general-wrap(height="77" :style="offsetTop" :class="{'fixed': isFixed || togglerValue, 'black-header': isBlackHeader}")
+    .general-wrap(height="77" :style="offsetTop" :class="{'fixed': isFixed || togglerValue, 'hidden': isHidden, 'black-header': isBlackHeader}")
       .header-wrap
         router-link.header-logo(:to="{name: 'home'}" @click.native="onLogoClick")
           logo.site-logo
@@ -46,9 +46,12 @@ export default {
   data() {
     return {
       link: CONFIG.urls.lendingMain,
-      scrollPosition: 0,
+      scrollPosition: null,
       isFixed: false,
+      isHidden: false,
       togglerValue: false,
+      lastScrollTop: 0,
+      scrollOffset: 0,
     };
   },
   computed: {
@@ -84,6 +87,10 @@ export default {
       handler: 'setIsFixed',
       immediate: true,
     },
+    scrollOffset: {
+      handler: 'setIsFixed',
+      immediate: true,
+    },
     routerNameUpdating() {
       this.togglerValue = false;
     },
@@ -96,10 +103,26 @@ export default {
   },
   methods: {
     setScrollPosition() {
-      this.scrollPosition = window.pageYOffset;
+      this.scrollOffset = window.pageYOffset;
+      const st = window.pageYOffset || document.documentElement.scrollTop;
+      if (st > this.lastScrollTop) {
+        this.scrollPosition = 'down';
+      } else {
+        this.scrollPosition = 'up';
+      }
+      this.lastScrollTop = st <= 0 ? 0 : st;
     },
     setIsFixed() {
-      this.isFixed = this.scrollPosition > 0;
+      if (this.scrollPosition === 'down' && this.scrollOffset > 0) {
+        this.isFixed = false;
+        this.isHidden = true;
+      } else if (this.scrollPosition === 'up' && this.scrollOffset === 0) {
+        this.isFixed = false;
+        this.isHidden = false;
+      } else {
+        this.isFixed = true;
+        this.isHidden = false;
+      }
     },
     onLogoClick() {
       this.togglerValue = false;
@@ -138,6 +161,10 @@ export default {
   .general-wrap
     width: 100%
     +mt(.3s)
+    &.hidden
+      position: fixed
+      opacity: 0
+      visibility: hidden
     &.fixed
       position: fixed
       left: 0
@@ -152,8 +179,8 @@ export default {
       @media screen and (max-width: 991px)
         box-shadow: none
       .header-wrap
-        padding-top: 24px
-        padding-bottom: 24px
+        padding-top: 19px
+        padding-bottom: 19px
         @media screen and (max-width: 991px)
           padding-top: 15px
           padding-bottom: 15px
@@ -223,7 +250,7 @@ export default {
     @media screen and (max-width: 1199px)
       padding-top: 28px
     @media screen and (max-width: 767px)
-      padding-top: 30px
+      padding-top: 20px
       padding-bottom: 10px
     .header-menu
       @media screen and (max-width: 991px)
