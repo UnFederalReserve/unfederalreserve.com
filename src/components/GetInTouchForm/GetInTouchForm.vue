@@ -1,19 +1,18 @@
 <template lang="pug">
-  .GetInTouchForm
+  .GetInTouchForm.get-in-touch-form
     v-form#getintouchform(@submit.prevent="send", ref="form",)
-      .row-fields
-        v-text-field(
-          v-model="model.name"
-          label="Name"
-          solo
-          :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
-        )
-        v-text-field(
-          v-model="model.email"
-          label="Email"
-          solo
-          :rules="[rules.required, rules.email]"
-        )
+      v-text-field(
+        v-model="model.name"
+        label="Name"
+        solo
+        :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
+      )
+      v-text-field(
+        v-model="model.email"
+        label="Email"
+        solo
+        :rules="[rules.required, rules.email]"
+      )
       v-text-field(
         v-model="model.subject"
         :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
@@ -27,9 +26,9 @@
         :rules="[rules.required, rules.more_then_3, rules.less_then_300]"
       )
       .row-btn
-        v-btn(
-          type="submit",
-          color="secondary"
+        button(
+          class="btn-rounded btn-gradient btn-default"
+          type="submit"
         ) Submit
 </template>
 
@@ -73,6 +72,11 @@ export default {
 
 <style lang="sass" scoped>
 @import '~Styles/_variables'
+
+.get-in-touch-form
+  max-width: 350px
+  width: 100% 
+  margin: 0 auto
 .row-fields
   display: flex
   flex-directio: row
@@ -84,6 +88,14 @@ export default {
 .row-btn
   display: flex
   justify-content: center
-  margin-top: 50px
+  margin-top: 15px
   margin-bottom: 90px
+
+button
+  transition: 0.3s
+  color: #fff
+  max-width: 144px
+  width: 100%
+  padding: 8px 26px 9px 25px
+
 </style>

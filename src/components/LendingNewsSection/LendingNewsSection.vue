@@ -3,34 +3,54 @@
     .s-container
       h2.s-title Latest news
       .news-wrap
-        a.twitter-timeline(
-          href="https://twitter.com/Unfederalreser1?ref_src=twsrc%5Etfw" 
-          data-height="600" 
-          data-width="100%" 
-          data-chrome="nofooter") Tweets by Unfederalreser1 
+        .twitter-timeline(ref="tw")
 
 </template>
 
 <script>
 import BaseImage from 'Components/Base/BaseImage';
+
 export default {
-  name: "LendingNewsSection",
+  name: 'LendingNewsSection',
   components: {
-    BaseImage
+    BaseImage,
+  },
+  mounted() {
+    this.initTw();
+    setTimeout(() => {
+      this.loadTw();
+    }, 2000);
+  },
+  beforeDestroy() {
+    const twt = document.getElementById('twt');
+    twt.remove();
   },
   methods: {
     initTw() {
       const script = document.createElement('script');
       script.async = true;
       script.defer = true;
-      script.src = "https://platform.twitter.com/widgets.js";
+      script.src = 'https://platform.twitter.com/widgets.js';
+      script.setAttribute('id', 'twt');
       document.querySelector('head').appendChild(script);
-    }
+    },
+    loadTw() {
+      const dataSource = {
+        sourceType: 'profile',
+        screenName: 'Unfederalreser1',
+      };
+      const target = this.$refs.tw;
+      const options = {
+        chrome: 'nofooter',
+        height: 600,
+        width: '100%',
+      };
+      window.twttr.ready(() => {
+        if (target) window.twttr.widgets.createTimeline(dataSource, target, options);
+      });
+    },
   },
-  mounted() {
-    this.initTw()
-  }
-}
+};
 </script>
 
 <style lang="sass" scoped>
@@ -59,7 +79,8 @@ export default {
     font-size: 42px
     @media screen and (max-width: 991px)
       font-size: 38px
-
+.twitter-timeline
+  width: 100%
 .news-wrap
   overflow: hidden
   border-radius: 15px

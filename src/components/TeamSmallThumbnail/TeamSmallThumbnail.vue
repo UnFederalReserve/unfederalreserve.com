@@ -51,21 +51,22 @@ export default {
     +mt(.3s)
     background: rgba(0, 0, 0, 0.08)
   &-image
-    width: 100%
-    height: 230px
+    width: calc(100% - 25px)
+    max-width: 310px
+    height: 300px
     flex-shrink: 0
     background: #2B3E99
-    border-radius: 5px
-    margin-bottom: 20px
-    @media screen and (max-width: 767px)
-      height: 300px
+    border-radius: 20px
+    margin: -35px auto 28px
+    overflow: hidden
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5)
+    @media screen and (max-width: 580px)
+      height: 275px
     .image
       width: 100%
       height: 100%
       background-size: cover
-      background-position: center bottom
-      @media screen and (max-width: 767px)
-        background-size: contain
+      background-position: top center
   &-description
     display: flex
     flex-direction: row
@@ -75,8 +76,14 @@ export default {
       color: $white
     h4
       margin-bottom: 12px
+      @media screen and (max-width: 580px)
+        font-size: 22px
     p
       margin-bottom: 0
+      line-height: 27px
+      @media screen and (max-width: 580px)
+        font-size: 16px
+        line-height: 24px
   &-social
     display: flex
     background: rgba(100, 133, 255, 0.25)
@@ -87,6 +94,7 @@ export default {
     align-items: center
     width: 65px
     height: 55px
+    margin-left: 10px
     flex-shrink: 0
     .link
       width: 30px
