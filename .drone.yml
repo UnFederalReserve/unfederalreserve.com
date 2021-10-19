@@ -17,7 +17,7 @@ steps:
   - yarn build
   - rm -rf /dest/*
   - mkdir -p dist/static/img/
-  - cp staticdata/img/sharing-image.png dist/static/img/
+  - cp staticdata/img/sharing-image.jpg dist/static/img/
   - cp -r dist/* /dest/
 
 - name: build-image
