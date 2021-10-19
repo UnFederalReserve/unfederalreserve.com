@@ -55,6 +55,10 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     'max-len': ['error', { 'code': 250, 'ignoreStrings': true } ],
+    'one-var': 0,
+    'prefer-destructuring': 0,
+    'no-restricted-properties': 0,
+    'no-nested-ternary': 0,
     // custom project rules
     'no-underscore-dangle': 0,
     'import/prefer-default-export': 0,

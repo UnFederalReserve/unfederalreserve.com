@@ -18,24 +18,25 @@
 <script>
 import BaseImage from 'Components/Base/BaseImage';
 import BaseModal from 'Components/Base/BaseModal';
+
 export default {
-  name: "LendingInfoItem",
+  name: 'LendingInfoItem',
   components: {
     BaseImage,
-    BaseModal
+    BaseModal,
   },
   props: {
     img: String,
     title: String,
     description: String,
-    videoSrc: String
+    videoSrc: String,
   },
   data() {
     return {
-      showModal: false
-    }
-  }
-}
+      showModal: false,
+    };
+  },
+};
 </script>
 
 <style lang="sass" scoped>

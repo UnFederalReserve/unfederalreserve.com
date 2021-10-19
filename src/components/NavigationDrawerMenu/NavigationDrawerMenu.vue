@@ -16,7 +16,7 @@
         li
           router-link(to="/") Home
         li
-          router-link(to="product") Lending
+          router-link(to="/product") Lending
         li
           a(:href="linkDocs" target="_blank") Education Center
         li

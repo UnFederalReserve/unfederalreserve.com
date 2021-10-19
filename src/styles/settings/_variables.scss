@@ -26,11 +26,11 @@ $grid-gutter: 15px !default;
 $form-grid-gutter: $spacer * 2 !default;
 $grid-columns: 12 !default;
 
-$container-padding-x: $grid-gutter / 2 !default;
+$container-padding-x: $grid-gutter * 0.5 !default;
 
 $grid-gutters: (
   'xs': $grid-gutter  4,
-  'sm': $grid-gutter / 2,
+  'sm': $grid-gutter * 0.5,
   'md': $grid-gutter,
   'lg': $grid-gutter * 2,
   'xl': $grid-gutter * 3,

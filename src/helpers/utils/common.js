@@ -3,10 +3,44 @@ const formatOptions = {
   currency: 'USD',
 };
 
+const pow = Math.pow,
+  floor = Math.floor,
+  abs = Math.abs,
+  log = Math.log;
+const abbrev = 'KMB';
+
 const intlCurrency = Intl.NumberFormat('en-US', formatOptions);
 
 export function formatToCurrency(number) {
   return intlCurrency.format(number);
+}
+
+function round(n, precision) {
+  const prec = Math.pow(10, precision);
+  return Math.round(n * prec) / prec;
+}
+
+export function beautifyNumber(n, isCurrency) {
+  let base = floor(log(abs(n)) / log(1000));
+  const suffix = abbrev[Math.min(2, base - 1)];
+  base = abbrev.indexOf(suffix) + 1;
+  const rounded = round(n / pow(1000, base), 2);
+
+  return isCurrency
+    ? suffix
+      ? formatToCurrency(rounded) + suffix
+      : formatToCurrency(n)
+    : suffix
+      ? rounded + suffix
+      : n;
+}
+
+export function truncateText(text, amount = 150) {
+  return text.substring(0, amount);
+}
+
+export function cleanTextFromHtml(text) {
+  return text.replace(/<\/?[^>]+>/gi, '');
 }
 
 export function isNil(value) {

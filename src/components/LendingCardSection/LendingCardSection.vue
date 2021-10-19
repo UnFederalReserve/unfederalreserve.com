@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-card-info
       .s-container
-        h2.s-title Use ReserveLending®
+        h2.s-title Use ReserveLending™
         .card-items
           .card-item
             .card-item__label.safe SAFE
@@ -12,12 +12,12 @@
                   alt="eth-icon",
                 )
               .card-item__title Supply Assets
-              .card-item__title-descr Supply (deposit) assets to the ReserveLending® platform and earn interest
+              .card-item__title-descr Supply (deposit) assets to the ReserveLending™ platform and earn interest
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Supply Assets
-                  p ReserveLending® platform allows you to supply assets in an easy, safe, and secure way.
+                  p ReserveLending™ platform allows you to supply assets in an easy, safe, and secure way.
                 .card-info__right
                   BaseImage.eth-icon-1(
                     :src="require('images/spa-icon-1.svg')",
@@ -26,7 +26,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Claim Receipt
-                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt 
+                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt
                     | for the portion of assets being supplied to the asset pool.
                 .card-info__right
                   BaseImage.eth-icon-2(
@@ -45,7 +45,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title No Lock-up Period
-                  p Redeem your unTokens for the portion of the ReserveLending® asset pool they represent at any time.
+                  p Redeem your unTokens for the portion of the ReserveLending™ asset pool they represent at any time.
                 .card-info__right
                   BaseImage.eth-icon-4(
                     :src="require('images/spa-icon-4.svg')",
@@ -65,7 +65,7 @@
                   alt="eth-icon",
                 )
               .card-item__title Borrow Assets
-              .card-item__title-descr You can borrow assets on the ReserveLending® platform after enabling collateral
+              .card-item__title-descr You can borrow assets on the ReserveLending™ platform after enabling collateral
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
@@ -75,7 +75,7 @@
                         :src="require('images/toggle-icon.svg')",
                         alt="toggle-icon",
                       )
-                  p Supplying assets to the ReserveLending® platform allows you to use your supplied assets as collateral.
+                  p Supplying assets to the ReserveLending™ platform allows you to use your supplied assets as collateral.
                 .card-info__right
                   BaseImage.eth-icon-5(
                     :src="require('images/spa-icon-5.svg')",
@@ -84,7 +84,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Borrow assets
-                  p Enabling collateral creates “Borrowing Power” which is directly correlated to 
+                  p Enabling collateral creates “Borrowing Power” which is directly correlated to
                     | the amount of collateral provided on the supply side.
                 .card-info__right
                   BaseImage.eth-icon-6(
@@ -93,14 +93,14 @@
                   )
               li.card-item__li.card-info.card-accent
                 .card-info__left
-                  h4.card-info__title 
+                  h4.card-info__title
                     span.card-info__title-icon.left
                       BaseImage.warning-red-icon(
                         :src="require('images/warning-red-icon.svg')",
                         alt="icon",
                       )
                     span Liquidation Risks
-                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending® exchanges 
+                  p In the event that the balance of your borrow outpaces your maximum borrowing factor, ReserveLending™ exchanges&nbsp;
                     | the over-borrowed asset for the borrower’s supplied collateral, at a slightly lower than market rate.
                 .card-info__right
                   BaseImage.eth-icon-7(
@@ -116,35 +116,24 @@
                     :src="require('images/spa-icon-8.svg')",
                     alt="icon",
                   )
-        //- .revards
-        //-   .revards__left
-        //-     .revards__logo
-        //-       BaseImage.un-logo(
-        //-         :src="require('images/un-logo.svg')",
-        //-         alt="logo",
-        //-       )
-        //-     .revards__text
-        //-       h3.revards__title ERSDL Rewards 
-        //-       p Earn rewards in the form of eRSDL for participating in the platform
-        //-   .revards__right
-        //-     BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 </template>
 
 <script>
+import CONFIG from 'Config';
 import BaseImage from 'Components/Base//BaseImage';
 import BaseBtn from 'Components/Base/BaseBtn';
-import CONFIG from 'Config';
+
 export default {
   name: 'LendingCardSection',
   components: {
     BaseImage,
-    BaseBtn
+    BaseBtn,
   },
   data() {
     return {
-      link: CONFIG.urls.lendingMain
-    }
-  }
+      link: CONFIG.urls.lendingMain,
+    };
+  },
 };
 </script>
 
@@ -152,12 +141,8 @@ export default {
 @import '~Styles/_variables'
 
 .s-card-info
-  padding-bottom: 150px
+  padding-bottom: 50px
   position: relative
-  @media screen and (max-width: 1199px)
-    padding-bottom: 73px
-  @media screen and (max-width: 991px)
-    padding-bottom: 96px
   &::before
     content: ""
     position: absolute
@@ -172,7 +157,6 @@ export default {
       top: -388px
     @media screen and (max-width: 991px)
       top: -627px
-  
 .s-title
   margin-bottom: 105px
   font-size: 42px
@@ -266,7 +250,7 @@ export default {
       font-size: 32px
       line-height: 140%
       margin-bottom: 8px
-  &__title-descr 
+  &__title-descr
     font-weight: 500
     font-size: 14px
     line-height: 22px
@@ -283,7 +267,7 @@ export default {
     padding: 0
 
 .card-info
-  padding: 0 35px 0 55px 
+  padding: 0 35px 0 55px
   display: flex
   justify-content: space-between
   align-items: flex-start
@@ -292,11 +276,11 @@ export default {
     padding: 0 30px
     margin-bottom: 34px
   &.card-accent
-    padding: 12px 35px 14px 55px 
+    padding: 12px 35px 14px 55px
     background: linear-gradient(90deg, rgba(229, 55, 55, 0.22) 0%, rgba(183, 52, 52, 0.11) 92.71%)
     margin-bottom: 19px
     @media screen and (max-width: 991px)
-      padding: 12px 30px 14px 30px 
+      padding: 12px 30px 14px 30px
     .card-info__left
       p
         color: #E53737

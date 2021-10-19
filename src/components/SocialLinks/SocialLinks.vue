@@ -12,39 +12,37 @@
       Twitt.svg-icon
     a(href="https://www.reddit.com/r/unFederalReserve" target="_blank").link
       Reddit.svg-icon
-    a(href="https://defipulse.com/defi-lending" target="_blank").link
-      Defi.svg-icon
     a(href="https://www.coingecko.com/en/coins/unfederalreserve" target="_blank").link
       Geco.svg-icon
     a(href="https://coinmarketcap.com/currencies/unfederalreserve/" target="_blank").link
       cointMarket.svg-icon
+    a(href="https://linktr.ee/unfederalreserve" target="_blank").link
+      SocIcon.svg-icon
 </template>
 
 <script>
 import Linkedin from 'images/svg-icons/linkedin.svg';
-import Facebook from 'images/svg-icons/facebook.svg';
 import GroupIcon from 'images/svg-icons/group-icon.svg';
 import Vector from 'images/svg-icons/vector.svg';
 import Twitt from 'images/svg-icons/twitt.svg';
 import Youtube from 'images/svg-icons/youtube.svg';
-import Reddit from 'images/svg-icons/reddit.svg';
-import Defi from 'images/svg-icons/defi.svg';
-import cointMarket from 'images/svg-icons/coin-market.svg';
 import Geco from 'images/svg-icons/geco.svg';
+import Reddit from 'images/svg-icons/reddit.svg';
+import cointMarket from 'images/svg-icons/coin-market.svg';
+import SocIcon from 'images/svg-icons/soc-icon.svg';
 
 export default {
   name: 'SocialLinks',
   components: {
     Linkedin,
-    Facebook,
     GroupIcon,
     Vector,
     Twitt,
     Youtube,
-    Reddit,
-    Defi,
-    cointMarket,
     Geco,
+    Reddit,
+    cointMarket,
+    SocIcon,
   },
 };
 </script>
@@ -55,6 +53,8 @@ export default {
   display: flex
   flex-direction: row
   flex-wrap: wrap
+  @media screen and (max-width: 767px)
+    margin-top: 10px
 .link
   width: 50px
   height: 50px
@@ -64,6 +64,9 @@ export default {
   flex-direction: row
   justify-content: center
   align-items: center
+  @media screen and (max-width: 767px)
+    width: 45px
+    height: 45px
   &:before
     content: ''
     position: absolute

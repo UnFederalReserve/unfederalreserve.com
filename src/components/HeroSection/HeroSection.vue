@@ -2,45 +2,31 @@
   section.HeroSection.hero
     .hero-content
       .hero-content__wrap
-        .cloud-items
-          .cloud-item.cloud-supply
-            .cloud-item__value {{ formatToCurrency(totalSupply.toFixed(2)) }}
-            .cloud-item__label Total Supply
-          .cloud-item.cloud-apy
-            .cloud-item__top-info Earn up to
-            .cloud-item__value {{ supplyApy.toFixed(2) }}%
-            .cloud-item__label USDC APY
-        p.hero-content__text
-          strong unFederalReserve&nbsp;
-          | is a banking SaaS company
-          | built on blockchain technology. Our banking products are designed
-          | for smaller U.S. Treasury chartered banks and non-bank lenders in
-          | need of greater liquidity without sacrificing security or compliance.
-          | ReserveLending is our live DeFI or P2P lending and borrowing platform.
-          | Get the most from your crypto while enjoying a safe and easy user
-          | experience by clicking the button below.
+        h1 Be the Bank.
+        h2 Fintech SaaS Solutions
+        p unFederalReserve™ is a fintech SaaS company combining&nbsp;
+          | software built on blockchain technology and 200 years
+          | of consumer lending experience. ReserveLending™ is our live DeFi or P2P
+          | lending and borrowing platform. Get the most from your crypto while
+          | enjoying a safe and easy user experience by clicking the button below.
+        p.bold-descr
+          | Our banking products are designed for smaller U.S. Treasury
+          | chartered banks and non-bank lenders in need of a DeFi strategy and
+          | greater liquidity without sacrificing security or compliance. <br/>
+          a(:href="link" target="_blank") Click here to learn more
         div.btn-container
           BaseBtn(
-            classes="btn-rounded btn-with-arrow btn-gradient"
+            classes="btn-rounded btn-with-arrow btn-blue"
             text="Get Started"
             :link="link"
-          )
-          BaseBtn(
-            classes="btn-rounded btn-with-arrow btn-grey-border"
-            text="LP Staking"
-            link="https://app.unfederalreserve.com/farms/eRSDL-ETH%20UNI-V2%20LP"
           )
 </template>
 
 
 <script>
-
+import CONFIG from 'Config';
 import DropdownMenu from 'Components/DropdownMenu/DropdownMenu';
 import BaseBtn from 'Components/Base/BaseBtn';
-import CONFIG from 'Config';
-import {
-  formatToCurrency,
-} from '@/helpers/utils/common';
 
 export default {
   name: 'HeroSection',
@@ -57,16 +43,12 @@ export default {
       transition: false,
       closeOnClickOutside: true,
       link: CONFIG.urls.lendingMain,
-      marketData: [],
-      totalSupply: 0,
-      supplyApy: 0,
     };
   },
   async mounted() {
     await this.marketDetailsHundler();
   },
   methods: {
-    formatToCurrency,
     handleError(response) {
       if (!response.ok) throw new Error(response);
 
@@ -105,13 +87,12 @@ export default {
   background-position: center bottom
   background-size: cover
   width: 100%
-  height: 1000px
-  @media screen and (min-width: 2200px)
-    height: 1200px
-  @media screen and (min-width: 2700px)
-    height: 1500px
+  min-height: 920px
   @media screen and (max-width: 767px)
-    min-height: 1100px
+    background-image: url('~images/mob-hero.svg')
+    padding-bottom: 215px
+  @media screen and (min-width: 2700px)
+    min-height: 1200px
   &-content
     width: 100%
     margin: 0 auto
@@ -119,48 +100,54 @@ export default {
     padding-left: 15px
     padding-right: 15px
 
-    &__text
-      margin: 24px auto 24px
-      width: 100%
-      max-width: 663px
-      font-size: 14px
-      line-height: 170%
-      letter-spacing: 0.01em
-      color: #021859
-      text-align: center
-      margin-bottom: 53px
-      &.bold-descr
-        margin-bottom: 21px
-
-      strong
-        font-weight: 700
-        font-size: 18px
-        line-height: 170%
-        letter-spacing: 0.01em
-        color: $blue-23
-
     &__wrap
-      padding-top: 110px
+      padding-top: 170px
+      max-width: 635px
       width: 100%
       @media screen and (max-width: 767px)
         padding-top: 112px
       h1
-        font-size: 56px
+        font-weight: 700
+        font-size: 55px
+        line-height: 120%
         letter-spacing: 0.01em
-        line-height: 130%
-        color: #002490
-        margin-bottom: 30px
+        color: #2C2C2C
         @media screen and (max-width: 767px)
-          font-size: 32px
-          margin-bottom: 24px
+          margin-bottom: 9px
+      h2
+        font-weight: 700
+        font-size: 30px
+        line-height: 130%
+        letter-spacing: 0.01em
+        color: #3377FF
+        margin-bottom: 16px
+        @media screen and (max-width: 767px)
+          font-size: 28px
+      p
+        margin-bottom: 25px
+        max-width: 520px
+        width: 100%
+        font-size: 14px
+        line-height: 170%
+        letter-spacing: 0.01em
+        color: #6C8AAE
+        &.bold-descr
+          max-width: 506px
+          font-weight: 600
+          margin-bottom: 32px
+        a
+          font-weight: 600
+          font-size: 14px
+          line-height: 170%
+          letter-spacing: 0.01em
+          color: #6C8AAE
+          text-decoration: underline
+          opacity: 1
+          &:hover
+            opacity: 0.8
+            color: #6C8AAE
       .btn-container
         margin-bottom: 20px
-        display: flex
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
-        .btn-rounded
-          margin: 0 7px 10px
       .hero-bottom-links
         display: flex
         color: black
@@ -173,60 +160,4 @@ export default {
           color: #366CEF
           &:hover
             text-decoration: underline
-
-.cloud-items
-  display: flex
-  align-items: center
-  justify-content: center
-  flex-wrap: wrap
-.cloud-item
-  display: flex
-  align-items: center
-  justify-content: center
-  flex-direction: column
-  background-size: contain
-  background-repeat: no-repeat
-  min-height: 215px
-  width: 100%
-  flex-shrink: 0
-  margin: 0 20px
-  @media screen and (max-width: 1199px)
-    min-height: 150px
-  &.cloud-supply
-    background-image: url('~images/cloud-1.svg')
-    max-width: 477px
-    padding-top: 20px
-    @media screen and (max-width: 1199px)
-      max-width: 320px
-  &.cloud-apy
-    background-image: url('~images/cloud-2.svg')
-    max-width: 463px
-    @media screen and (max-width: 1199px)
-      max-width: 320px
-  &__value
-    font-weight: 700
-    font-size: 46px
-    line-height: 130%
-    letter-spacing: 0.01em
-    color: $blue-21
-    margin-bottom: 2px
-    margin-top: 7px
-    @media screen and (max-width: 1199px)
-      font-size: 28px
-  &__label
-    font-weight: 600
-    font-size: 18px
-    line-height: 130%
-    letter-spacing: 0.01em
-    text-transform: uppercase
-    color: $blue-22
-  &__top-info
-    font-weight: 600
-    font-size: 14px
-    line-height: 130%
-    letter-spacing: 0.01em
-    text-transform: uppercase
-    color: $blue-21
-
-
 </style>
