@@ -30,10 +30,11 @@ steps:
   id: build
   waitFor:
     - init
-  entrypoint: 'sh'
+  entrypoint: 'bash'
   args:
     - '-c'
     - |
+      set -e
       . ./.cloudbuild.env.sh
       if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then
         export $(cat ./.env.$BRANCH_NAME | sed 's/#.*//g' | xargs)
@@ -42,6 +43,8 @@ steps:
       fi
 
       yarn build
+      
+      cp staticdata/img/sharing-image.jpg dist/img/
 
 # build docker image
 - name: 'gcr.io/cloud-builders/gsutil'
