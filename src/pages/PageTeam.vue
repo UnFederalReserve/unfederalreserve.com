@@ -98,7 +98,7 @@ export default {
           ],
         },
         {
-          name: 'Kate Atkinson',
+          name: 'Katy Atkinson',
           title: 'Senior Director',
           image: 'team/katy.png',
           social: [
@@ -142,7 +142,7 @@ export default {
           ],
         },
         {
-          name: 'Daniel Love',
+          name: 'Dan Love',
           title: 'Product Design',
           image: 'team/daniel.png',
           social: [
@@ -153,7 +153,7 @@ export default {
           ],
         },
         {
-          name: 'Scott Banks, CPA',
+          name: 'Scott Banks',
           title: 'FP&A / Controls',
           image: 'team/scott.png',
           social: [
@@ -170,18 +170,7 @@ export default {
           social: [],
         },
         {
-          name: 'Alan Alford, PhD',
-          title: 'Risk Pricing (Economics)',
-          image: 'team/alan.png',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/alan-alford-ba36795',
-            },
-          ],
-        },
-        {
-          name: 'Melissa Barbera, Esq',
+          name: 'Melissa Barbera',
           title: 'Legal',
           image: 'team/melissa.png',
           social: [
@@ -198,13 +187,79 @@ export default {
           social: [],
         },
         {
-          name: 'Michael Forester, CFE, CMB, CPA',
-          title: 'Compliance',
+          name: 'Michael Forrester',
+          title: 'Compliance CFE, CMB, CPA',
           image: 'team/michael-f.png',
           social: [
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/mikeforester/',
+            },
+          ],
+        },
+        {
+          name: 'Alex Lee',
+          title: 'Founder at Liquidigy.com',
+          image: 'team/alex.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/alexblee/',
+            },
+          ],
+        },
+        {
+          name: 'Ralph Fatigate',
+          title: 'Former Advisor at AXA Advisors, LLC and Bear Stearns and Co',
+          image: 'team/ralph.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/ralph-fatigate-573a253/',
+            },
+          ],
+        },
+        {
+          name: "Nicholas D'Angelo",
+          title: 'Former SVP & Chief of Staff at Wells Fargo',
+          image: 'team/nicholas.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/nicholascdangelo/',
+            },
+          ],
+        },
+        {
+          name: 'Martine Niejadlik',
+          title: 'Former Chief Compliance Officer at Coinbase®',
+          image: 'team/martine.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/martineniejadlik/',
+            },
+          ],
+        },
+        {
+          name: 'Dave Stone',
+          title: 'Director of Product Management at Salesforce',
+          image: 'team/stub.svg',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/davestone2/',
+            },
+          ],
+        },
+        {
+          name: 'Alan Alford',
+          title: 'Risk Pricing (Economics)',
+          image: 'team/stub.svg',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/alan-alford-ba36795',
             },
           ],
         },
@@ -281,17 +336,13 @@ export default {
     margin-top: 130px
     @media screen and (max-width: 767px)
       margin-top: 100px
-      margin-bottom: 0
   &-advisors
     display: flex
     flex-wrap: wrap
-    justify-content: space-between
-    margin: 0 -20px
+    margin: 0 -15px
     ::v-deep .thumbnail
-      width: 350px
-      margin: 20px 15px
-      @media screen and (max-width: 1129px)
-        width: calc(33.333% - 30px)
+      width: calc(33.333% - 30px)
+      margin: 20px 15px 35px
       @media screen and (max-width: 991px)
         width: calc(50% - 30px)
       @media screen and (max-width: 767px)
