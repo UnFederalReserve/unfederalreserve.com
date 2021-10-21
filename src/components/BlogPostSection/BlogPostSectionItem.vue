@@ -25,7 +25,8 @@ export default {
       return truncateText(cleanTextFromHtml(this.blogItem.description));
     },
     pubDate() {
-      const pubDate = new Date(this.blogItem.pubDate).getTime();
+      const convertedDate = this.convertDateForIos(this.blogItem.pubDate);
+      const pubDate = convertedDate.getTime();
       const currentDate = new Date().getTime();
       const diff = Math.abs(Math.floor((currentDate - pubDate) / 1000));
       const date = Math.floor(diff / (24 * 60 * 60));
@@ -33,7 +34,7 @@ export default {
         return 'Recently';
       }
       if (date > 7) {
-        return new Date(this.blogItem.pubDate).toLocaleDateString('en-US', {
+        return convertedDate.toLocaleDateString('en-US', {
           month: 'short',
           day: 'numeric',
         });
@@ -47,6 +48,11 @@ export default {
   methods: {
     truncateText,
     cleanTextFromHtml,
+    convertDateForIos(date) {
+      const arr = date.split(/[- :]/);
+      const newDate = new Date(arr[0], arr[1] - 1, arr[2], arr[3], arr[4], arr[5]);
+      return newDate;
+    },
   },
 };
 </script>

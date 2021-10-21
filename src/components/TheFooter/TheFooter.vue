@@ -62,6 +62,10 @@
               href="https://www.branditpromo.com/stores/unFederalReserve",
               target="_blank",
             ) Merch Store
+            a(
+              href="https://forum.unfederalreserve.com",
+              target="_blank",
+            ) Forum
         .footer-content-row.between
           .footer-content-row__contacts.column
               h5 We Want to Hear from You

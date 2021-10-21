@@ -10,7 +10,7 @@
           .approval-text__content
             .approval-text__icon
             .approval-text__inner
-              p We are your safe harbor when navigating uncharted waters.
+              p We are your safe harbor when navigating uncharted waters.&nbsp;
                 | unFederalReserve™ has selected premium elements of the crypto ecosystem
                 | and wrapped it in a best-in-class regulatory framework that delivers its
                 | middle-market clients a B2B lending, cash reporting and overnight lending/borrowing utility tool.
