@@ -9,6 +9,10 @@
       href="https://www.branditpromo.com/stores/unFederalReserve"
       target="_blank"
     ) Merch
+    a(
+      href="https://forum.unfederalreserve.com"
+      target="_blank"
+    ) Forum
 </template>
 
 <script>
@@ -38,7 +42,7 @@ export default {
   @media screen and (max-width: 768px)
     display: none
   a
-    margin: 0 21px
+    margin: 0 18px
     color: $menu !important
     font-weight: 500 !important
     letter-spacing: 0.01em
@@ -57,7 +61,7 @@ export default {
       opacity: 0
       transition: 0.3s
     @media screen and (max-width: 1199px)
-      margin: 0 18px
+      margin: 0 10px
     @media screen and (max-width: 991px)
       margin: 0 5px
     &:hover
