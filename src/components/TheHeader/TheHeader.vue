@@ -149,7 +149,7 @@ export default {
     opacity: 1
     white-space: nowrap
     color: #FFFFFF
-    margin-left: 37px
+    margin-left: 35px
     @media screen and (max-width: 1199px)
       margin-left: 25px
     @media screen and (max-width: 991px)
@@ -270,7 +270,7 @@ export default {
     img
       width: 100%
     @media screen and (max-width: 1199px)
-      max-width: 250px
+      max-width: 245px
       width: 100%
       height: 100%
 
