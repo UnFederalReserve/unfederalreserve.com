@@ -26,6 +26,11 @@
             href="https://www.branditpromo.com/stores/unFederalReserve"
             target="_blank"
           ) Merch
+        li
+          a(
+            href="https://forum.unfederalreserve.com"
+            target="_blank"
+          ) Forum
       a(
         class="btn-rounded btn-white"
         :href="linkLending"

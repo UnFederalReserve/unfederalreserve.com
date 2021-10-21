@@ -13,7 +13,10 @@
           | Our banking products are designed for smaller U.S. Treasury
           | chartered banks and non-bank lenders in need of a DeFi strategy and
           | greater liquidity without sacrificing security or compliance. <br/>
-          a(:href="link" target="_blank") Click here to learn more
+          a(
+            href="https://unfederalreserve.medium.com/unfederalreserve-and-percent-to-join-forces-e151cab7e90b" 
+            target="_blank"
+          ) Click here to learn more
         div.btn-container
           BaseBtn(
             classes="btn-rounded btn-with-arrow btn-blue"
