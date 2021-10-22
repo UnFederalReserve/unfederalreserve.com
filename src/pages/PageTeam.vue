@@ -210,7 +210,7 @@ export default {
         },
         {
           name: 'Ralph Fatigate',
-          title: 'Former Advisor at AXA Advisors, LLC and Bear Stearns and Co',
+          title: '',
           image: 'team/ralph.png',
           social: [
             {
