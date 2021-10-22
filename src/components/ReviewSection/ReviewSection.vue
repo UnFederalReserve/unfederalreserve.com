@@ -54,7 +54,7 @@ export default {
           img: 'person-img-5.png',
           text: '“During my career as a consultant I was an advisor to a major crypto currency company where I provided regulatory advice and program enhancements”',
           name: 'Ralph Fatigate',
-          description: 'Financial Advisor at UnfederalReserve™. Former Advisor at AXA Advisors, LLC and Bear Stearns and Co',
+          description: 'Financial Advisor at UnfederalReserve™.',
         },
       ],
     };
