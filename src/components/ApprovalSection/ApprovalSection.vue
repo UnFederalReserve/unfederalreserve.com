@@ -162,6 +162,10 @@ export default {
     @media screen and (max-width: 767px)
       font-size: 38px
       text-align: left
+    @media screen and (max-width: 475px)
+      font-size: 28px
+    @media screen and (max-width: 374px)
+      font-size: 23px
   &__bottom-descr
     padding-top: 22px
     margin-top: 35px
