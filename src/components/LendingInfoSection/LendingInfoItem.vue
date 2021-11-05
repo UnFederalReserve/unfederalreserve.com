@@ -3,7 +3,7 @@
     .info-item__inner(@click="showModal = true")
       .info-item__video-img
         BaseImage.video-preview(
-          :src="img",
+          :src="require('images/video-preview.png')",
           alt="preview",
         )
       span.info-item__title {{title}}
@@ -11,7 +11,7 @@
         span.info-item__text {{description}}
     BaseModal(v-if="showModal" @close="showModal = false")
       template(slot="content")
-        iframe(width="100%" height="535" :src="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="100%" height="535" class="info-item__iframe" :src="videoSrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 </template>
 
@@ -26,7 +26,6 @@ export default {
     BaseModal,
   },
   props: {
-    img: String,
     title: String,
     description: String,
     videoSrc: String,
@@ -68,6 +67,10 @@ export default {
       svg
         path
           fill: #fff
+
+  &__iframe
+    @media screen and (max-width: 767px)
+      height: 380px
   &__video-img
     position: absolute
     top: -30px
