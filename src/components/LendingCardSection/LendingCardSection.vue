@@ -26,7 +26,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Claim Receipt
-                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt
+                  p Once assets are supplied to the platform you are issued unTokens as a claim receipt&nbsp;
                     | for the portion of assets being supplied to the asset pool.
                 .card-info__right
                   BaseImage.eth-icon-2(
@@ -84,7 +84,7 @@
               li.card-item__li.card-info
                 .card-info__left
                   h4.card-info__title Borrow assets
-                  p Enabling collateral creates “Borrowing Power” which is directly correlated to
+                  p Enabling collateral creates “Borrowing Power” which is directly correlated to&nbsp;
                     | the amount of collateral provided on the supply side.
                 .card-info__right
                   BaseImage.eth-icon-6(
