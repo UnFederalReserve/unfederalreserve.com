@@ -12,7 +12,7 @@ export default {
           + 'WithumSmith+Brown and was also a Senior Manager at one of the Big 4 Accounting Firms.</p> <p>Krieger is well-versed in intangible business '
           + 'valuation, intellectual property valuation, financial modeling, valuation of equity-participating instruments, and exotic financial assets '
           + 'and liabilities. Krieger holds a bachelor\'s degree in business administration from James Madison University and a MBA with a '
-          + 'concentration in quantitive finance from Rutgers University.</p>',
+          + 'concentration in quantitative finance from Rutgers University.</p>',
       social: [
         {
           name: 'linkedin',
