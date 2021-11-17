@@ -66,6 +66,8 @@ steps:
         exit;
       fi
 
+      cp -r staticdata/img/sharing-image.jpg dist/img
+
       cd dist
 
       if [ "$BRANCH_NAME" = "master" ] || [ "$BRANCH_NAME" = "stage" ] || [ "$BRANCH_NAME" = "dev" ]; then

@@ -11,11 +11,12 @@
 <script>
 import BaseImage from 'Components/Base/BaseImage';
 import BaseAccordion from 'Components/Base/BaseAccordion';
+
 export default {
-  name: "LendingFaqSection",
+  name: 'LendingFaqSection',
   components: {
     BaseImage,
-    BaseAccordion
+    BaseAccordion,
   },
   data() {
     return {
@@ -26,7 +27,7 @@ export default {
           title: 'Why is my transaction taking so long to come through?',
           details: `This may be because the ethereum network is experiencing heavy traffic at the time of you 
             sending your transaction through, this may result in higher gas fees being displayed 
-            and longer duration for your transaction to come through.`
+            and longer duration for your transaction to come through.`,
         },
         {
           id: 2,
@@ -39,14 +40,14 @@ export default {
             with meta mask wallet) and click on the activity tab > find your transaction which is usually with a 
             pending status > click on pending and it will bring up the 3 options, by default the middle 
             option is sent you can click on the faster one and select this will bump you up with 
-            more gas to transact quicker than the default.`        
+            more gas to transact quicker than the default.`,
         },
         {
           id: 3,
           active: false,
           title: 'How can I reduce my gas fee?',
           details: `The ethereum network like any other network does have busy periods and periods 
-            where it is not as busy, the less busier periods tend to reduce the gas fee.`        
+            where it is not as busy, the less busier periods tend to reduce the gas fee.`,
         },
         {
           id: 4,
@@ -58,7 +59,7 @@ export default {
               <li>A single liquidator will liquidate a specific position, at the discount rate allowed by the protocol.</li>
               <li>The discount incentive for buying out liquidate collateral is fixed at 8%.</li>
             </ol>
-          ` 
+          `,
         },
         {
           id: 5,
@@ -72,12 +73,12 @@ export default {
               <li>Swaps these funds for the borrowed asset (e.g. exchange ETH -> SUSHI)</li>
               <li>Uses these new funds to pay back debt (e.g. payback SUSHI debt)</li>
             </ul>
-          ` 
+          `,
         },
-      ]
-    }
-  }
-}
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="sass" scoped>
