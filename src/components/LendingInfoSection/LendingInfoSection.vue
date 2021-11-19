@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-info
     .s-container
-      h2.s-title Learn how to use the platform
+      h2.s-title Learn How to Use the Platform
       .info-items
         LendingInfoItem(
           v-for="item in items"
