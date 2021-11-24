@@ -242,6 +242,17 @@ export default {
           ],
         },
         {
+          name: 'Alan Alford',
+          title: 'Risk Pricing (Economics)',
+          image: 'team/alan.png',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/alan-alford-ba36795',
+            },
+          ],
+        },
+        {
           name: 'Dave Stone',
           title: 'Director of Product Management at Salesforce',
           image: 'team/stub.svg',
@@ -249,17 +260,6 @@ export default {
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/davestone2/',
-            },
-          ],
-        },
-        {
-          name: 'Alan Alford',
-          title: 'Risk Pricing (Economics)',
-          image: 'team/stub.svg',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/alan-alford-ba36795',
             },
           ],
         },
