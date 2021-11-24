@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-faq
     .s-container
-      h2.s-title F.A.Q
+      h2.s-title F.A.Q.
       BaseAccordion(
         id="accordion-example-1"
         :content="accordionData"
