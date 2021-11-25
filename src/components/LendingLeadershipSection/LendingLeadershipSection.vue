@@ -10,12 +10,12 @@
             v-bind="item"
           )
       .bottom-info
-        h2.bottom-info__title 
+        h2.bottom-info__title
           BaseImage.earn-icon(
             :src="require('images/earn-icon.svg')",
             alt="earn-icon",
           )
-          span Ready to earn?
+          span Ready to Earn?
         p Go to ReserveLending™ platform and start supplying assets today
         BaseBtn(classes="btn-rounded btn-with-arrow btn-gradient" text="Get Started" :link="link" :withArrow="true")
 

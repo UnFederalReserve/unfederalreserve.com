@@ -65,11 +65,11 @@
                   alt="eth-icon",
                 )
               .card-item__title Borrow Assets
-              .card-item__title-descr You can borrow assets on the ReserveLending™ platform after enabling collateral
+              .card-item__title-descr You can borrow assets on the ReserveLending™ platform after enabling a collateral
             ul.card-item__lists
               li.card-item__li.card-info
                 .card-info__left
-                  h4.card-info__title Use collateral
+                  h4.card-info__title Use Collateral
                     span.card-info__title-icon.right.icon-switch
                       BaseImage.toggle-icon(
                         :src="require('images/toggle-icon.svg')",
@@ -83,7 +83,7 @@
                   )
               li.card-item__li.card-info
                 .card-info__left
-                  h4.card-info__title Borrow assets
+                  h4.card-info__title Borrow Assets
                   p Enabling collateral creates “Borrowing Power” which is directly correlated to&nbsp;
                     | the amount of collateral provided on the supply side.
                 .card-info__right

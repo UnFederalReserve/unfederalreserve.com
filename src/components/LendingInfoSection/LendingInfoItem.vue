@@ -3,7 +3,7 @@
     .info-item__inner(@click="showModal = true")
       .info-item__video-img
         BaseImage.video-preview(
-          :src="require('images/video-preview.png')",
+          :src="require('images/video-preview.jpg')",
           alt="preview",
         )
       span.info-item__title {{title}}
@@ -81,6 +81,8 @@ export default {
     z-index: 1
     display: flex
     align-items: center
+    .video-preview
+      border-radius: 20px
   &__inner
     background: rgba(0, 0, 0, 0.11)
     border-radius: 25px
@@ -96,19 +98,17 @@ export default {
     @media screen and (max-width: 991px)
       padding-top: 172px
   &__title
-    font-weight: bold
-    font-size: 22px
+    font-weight: 700
+    font-size: 21px
     line-height: 170%
     letter-spacing: 0.01em
     margin-bottom: 13px
     color: #FFFFFF
     display: block
-    flex: 1
   &__bottom
     display: flex
     align-items: flex-start
     justify-content: space-between
-    flex: 1
   &__text
     font-weight: 500
     font-size: 16px

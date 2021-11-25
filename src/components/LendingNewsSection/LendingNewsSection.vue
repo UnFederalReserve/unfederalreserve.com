@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-news
     .s-container
-      h2.s-title Latest news
+      h2.s-title Latest News
       .news-wrap
         .twitter-timeline(ref="tw")
 
