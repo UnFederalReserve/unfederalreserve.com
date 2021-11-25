@@ -1,7 +1,7 @@
 <template lang="pug">
   section.s-info
     .s-container
-      h2.s-title Learn how to use the platform
+      h2.s-title Learn How to Use the Platform
       .info-items
         LendingInfoItem(
           v-for="item in items"
@@ -36,37 +36,43 @@ export default {
           id: 1,
           title: 'How To: Connect a Wallet',
           description: 'Watch our tutorial about connecting a wallet',
-          videoSrc: 'https://www.youtube.com/embed/gtOXxUPuxfA?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/fIRinsQO2EE?autoplay=1',
         },
         {
           id: 2,
           title: 'How To: Supply Asset',
           description: 'Watch our tutorial about supplying assets',
-          videoSrc: 'https://www.youtube.com/embed/BBTVYIXXrag?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/_86yhN8fzCQ?autoplay=1',
         },
         {
           id: 3,
           title: 'How to: Borrow Asset',
           description: 'Watch our tutorial about borrowing assets',
-          videoSrc: 'https://www.youtube.com/embed/3v0ShNwko3Q?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/iVHdmzg45do?autoplay=1',
         },
         {
           id: 4,
           title: 'How To: Repay a Borrow',
           description: 'Watch our tutorial about repaying a borrow',
-          videoSrc: 'https://www.youtube.com/embed/vzzZWutLkV8?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/XVlyC33sXGA?autoplay=1',
         },
         {
           id: 5,
           title: 'How To: Withdraw',
           description: 'Watch our tutorial about withdrawing',
-          videoSrc: 'https://www.youtube.com/embed/Oi0ZLzYWmw8?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/2FvdKcKZ4Jc?autoplay=1',
         },
         {
           id: 6,
           title: 'How To: Claim Rewards',
           description: 'Watch our tutorial about claiming rewards',
-          videoSrc: 'https://www.youtube.com/embed/ZWt1IfvZKaU?autoplay=1',
+          videoSrc: 'https://www.youtube.com/embed/NDh93CfCH-s?autoplay=1',
+        },
+        {
+          id: 7,
+          title: 'How To: Create a Liquidity Pools',
+          description: 'Watch our tutorial about liquidity pools',
+          videoSrc: 'https://www.youtube.com/embed/F1sLJdohgIs?autoplay=1',
         },
       ],
     };
