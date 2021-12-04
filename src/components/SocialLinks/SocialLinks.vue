@@ -18,6 +18,8 @@
       cointMarket.svg-icon
     a(href="https://linktr.ee/unfederalreserve" target="_blank").link
       SocIcon.svg-icon
+    a(href="https://defipulse.com/defi-lending" target="_blank").link
+      Defi.svg-icon
 </template>
 
 <script>
@@ -30,6 +32,7 @@ import Geco from 'images/svg-icons/geco.svg';
 import Reddit from 'images/svg-icons/reddit.svg';
 import cointMarket from 'images/svg-icons/coin-market.svg';
 import SocIcon from 'images/svg-icons/soc-icon.svg';
+import Defi from 'images/svg-icons/defi.svg';
 
 export default {
   name: 'SocialLinks',
@@ -43,6 +46,7 @@ export default {
     Reddit,
     cointMarket,
     SocIcon,
+    Defi,
   },
 };
 </script>
