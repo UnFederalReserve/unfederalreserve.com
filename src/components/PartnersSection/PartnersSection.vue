@@ -188,12 +188,12 @@ export default {
       partnersExchange: [
         {
           id: 1,
-          href: 'https://trade.kucoin.com/ERSDL-USDT',
+          href: 'https://trade.kucoin.com/trade/ERSDL-USDT?spm=kcWeb.B5markets.tradeList.1',
           logoName: '26.png',
         },
         {
           id: 2,
-          href: 'https://www.bitmart.com/trade/en?symbol=eRSDL_ETH',
+          href: 'https://www.bitmart.com/trade/en?symbol=eRSDL_ETH&layout=basic',
           logoName: '27.png',
         },
         {
@@ -208,12 +208,12 @@ export default {
         },
         {
           id: 5,
-          href: 'https://app.sushi.com/swap?inputCurrency=0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6',
+          href: 'https://app.sushi.com/swap?inputCurrency=0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48&outputCurrency=0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6',
           logoName: '30.png',
         },
         {
           id: 6,
-          href: 'https://app.bancor.network/eth/swap?from=0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6',
+          href: 'https://app.bancor.network/?from=0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C&to=0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6',
           logoName: '31.png',
         },
       ],
