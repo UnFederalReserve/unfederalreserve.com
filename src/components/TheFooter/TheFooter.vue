@@ -29,27 +29,27 @@
           .footer-content-row__home.column
             h5 Exchanges
             a(
-              href="https://app.bancor.network/eth/data/",
+              href="https://app.bancor.network/?from=0x1F573D6Fb3F13d689FF844B4cE37794d79a7FF1C&to=0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
               target="_blank",
             ) Bancor
             a(
-              href="https://www.bitmart.com/",
+              href="https://www.bitmart.com/trade/en?symbol=eRSDL_ETH&layout=basic",
               target="_blank",
             ) BitMart
             a(
-              href="https://www.kucoin.com/",
+              href="https://trade.kucoin.com/trade/ERSDL-USDT?spm=kcWeb.B5markets.tradeList.1",
               target="_blank",
             ) KuCoin
             a(
-              href="https://latoken.com/exchange/USDT",
+              href="https://latoken.com/exchange/ERSDL_USDT",
               target="_blank",
             ) LATOKEN
             a(
-              href="https://app.sushi.com/swap",
+              href="https://app.sushi.com/swap?inputCurrency=0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48&outputCurrency=0x5218E472cFCFE0b64A064F055B43b4cdC9EfD3A6",
               target="_blank",
             ) Sushiswap
             a(
-              href="https://app.uniswap.org/#/swap",
+              href="https://app.uniswap.org/#/swap?inputCurrency=0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6",
               target="_blank",
             ) Uniswap
           .footer-content-row__more.column
