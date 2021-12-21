@@ -2,7 +2,7 @@
   a(:href="blogItem.link" target="_blank").blog-post-item.fadeIn
     .blog-post-item__top
       .blog-post-item__label {{ pubDate }}
-      h3.blog-post-item__title {{ blogItem.title }}
+      h3.blog-post-item__title {{ title }}
       p.blog-post-item__text {{ description }}...
     .blog-post-item__bottom
       .blog-post-item__more Read more
@@ -21,6 +21,11 @@ export default {
     blogItem: Object,
   },
   computed: {
+    title() {
+      const title = this.blogItem.title;
+      return title.replace('&amp;', '&');
+    },
+
     description() {
       return truncateText(cleanTextFromHtml(this.blogItem.description));
     },
