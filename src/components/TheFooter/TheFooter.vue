@@ -70,8 +70,7 @@
           .footer-content-row__contacts.column
               h5 We Want to Hear from You
               .link-group
-                a(href="mailto:feedback@unfederalreserve.com") feedback@unfederalreserve.com
-                a(href="mailto:info@unfederalreserve.com" class="email-info") info@unfederalreserve.com
+                a(href="mailto:info@unfederalreserve.com") info@unfederalreserve.com
                 a(href="mailto:askhoward@unfederalreserve.com") Submit Town Hall Questions
               SocialLinks
           .all-rights
@@ -183,6 +182,7 @@ export default {
         .link-group
           display: flex
           flex-direction: column
+          align-items: flex-start
           margin-bottom: 10px
         span
           font-size: 12px
@@ -191,8 +191,6 @@ export default {
           color: #909AB6
         h5
           margin-bottom: 11px!important
-        .email-info
-          margin-top: 15px
         a
           color: #fff!important
           font-size: 14px!important
