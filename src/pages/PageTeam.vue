@@ -64,24 +64,6 @@ export default {
             },
           ],
         },
-        {
-          name: 'Vladyslav Tarasenko',
-          title: 'Solution Architect',
-          image: 'team/vlad100x100.png',
-          description: '<p> Vlad is a software developer with 10 years of experience and a wide range of skills in various '
-          + 'technologies. Vlad has a Master\'s Degree in Computer  Science. He has a proven track record in the financial '
-          + 'services sector. As a lead engineer, Vlad has successfully managed all stages of the development process '
-          + 'from idea to product launch. He is a good problem solver who knows how to find a balance between the quality '
-          + 'of the product and development speed. He can grasp the essence of the project at hand. Vlad has launched 3 '
-          + 'big projects with hit rate more than 1 000 000+ requests per day. Today he’s a founder of Webdevelop Pro '
-          + 'and an experienced team leader building strong development teams.</p>',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/vladyslav-tarasenko-16600372',
-            },
-          ],
-        },
       ];
     },
     advisors() {
@@ -260,6 +242,17 @@ export default {
             {
               name: 'linkedin',
               path: 'https://www.linkedin.com/in/davestone2/',
+            },
+          ],
+        },
+        {
+          name: 'Vladyslav Tarasenko',
+          title: 'Solution Architect',
+          image: 'team/stub.svg',
+          social: [
+            {
+              name: 'linkedin',
+              path: 'https://www.linkedin.com/in/vladyslav-tarasenko-16600372/',
             },
           ],
         },
