@@ -244,18 +244,7 @@ export default {
               path: 'https://www.linkedin.com/in/davestone2/',
             },
           ],
-        },
-        {
-          name: 'Vladyslav Tarasenko',
-          title: 'Solution Architect',
-          image: 'team/stub.svg',
-          social: [
-            {
-              name: 'linkedin',
-              path: 'https://www.linkedin.com/in/vladyslav-tarasenko-16600372/',
-            },
-          ],
-        },
+        }
       ];
     },
   },
