@@ -15,6 +15,10 @@
             h5 Main
             router-link(:to="{name: 'home'}" @click.native="onLogoClick") Home
             router-link(:to="{name: 'product'}") Lending
+            a(
+              href="https://unfederalreserve.com/lending-plus"
+              target="_blank"
+            ) Lending Plus
             router-link(:to="{name: 'home', hash: '#about'}") About Us
             a(
               href="https://unfederalreserve.medium.com/",
@@ -58,10 +62,6 @@
               href="https://app.unfederalreserve.com/farms/eRSDL-ETH%20UNI-V2%20LP",
               target="_blank",
             ) LP Staking
-            a(
-              href="https://www.branditpromo.com/stores/unFederalReserve",
-              target="_blank",
-            ) Merch Store
             a(
               href="https://forum.unfederalreserve.com",
               target="_blank",
