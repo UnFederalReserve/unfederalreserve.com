@@ -3,12 +3,12 @@
     slot(name="additionalItem")
     router-link(to="/") Home
     router-link(to="/product") Lending
+    a(
+      href="https://unfederalreserve.com/lending-plus"
+      target="_blank"
+    ) Lending Plus
     a(:href="linkDocs" target="_blank") Education Center
     router-link(to="team") About Us
-    a(
-      href="https://www.branditpromo.com/stores/unFederalReserve"
-      target="_blank"
-    ) Merch
     a(
       href="https://forum.unfederalreserve.com"
       target="_blank"
@@ -42,7 +42,7 @@ export default {
   @media screen and (max-width: 768px)
     display: none
   a
-    margin: 0 18px
+    margin: 0 14px
     color: $menu !important
     font-weight: 500 !important
     letter-spacing: 0.01em
@@ -62,6 +62,7 @@ export default {
       transition: 0.3s
     @media screen and (max-width: 1199px)
       margin: 0 10px
+      font-size: 15px!important
     @media screen and (max-width: 991px)
       margin: 0 5px
     &:hover

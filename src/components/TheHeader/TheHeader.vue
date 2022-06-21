@@ -270,7 +270,7 @@ export default {
     img
       width: 100%
     @media screen and (max-width: 1199px)
-      max-width: 245px
+      max-width: 215px
       width: 100%
       height: 100%
 
