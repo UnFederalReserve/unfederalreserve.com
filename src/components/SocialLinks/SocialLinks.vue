@@ -2,7 +2,7 @@
   .SocialLinks.social-links
     a(href="https://www.youtube.com/channel/UCcKaHJ8SdyAGqoMrVrsKK_A" target="_blank").link
       Youtube.svg-icon
-    a(href="https://discord.gg/unfederalreserve" target="_blank").link
+    a(href="https://discord.gg/TEJQ95PW9W" target="_blank").link
       GroupIcon.svg-icon
     a(href="https://www.linkedin.com/company/unfederalreserve" target="_blank").link
       Linkedin.svg-icon
