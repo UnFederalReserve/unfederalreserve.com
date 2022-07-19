@@ -28,9 +28,9 @@
           ) Merch
         li
           a(
-            href="https://forum.unfederalreserve.com"
+            href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x5218e472cfcfe0b64a064f055b43b4cdc9efd3a6&chain=mainnet"
             target="_blank"
-          ) Forum
+          ) Buy eRSDL
       a(
         class="btn-rounded btn-white"
         :href="linkLending"
