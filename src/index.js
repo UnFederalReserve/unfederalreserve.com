@@ -1,11 +1,11 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import vuetify from './tree-shaking/vuetify';
 import Vue from 'vue';
 // Import check version script (can reload site or redirect to home page)
 // import './checkVersion';
 // Import sleep mode detector
 // import dreamCatcher from './services/dream-catcher';
-import vuetify from './tree-shaking/vuetify';
 
 import App from './App';
 import router from './router';
