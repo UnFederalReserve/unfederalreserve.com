@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
 import BaseSpinner from 'Components/Base/BaseSpinner';
+import { mapActions, mapGetters } from 'vuex';
 import TheHeader from 'Components/TheHeader/TheHeader';
 import TheFooter from 'Components/TheFooter/TheFooter';
 import TheNotification from 'Components/TheNotification/TheNotification';
