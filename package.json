@@ -6,8 +6,7 @@
   "private": true,
   "homepage": "./",
   "scripts": {
-    "prerender": "rm -rf prerendered/* && node_modules/webpack/bin/webpack.js --hide-modules --mode none --config=webpack/prerender/webpack.config.js",
-    "start": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --hot-styles",
+    "start": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --hot-styles"
     "start:legacy": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --hot-styles --env.legacy=true",
     "start:prod": "NODE_ENV=production webpack-dev-server --host 0.0.0.0 --mode production",
     "start:analyze": "NODE_ENV=development webpack-dev-server --inline --host 0.0.0.0 --hot --mode development --analyze",
